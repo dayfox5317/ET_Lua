@@ -1,0 +1,1 @@
+{ "_t" : "GlobalHotfixProto", "ClientVersion" : "1.1" }

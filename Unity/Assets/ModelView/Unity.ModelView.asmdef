@@ -1,0 +1,21 @@
+{
+    "name": "Unity.ModelView",
+    "rootNamespace": "",
+    "references": [
+        "GUID:bebd02018e98e44409a761968a7cbcd9",
+        "GUID:e056512c76ca58d4880cf2e7b44e861d",
+        "GUID:bcbe5d5b14115ba47a1a859fba2d0779",
+        "GUID:9a87097604f806340b969a2d9261a322"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

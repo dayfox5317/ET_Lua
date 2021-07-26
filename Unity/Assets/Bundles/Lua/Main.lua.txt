@@ -1,0 +1,45 @@
+local Init = function(isStartGame)
+    --luaide Debug
+    --require("LuaDebug")("localhost",7003)
+    --LuaPanda Debug
+    require("LuaPanda").start("127.0.0.1", 8818)
+    --  package.cpath = package.cpath .. ';C:/Users/Cal/AppData/Roaming/JetBrains/Rider2021.1/plugins/EmmyLua/classes/debugger/emmy/windows/x64/?.dll'
+    --  local dbg = require('emmy_core')
+    --  dbg.tcpConnect('localhost', 9966)
+    package.path=package.path..";./Assets/Bundles/Config/CS2Lua/?.lua.txt"
+
+    rawPrint=print
+    print = function(...)
+        local info = debug.getinfo(2,"Sl");
+        local a=table.pack(...)
+        local str=table.concat(a,"  ")
+        rawPrint(str.."\r\n"..info.source..":"..info.currentline)
+    end
+    --require("LuaConfig")()
+    require("CSharpLua.Classloader")
+    require("xLuaAdapter")
+   
+    json = require("json")
+   -- System.init({
+   --     path="Assets/Bundles/Lua",
+   --     files={
+   --         "Object"
+   --     },
+   --     types={
+   --         "ET.Object"
+   --     }
+   -- })
+    require("Core.manifest")("Core")
+    require("ETTask")
+    require("CustomAttribute")
+     require("ProtobufAdapter")
+    require("Model.manifest")("Model")
+    require("ModelView.manifest")("ModelView")
+    require("Hotfix.manifest")("Hotfix")
+    require("HotfixView.manifest")("HotfixView")
+
+    if isStartGame then
+        ET.Init.Start()
+    end
+end
+return Init

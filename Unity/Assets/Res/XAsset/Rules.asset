@@ -1,0 +1,1554 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da61acc5b35847a42af155a1c750c526, type: 3}
+  m_Name: Rules
+  m_EditorClassIdentifier: 
+  searchPatternAsset: '*.asset'
+  searchPatternController: '*.controller'
+  searchPatternDir: '*'
+  searchPatternMaterial: '*.mat'
+  searchPatternPng: '*.png'
+  searchPatternMotionData: '*.bytes'
+  searchPatternPrefab: '*.prefab'
+  searchPatternScene: '*.unity'
+  searchPatternText: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
+  version: 42
+  scenesInBuild: []
+  rules:
+  - searchPath: Assets/Bundles/Controller
+    searchPattern: '*.controller'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Bundles/Code
+    searchPattern: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Bundles/Lua
+    searchPattern: '*.txt'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Bundles/Config
+    searchPattern: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Bundles/MotionData
+    searchPattern: '*.bytes'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Bundles/Other
+    searchPattern: '*'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Bundles/Unit
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Bundles/Scene
+    searchPattern: '*.unity'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Bundles/UI
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  ruleAssets:
+  - bundle: 0348aa20c3a6a01661a88a50e2077aac.unity3d
+    path: Assets/Bundles/Code/Hotfix.dll.bytes
+  - bundle: a16207b49b79d293b38ce2c7f4fd611b.unity3d
+    path: Assets/Bundles/Code/Hotfix.pdb.bytes
+  - bundle: 9993bdac7376840e209aabce5a4939e4.unity3d
+    path: Assets/Bundles/Code/HotfixCombine.dll.bytes
+  - bundle: acab1e1a40f818e65a8ee7229eac87e1.unity3d
+    path: Assets/Bundles/Code/HotfixCombine.pdb.bytes
+  - bundle: c01a72a10e08a7e168c0512802f3b838.unity3d
+    path: Assets/Bundles/Config/AIConfigCategory.bytes
+  - bundle: 1dbea14d7fd18d3c07f03f97dec676c0.unity3d
+    path: Assets/Bundles/Config/GlobalConfig.txt
+  - bundle: 9cd3154c05cb13bca1b8f76cc4512eee.unity3d
+    path: Assets/Bundles/Config/StartMachineConfigCategory.bytes
+  - bundle: 05014c9edac5d88b8ff22950a8eba351.unity3d
+    path: Assets/Bundles/Config/StartProcessConfigCategory.bytes
+  - bundle: 95ef3f249d8731dfb01bf7821eb98dc7.unity3d
+    path: Assets/Bundles/Config/StartSceneConfigCategory.bytes
+  - bundle: 76e7f033de36edc4fd11f354bc4f350b.unity3d
+    path: Assets/Bundles/Config/StartZoneConfigCategory.bytes
+  - bundle: 834fd1170cc25a7679603034262ce44a.unity3d
+    path: Assets/Bundles/Config/UnitConfigCategory.bytes
+  - bundle: a00b4f947e13b5103289fcae71d768c4.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/All.lua.txt
+  - bundle: 00917512b757dd5d7e69228316bf6955.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/Classloader.lua.txt
+  - bundle: 74bf49a415111c6f91876861d63d36ac.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Array.lua.txt
+  - bundle: fc29a5f0a1f47691eab2043ba0c98fd9.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Boolean.lua.txt
+  - bundle: 3860dcacb258b7b73203a961aa8e27c8.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Char.lua.txt
+  - bundle: b9e3160844e4ed14ea9b4c78ad44fa1c.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/Dictionary.lua.txt
+  - bundle: a51b736357fb20ae2e2a67764ca007b8.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/EqualityComparer.lua.txt
+  - bundle: 68fbaa22d7edca1b3d82ecaff7826d1f.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/HashSet.lua.txt
+  - bundle: 607b934732f494a12b98a25885029c65.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/LinkedList.lua.txt
+  - bundle: d8e334f9e23477d089d7f198362b5baa.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/Linq.lua.txt
+  - bundle: 34a2041883734221d63fa90c14be87a1.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/List.lua.txt
+  - bundle: 2b2d5f87489446ef2a9c63e54c2d4baa.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/Queue.lua.txt
+  - bundle: 8f4c4aef0b72ea2c024e8d6407a63a7c.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/SortedDictionary.lua.txt
+  - bundle: c02d4bcf7e73abbe517b558fe1c4943d.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/SortedSet.lua.txt
+  - bundle: d04fe24fd9b58b7a10abcbbb1fb65af4.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/Stack.lua.txt
+  - bundle: 65ae56d19e0f4171cc2f8cdd4cf70f16.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Console.lua.txt
+  - bundle: 15fa8babceb810f9427fa71238f016ff.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Convert.lua.txt
+  - bundle: a4a947f8b30d13b11763f317e05971aa.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Core.lua.txt
+  - bundle: 382863b6ceb3d2e07d8a5cd5cb6a9dd6.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/DateTime.lua.txt
+  - bundle: e71da7bd35ad8c38eef2b6be9d33ff9c.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Delegate.lua.txt
+  - bundle: df7dacd4d0e170643b61fb4a86286fcc.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Enum.lua.txt
+  - bundle: 1efaf5943cbbce443c916a2329852308.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Exception.lua.txt
+  - bundle: f0a1a59fc0ab64762bb2b5ba631dc803.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Globalization/Globalization.lua.txt
+  - bundle: 6395560d6d45e36c4a61207fb35ecd64.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/IO/File.lua.txt
+  - bundle: b7d793de2df0cffb5edb808bc9596b7b.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Interfaces.lua.txt
+  - bundle: 767635b1ead044155b8de9663b61fa5c.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Math.lua.txt
+  - bundle: 75321a0ddde5a65cd562ca138a31d7c3.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Number.lua.txt
+  - bundle: df3996accc0822956dfb3246e335ddff.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Complex.lua.txt
+  - bundle: 237dcd4c0e245ada17917d1dceafe2eb.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/HashCodeHelper.lua.txt
+  - bundle: 2ebea85b6cacdf31298be4e5c52cea59.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Matrix3x2.lua.txt
+  - bundle: 63ebf0fc7e953d1d6ca3360157d09195.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Matrix4x4.lua.txt
+  - bundle: 7abe3d409003872dd8bdcc63b96e276b.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Plane.lua.txt
+  - bundle: 4a6b39bdb4712f00dee1e9311701bc39.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Quaternion.lua.txt
+  - bundle: 7608d5cd330c563118d4aa56e0b01fa7.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Vector2.lua.txt
+  - bundle: ddc951a7445867914c9d761a1402ece0.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Vector3.lua.txt
+  - bundle: e0fe39f582d84211b00838dc667aa88c.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Vector4.lua.txt
+  - bundle: bd5d6d6bd6195754321831224418c49b.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Random.lua.txt
+  - bundle: 3ac3055eedef1e2452fb30c1003908e0.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Reflection/Assembly.lua.txt
+  - bundle: 53c1b166e6c4a01b58dce52db51f965a.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/String.lua.txt
+  - bundle: 1fff8213fac1f8fe686444584aacea4b.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Text/StringBuilder.lua.txt
+  - bundle: 6aba964d044d4b40ca8cf122a8c13729.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Threading/Task.lua.txt
+  - bundle: a64e000032f0b89245ef6e5e1b4d5ec7.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Threading/Thread.lua.txt
+  - bundle: f97c7335a55406937855aa8f22723497.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Threading/Timer.lua.txt
+  - bundle: 565921fc9726206cfe16c337a3c612e7.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/TimeSpan.lua.txt
+  - bundle: c19453af84d850333daf9663ec08cb8e.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Type.lua.txt
+  - bundle: 73edefad4c6cfa87b6d8ad83c4e0596a.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/CoreSystem/Utilities.lua.txt
+  - bundle: 3cdcfb65b401b2d341b5c08b8ee97f3b.unity3d
+    path: Assets/Bundles/Lua/CSharpLua/Sample/test.lua.txt
+  - bundle: f478b10a1a325d56462b02e14a469547.unity3d
+    path: Assets/Bundles/Lua/Core/Object.lua.txt
+  - bundle: 092495934883aa4f9772e014cbaeb49a.unity3d
+    path: Assets/Bundles/Lua/Core/manifest.lua.txt
+  - bundle: 79e7cbccda5b71112de936a6978e5a32.unity3d
+    path: Assets/Bundles/Lua/CustomAttribute.lua.txt
+  - bundle: 002f90ffce0c7c2abedc7341e36833d9.unity3d
+    path: Assets/Bundles/Lua/ETTask.lua.txt
+  - bundle: 778ab67a977a1fd12e5236beaf63a6c1.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Core/Scene/ZoneSceneFlagComponentSystem.lua.txt
+  - bundle: 5658fbca909f2e1030b96e90b7c90b60.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Core/Scene/ZoneSceneManagerComponentSystem.lua.txt
+  - bundle: e375499bd006c645325758b343c0e239.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Demo/AI/AI_Attack.lua.txt
+  - bundle: b1176390c74822784e620072f81c83ca.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Demo/AI/AI_XunLuo.lua.txt
+  - bundle: 0229c03993419d58d94b9e7a6b5a7d2d.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Demo/AI/XunLuoPathComponentSystem.lua.txt
+  - bundle: ac0976352dfb726608e75c650be77e8a.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Demo/LoginHelper.lua.txt
+  - bundle: 93d9ac3c67ddd4a516259b658a4ad155.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Demo/MapHelper.lua.txt
+  - bundle: 6bb07b1e240e88161712c5300522031c.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Demo/Move/M2C_PathfindingResultHandler.lua.txt
+  - bundle: b671204ee029704456b4e53f818fae6f.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Demo/Move/M2C_StopHandler.lua.txt
+  - bundle: 8fe6a0ffad2cd70cba32a045615a00fc.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Demo/Move/MoveComponentSystem.lua.txt
+  - bundle: f12b41dbca77be5f8743ae29188f880f.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Demo/Move/MoveHelper.lua.txt
+  - bundle: e855b8d7cf5eaf01f3da0e1f25b998f1.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Demo/Session/SessionComponentSystem.lua.txt
+  - bundle: 4010f70b1fe29e57cb323fdfe9e20c4e.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Demo/Unit/M2C_CreateUnitsHandler.lua.txt
+  - bundle: e8828546d27d954dd49bad61d10290ea.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Demo/Unit/UnitComponent.lua.txt
+  - bundle: 0d5021c0320c43433c5fb94e73e9aa2a.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Demo/Unit/UnitFactory.lua.txt
+  - bundle: 2fc0a325a80d28c08daa8a3ee8b35c2d.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Demo/Unit/UnitSystem.lua.txt
+  - bundle: bbe299cd43de749ed6b06c8ae527fc91.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Common/UIDragArgs.lua.txt
+  - bundle: a7d38bf8f9d7e22f8a310746bf6b7392.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Entity/GameKeyComponent.lua.txt
+  - bundle: 09a051ca184ab5cfd5b20598f26a6242.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Entity/ResourceEntity.lua.txt
+  - bundle: 59bf4af97773e382d6562331e81cf40c.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Entity/TowerPointViewComponent.lua.txt
+  - bundle: a81b97e690676ac5c957f08560611d59.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Entity/TranslateSceneComponent.lua.txt
+  - bundle: 875fff5971814f81a11f5110d924bb76.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Event/AppStartInitFinishEvent.lua.txt
+  - bundle: 157f4103623bbc423c888df0e4149067.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Event/EventIdType.lua.txt
+  - bundle: 79200221891fcec25856dd50fff59c1e.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Handler/G2C_TestHotfixHandler.lua.txt
+  - bundle: b9b54893acbb3abbac90e2977b4954d9.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Helper/ClassHelper.lua.txt
+  - bundle: d4163cf74e47e8502878392a649e39a2.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Helper/DictionaryHelper.lua.txt
+  - bundle: e43a830befb8c139ea591e92666285f4.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Helper/LuaJsonHelper.lua.txt
+  - bundle: e13685d6622a6859fbd7bacac8faaba7.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Helper/PosHelper.lua.txt
+  - bundle: a029afbfa5cc419081990da3f981a6b1.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Helper/ResourceHelper.lua.txt
+  - bundle: 0b9a5e3e2737c96753c9fca6903a1c77.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Helper/TypeHelper.lua.txt
+  - bundle: 6b2c7387857022cd0284fac68315aa1c.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Game/Init.lua.txt
+  - bundle: 7210a692bcd429449ac83d50e89255ed.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Module/AI/AIComponentSystem.lua.txt
+  - bundle: afb719c9f0ce9f72868d114ecc872c6e.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Module/AI/AIDispatcherComponentSystem.lua.txt
+  - bundle: 5cab477373bcce43e9850c6d86f7f7ef.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Module/Config/ConfigComponentSystem.lua.txt
+  - bundle: ace07949a630000ca062c615898b9b90.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Module/Message/MessageDispatcherComponentSystem.lua.txt
+  - bundle: 6d6875e3f7f220f1c1d5f2c35cdec85b.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Module/Message/NetKcpComponentSystem.lua.txt
+  - bundle: a3f57e081a1e9ddb4ef0bdafc6e924e9.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Module/Message/NetThreadComponentSystem.lua.txt
+  - bundle: 3623277e66a4e0e0be2d3fe413073afc.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Module/Message/OuterMessageDispatcher.lua.txt
+  - bundle: be6ba3e8906f127cd0b27f2916072225.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Module/Message/PingComponentSystem.lua.txt
+  - bundle: d2ba404eb4b01e091140820ebbe321f8.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Module/Message/SessionAcceptTimeoutComponentSystem.lua.txt
+  - bundle: a395516eebdeab594b0233fe80721456.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Module/Message/SessionIdleCheckerComponentSystem.lua.txt
+  - bundle: 4929f20acd2ec2db801a980a0e581f17.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Module/Numeric/NumericChangeEvent_NotifyWatcher.lua.txt
+  - bundle: 8b82e9b23e8ebfed06299a4fa54ebece.unity3d
+    path: Assets/Bundles/Lua/Hotfix/Module/Numeric/NumericWatcher_Hp_ShowUI.lua.txt
+  - bundle: b2f6a51d75b848b5014a50f18867556b.unity3d
+    path: Assets/Bundles/Lua/Hotfix/manifest.lua.txt
+  - bundle: bbe60696c09043f70b1c4254309a4d0e.unity3d
+    path: Assets/Bundles/Lua/HotfixView/AppStart_Init.lua.txt
+  - bundle: 1eea97f70592f6058d9f114ab0c8d7b7.unity3d
+    path: Assets/Bundles/Lua/HotfixView/Global/GlobalComponentSystem.lua.txt
+  - bundle: a08f03ff7c96c5569a2a05a6671eac57.unity3d
+    path: Assets/Bundles/Lua/HotfixView/Helper/LoadConfigHelper.lua.txt
+  - bundle: 09a6b0d54cfb9d3a233e4a499e03ac3a.unity3d
+    path: Assets/Bundles/Lua/HotfixView/Module/Resource/GameObjectHelper.lua.txt
+  - bundle: fbf1eef33e6a625fd300e08581ea1687.unity3d
+    path: Assets/Bundles/Lua/HotfixView/Module/UI/UIComponentSystem.lua.txt
+  - bundle: 6e86a469406b0393d7d18a249d417c81.unity3d
+    path: Assets/Bundles/Lua/HotfixView/Module/UI/UIEventComponentSystem.lua.txt
+  - bundle: 16f83eecece33d53abc814217f3a529b.unity3d
+    path: Assets/Bundles/Lua/HotfixView/Opera/OperaComponentSystem.lua.txt
+  - bundle: a84a8d6010a7cac130d46f6905a6312b.unity3d
+    path: Assets/Bundles/Lua/HotfixView/Scene/AfterCreateZoneScene_AddComponent.lua.txt
+  - bundle: 814d9d27571d6817ff930c09bbd7c000.unity3d
+    path: Assets/Bundles/Lua/HotfixView/Scene/SceneChangeComponentSystem.lua.txt
+  - bundle: 6777e460799f4080cff9407d3db84d30.unity3d
+    path: Assets/Bundles/Lua/HotfixView/Scene/SceneFactory.lua.txt
+  - bundle: 588d1c67a86932320a63a780bd86cf46.unity3d
+    path: Assets/Bundles/Lua/HotfixView/UI/UIHelper.lua.txt
+  - bundle: 5590080ec0be6a44f5220d7fc78ab050.unity3d
+    path: Assets/Bundles/Lua/HotfixView/UI/UILoading/LoadingBeginEvent_CreateLoadingUI.lua.txt
+  - bundle: 1024e11f2df316397a742770a3b19141.unity3d
+    path: Assets/Bundles/Lua/HotfixView/UI/UILoading/LoadingFinishEvent_RemoveLoadingUI.lua.txt
+  - bundle: 7d6134ab0836ee1a0d53a92ce2f34a33.unity3d
+    path: Assets/Bundles/Lua/HotfixView/UI/UILoading/UILoadingComponentSystem.lua.txt
+  - bundle: 46bc8ed8a0e28ce6a5e06fa80e633ef5.unity3d
+    path: Assets/Bundles/Lua/HotfixView/UI/UILoading/UILoadingEvent.lua.txt
+  - bundle: d21e024b79e57955a459c65cd1e9d1ac.unity3d
+    path: Assets/Bundles/Lua/HotfixView/UI/UILobby/EnterMapFinish_RemoveLobbyUI.lua.txt
+  - bundle: 2cdb7745eabeaf775b928236e071a95c.unity3d
+    path: Assets/Bundles/Lua/HotfixView/UI/UILobby/LoginFinish_CreateLobbyUI.lua.txt
+  - bundle: 0f9658d9a8aaebb8ad0144bc4f1df7d2.unity3d
+    path: Assets/Bundles/Lua/HotfixView/UI/UILobby/UILobbyComponentSystem.lua.txt
+  - bundle: ae7939de49de979f77108f44e1c9ad86.unity3d
+    path: Assets/Bundles/Lua/HotfixView/UI/UILobby/UILobbyEvent.lua.txt
+  - bundle: 84f1d2c2278ebe54038a5492d6ceb051.unity3d
+    path: Assets/Bundles/Lua/HotfixView/UI/UILogin/AppStartInitFinish_CreateLoginUI.lua.txt
+  - bundle: 8ccd611b4ef97cf1922a1c6cf489619d.unity3d
+    path: Assets/Bundles/Lua/HotfixView/UI/UILogin/LoginFinish_RemoveLoginUI.lua.txt
+  - bundle: eaca5d9c8d6592094b10045d97a095f0.unity3d
+    path: Assets/Bundles/Lua/HotfixView/UI/UILogin/UILoginComponentSystem.lua.txt
+  - bundle: 6bcbe478ce1e73ec9f167b0b296232ab.unity3d
+    path: Assets/Bundles/Lua/HotfixView/UI/UILogin/UILoginEvent.lua.txt
+  - bundle: 7a436e4cae51c3c048eedb442e64baa6.unity3d
+    path: Assets/Bundles/Lua/HotfixView/Unit/AfterUnitCreate_CreateUnitView.lua.txt
+  - bundle: 4c08447906eecd56303feb8b9c1b11e8.unity3d
+    path: Assets/Bundles/Lua/HotfixView/Unit/AnimatorComponentSystem.lua.txt
+  - bundle: e2e5c59642f2e0ee0659f12921234873.unity3d
+    path: Assets/Bundles/Lua/HotfixView/Unit/ChangePosition_SyncGameObjectPos.lua.txt
+  - bundle: 6e962842e3655730de4e0bd32923331c.unity3d
+    path: Assets/Bundles/Lua/HotfixView/Unit/ChangeRotation_SyncGameObjectRotation.lua.txt
+  - bundle: c8580252762ebdffe2c32b02db14d942.unity3d
+    path: Assets/Bundles/Lua/HotfixView/manifest.lua.txt
+  - bundle: fb83fe3a13b2ad36a4daaf2b3b8638ba.unity3d
+    path: Assets/Bundles/Lua/LuaConfig.lua.txt
+  - bundle: 4667b68cc651a73344dd159bee7b0552.unity3d
+    path: Assets/Bundles/Lua/LuaDebug.lua.txt
+  - bundle: 5a44bdc65037b639d1e07f81ba65110d.unity3d
+    path: Assets/Bundles/Lua/LuaDebugjit.lua.txt
+  - bundle: ee8aca0ff67abc342cb24d1fd10b5dc3.unity3d
+    path: Assets/Bundles/Lua/LuaPanda.lua.txt
+  - bundle: 526487eaa4c316624de7e00158f30a94.unity3d
+    path: Assets/Bundles/Lua/Main.lua.txt
+  - bundle: acbc0bd9ef9f1c75adbd3f2528cd86ca.unity3d
+    path: Assets/Bundles/Lua/Model/Base/Options.lua.txt
+  - bundle: c24aad4a0f398006ac03dc5b35437a36.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Async/ETCancellationToken.lua.txt
+  - bundle: bd23d464b31e35e57adbb717168910c3.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Async/ETTaskHelper.lua.txt
+  - bundle: c41f16c3eecf27b4367145340a3505d1.unity3d
+    path: Assets/Bundles/Lua/Model/Core/DoubleMap.lua.txt
+  - bundle: 2c8422b9a39b8406520bdee3bd920ba4.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Entity/EntitySceneFactory.lua.txt
+  - bundle: 2ce6650b605188cfdab4194a1a6e9d30.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Entity/Game.lua.txt
+  - bundle: 91ea0b5a47c25f523624fa68c7db6e29.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Entity/Scene.lua.txt
+  - bundle: ffc97894a7995b561d4f1127dc68e279.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Entity/SceneType.lua.txt
+  - bundle: 90ec1044e359173c68a5738e4a95563c.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Entity/TimerComponent.lua.txt
+  - bundle: 33357b7f787f0e6dd88d52996a49d88e.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Event/EventAttribute.lua.txt
+  - bundle: e3ae7f8be4abd37c9dadba9b02c4a2fb.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Event/IEvent.lua.txt
+  - bundle: 38cb4a8c056e831573ad0a464bd6cc35.unity3d
+    path: Assets/Bundles/Lua/Model/Core/HashSetComponent.lua.txt
+  - bundle: 53653d95a575b6ca31e4b5c81df679f5.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Helper/EnumHelper.lua.txt
+  - bundle: f02915780d735a6aa531ca5488cf2a3e.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Helper/FileHelper.lua.txt
+  - bundle: e3773ba27080e98cc271d6b6e9e95dc4.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Helper/IdGenerater.lua.txt
+  - bundle: 07ae397079a54cada29008c0f0f5fbf3.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Helper/MD5Helper.lua.txt
+  - bundle: ff257099772201a1cb5a357ae6f3eba8.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Helper/MethodInfoHelper.lua.txt
+  - bundle: 66a3852b3299c94092ba5e10c260c937.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Helper/NetworkHelper.lua.txt
+  - bundle: b3b878564635c1878bb26b7ca8dd2cb1.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Helper/ObjectHelper.lua.txt
+  - bundle: 85875728c68f66681fca0b6b9edb9288.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Helper/RandomHelper.lua.txt
+  - bundle: 92818936b8007624dd14db59fee416c3.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Helper/StringHelper.lua.txt
+  - bundle: 55d865f1b7aea6701951975d4888a09c.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Helper/TimeHelper.lua.txt
+  - bundle: 332f66d08631d0e86482a69aba9fbc2f.unity3d
+    path: Assets/Bundles/Lua/Model/Core/ListComponent.lua.txt
+  - bundle: e03cbe0d3edd132736303c4e62ff1ffd.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Log/Log.lua.txt
+  - bundle: 061808af9f4497aa9bc98408ae97661b.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Log/LogHelper.lua.txt
+  - bundle: e7b6ff999b71b026bff6113457930f7e.unity3d
+    path: Assets/Bundles/Lua/Model/Core/LogType.lua.txt
+  - bundle: 7cdaff03ba2358aec145d220e9867b39.unity3d
+    path: Assets/Bundles/Lua/Model/Core/MultiDictionary.lua.txt
+  - bundle: 1c7f23739d4d4a10a7a624548da0d4a0.unity3d
+    path: Assets/Bundles/Lua/Model/Core/MultiMap.lua.txt
+  - bundle: fd46757735a37c4f3839e4b671b24e86.unity3d
+    path: Assets/Bundles/Lua/Model/Core/MultiMapComponent.lua.txt
+  - bundle: 6e24cbc820a0771c924aacf3509fc4c2.unity3d
+    path: Assets/Bundles/Lua/Model/Core/MultiMapSet.lua.txt
+  - bundle: 2749ac8c1c45e4fdc1f825ecf9d3e823.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/BaseAttribute.lua.txt
+  - bundle: 3e02dc99cb4b31dd0ee5521596102d50.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/Entity.lua.txt
+  - bundle: c31a8bdbf850373bdd983d622094740d.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/EntityEventAttribute.lua.txt
+  - bundle: 2603742010e6d68db72029fe1f98637c.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/EntityFactory.lua.txt
+  - bundle: b680d326efe2be8bc540d5f01bc2abf9.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/EventSystem.lua.txt
+  - bundle: 16e894fffb480050dd3898048d33bedd.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/HideInHierarchy.lua.txt
+  - bundle: cd7c08c0e67b6fd21d00e74133c01503.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/IAwakeSystem.lua.txt
+  - bundle: 161e27d0a1b793cc6ed1324b55c951b5.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/IChangeSystem.lua.txt
+  - bundle: 294a85b85b5e4cc187ecad792859d389.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/IDeserializeSystem.lua.txt
+  - bundle: 57db659adfdb753db28d6ab24dc66aac.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/IDestroySystem.lua.txt
+  - bundle: aa637ffba69f6dacb19741be8a15523d.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/ILateUpdateSystem.lua.txt
+  - bundle: 381cf5733647b84022439f98ac13a2ce.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/ILoadSystem.lua.txt
+  - bundle: 88feb889268873fab9ce31777fbc6d68.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/ISerializeToEntity.lua.txt
+  - bundle: e7e46ae14b8cf2ee96eb119e66af5e47.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/IStartSystem.lua.txt
+  - bundle: 07c3cc4b16d92f332258965a4aee53a5.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/IUpdateSystem.lua.txt
+  - bundle: 3a168095a00a96089aae1614125de03a.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/NoMemoryCheck.lua.txt
+  - bundle: e29f1c38deb37ff8e63d077c7cbdc549.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/NoObjectPool.lua.txt
+  - bundle: 8a36949a7126f8f3ca0886d9e65dcccd.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/ObjectPool.lua.txt
+  - bundle: 337e718d7750fb2064715f557c650477.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/ObjectSystemAttribute.lua.txt
+  - bundle: 7f7c05ddc905fdb2e1ea0fbca9f3b989.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/ProtoObject.lua.txt
+  - bundle: adc69f09d0f52973c5aabf792b4296b8.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Object/TimeInfo.lua.txt
+  - bundle: c1ca7e4bc494ba0e8fe78bd9bc81cc4e.unity3d
+    path: Assets/Bundles/Lua/Model/Core/ObjectWait.lua.txt
+  - bundle: 3cb86d553b564cebcf8dd05b9355f7a5.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Pool.lua.txt
+  - bundle: f35cfc052ea751ca50b2bd24b8c799e0.unity3d
+    path: Assets/Bundles/Lua/Model/Core/ProcessHelper.lua.txt
+  - bundle: e88c0fd0d2311c91024ebc71b70bb7fd.unity3d
+    path: Assets/Bundles/Lua/Model/Core/QueueDictionary.lua.txt
+  - bundle: 787d501775364d979194c65b0884993d.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Scene/SceneHelper.lua.txt
+  - bundle: d10166817247ebb297054a9dd0730894.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Scene/ZoneSceneFlagComponent.lua.txt
+  - bundle: acf1a581be7d436f8d8b9eb8ddf703e2.unity3d
+    path: Assets/Bundles/Lua/Model/Core/Scene/ZoneSceneManagerComponent.lua.txt
+  - bundle: d7c3772c0565a57e71f980b3bb38245c.unity3d
+    path: Assets/Bundles/Lua/Model/Core/StructBsonSerialize.lua.txt
+  - bundle: 3b54cb1ea10ed4cbbf7d1b72da6ca801.unity3d
+    path: Assets/Bundles/Lua/Model/Core/UnOrderMultiMap.lua.txt
+  - bundle: 3299385f0b5a71e70f2d3cbd9966c25c.unity3d
+    path: Assets/Bundles/Lua/Model/Core/UnOrderMultiMapSet.lua.txt
+  - bundle: 789d437340f927ad8f9223643b938b04.unity3d
+    path: Assets/Bundles/Lua/Model/Demo/AI/XunLuoPathComponent.lua.txt
+  - bundle: 3b502e01946e36e588b798ff74bc55ff.unity3d
+    path: Assets/Bundles/Lua/Model/Demo/Define.lua.txt
+  - bundle: f24889d77a08248daa788d51e3d2c7ed.unity3d
+    path: Assets/Bundles/Lua/Model/Demo/EventType.lua.txt
+  - bundle: 71bd1940d57ae752b61c855f0132447b.unity3d
+    path: Assets/Bundles/Lua/Model/Demo/Helper/PathHelper.lua.txt
+  - bundle: 2905b997f5f076e1052c8361a6109dc0.unity3d
+    path: Assets/Bundles/Lua/Model/Demo/Helper/PositionHelper.lua.txt
+  - bundle: 345649c5dca836413f3f10332c023ce6.unity3d
+    path: Assets/Bundles/Lua/Model/Demo/Move/MoveComponent.lua.txt
+  - bundle: a2c968ed3c816cf0eb2b9ca54cc2b383.unity3d
+    path: Assets/Bundles/Lua/Model/Demo/Session/SessionComponent.lua.txt
+  - bundle: 18d61ff03a5e5e140b7c7dd2871a8c8a.unity3d
+    path: Assets/Bundles/Lua/Model/Demo/Unit/Unit.lua.txt
+  - bundle: c3c899bbde18fe799da7c37e5f679c39.unity3d
+    path: Assets/Bundles/Lua/Model/Demo/Unit/UnitComponent.lua.txt
+  - bundle: 5193ea8adf8b4a73961079db3861e3fa.unity3d
+    path: Assets/Bundles/Lua/Model/Demo/WaitType.lua.txt
+  - bundle: 2dfd56d4cd8689ef8c1578371c962db6.unity3d
+    path: Assets/Bundles/Lua/Model/Generate/Config/AIConfig.lua.txt
+  - bundle: 642480fe67fe550265059027436885e3.unity3d
+    path: Assets/Bundles/Lua/Model/Generate/Config/StartMachineConfig.lua.txt
+  - bundle: b3db9331e1a76f8ed906faf1933b0b0d.unity3d
+    path: Assets/Bundles/Lua/Model/Generate/Config/StartProcessConfig.lua.txt
+  - bundle: 775fd7b4795edc7dfe58def4c9c7eae3.unity3d
+    path: Assets/Bundles/Lua/Model/Generate/Config/StartSceneConfig.lua.txt
+  - bundle: fb78dd149b986baa2c4b87d6799371e8.unity3d
+    path: Assets/Bundles/Lua/Model/Generate/Config/StartZoneConfig.lua.txt
+  - bundle: ab6db1d638b59b0c5981b892ce918a59.unity3d
+    path: Assets/Bundles/Lua/Model/Generate/Config/UnitConfig.lua.txt
+  - bundle: 61885ed87a036e4f0de1b516c828af87.unity3d
+    path: Assets/Bundles/Lua/Model/Generate/Message/OuterMessage.lua.txt
+  - bundle: 64b5d81c25d5ec77ec139e63f887d86d.unity3d
+    path: Assets/Bundles/Lua/Model/Generate/Message/OuterOpcode.lua.txt
+  - bundle: 82e2edd3d235e4d7334dad1170503966.unity3d
+    path: Assets/Bundles/Lua/Model/Module/AI/AAIHandler.lua.txt
+  - bundle: d7ce02690c527596158981cf6cc009a0.unity3d
+    path: Assets/Bundles/Lua/Model/Module/AI/AIComponent.lua.txt
+  - bundle: b1e05e6e5748e26165d2e6fcc1417a73.unity3d
+    path: Assets/Bundles/Lua/Model/Module/AI/AIDispatcherComponent.lua.txt
+  - bundle: 4109008e1e7a5834880f8a16d123a3dd.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Actor/IActorMessage.lua.txt
+  - bundle: 30c8e780dad0415b52fbdf924b64221f.unity3d
+    path: Assets/Bundles/Lua/Model/Module/ActorLocation/ActorResponse.lua.txt
+  - bundle: 2f67290f6f035cb0c31ad5f2e27722e1.unity3d
+    path: Assets/Bundles/Lua/Model/Module/ActorLocation/IActorLocationMessage.lua.txt
+  - bundle: 4244aa3d46a52ed544d43266c390f261.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Config/ConfigAttribute.lua.txt
+  - bundle: 9e57d29ea8f968340934483bec0c04d2.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Config/ConfigComponent.lua.txt
+  - bundle: 9f6f6c54ce43b98ad0955f39a0b15f8a.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Config/IConfig.lua.txt
+  - bundle: ae26fccccca00f06cfa2af6b663196e4.unity3d
+    path: Assets/Bundles/Lua/Model/Module/CoroutineLock/CoroutineLock.lua.txt
+  - bundle: 2a11702b365dc4255628d360d270476b.unity3d
+    path: Assets/Bundles/Lua/Model/Module/CoroutineLock/CoroutineLockComponent.lua.txt
+  - bundle: 15ae48f9b207327d364835443febf31a.unity3d
+    path: Assets/Bundles/Lua/Model/Module/CoroutineLock/CoroutineLockType.lua.txt
+  - bundle: 388089ad7a1c065a109f2ab84f0a396c.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/AMHandler.lua.txt
+  - bundle: 177b0fc3bc085d4b8f91bdade7535ad5.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/ErrorCode.lua.txt
+  - bundle: 5d5b735fa0044a82f8584e58995bc985.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/IMHandler.lua.txt
+  - bundle: 7aaf0588447428d2157219b4f352840a.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/IMessage.lua.txt
+  - bundle: 62f56bc89fb80e9e063bee1725a822cf.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/IMessageDispatcher.lua.txt
+  - bundle: a2fafe515ce69e780d4b5850499e50ae.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/MessageAttribute.lua.txt
+  - bundle: c475cbb32d710501e5899af73ceb72b4.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/MessageDispatcherComponent.lua.txt
+  - bundle: 0a39c5ecb90e7555ceca5179faf16c0f.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/MessageHandlerAttribute.lua.txt
+  - bundle: 7b289ac7a3f0cbbdbdccbde387c7384e.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/MessagePool.lua.txt
+  - bundle: f901195c35412dbad485d96e713b3427.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/MessageProxy.lua.txt
+  - bundle: a040b277c2d9bae0520e44e0cef09852.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/MessageSerializeHelper.lua.txt
+  - bundle: 78ca37192950373617dad52bff9d02d5.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/NetKcpComponent.lua.txt
+  - bundle: 930b7bbd51b1c2a4b17d11697befcdee.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/NetThreadComponent.lua.txt
+  - bundle: 9888d83ede8397cc7ea55f2e72776c6c.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/OpcodeHelper.lua.txt
+  - bundle: c715c20e98362013bae06a3cf463b46b.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/OpcodeTypeComponent.lua.txt
+  - bundle: ebc122472e258f646a428d368a7a3eb8.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/PingComponent.lua.txt
+  - bundle: f78a78a6fff94a9afcee8d7ee8d43cbf.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/ProtobufHelper.lua.txt
+  - bundle: f984e9e3d5cc710244a6622a4ee043aa.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/ResponseTypeAttribute.lua.txt
+  - bundle: 36c7513b731643ea07696ff6cbfe5fe7.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/RpcException.lua.txt
+  - bundle: 3ae9240f11a9f583434999d279bdc220.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/Session.lua.txt
+  - bundle: 35e1221c8e9c8795145b87b26b25542f.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/SessionAcceptTimeoutComponent.lua.txt
+  - bundle: 6ac3bab9d9a9e1c906724b3d72e4e21e.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/SessionCallbackComponent.lua.txt
+  - bundle: 4eefa3004e5ecdb504b631f67f2e3ccd.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Message/SessionIdleCheckerComponent.lua.txt
+  - bundle: b122356c90203dedd342984ab89c9129.unity3d
+    path: Assets/Bundles/Lua/Model/Module/NetworkTCP/AChannel.lua.txt
+  - bundle: da0d7bd1f6981ab58cd22de6078b72f5.unity3d
+    path: Assets/Bundles/Lua/Model/Module/NetworkTCP/AService.lua.txt
+  - bundle: bef5ee6855286f5a7e4def3ff9a24526.unity3d
+    path: Assets/Bundles/Lua/Model/Module/NetworkTCP/KChannel.lua.txt
+  - bundle: a478eef70ca7d503a2be0213ec4794bf.unity3d
+    path: Assets/Bundles/Lua/Model/Module/NetworkTCP/KService.lua.txt
+  - bundle: 19869262987f29782c2d9621956db1eb.unity3d
+    path: Assets/Bundles/Lua/Model/Module/NetworkTCP/PacketParser.lua.txt
+  - bundle: 40e8b6f6bc8898988ddc6c55d9805ad9.unity3d
+    path: Assets/Bundles/Lua/Model/Module/NetworkTCP/TChannel.lua.txt
+  - bundle: f9594f42a7c618d18084e8f227c2077c.unity3d
+    path: Assets/Bundles/Lua/Model/Module/NetworkTCP/TService.lua.txt
+  - bundle: 784522b1b63593e2fa83dc32cd5c22a8.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Numeric/INumericWatcher.lua.txt
+  - bundle: b5c576f6ec1bd985050ae9526a60bf06.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Numeric/NumericComponent.lua.txt
+  - bundle: 8d4952b7808e6a6dafe28a65810859a6.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Numeric/NumericType.lua.txt
+  - bundle: ddd525aecea69ae311ddf637ec80e2ab.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Numeric/NumericWatcherAttribute.lua.txt
+  - bundle: 75d3f81378c48106a6cccc6743458802.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Numeric/NumericWatcherComponent.lua.txt
+  - bundle: 8b41522267d97526d95e1e68e06d79c1.unity3d
+    path: Assets/Bundles/Lua/Model/Module/Resource/ResourcesComponent.lua.txt
+  - bundle: d452a6d5e7c53e7286d8e5ca75a17cd2.unity3d
+    path: Assets/Bundles/Lua/Model/manifest.lua.txt
+  - bundle: 26e9af5670ca4209ae883815631b94b3.unity3d
+    path: Assets/Bundles/Lua/ModelView/Camera/CameraComponent.lua.txt
+  - bundle: c9270c30e2d4574d5ac9234c72aa6d52.unity3d
+    path: Assets/Bundles/Lua/ModelView/Global/GlobalComponent.lua.txt
+  - bundle: 53ee3bf49f601fad963020c9fd2ff410.unity3d
+    path: Assets/Bundles/Lua/ModelView/Module/UI/AUIEvent.lua.txt
+  - bundle: f996f13a7a3cfb28c5bc690a0ee75a8d.unity3d
+    path: Assets/Bundles/Lua/ModelView/Module/UI/LayerNames.lua.txt
+  - bundle: e96f2c720bc7266e090c6fc9069b2ccd.unity3d
+    path: Assets/Bundles/Lua/ModelView/Module/UI/UI.lua.txt
+  - bundle: 66ddbb1122f77c410e56b19a95a1f34d.unity3d
+    path: Assets/Bundles/Lua/ModelView/Module/UI/UIComponent.lua.txt
+  - bundle: aeaf59340be87a1edff8966ff33d7d2f.unity3d
+    path: Assets/Bundles/Lua/ModelView/Module/UI/UIEventAttribute.lua.txt
+  - bundle: ed0e79fe2b9a14921a31615b3141530e.unity3d
+    path: Assets/Bundles/Lua/ModelView/Module/UI/UIEventComponent.lua.txt
+  - bundle: 732958f4e8d9747db62c7ee4b4ab486e.unity3d
+    path: Assets/Bundles/Lua/ModelView/Module/UI/UIType.lua.txt
+  - bundle: b42fd69966f5adb9b7b8761e434e0c6f.unity3d
+    path: Assets/Bundles/Lua/ModelView/Opera/OperaComponent.lua.txt
+  - bundle: c9178f2620fbdf9c7d694b174ce58c5f.unity3d
+    path: Assets/Bundles/Lua/ModelView/RTUI/DragDropTarget.lua.txt
+  - bundle: 2889d3638d8ea0119c0748956f687279.unity3d
+    path: Assets/Bundles/Lua/ModelView/Scene/SceneChangeComponent.lua.txt
+  - bundle: 9ec7ef79db511e4692b35a8900032f8f.unity3d
+    path: Assets/Bundles/Lua/ModelView/UI/UILoading/UILoadingComponent.lua.txt
+  - bundle: 2afaff9bff10f45926d812710be004ea.unity3d
+    path: Assets/Bundles/Lua/ModelView/UI/UILobby/UILobbyComponent.lua.txt
+  - bundle: 68fc01e66ec812c2f6ed0980a342efd2.unity3d
+    path: Assets/Bundles/Lua/ModelView/UI/UILogin/UILoginComponent.lua.txt
+  - bundle: 9d6aded73b0be2f723eaffa7f5204222.unity3d
+    path: Assets/Bundles/Lua/ModelView/Unit/AnimatorComponent.lua.txt
+  - bundle: 18df4a35cd0be0900a52c3d8ab2099bd.unity3d
+    path: Assets/Bundles/Lua/ModelView/Unit/GameObjectComponent.lua.txt
+  - bundle: 06a3e87aaa14e91b7b7a01a7c2cd9362.unity3d
+    path: Assets/Bundles/Lua/ModelView/manifest.lua.txt
+  - bundle: 8222bfe7f21b31ea9f6dcfcf9d0cf359.unity3d
+    path: Assets/Bundles/Lua/Object.lua.txt
+  - bundle: 36b48ccab4d8ed8b43543b2b3ab4a54e.unity3d
+    path: Assets/Bundles/Lua/ProtobufAdapter.lua.txt
+  - bundle: 3c318ef2d3457aa036720603f59a138f.unity3d
+    path: Assets/Bundles/Lua/json.lua.txt
+  - bundle: 7940f6c8448eedf5c2e691f0230eedc2.unity3d
+    path: Assets/Bundles/Lua/pbc/AutoGeneratedCode/OuterMessage.txt
+  - bundle: 8ddbd50a69a838845bdfbcbe894ed5b9.unity3d
+    path: Assets/Bundles/Lua/pbc/config.proto.txt
+  - bundle: ac17324c8476e1b32cc0588bfc24f196.unity3d
+    path: Assets/Bundles/Lua/pbc/protobuf.lua.txt
+  - bundle: a52cddba3a34afb319554f3bf37f29e3.unity3d
+    path: Assets/Bundles/Lua/protoc.lua.txt
+  - bundle: bc08f4c3dad0d20c0f70310addbaacd2.unity3d
+    path: Assets/Bundles/Lua/xLuaAdapter.lua.txt
+  - bundle: 808f0f0f8caefc93706e3d9c8c513f4a.unity3d
+    path: Assets/Bundles/Scene/Game.unity
+  - bundle: f9f380096cbdda9ee505045ec505fa50.unity3d
+    path: Assets/Bundles/Scene/GameMap.unity
+  - bundle: d271e46befcf51c65a9835c5da2b2741.unity3d
+    path: Assets/Bundles/UI/UILobby.prefab
+  - bundle: 0fdb89a04e55223f72b5ad7a78c32c00.unity3d
+    path: Assets/Bundles/UI/UILogin.prefab
+  - bundle: 2efc619c3f96e68cc7eaeffd09addad3.unity3d
+    path: Assets/Bundles/Unit/Unit.prefab
+  ruleBundles:
+  - name: 0348aa20c3a6a01661a88a50e2077aac.unity3d
+    assets:
+    - Assets/Bundles/Code/Hotfix.dll.bytes
+  - name: a16207b49b79d293b38ce2c7f4fd611b.unity3d
+    assets:
+    - Assets/Bundles/Code/Hotfix.pdb.bytes
+  - name: 9993bdac7376840e209aabce5a4939e4.unity3d
+    assets:
+    - Assets/Bundles/Code/HotfixCombine.dll.bytes
+  - name: acab1e1a40f818e65a8ee7229eac87e1.unity3d
+    assets:
+    - Assets/Bundles/Code/HotfixCombine.pdb.bytes
+  - name: 79e7cbccda5b71112de936a6978e5a32.unity3d
+    assets:
+    - Assets/Bundles/Lua/CustomAttribute.lua.txt
+  - name: 002f90ffce0c7c2abedc7341e36833d9.unity3d
+    assets:
+    - Assets/Bundles/Lua/ETTask.lua.txt
+  - name: 3c318ef2d3457aa036720603f59a138f.unity3d
+    assets:
+    - Assets/Bundles/Lua/json.lua.txt
+  - name: fb83fe3a13b2ad36a4daaf2b3b8638ba.unity3d
+    assets:
+    - Assets/Bundles/Lua/LuaConfig.lua.txt
+  - name: 4667b68cc651a73344dd159bee7b0552.unity3d
+    assets:
+    - Assets/Bundles/Lua/LuaDebug.lua.txt
+  - name: 5a44bdc65037b639d1e07f81ba65110d.unity3d
+    assets:
+    - Assets/Bundles/Lua/LuaDebugjit.lua.txt
+  - name: ee8aca0ff67abc342cb24d1fd10b5dc3.unity3d
+    assets:
+    - Assets/Bundles/Lua/LuaPanda.lua.txt
+  - name: 526487eaa4c316624de7e00158f30a94.unity3d
+    assets:
+    - Assets/Bundles/Lua/Main.lua.txt
+  - name: 8222bfe7f21b31ea9f6dcfcf9d0cf359.unity3d
+    assets:
+    - Assets/Bundles/Lua/Object.lua.txt
+  - name: 36b48ccab4d8ed8b43543b2b3ab4a54e.unity3d
+    assets:
+    - Assets/Bundles/Lua/ProtobufAdapter.lua.txt
+  - name: a52cddba3a34afb319554f3bf37f29e3.unity3d
+    assets:
+    - Assets/Bundles/Lua/protoc.lua.txt
+  - name: bc08f4c3dad0d20c0f70310addbaacd2.unity3d
+    assets:
+    - Assets/Bundles/Lua/xLuaAdapter.lua.txt
+  - name: 092495934883aa4f9772e014cbaeb49a.unity3d
+    assets:
+    - Assets/Bundles/Lua/Core/manifest.lua.txt
+  - name: f478b10a1a325d56462b02e14a469547.unity3d
+    assets:
+    - Assets/Bundles/Lua/Core/Object.lua.txt
+  - name: a00b4f947e13b5103289fcae71d768c4.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/All.lua.txt
+  - name: 00917512b757dd5d7e69228316bf6955.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/Classloader.lua.txt
+  - name: 74bf49a415111c6f91876861d63d36ac.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Array.lua.txt
+  - name: fc29a5f0a1f47691eab2043ba0c98fd9.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Boolean.lua.txt
+  - name: 3860dcacb258b7b73203a961aa8e27c8.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Char.lua.txt
+  - name: 65ae56d19e0f4171cc2f8cdd4cf70f16.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Console.lua.txt
+  - name: 15fa8babceb810f9427fa71238f016ff.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Convert.lua.txt
+  - name: a4a947f8b30d13b11763f317e05971aa.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Core.lua.txt
+  - name: 382863b6ceb3d2e07d8a5cd5cb6a9dd6.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/DateTime.lua.txt
+  - name: e71da7bd35ad8c38eef2b6be9d33ff9c.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Delegate.lua.txt
+  - name: df7dacd4d0e170643b61fb4a86286fcc.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Enum.lua.txt
+  - name: 1efaf5943cbbce443c916a2329852308.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Exception.lua.txt
+  - name: b7d793de2df0cffb5edb808bc9596b7b.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Interfaces.lua.txt
+  - name: 767635b1ead044155b8de9663b61fa5c.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Math.lua.txt
+  - name: 75321a0ddde5a65cd562ca138a31d7c3.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Number.lua.txt
+  - name: bd5d6d6bd6195754321831224418c49b.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Random.lua.txt
+  - name: 53c1b166e6c4a01b58dce52db51f965a.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/String.lua.txt
+  - name: 565921fc9726206cfe16c337a3c612e7.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/TimeSpan.lua.txt
+  - name: c19453af84d850333daf9663ec08cb8e.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Type.lua.txt
+  - name: 73edefad4c6cfa87b6d8ad83c4e0596a.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Utilities.lua.txt
+  - name: b9e3160844e4ed14ea9b4c78ad44fa1c.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/Dictionary.lua.txt
+  - name: a51b736357fb20ae2e2a67764ca007b8.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/EqualityComparer.lua.txt
+  - name: 68fbaa22d7edca1b3d82ecaff7826d1f.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/HashSet.lua.txt
+  - name: 607b934732f494a12b98a25885029c65.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/LinkedList.lua.txt
+  - name: d8e334f9e23477d089d7f198362b5baa.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/Linq.lua.txt
+  - name: 34a2041883734221d63fa90c14be87a1.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/List.lua.txt
+  - name: 2b2d5f87489446ef2a9c63e54c2d4baa.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/Queue.lua.txt
+  - name: 8f4c4aef0b72ea2c024e8d6407a63a7c.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/SortedDictionary.lua.txt
+  - name: c02d4bcf7e73abbe517b558fe1c4943d.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/SortedSet.lua.txt
+  - name: d04fe24fd9b58b7a10abcbbb1fb65af4.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections/Stack.lua.txt
+  - name: f0a1a59fc0ab64762bb2b5ba631dc803.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Globalization/Globalization.lua.txt
+  - name: 6395560d6d45e36c4a61207fb35ecd64.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/IO/File.lua.txt
+  - name: df3996accc0822956dfb3246e335ddff.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Complex.lua.txt
+  - name: 237dcd4c0e245ada17917d1dceafe2eb.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/HashCodeHelper.lua.txt
+  - name: 2ebea85b6cacdf31298be4e5c52cea59.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Matrix3x2.lua.txt
+  - name: 63ebf0fc7e953d1d6ca3360157d09195.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Matrix4x4.lua.txt
+  - name: 7abe3d409003872dd8bdcc63b96e276b.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Plane.lua.txt
+  - name: 4a6b39bdb4712f00dee1e9311701bc39.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Quaternion.lua.txt
+  - name: 7608d5cd330c563118d4aa56e0b01fa7.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Vector2.lua.txt
+  - name: ddc951a7445867914c9d761a1402ece0.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Vector3.lua.txt
+  - name: e0fe39f582d84211b00838dc667aa88c.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics/Vector4.lua.txt
+  - name: 3ac3055eedef1e2452fb30c1003908e0.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Reflection/Assembly.lua.txt
+  - name: 1fff8213fac1f8fe686444584aacea4b.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Text/StringBuilder.lua.txt
+  - name: 6aba964d044d4b40ca8cf122a8c13729.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Threading/Task.lua.txt
+  - name: a64e000032f0b89245ef6e5e1b4d5ec7.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Threading/Thread.lua.txt
+  - name: f97c7335a55406937855aa8f22723497.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/CoreSystem/Threading/Timer.lua.txt
+  - name: 3cdcfb65b401b2d341b5c08b8ee97f3b.unity3d
+    assets:
+    - Assets/Bundles/Lua/CSharpLua/Sample/test.lua.txt
+  - name: b2f6a51d75b848b5014a50f18867556b.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/manifest.lua.txt
+  - name: 778ab67a977a1fd12e5236beaf63a6c1.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Core/Scene/ZoneSceneFlagComponentSystem.lua.txt
+  - name: 5658fbca909f2e1030b96e90b7c90b60.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Core/Scene/ZoneSceneManagerComponentSystem.lua.txt
+  - name: ac0976352dfb726608e75c650be77e8a.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Demo/LoginHelper.lua.txt
+  - name: 93d9ac3c67ddd4a516259b658a4ad155.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Demo/MapHelper.lua.txt
+  - name: e375499bd006c645325758b343c0e239.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Demo/AI/AI_Attack.lua.txt
+  - name: b1176390c74822784e620072f81c83ca.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Demo/AI/AI_XunLuo.lua.txt
+  - name: 0229c03993419d58d94b9e7a6b5a7d2d.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Demo/AI/XunLuoPathComponentSystem.lua.txt
+  - name: 6bb07b1e240e88161712c5300522031c.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Demo/Move/M2C_PathfindingResultHandler.lua.txt
+  - name: b671204ee029704456b4e53f818fae6f.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Demo/Move/M2C_StopHandler.lua.txt
+  - name: 8fe6a0ffad2cd70cba32a045615a00fc.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Demo/Move/MoveComponentSystem.lua.txt
+  - name: f12b41dbca77be5f8743ae29188f880f.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Demo/Move/MoveHelper.lua.txt
+  - name: e855b8d7cf5eaf01f3da0e1f25b998f1.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Demo/Session/SessionComponentSystem.lua.txt
+  - name: 4010f70b1fe29e57cb323fdfe9e20c4e.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Demo/Unit/M2C_CreateUnitsHandler.lua.txt
+  - name: e8828546d27d954dd49bad61d10290ea.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Demo/Unit/UnitComponent.lua.txt
+  - name: 0d5021c0320c43433c5fb94e73e9aa2a.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Demo/Unit/UnitFactory.lua.txt
+  - name: 2fc0a325a80d28c08daa8a3ee8b35c2d.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Demo/Unit/UnitSystem.lua.txt
+  - name: 6b2c7387857022cd0284fac68315aa1c.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Init.lua.txt
+  - name: bbe299cd43de749ed6b06c8ae527fc91.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Common/UIDragArgs.lua.txt
+  - name: a7d38bf8f9d7e22f8a310746bf6b7392.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Entity/GameKeyComponent.lua.txt
+  - name: 09a051ca184ab5cfd5b20598f26a6242.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Entity/ResourceEntity.lua.txt
+  - name: 59bf4af97773e382d6562331e81cf40c.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Entity/TowerPointViewComponent.lua.txt
+  - name: a81b97e690676ac5c957f08560611d59.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Entity/TranslateSceneComponent.lua.txt
+  - name: 875fff5971814f81a11f5110d924bb76.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Event/AppStartInitFinishEvent.lua.txt
+  - name: 157f4103623bbc423c888df0e4149067.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Event/EventIdType.lua.txt
+  - name: 79200221891fcec25856dd50fff59c1e.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Handler/G2C_TestHotfixHandler.lua.txt
+  - name: b9b54893acbb3abbac90e2977b4954d9.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Helper/ClassHelper.lua.txt
+  - name: d4163cf74e47e8502878392a649e39a2.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Helper/DictionaryHelper.lua.txt
+  - name: e43a830befb8c139ea591e92666285f4.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Helper/LuaJsonHelper.lua.txt
+  - name: e13685d6622a6859fbd7bacac8faaba7.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Helper/PosHelper.lua.txt
+  - name: a029afbfa5cc419081990da3f981a6b1.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Helper/ResourceHelper.lua.txt
+  - name: 0b9a5e3e2737c96753c9fca6903a1c77.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Game/Helper/TypeHelper.lua.txt
+  - name: 7210a692bcd429449ac83d50e89255ed.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Module/AI/AIComponentSystem.lua.txt
+  - name: afb719c9f0ce9f72868d114ecc872c6e.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Module/AI/AIDispatcherComponentSystem.lua.txt
+  - name: 5cab477373bcce43e9850c6d86f7f7ef.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Module/Config/ConfigComponentSystem.lua.txt
+  - name: ace07949a630000ca062c615898b9b90.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Module/Message/MessageDispatcherComponentSystem.lua.txt
+  - name: 6d6875e3f7f220f1c1d5f2c35cdec85b.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Module/Message/NetKcpComponentSystem.lua.txt
+  - name: a3f57e081a1e9ddb4ef0bdafc6e924e9.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Module/Message/NetThreadComponentSystem.lua.txt
+  - name: 3623277e66a4e0e0be2d3fe413073afc.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Module/Message/OuterMessageDispatcher.lua.txt
+  - name: be6ba3e8906f127cd0b27f2916072225.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Module/Message/PingComponentSystem.lua.txt
+  - name: d2ba404eb4b01e091140820ebbe321f8.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Module/Message/SessionAcceptTimeoutComponentSystem.lua.txt
+  - name: a395516eebdeab594b0233fe80721456.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Module/Message/SessionIdleCheckerComponentSystem.lua.txt
+  - name: 4929f20acd2ec2db801a980a0e581f17.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Module/Numeric/NumericChangeEvent_NotifyWatcher.lua.txt
+  - name: 8b82e9b23e8ebfed06299a4fa54ebece.unity3d
+    assets:
+    - Assets/Bundles/Lua/Hotfix/Module/Numeric/NumericWatcher_Hp_ShowUI.lua.txt
+  - name: bbe60696c09043f70b1c4254309a4d0e.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/AppStart_Init.lua.txt
+  - name: c8580252762ebdffe2c32b02db14d942.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/manifest.lua.txt
+  - name: 1eea97f70592f6058d9f114ab0c8d7b7.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/Global/GlobalComponentSystem.lua.txt
+  - name: a08f03ff7c96c5569a2a05a6671eac57.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/Helper/LoadConfigHelper.lua.txt
+  - name: 09a6b0d54cfb9d3a233e4a499e03ac3a.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/Module/Resource/GameObjectHelper.lua.txt
+  - name: fbf1eef33e6a625fd300e08581ea1687.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/Module/UI/UIComponentSystem.lua.txt
+  - name: 6e86a469406b0393d7d18a249d417c81.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/Module/UI/UIEventComponentSystem.lua.txt
+  - name: 16f83eecece33d53abc814217f3a529b.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/Opera/OperaComponentSystem.lua.txt
+  - name: a84a8d6010a7cac130d46f6905a6312b.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/Scene/AfterCreateZoneScene_AddComponent.lua.txt
+  - name: 814d9d27571d6817ff930c09bbd7c000.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/Scene/SceneChangeComponentSystem.lua.txt
+  - name: 6777e460799f4080cff9407d3db84d30.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/Scene/SceneFactory.lua.txt
+  - name: 588d1c67a86932320a63a780bd86cf46.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/UI/UIHelper.lua.txt
+  - name: 5590080ec0be6a44f5220d7fc78ab050.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/UI/UILoading/LoadingBeginEvent_CreateLoadingUI.lua.txt
+  - name: 1024e11f2df316397a742770a3b19141.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/UI/UILoading/LoadingFinishEvent_RemoveLoadingUI.lua.txt
+  - name: 7d6134ab0836ee1a0d53a92ce2f34a33.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/UI/UILoading/UILoadingComponentSystem.lua.txt
+  - name: 46bc8ed8a0e28ce6a5e06fa80e633ef5.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/UI/UILoading/UILoadingEvent.lua.txt
+  - name: d21e024b79e57955a459c65cd1e9d1ac.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/UI/UILobby/EnterMapFinish_RemoveLobbyUI.lua.txt
+  - name: 2cdb7745eabeaf775b928236e071a95c.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/UI/UILobby/LoginFinish_CreateLobbyUI.lua.txt
+  - name: 0f9658d9a8aaebb8ad0144bc4f1df7d2.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/UI/UILobby/UILobbyComponentSystem.lua.txt
+  - name: ae7939de49de979f77108f44e1c9ad86.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/UI/UILobby/UILobbyEvent.lua.txt
+  - name: 84f1d2c2278ebe54038a5492d6ceb051.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/UI/UILogin/AppStartInitFinish_CreateLoginUI.lua.txt
+  - name: 8ccd611b4ef97cf1922a1c6cf489619d.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/UI/UILogin/LoginFinish_RemoveLoginUI.lua.txt
+  - name: eaca5d9c8d6592094b10045d97a095f0.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/UI/UILogin/UILoginComponentSystem.lua.txt
+  - name: 6bcbe478ce1e73ec9f167b0b296232ab.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/UI/UILogin/UILoginEvent.lua.txt
+  - name: 7a436e4cae51c3c048eedb442e64baa6.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/Unit/AfterUnitCreate_CreateUnitView.lua.txt
+  - name: 4c08447906eecd56303feb8b9c1b11e8.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/Unit/AnimatorComponentSystem.lua.txt
+  - name: e2e5c59642f2e0ee0659f12921234873.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/Unit/ChangePosition_SyncGameObjectPos.lua.txt
+  - name: 6e962842e3655730de4e0bd32923331c.unity3d
+    assets:
+    - Assets/Bundles/Lua/HotfixView/Unit/ChangeRotation_SyncGameObjectRotation.lua.txt
+  - name: d452a6d5e7c53e7286d8e5ca75a17cd2.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/manifest.lua.txt
+  - name: acbc0bd9ef9f1c75adbd3f2528cd86ca.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Base/Options.lua.txt
+  - name: c41f16c3eecf27b4367145340a3505d1.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/DoubleMap.lua.txt
+  - name: 38cb4a8c056e831573ad0a464bd6cc35.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/HashSetComponent.lua.txt
+  - name: 332f66d08631d0e86482a69aba9fbc2f.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/ListComponent.lua.txt
+  - name: e7b6ff999b71b026bff6113457930f7e.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/LogType.lua.txt
+  - name: 7cdaff03ba2358aec145d220e9867b39.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/MultiDictionary.lua.txt
+  - name: 1c7f23739d4d4a10a7a624548da0d4a0.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/MultiMap.lua.txt
+  - name: fd46757735a37c4f3839e4b671b24e86.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/MultiMapComponent.lua.txt
+  - name: 6e24cbc820a0771c924aacf3509fc4c2.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/MultiMapSet.lua.txt
+  - name: c1ca7e4bc494ba0e8fe78bd9bc81cc4e.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/ObjectWait.lua.txt
+  - name: 3cb86d553b564cebcf8dd05b9355f7a5.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Pool.lua.txt
+  - name: f35cfc052ea751ca50b2bd24b8c799e0.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/ProcessHelper.lua.txt
+  - name: e88c0fd0d2311c91024ebc71b70bb7fd.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/QueueDictionary.lua.txt
+  - name: d7c3772c0565a57e71f980b3bb38245c.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/StructBsonSerialize.lua.txt
+  - name: 3b54cb1ea10ed4cbbf7d1b72da6ca801.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/UnOrderMultiMap.lua.txt
+  - name: 3299385f0b5a71e70f2d3cbd9966c25c.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/UnOrderMultiMapSet.lua.txt
+  - name: c24aad4a0f398006ac03dc5b35437a36.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Async/ETCancellationToken.lua.txt
+  - name: bd23d464b31e35e57adbb717168910c3.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Async/ETTaskHelper.lua.txt
+  - name: 2c8422b9a39b8406520bdee3bd920ba4.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Entity/EntitySceneFactory.lua.txt
+  - name: 2ce6650b605188cfdab4194a1a6e9d30.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Entity/Game.lua.txt
+  - name: 91ea0b5a47c25f523624fa68c7db6e29.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Entity/Scene.lua.txt
+  - name: ffc97894a7995b561d4f1127dc68e279.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Entity/SceneType.lua.txt
+  - name: 90ec1044e359173c68a5738e4a95563c.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Entity/TimerComponent.lua.txt
+  - name: 33357b7f787f0e6dd88d52996a49d88e.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Event/EventAttribute.lua.txt
+  - name: e3ae7f8be4abd37c9dadba9b02c4a2fb.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Event/IEvent.lua.txt
+  - name: 53653d95a575b6ca31e4b5c81df679f5.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Helper/EnumHelper.lua.txt
+  - name: f02915780d735a6aa531ca5488cf2a3e.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Helper/FileHelper.lua.txt
+  - name: e3773ba27080e98cc271d6b6e9e95dc4.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Helper/IdGenerater.lua.txt
+  - name: 07ae397079a54cada29008c0f0f5fbf3.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Helper/MD5Helper.lua.txt
+  - name: ff257099772201a1cb5a357ae6f3eba8.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Helper/MethodInfoHelper.lua.txt
+  - name: 66a3852b3299c94092ba5e10c260c937.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Helper/NetworkHelper.lua.txt
+  - name: b3b878564635c1878bb26b7ca8dd2cb1.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Helper/ObjectHelper.lua.txt
+  - name: 85875728c68f66681fca0b6b9edb9288.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Helper/RandomHelper.lua.txt
+  - name: 92818936b8007624dd14db59fee416c3.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Helper/StringHelper.lua.txt
+  - name: 55d865f1b7aea6701951975d4888a09c.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Helper/TimeHelper.lua.txt
+  - name: e03cbe0d3edd132736303c4e62ff1ffd.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Log/Log.lua.txt
+  - name: 061808af9f4497aa9bc98408ae97661b.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Log/LogHelper.lua.txt
+  - name: 2749ac8c1c45e4fdc1f825ecf9d3e823.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/BaseAttribute.lua.txt
+  - name: 3e02dc99cb4b31dd0ee5521596102d50.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/Entity.lua.txt
+  - name: c31a8bdbf850373bdd983d622094740d.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/EntityEventAttribute.lua.txt
+  - name: 2603742010e6d68db72029fe1f98637c.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/EntityFactory.lua.txt
+  - name: b680d326efe2be8bc540d5f01bc2abf9.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/EventSystem.lua.txt
+  - name: 16e894fffb480050dd3898048d33bedd.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/HideInHierarchy.lua.txt
+  - name: cd7c08c0e67b6fd21d00e74133c01503.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/IAwakeSystem.lua.txt
+  - name: 161e27d0a1b793cc6ed1324b55c951b5.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/IChangeSystem.lua.txt
+  - name: 294a85b85b5e4cc187ecad792859d389.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/IDeserializeSystem.lua.txt
+  - name: 57db659adfdb753db28d6ab24dc66aac.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/IDestroySystem.lua.txt
+  - name: aa637ffba69f6dacb19741be8a15523d.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/ILateUpdateSystem.lua.txt
+  - name: 381cf5733647b84022439f98ac13a2ce.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/ILoadSystem.lua.txt
+  - name: 88feb889268873fab9ce31777fbc6d68.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/ISerializeToEntity.lua.txt
+  - name: e7e46ae14b8cf2ee96eb119e66af5e47.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/IStartSystem.lua.txt
+  - name: 07c3cc4b16d92f332258965a4aee53a5.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/IUpdateSystem.lua.txt
+  - name: 3a168095a00a96089aae1614125de03a.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/NoMemoryCheck.lua.txt
+  - name: e29f1c38deb37ff8e63d077c7cbdc549.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/NoObjectPool.lua.txt
+  - name: 8a36949a7126f8f3ca0886d9e65dcccd.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/ObjectPool.lua.txt
+  - name: 337e718d7750fb2064715f557c650477.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/ObjectSystemAttribute.lua.txt
+  - name: 7f7c05ddc905fdb2e1ea0fbca9f3b989.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/ProtoObject.lua.txt
+  - name: adc69f09d0f52973c5aabf792b4296b8.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Object/TimeInfo.lua.txt
+  - name: 787d501775364d979194c65b0884993d.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Scene/SceneHelper.lua.txt
+  - name: d10166817247ebb297054a9dd0730894.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Scene/ZoneSceneFlagComponent.lua.txt
+  - name: acf1a581be7d436f8d8b9eb8ddf703e2.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Core/Scene/ZoneSceneManagerComponent.lua.txt
+  - name: 3b502e01946e36e588b798ff74bc55ff.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Demo/Define.lua.txt
+  - name: f24889d77a08248daa788d51e3d2c7ed.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Demo/EventType.lua.txt
+  - name: 5193ea8adf8b4a73961079db3861e3fa.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Demo/WaitType.lua.txt
+  - name: 789d437340f927ad8f9223643b938b04.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Demo/AI/XunLuoPathComponent.lua.txt
+  - name: 71bd1940d57ae752b61c855f0132447b.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Demo/Helper/PathHelper.lua.txt
+  - name: 2905b997f5f076e1052c8361a6109dc0.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Demo/Helper/PositionHelper.lua.txt
+  - name: 345649c5dca836413f3f10332c023ce6.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Demo/Move/MoveComponent.lua.txt
+  - name: a2c968ed3c816cf0eb2b9ca54cc2b383.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Demo/Session/SessionComponent.lua.txt
+  - name: 18d61ff03a5e5e140b7c7dd2871a8c8a.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Demo/Unit/Unit.lua.txt
+  - name: c3c899bbde18fe799da7c37e5f679c39.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Demo/Unit/UnitComponent.lua.txt
+  - name: 2dfd56d4cd8689ef8c1578371c962db6.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Generate/Config/AIConfig.lua.txt
+  - name: 642480fe67fe550265059027436885e3.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Generate/Config/StartMachineConfig.lua.txt
+  - name: b3db9331e1a76f8ed906faf1933b0b0d.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Generate/Config/StartProcessConfig.lua.txt
+  - name: 775fd7b4795edc7dfe58def4c9c7eae3.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Generate/Config/StartSceneConfig.lua.txt
+  - name: fb78dd149b986baa2c4b87d6799371e8.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Generate/Config/StartZoneConfig.lua.txt
+  - name: ab6db1d638b59b0c5981b892ce918a59.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Generate/Config/UnitConfig.lua.txt
+  - name: 61885ed87a036e4f0de1b516c828af87.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Generate/Message/OuterMessage.lua.txt
+  - name: 64b5d81c25d5ec77ec139e63f887d86d.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Generate/Message/OuterOpcode.lua.txt
+  - name: 4109008e1e7a5834880f8a16d123a3dd.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Actor/IActorMessage.lua.txt
+  - name: 30c8e780dad0415b52fbdf924b64221f.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/ActorLocation/ActorResponse.lua.txt
+  - name: 2f67290f6f035cb0c31ad5f2e27722e1.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/ActorLocation/IActorLocationMessage.lua.txt
+  - name: 82e2edd3d235e4d7334dad1170503966.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/AI/AAIHandler.lua.txt
+  - name: d7ce02690c527596158981cf6cc009a0.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/AI/AIComponent.lua.txt
+  - name: b1e05e6e5748e26165d2e6fcc1417a73.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/AI/AIDispatcherComponent.lua.txt
+  - name: 4244aa3d46a52ed544d43266c390f261.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Config/ConfigAttribute.lua.txt
+  - name: 9e57d29ea8f968340934483bec0c04d2.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Config/ConfigComponent.lua.txt
+  - name: 9f6f6c54ce43b98ad0955f39a0b15f8a.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Config/IConfig.lua.txt
+  - name: ae26fccccca00f06cfa2af6b663196e4.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/CoroutineLock/CoroutineLock.lua.txt
+  - name: 2a11702b365dc4255628d360d270476b.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/CoroutineLock/CoroutineLockComponent.lua.txt
+  - name: 15ae48f9b207327d364835443febf31a.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/CoroutineLock/CoroutineLockType.lua.txt
+  - name: 388089ad7a1c065a109f2ab84f0a396c.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/AMHandler.lua.txt
+  - name: 177b0fc3bc085d4b8f91bdade7535ad5.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/ErrorCode.lua.txt
+  - name: 7aaf0588447428d2157219b4f352840a.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/IMessage.lua.txt
+  - name: 62f56bc89fb80e9e063bee1725a822cf.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/IMessageDispatcher.lua.txt
+  - name: 5d5b735fa0044a82f8584e58995bc985.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/IMHandler.lua.txt
+  - name: a2fafe515ce69e780d4b5850499e50ae.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/MessageAttribute.lua.txt
+  - name: c475cbb32d710501e5899af73ceb72b4.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/MessageDispatcherComponent.lua.txt
+  - name: 0a39c5ecb90e7555ceca5179faf16c0f.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/MessageHandlerAttribute.lua.txt
+  - name: 7b289ac7a3f0cbbdbdccbde387c7384e.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/MessagePool.lua.txt
+  - name: f901195c35412dbad485d96e713b3427.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/MessageProxy.lua.txt
+  - name: a040b277c2d9bae0520e44e0cef09852.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/MessageSerializeHelper.lua.txt
+  - name: 78ca37192950373617dad52bff9d02d5.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/NetKcpComponent.lua.txt
+  - name: 930b7bbd51b1c2a4b17d11697befcdee.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/NetThreadComponent.lua.txt
+  - name: 9888d83ede8397cc7ea55f2e72776c6c.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/OpcodeHelper.lua.txt
+  - name: c715c20e98362013bae06a3cf463b46b.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/OpcodeTypeComponent.lua.txt
+  - name: ebc122472e258f646a428d368a7a3eb8.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/PingComponent.lua.txt
+  - name: f78a78a6fff94a9afcee8d7ee8d43cbf.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/ProtobufHelper.lua.txt
+  - name: f984e9e3d5cc710244a6622a4ee043aa.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/ResponseTypeAttribute.lua.txt
+  - name: 36c7513b731643ea07696ff6cbfe5fe7.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/RpcException.lua.txt
+  - name: 3ae9240f11a9f583434999d279bdc220.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/Session.lua.txt
+  - name: 35e1221c8e9c8795145b87b26b25542f.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/SessionAcceptTimeoutComponent.lua.txt
+  - name: 6ac3bab9d9a9e1c906724b3d72e4e21e.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/SessionCallbackComponent.lua.txt
+  - name: 4eefa3004e5ecdb504b631f67f2e3ccd.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Message/SessionIdleCheckerComponent.lua.txt
+  - name: b122356c90203dedd342984ab89c9129.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/NetworkTCP/AChannel.lua.txt
+  - name: da0d7bd1f6981ab58cd22de6078b72f5.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/NetworkTCP/AService.lua.txt
+  - name: bef5ee6855286f5a7e4def3ff9a24526.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/NetworkTCP/KChannel.lua.txt
+  - name: a478eef70ca7d503a2be0213ec4794bf.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/NetworkTCP/KService.lua.txt
+  - name: 19869262987f29782c2d9621956db1eb.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/NetworkTCP/PacketParser.lua.txt
+  - name: 40e8b6f6bc8898988ddc6c55d9805ad9.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/NetworkTCP/TChannel.lua.txt
+  - name: f9594f42a7c618d18084e8f227c2077c.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/NetworkTCP/TService.lua.txt
+  - name: 784522b1b63593e2fa83dc32cd5c22a8.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Numeric/INumericWatcher.lua.txt
+  - name: b5c576f6ec1bd985050ae9526a60bf06.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Numeric/NumericComponent.lua.txt
+  - name: 8d4952b7808e6a6dafe28a65810859a6.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Numeric/NumericType.lua.txt
+  - name: ddd525aecea69ae311ddf637ec80e2ab.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Numeric/NumericWatcherAttribute.lua.txt
+  - name: 75d3f81378c48106a6cccc6743458802.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Numeric/NumericWatcherComponent.lua.txt
+  - name: 8b41522267d97526d95e1e68e06d79c1.unity3d
+    assets:
+    - Assets/Bundles/Lua/Model/Module/Resource/ResourcesComponent.lua.txt
+  - name: 06a3e87aaa14e91b7b7a01a7c2cd9362.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/manifest.lua.txt
+  - name: 26e9af5670ca4209ae883815631b94b3.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/Camera/CameraComponent.lua.txt
+  - name: c9270c30e2d4574d5ac9234c72aa6d52.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/Global/GlobalComponent.lua.txt
+  - name: 53ee3bf49f601fad963020c9fd2ff410.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/Module/UI/AUIEvent.lua.txt
+  - name: f996f13a7a3cfb28c5bc690a0ee75a8d.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/Module/UI/LayerNames.lua.txt
+  - name: e96f2c720bc7266e090c6fc9069b2ccd.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/Module/UI/UI.lua.txt
+  - name: 66ddbb1122f77c410e56b19a95a1f34d.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/Module/UI/UIComponent.lua.txt
+  - name: aeaf59340be87a1edff8966ff33d7d2f.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/Module/UI/UIEventAttribute.lua.txt
+  - name: ed0e79fe2b9a14921a31615b3141530e.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/Module/UI/UIEventComponent.lua.txt
+  - name: 732958f4e8d9747db62c7ee4b4ab486e.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/Module/UI/UIType.lua.txt
+  - name: b42fd69966f5adb9b7b8761e434e0c6f.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/Opera/OperaComponent.lua.txt
+  - name: c9178f2620fbdf9c7d694b174ce58c5f.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/RTUI/DragDropTarget.lua.txt
+  - name: 2889d3638d8ea0119c0748956f687279.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/Scene/SceneChangeComponent.lua.txt
+  - name: 9ec7ef79db511e4692b35a8900032f8f.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/UI/UILoading/UILoadingComponent.lua.txt
+  - name: 2afaff9bff10f45926d812710be004ea.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/UI/UILobby/UILobbyComponent.lua.txt
+  - name: 68fc01e66ec812c2f6ed0980a342efd2.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/UI/UILogin/UILoginComponent.lua.txt
+  - name: 9d6aded73b0be2f723eaffa7f5204222.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/Unit/AnimatorComponent.lua.txt
+  - name: 18df4a35cd0be0900a52c3d8ab2099bd.unity3d
+    assets:
+    - Assets/Bundles/Lua/ModelView/Unit/GameObjectComponent.lua.txt
+  - name: 8ddbd50a69a838845bdfbcbe894ed5b9.unity3d
+    assets:
+    - Assets/Bundles/Lua/pbc/config.proto.txt
+  - name: ac17324c8476e1b32cc0588bfc24f196.unity3d
+    assets:
+    - Assets/Bundles/Lua/pbc/protobuf.lua.txt
+  - name: 7940f6c8448eedf5c2e691f0230eedc2.unity3d
+    assets:
+    - Assets/Bundles/Lua/pbc/AutoGeneratedCode/OuterMessage.txt
+  - name: 1dbea14d7fd18d3c07f03f97dec676c0.unity3d
+    assets:
+    - Assets/Bundles/Config/GlobalConfig.txt
+  - name: c01a72a10e08a7e168c0512802f3b838.unity3d
+    assets:
+    - Assets/Bundles/Config/AIConfigCategory.bytes
+  - name: 9cd3154c05cb13bca1b8f76cc4512eee.unity3d
+    assets:
+    - Assets/Bundles/Config/StartMachineConfigCategory.bytes
+  - name: 05014c9edac5d88b8ff22950a8eba351.unity3d
+    assets:
+    - Assets/Bundles/Config/StartProcessConfigCategory.bytes
+  - name: 95ef3f249d8731dfb01bf7821eb98dc7.unity3d
+    assets:
+    - Assets/Bundles/Config/StartSceneConfigCategory.bytes
+  - name: 76e7f033de36edc4fd11f354bc4f350b.unity3d
+    assets:
+    - Assets/Bundles/Config/StartZoneConfigCategory.bytes
+  - name: 834fd1170cc25a7679603034262ce44a.unity3d
+    assets:
+    - Assets/Bundles/Config/UnitConfigCategory.bytes
+  - name: 2efc619c3f96e68cc7eaeffd09addad3.unity3d
+    assets:
+    - Assets/Bundles/Unit/Unit.prefab
+  - name: 808f0f0f8caefc93706e3d9c8c513f4a.unity3d
+    assets:
+    - Assets/Bundles/Scene/Game.unity
+  - name: f9f380096cbdda9ee505045ec505fa50.unity3d
+    assets:
+    - Assets/Bundles/Scene/GameMap.unity
+  - name: d271e46befcf51c65a9835c5da2b2741.unity3d
+    assets:
+    - Assets/Bundles/UI/UILobby.prefab
+  - name: 0fdb89a04e55223f72b5ad7a78c32c00.unity3d
+    assets:
+    - Assets/Bundles/UI/UILogin.prefab

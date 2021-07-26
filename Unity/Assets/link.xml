@@ -1,0 +1,5 @@
+<linker>
+  <assembly fullname="UnityEngine" preserve="all"/>
+  <assembly fullname="System" preserve="all"/>
+  <assembly fullname="Unity.Cold" preserve="all"/>
+</linker>

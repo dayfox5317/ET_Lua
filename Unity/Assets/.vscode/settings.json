@@ -1,0 +1,13 @@
+{
+    "editor.snippetSuggestions": "bottom",
+    "files.associations": {
+        "*.lua.txt":"lua",
+        "*.lua":"lua"
+    },
+    
+        "files.exclude": {
+            "**/*.meta": true
+        },
+    
+    "luaide.apiType": "xlua"
+}

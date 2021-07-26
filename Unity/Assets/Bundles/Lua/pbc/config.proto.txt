@@ -1,0 +1,63 @@
+package ET;
+
+message AIConfig {
+   required int32 Id = 1;
+   required int32 AIConfigId = 2;
+   required int32 Order = 3;
+   required string Name = 4;
+   repeated int32 NodeParams = 5;
+}
+message AIConfigCategory {
+   repeated AIConfig list = 1;
+}
+
+message StartMachineConfig {
+   required int32 Id = 1;
+   required string InnerIP = 2;
+   required string OuterIP = 3;
+}
+message StartMachineConfigCategory {
+   repeated StartMachineConfig list = 1;
+}
+
+message StartProcessConfig {
+   required int32 Id = 1;
+   required int32 MachineId = 2;
+   required int32 InnerPort = 3;
+}
+message StartProcessConfigCategory {
+   repeated StartProcessConfig list = 1;
+}
+
+message StartSceneConfig {
+   required int32 Id = 1;
+   required int32 Process = 2;
+   required int32 Zone = 3;
+   required string SceneType = 4;
+   required string Name = 5;
+   required int32 OuterPort = 6;
+}
+message StartSceneConfigCategory {
+   repeated StartSceneConfig list = 1;
+}
+
+message StartZoneConfig {
+   required int32 Id = 1;
+   required string DBConnection = 2;
+   required string DBName = 3;
+}
+message StartZoneConfigCategory {
+   repeated StartZoneConfig list = 1;
+}
+
+message UnitConfig {
+   required int32 Id = 1;
+   required string Name = 2;
+   required string Desc = 3;
+   required int32 Position = 4;
+   required int32 Height = 5;
+   required int32 Weight = 6;
+}
+message UnitConfigCategory {
+   repeated UnitConfig list = 1;
+}

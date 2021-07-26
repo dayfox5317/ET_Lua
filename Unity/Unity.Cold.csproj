@@ -1,0 +1,1171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{8EE8BE1C-E006-34B4-E864-BB9D6C283BBB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Unity.Cold</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\</OutputPath>
+    <DefineConstants>UNITY_2020_3_12;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;NET452;UNITY;XLUA;PC;THREAD_SAFE;LOG_ENABLE;ENABLE_IL2CPP;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.8</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2020.3.12f1c1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIImageWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxAssetsWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\DelegatesGensBridge.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdMathHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\XLuaGenAutoRegister.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineVector4Wrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIScrollRectScrollRectEventWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\ObjectTranslatorPool.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxNetworkMonitorWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\PathHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\LuaTable.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdAssetLoaderAsyncWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsPhysicsRaycasterWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ReferenceCollectorWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\ArrayHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETETTaskCompletedWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineMathfWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIButtonWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineParticleSystemWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Dialog\Dialog.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIPositionAsUV1Wrap.cs" />
+    <Compile Include="Assets\Cold\XAsset\Core\Reference.cs" />
+    <Compile Include="Assets\Cold\XLua\BuildInInit.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\MathHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemIOStreamWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Hotfix.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\LuaDLL.cs" />
+    <Compile Include="Assets\Cold\ET\Mono\ComponentView.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\MD5Helper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxAssetRequestWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Common\RectTransformChangeListener.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxINetworkMonitorListenerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIInputFieldWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIICanvasElementWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Object\Object.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETILStaticMethodWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Menu\Menu.cs" />
+    <Compile Include="Assets\Cold\LuaTypeSystem\LuaRuntimeFieldInfo.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineMonoBehaviourWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\MonoHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsEventTriggerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxVDiskWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemRuntimeCompilerServicesAsyncMethodBuilderAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ProtoBufProtoPartialIgnoreAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUISliderWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsAbstractEventDataWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Helper\LuaHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\MongoDBBsonSerializationAttributesBsonDictionaryOptionsAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIDragHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsUIBehaviourWrap.cs" />
+    <Compile Include="Assets\Cold\LuaTypeSystem\LuaRuntimeActivator.cs" />
+    <Compile Include="Assets\Cold\UIControls\VirtualizingTreeView\PointerEnterExitListener.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdLogDataWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIInputFieldOnChangeEventWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineRayWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\TreeView\TreeViewExpander.cs" />
+    <Compile Include="Assets\Cold\UIControls\TreeView\ListBoxItem.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ProtoBufProtoIgnoreAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Common\UIStyle.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIColorBlockWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdProcessHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsBaseEventDataWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ProtoBufProtoMemberAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Menu\UIMenuStyle.cs" />
+    <Compile Include="Assets\Cold\XAsset\Core\Updater.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\Utils.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETModelIDisposableClassInheritanceAdaptorWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineLightWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdDefineWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdGizmosDebugWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Menu\ContextMenuTrigger.cs" />
+    <Compile Include="Assets\Cold\UIControls\Common\DragAndDropListener.cs" />
+    <Compile Include="Assets\Cold\UIControls\TreeView\TreeViewDropMarker.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIPointerUpHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\ET\GameInit.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\TypeHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUISliderSliderEventWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemCollectionsIEnumeratorBridge.cs" />
+    <Compile Include="Assets\Cold\ET\Mono\ReferenceCollector.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\RawObject.cs" />
+    <Compile Include="Assets\Cold\XAsset\Core\VDisk.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIEndDragHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIGridLayoutGroupWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsStandaloneInputModuleWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemIOMemoryStreamWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdMonoHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxBundleAssetRequestWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIHorizontalLayoutGroupWrap.cs" />
+    <Compile Include="Assets\Cold\LuaTypeSystem\LuaRuntimePropertyInfo.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\TemplateEngine\TemplateEngine.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIGraphicRaycasterWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemGuidWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETIStaticMethodWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdZipHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\MongoDBBsonSerializationAttributesBsonIgnoreExtraElementsAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineSceneManagementSceneManagerWrap.cs" />
+    <Compile Include="Assets\Cold\XAsset\Core\Versions.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETModelIDisposableClassInheritanceAdaptorIDisposableAdaptorWrap.cs" />
+    <Compile Include="Assets\Cold\LuaTypeSystem\LuaRuntimeType.cs" />
+    <Compile Include="Assets\Cold\ILRuntime\IAsyncStateMachineAdaptor.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsISubmitHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxStringExtensionWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineGameObjectWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIMaskUtilitiesWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdMonoStaticMethodWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemReflectionMemberInfoWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Tooltip\TooltipLayer.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIILayoutSelfControllerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdRandomHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxIUpdaterWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Mono\MonoStaticMethod.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\ZipHelper.cs" />
+    <Compile Include="Assets\Cold\UIControls\TreeView\ItemsControl.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIDropdownWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\DockPanels\Resizer.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIPointerEnterHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\XAsset\UI\MessageBox.cs" />
+    <Compile Include="Assets\Cold\Other\UGUIEventTrigger.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Async\ETTask.cs" />
+    <Compile Include="Assets\Cold\ILRuntime\Attribute\ILAdapterAttribute.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIInitializePotentialDragHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\MethodWarpsCache.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdKcpWraperWrap.cs" />
+    <Compile Include="Assets\Cold\LuaTypeSystem\LuaRuntimeType_WrapFunc.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxSceneAssetRequestWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ReferenceCollectorDataComparerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineAnimatorControllerParameterWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Other\IInstanceMethod.cs" />
+    <Compile Include="Assets\Cold\ET\Define.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsEventTriggerTriggerEventWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Tooltip\TooltipUI.cs" />
+    <Compile Include="Assets\Cold\UIControls\MultiToggle\MultiToggleLayer.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIFontUpdateTrackerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemNetIPAddressWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ProtoBufProtoIncludeAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Common\Repeater.cs" />
+    <Compile Include="Assets\Cold\ET\Module\Network\Kcp.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\GameObjectHelper.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\ResourcesHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETIAsyncStateMachineClassInheritanceAdaptorIAsyncStateMachineAdaptorWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdPathHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxUtilityWrap.cs" />
+    <Compile Include="Assets\Cold\Other\CursorHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemCollectionsGenericList1SystemStringWrap.cs" />
+    <Compile Include="Assets\Cold\XAsset\UI\UpdateScreen.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdStreamHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdHotfixHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\MongoDBBsonSerializationAttributesBsonIgnoreIfNullAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdGameObjectHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineDebugWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxBackgroundAdapterWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdComponentViewWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIDeselectHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdRawFieldInfoWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIMoveHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineVector2Wrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdLuaHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\ObjectPool.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Log\UnityLogger.cs" />
+    <Compile Include="Assets\Cold\XAsset\UI\ScrollContent.cs" />
+    <Compile Include="Assets\Cold\UIControls\Common\InputProvider.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdByteHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdFileLoggerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdUnityLoggerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\MongoDBBsonSerializationAttributesBsonIgnoreIfDefaultAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIAspectRatioFitterWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUILayoutGroupWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineObjectWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\DockPanels\HeaderPanel.cs" />
+    <Compile Include="Assets\Cold\UIControls\VirtualizingTreeView\VirtualizingTreeViewItem.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Async\AsyncETVoidMethodBuilder.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIMaskWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxWebAssetRequestWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIFontDataWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIBeginDragHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\LuaTypeSystem\LuaRuntimeMethodInfo.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemComponentModelISupportInitializeWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\TreeView\ItemContainer.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIPointerExitHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdRawMemberInfoWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Common\CancelArgs.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsEventTriggerEntryWrap.cs" />
+    <Compile Include="Assets\Cold\ILRuntime\Helper\ILHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\WrapPusher.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIPointerClickHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsEventSystemWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETMonoStaticMethodWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\MongoHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIDefaultControlsResourcesWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Module\Network\RpcException.cs" />
+    <Compile Include="Assets\Cold\ET\Mono\DebuggerComponent.cs" />
+    <Compile Include="Assets\Cold\UIControls\DockPanels\TestLayout.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\CalLuaHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineAssetBundleWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Module\Network\Circularbuffer.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineAsyncOperationWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\MessageBoxWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsExecuteEventsWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdCompareHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdResourcesHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETETVoidWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxBundleRefWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIToggleWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIMaskableGraphicCullStateChangedEventWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Async\AsyncMethodBuilderAttribute.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIDropdownOptionDataListWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\LuaBase.cs" />
+    <Compile Include="Assets\Cold\ET\Other\ILStaticMethod.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIRawImageWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemCollectionsGenericList1SystemInt32Wrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIHorizontalOrVerticalLayoutGroupWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUILayoutElementWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineQuaternionWrap.cs" />
+    <Compile Include="Assets\Cold\LuaTypeSystem\LuaRuntimeAssembly.cs" />
+    <Compile Include="Assets\Cold\UIControls\TreeView\ListBox.cs" />
+    <Compile Include="Assets\Cold\UIControls\MultiToggle\MultiToggle.cs" />
+    <Compile Include="Assets\Cold\ET\Mono\UILayerScript.cs" />
+    <Compile Include="Assets\Cold\UIControls\VirtualizingTreeView\VirtualizingItemsControl.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIToggleToggleEventWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\HotfixHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxAssetRefWrap.cs" />
+    <Compile Include="Assets\Cold\XAsset\Core\Downloader.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemIOIOExceptionWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\ByteHelper.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Async\IAwaiter.cs" />
+    <Compile Include="Assets\Cold\ET\Core\ThreadSynchronizationContext.cs" />
+    <Compile Include="Assets\Cold\XAsset\Utility\Utility.cs" />
+    <Compile Include="Assets\Cold\UIControls\Menu\MenuCreator.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsRaycastResultWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemIOPathWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineAnimationClipWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\VirtualizingTreeView\VirtualizingScrollRect.cs" />
+    <Compile Include="Assets\Cold\XAsset\Core\Manifest.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineRuntimeAnimatorControllerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemRuntimeSerializationIgnoreDataMemberAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIEventSystemHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineComponentWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETAsyncETTaskCompletedMethodBuilderWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Log\ILog.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdLocalTimeHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ProtoBufProtoEnumAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIILayoutControllerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsAxisEventDataWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\TreeView\ItemDropMarker.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdKcpWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\VirtualizingTreeView\VirtualizingItemDropMarker.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsISelectHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETCanvasConfigWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIScrollHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIIClippableWrap.cs" />
+    <Compile Include="Assets\Cold\XAsset\Core\Requests.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIGraphicRegistryWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\JsonHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\GenAttributes.cs" />
+    <Compile Include="Assets\Cold\ET\Mono\GizmosDebug.cs" />
+    <Compile Include="Assets\Cold\AttributeAdaptor.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineKeyframeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETModelILAdapterAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\LuaFunction.cs" />
+    <Compile Include="Assets\Cold\UIControls\DockPanels\Tab.cs" />
+    <Compile Include="Assets\Cold\ET\Other\MonoStaticMethod.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIDropdownOptionDataWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdAssetDatabaseHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\MongoDBBsonSerializationAttributesBsonDefaultValueAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\MongoDBBsonSerializationAttributesBsonIgnoreAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\MultiselectDropDown\MultiselectDropdown.cs" />
+    <Compile Include="Assets\Cold\UIControls\Tooltip\Tooltip.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIOutlineWrap.cs" />
+    <Compile Include="Assets\Cold\XAsset\UI\BuildinSceneLoader.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdGameInitWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\GenConfig.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\BuildinSceneLoaderWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdAssetBundleLoaderAsyncWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\MongoDBBsonSerializationBsonSerializerWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Async\AsyncETTaskCompletedMethodBuilder.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUISpriteStateWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIAnimationTriggersWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\ObjectCasters.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Log\FileLogger.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ReferenceCollectorDataWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsBaseInputWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemObjectWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineTransformWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\SignatureLoader.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineRectTransformWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\ObjectHelper.cs" />
+    <Compile Include="Assets\Cold\XAsset\Core\Assets.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineAnimationCurveWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\MongoDBBsonSerializationAttributesBsonRequiredAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIUpdateSelectedHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxBundleAssetAsyncRequestWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIPointerDownHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ProtoBufProtoConverterAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\TypeExtensions.cs" />
+    <Compile Include="Assets\Cold\UIControls\DockPanels\DepthMaskingBehavior.cs" />
+    <Compile Include="Assets\Cold\UIControls\MultiToggle\MultiTogglePanel.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineRay2DWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsPhysics2DRaycasterWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxWebBundleRequestWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemNetIPEndPointWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineLayerMaskWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineAnimatorWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUINavigationWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineBehaviourWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIDefaultControlsIFactoryControlsWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\ObjectTranslator.cs" />
+    <Compile Include="Assets\Cold\XAsset\Core\Download.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxUpdateScreenWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdGameLoopWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Async\AsyncETTaskMethodBuilder.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIMaskableGraphicWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIILayoutElementWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUITextWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIClippingWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\VirtualizingTreeView\VirtualizingItemContainer.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIInputFieldSubmitEventWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdTypeHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdThreadSynchronizationContextWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\DockPanels\Region.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineBoundsWrap.cs" />
+    <Compile Include="Assets\Cold\ILRuntime\Adaptor\IDisposableAdaptor.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxDownloaderWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUICanvasScalerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdJsonHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemSerializableAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Common\RectTransformExtensions.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\LuaEnv.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\CompareHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdCircularBufferWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineApplicationWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdArrayHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdFileHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxSceneAssetAsyncRequestWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineRendererWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ProtoBufProtoContractAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIIMaskableWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Common\TransformChildrenChangeListener.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ProtoBufProtoPartialMemberAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIStencilMaterialWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\PackUnpack.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Async\ETVoid.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIVertexHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEnginePhysicsWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIILayoutGroupWrap.cs" />
+    <Compile Include="Assets\Cold\XAsset\Core\NetworkMonitor.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemNetSocketsSocketWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsBaseRaycasterWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxUpdaterWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIButtonButtonClickedEventWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdAnimatorHelperWrap.cs" />
+    <Compile Include="Assets\Cold\ET\GameLoop.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdStringHelperWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\StreamHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsPointerInputModuleWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\CodeEmit.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxManifestWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdILogWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Async\ETTaskCompleted.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\LoadHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsPointerInputModuleMouseButtonEventDataWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineSkinnedMeshRendererWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemNetEndPointWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\StringHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineAssetBundleManifestWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineTimeWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\DockPanels\RepeatButton.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUICanvasUpdateRegistryWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\MongoDBBsonSerializationAttributesBsonElementAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemTypeWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Module\Network\KcpWraper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIScrollbarWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIClipperRegistryWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIShadowWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\ProcessHelper.cs" />
+    <Compile Include="Assets\Cold\UIControls\VirtualizingTreeView\VirtualizingTreeViewDropMarker.cs" />
+    <Compile Include="Assets\Cold\ET\Module\Resource\AssetLoaderAsync.cs" />
+    <Compile Include="Assets\Cold\XAsset\Utility\StringExtension.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxScrollContentWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Common\InputProviderAdapter.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineVector3Wrap.cs" />
+    <Compile Include="Assets\Cold\XLua\AutoGenMissingConfig.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIILayoutIgnorerWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\LuaException.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxVFileWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\DelegateBridge.cs" />
+    <Compile Include="Assets\Cold\UIControls\Tooltip\ToggleTooltip.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIScrollbarScrollEventWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Menu\MenuItem.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETIAsyncStateMachineClassInheritanceAdaptorWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Dialog\DialogManager.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemNetSocketsSocketAsyncEventArgsWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETETTaskWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineTextAssetWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdIStaticMethodWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsIDropHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\LocalTimeHelper.cs" />
+    <Compile Include="Assets\Cold\UIControls\Common\ProgressBar.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdRawTypeInfoWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\DockPanels\DockPanel.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdAssetBundlesWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineColorWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemCollectionsConcurrentConcurrentDictionary2SystemInt64SystemUInt64Wrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxReferenceWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsICancelHandlerWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Menu\MainMenuButton.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\AnimatorHelper.cs" />
+    <Compile Include="Assets\Cold\ET\Mono\CanvasConfig.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdLuaWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\FileHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIIMaterialModifierWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIBaseMeshEffectWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdDefineGlobalProtoWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\MongoDBBsonSerializationAttributesBsonIdAttributeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\CopyByValue.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUISelectableWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\TreeView\TreeView.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdObjectHelperWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUILayoutRebuilderWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIToggleGroupWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\StaticLuaCallbacks.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\EnumWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETISupportInitializeWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdLoadHelperWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\AssetDatabaseHelper.cs" />
+    <Compile Include="Assets\Cold\UIControls\VirtualizingTreeView\VirtualizingTreeView.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdFastRawListWrap.cs" />
+    <Compile Include="Assets\Cold\LuaTypeSystem\LuaRuntimeMemberInfo_WrapFunc.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIIMeshModifierWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIIClipperWrap.cs" />
+    <Compile Include="Assets\Cold\XAsset\UI\BackgroundAdapter.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxVersionsWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsBaseInputModuleWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIDropdownDropdownEventWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETAsyncETVoidMethodBuilderWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineEventSystemsPointerEventDataWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUILayoutUtilityWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\TreeView\TreeViewItem.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineResourcesWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineInputWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\SystemTextEncodingWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIContentSizeFitterWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Src\InternalGlobals.cs" />
+    <Compile Include="Assets\Cold\Other\IMGUITester.cs" />
+    <Compile Include="Assets\Cold\ET\Mono\IStaticMethod.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdDebuggerComponentWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Module\Resource\AssetBundleLoaderAsync.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETETAsyncTaskMethodBuilderWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\Common\UnityEventHelper.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETILHelperWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\DockPanels\TabPanelScroller.cs" />
+    <Compile Include="Assets\Cold\ET\Module\Resource\AssetBundles.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdUILayerScriptWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdMD5HelperWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Helper\RandomHelper.cs" />
+    <Compile Include="Assets\Cold\UIControls\VirtualizingTreeView\VirtualizingItemsControlInputProvider.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIScrollRectWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\TreeView\LayoutElementResizer.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxBundleAsyncRequestWrap.cs" />
+    <Compile Include="Assets\Cold\ET\Core\Log\NLogger.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETObjectWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxDownloadWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETHotfixWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineRaycastHitWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxBundleRequestWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineCameraWrap.cs" />
+    <Compile Include="Assets\Cold\UIControls\DockPanels\EatDragEvent.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\libxManifestRequestWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIRectMask2DWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\UnityEngineUIVerticalLayoutGroupWrap.cs" />
+    <Compile Include="Assets\Cold\XLua\Gen\ETColdCalLuaHelperWrap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Cold\Unity.Cold.asmdef" />
+    <None Include="Assets\Cold\XLua\Resources\xlua\util.lua.txt" />
+    <None Include="Assets\Cold\XLua\Gen\link.xml" />
+    <None Include="Assets\Cold\XLua\Resources\perf\profiler.lua.txt" />
+    <None Include="Assets\Cold\XLua\Resources\protoc.lua.txt" />
+    <None Include="Assets\Cold\XLua\Resources\perf\memory.lua.txt" />
+    <None Include="Assets\Cold\XLua\Resources\tdr\tdr.lua.txt" />
+    <None Include="Assets\Cold\XLua\CHANGELOG.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Assets\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ILRuntime.Mono.Cecil.Mdb">
+      <HintPath>Assets\ThirdParty\ILRuntime\Dependencies\ILRuntime.Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="MikuHook">
+      <HintPath>Assets\Plugins\MikuHook.dll</HintPath>
+    </Reference>
+    <Reference Include="ILRuntime.Mono.Cecil">
+      <HintPath>Assets\ThirdParty\ILRuntime\Dependencies\ILRuntime.Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandLine">
+      <HintPath>Assets\Plugins\CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="MikuBinary">
+      <HintPath>Assets\Plugins\MikuBinary.dll</HintPath>
+    </Reference>
+    <Reference Include="ILRuntime.Mono.Cecil.Pdb">
+      <HintPath>Assets\ThirdParty\ILRuntime\Dependencies\ILRuntime.Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>Assets\Plugins\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Rtc">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Http.Rtc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Duplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.NetTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>D:\Program Files\U3D\2020.3.12f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.ThirdParty.csproj">
+      <Project>{E15BADD2-3A26-309A-AB0F-DC5B08044350}</Project>
+      <Name>Unity.ThirdParty</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{C0C5E174-727C-9FFA-CD43-B55BDEF754DA}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{98FE9D97-9991-E594-7D3C-A2ABC20E4793}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

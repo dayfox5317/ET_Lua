@@ -1,0 +1,5 @@
+local LuaConfig = function()
+    require("ConfigClass")
+end
+
+return LuaConfig

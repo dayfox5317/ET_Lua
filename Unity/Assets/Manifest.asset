@@ -1,0 +1,1512 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7882bd278763c45f49cef7deeae496e5, type: 3}
+  m_Name: Manifest
+  m_EditorClassIdentifier: 
+  activeVariants: []
+  assets:
+  - bundle: 41
+    dir: 0
+    name: ArmorConfig.json
+  - bundle: 41
+    dir: 0
+    name: GlobalConfig.txt
+  - bundle: 41
+    dir: 0
+    name: GoodsConfig.json
+  - bundle: 41
+    dir: 0
+    name: LevelConfig.json
+  - bundle: 41
+    dir: 0
+    name: MainLevelConfig.json
+  - bundle: 41
+    dir: 0
+    name: MapSceneConfig.json
+  - bundle: 41
+    dir: 0
+    name: OrnamentsConfig.json
+  - bundle: 41
+    dir: 0
+    name: PrefabConfig.json
+  - bundle: 41
+    dir: 0
+    name: RoleConfig.json
+  - bundle: 41
+    dir: 0
+    name: SkillConfig.json
+  - bundle: 41
+    dir: 0
+    name: WeaponConfig.json
+  - bundle: 53
+    dir: 1
+    name: Bag_atlas0.png
+  - bundle: 53
+    dir: 1
+    name: Bag_fui.bytes
+  - bundle: 72
+    dir: 2
+    name: Battle_fui.bytes
+  - bundle: 25
+    dir: 3
+    name: Character_fui.bytes
+  - bundle: 56
+    dir: 4
+    name: Common_atlas0.png
+  - bundle: 56
+    dir: 4
+    name: Common_fui.bytes
+  - bundle: 82
+    dir: 5
+    name: Consignment_atlas0.png
+  - bundle: 82
+    dir: 5
+    name: Consignment_fui.bytes
+  - bundle: 51
+    dir: 6
+    name: Dialog_atlas0.png
+  - bundle: 51
+    dir: 6
+    name: Dialog_fui.bytes
+  - bundle: 37
+    dir: 7
+    name: Friend_atlas0.png
+  - bundle: 37
+    dir: 7
+    name: Friend_fui.bytes
+  - bundle: 20
+    dir: 8
+    name: Hotfix_atlas0!a.png
+  - bundle: 20
+    dir: 8
+    name: Hotfix_atlas0.png
+  - bundle: 20
+    dir: 8
+    name: Hotfix_fui.bytes
+  - bundle: 62
+    dir: 9
+    name: Login_atlas0.png
+  - bundle: 62
+    dir: 9
+    name: Login_fui.bytes
+  - bundle: 17
+    dir: 10
+    name: Mail_atlas0.png
+  - bundle: 17
+    dir: 10
+    name: Mail_fui.bytes
+  - bundle: 57
+    dir: 11
+    name: Popup_atlas0.png
+  - bundle: 57
+    dir: 11
+    name: Popup_fui.bytes
+  - bundle: 55
+    dir: 12
+    name: Rank_atlas0.png
+  - bundle: 55
+    dir: 12
+    name: Rank_fui.bytes
+  - bundle: 35
+    dir: 13
+    name: Shop_atlas0.png
+  - bundle: 35
+    dir: 13
+    name: Shop_fui.bytes
+  - bundle: 18
+    dir: 14
+    name: Skill_atlas0.png
+  - bundle: 18
+    dir: 14
+    name: Skill_fui.bytes
+  - bundle: 65
+    dir: 15
+    name: Task_atlas0.png
+  - bundle: 65
+    dir: 15
+    name: Task_fui.bytes
+  - bundle: 46
+    dir: 16
+    name: TransPointUI_atlas0.png
+  - bundle: 46
+    dir: 16
+    name: TransPointUI_fui.bytes
+  - bundle: 36
+    dir: 17
+    name: All.lua.txt
+  - bundle: 36
+    dir: 17
+    name: Classloader.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Array.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Boolean.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Char.lua.txt
+  - bundle: 26
+    dir: 19
+    name: Dictionary.lua.txt
+  - bundle: 26
+    dir: 19
+    name: EqualityComparer.lua.txt
+  - bundle: 26
+    dir: 19
+    name: HashSet.lua.txt
+  - bundle: 26
+    dir: 19
+    name: LinkedList.lua.txt
+  - bundle: 26
+    dir: 19
+    name: Linq.lua.txt
+  - bundle: 26
+    dir: 19
+    name: List.lua.txt
+  - bundle: 26
+    dir: 19
+    name: Queue.lua.txt
+  - bundle: 26
+    dir: 19
+    name: SortedDictionary.lua.txt
+  - bundle: 26
+    dir: 19
+    name: SortedSet.lua.txt
+  - bundle: 26
+    dir: 19
+    name: Stack.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Console.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Convert.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Core.lua.txt
+  - bundle: 19
+    dir: 18
+    name: DateTime.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Delegate.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Enum.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Exception.lua.txt
+  - bundle: 14
+    dir: 20
+    name: Globalization.lua.txt
+  - bundle: 28
+    dir: 21
+    name: File.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Interfaces.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Math.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Number.lua.txt
+  - bundle: 80
+    dir: 22
+    name: Complex.lua.txt
+  - bundle: 80
+    dir: 22
+    name: HashCodeHelper.lua.txt
+  - bundle: 80
+    dir: 22
+    name: Matrix3x2.lua.txt
+  - bundle: 80
+    dir: 22
+    name: Matrix4x4.lua.txt
+  - bundle: 80
+    dir: 22
+    name: Plane.lua.txt
+  - bundle: 80
+    dir: 22
+    name: Quaternion.lua.txt
+  - bundle: 80
+    dir: 22
+    name: Vector2.lua.txt
+  - bundle: 80
+    dir: 22
+    name: Vector3.lua.txt
+  - bundle: 80
+    dir: 22
+    name: Vector4.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Random.lua.txt
+  - bundle: 40
+    dir: 23
+    name: Assembly.lua.txt
+  - bundle: 19
+    dir: 18
+    name: String.lua.txt
+  - bundle: 2
+    dir: 24
+    name: StringBuilder.lua.txt
+  - bundle: 33
+    dir: 25
+    name: Task.lua.txt
+  - bundle: 33
+    dir: 25
+    name: Thread.lua.txt
+  - bundle: 33
+    dir: 25
+    name: Timer.lua.txt
+  - bundle: 19
+    dir: 18
+    name: TimeSpan.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Type.lua.txt
+  - bundle: 19
+    dir: 18
+    name: Utilities.lua.txt
+  - bundle: 29
+    dir: 26
+    name: test.lua.txt
+  - bundle: 3
+    dir: 27
+    name: CustomAttribute.lua.txt
+  - bundle: 3
+    dir: 27
+    name: ETTask.lua.txt
+  - bundle: 47
+    dir: 28
+    name: ZoneSceneFlagComponentSystem.lua.txt
+  - bundle: 47
+    dir: 28
+    name: ZoneSceneManagerComponentSystem.lua.txt
+  - bundle: 44
+    dir: 29
+    name: AI_Attack.lua.txt
+  - bundle: 44
+    dir: 29
+    name: AI_XunLuo.lua.txt
+  - bundle: 44
+    dir: 29
+    name: XunLuoPathComponentSystem.lua.txt
+  - bundle: 63
+    dir: 30
+    name: LoginHelper.lua.txt
+  - bundle: 63
+    dir: 30
+    name: MapHelper.lua.txt
+  - bundle: 83
+    dir: 31
+    name: M2C_PathfindingResultHandler.lua.txt
+  - bundle: 83
+    dir: 31
+    name: M2C_StopHandler.lua.txt
+  - bundle: 83
+    dir: 31
+    name: MoveComponentSystem.lua.txt
+  - bundle: 83
+    dir: 31
+    name: MoveHelper.lua.txt
+  - bundle: 59
+    dir: 32
+    name: SessionComponentSystem.lua.txt
+  - bundle: 27
+    dir: 33
+    name: M2C_CreateUnitsHandler.lua.txt
+  - bundle: 27
+    dir: 33
+    name: UnitComponent.lua.txt
+  - bundle: 27
+    dir: 33
+    name: UnitFactory.lua.txt
+  - bundle: 27
+    dir: 33
+    name: UnitSystem.lua.txt
+  - bundle: 48
+    dir: 34
+    name: EnumDefines.lua.txt
+  - bundle: 48
+    dir: 34
+    name: UIDragArgs.lua.txt
+  - bundle: 69
+    dir: 35
+    name: GameKeyComponent.lua.txt
+  - bundle: 69
+    dir: 35
+    name: ResourceEntity.lua.txt
+  - bundle: 69
+    dir: 35
+    name: TowerPointViewComponent.lua.txt
+  - bundle: 69
+    dir: 35
+    name: TranslateSceneComponent.lua.txt
+  - bundle: 31
+    dir: 36
+    name: AppStartInitFinishEvent.lua.txt
+  - bundle: 31
+    dir: 36
+    name: EventIdType.lua.txt
+  - bundle: 50
+    dir: 37
+    name: FUIInitComponent.lua.txt
+  - bundle: 32
+    dir: 38
+    name: G2C_TestHotfixHandler.lua.txt
+  - bundle: 58
+    dir: 39
+    name: ClassHelper.lua.txt
+  - bundle: 58
+    dir: 39
+    name: DictionaryHelper.lua.txt
+  - bundle: 58
+    dir: 39
+    name: LuaJsonHelper.lua.txt
+  - bundle: 58
+    dir: 39
+    name: PosHelper.lua.txt
+  - bundle: 58
+    dir: 39
+    name: ResourceHelper.lua.txt
+  - bundle: 58
+    dir: 39
+    name: TypeHelper.lua.txt
+  - bundle: 9
+    dir: 40
+    name: Init.lua.txt
+  - bundle: 9
+    dir: 40
+    name: UnitTest.lua.txt
+  - bundle: 4
+    dir: 41
+    name: AIComponentSystem.lua.txt
+  - bundle: 4
+    dir: 41
+    name: AIDispatcherComponentSystem.lua.txt
+  - bundle: 49
+    dir: 42
+    name: ConfigComponentSystem.lua.txt
+  - bundle: 85
+    dir: 43
+    name: MessageDispatcherComponentSystem.lua.txt
+  - bundle: 85
+    dir: 43
+    name: NetKcpComponentSystem.lua.txt
+  - bundle: 85
+    dir: 43
+    name: NetThreadComponentSystem.lua.txt
+  - bundle: 85
+    dir: 43
+    name: OuterMessageDispatcher.lua.txt
+  - bundle: 85
+    dir: 43
+    name: PingComponentSystem.lua.txt
+  - bundle: 85
+    dir: 43
+    name: SessionAcceptTimeoutComponentSystem.lua.txt
+  - bundle: 85
+    dir: 43
+    name: SessionIdleCheckerComponentSystem.lua.txt
+  - bundle: 70
+    dir: 44
+    name: NumericChangeEvent_NotifyWatcher.lua.txt
+  - bundle: 70
+    dir: 44
+    name: NumericWatcher_Hp_ShowUI.lua.txt
+  - bundle: 8
+    dir: 45
+    name: manifest.lua.txt
+  - bundle: 23
+    dir: 46
+    name: AppStart_Init.lua.txt
+  - bundle: 34
+    dir: 47
+    name: GlobalComponentSystem.lua.txt
+  - bundle: 68
+    dir: 48
+    name: LoadConfigHelper.lua.txt
+  - bundle: 61
+    dir: 49
+    name: GameObjectHelper.lua.txt
+  - bundle: 89
+    dir: 50
+    name: UIComponentSystem.lua.txt
+  - bundle: 89
+    dir: 50
+    name: UIEventComponentSystem.lua.txt
+  - bundle: 13
+    dir: 51
+    name: OperaComponentSystem.lua.txt
+  - bundle: 76
+    dir: 52
+    name: AfterCreateZoneScene_AddComponent.lua.txt
+  - bundle: 76
+    dir: 52
+    name: SceneChangeComponentSystem.lua.txt
+  - bundle: 76
+    dir: 52
+    name: SceneFactory.lua.txt
+  - bundle: 7
+    dir: 53
+    name: AfterUnitCreate_CreateUnitView.lua.txt
+  - bundle: 7
+    dir: 53
+    name: AnimatorComponentSystem.lua.txt
+  - bundle: 7
+    dir: 53
+    name: ChangePosition_SyncGameObjectPos.lua.txt
+  - bundle: 7
+    dir: 53
+    name: ChangeRotation_SyncGameObjectRotation.lua.txt
+  - bundle: 23
+    dir: 46
+    name: manifest.lua.txt
+  - bundle: 3
+    dir: 27
+    name: LuaDebug.lua.txt
+  - bundle: 3
+    dir: 27
+    name: LuaDebugjit.lua.txt
+  - bundle: 3
+    dir: 27
+    name: LuaPanda.lua.txt
+  - bundle: 3
+    dir: 27
+    name: Main.lua.txt
+  - bundle: 60
+    dir: 54
+    name: Options.lua.txt
+  - bundle: 21
+    dir: 55
+    name: ETCancellationToken.lua.txt
+  - bundle: 21
+    dir: 55
+    name: ETTaskHelper.lua.txt
+  - bundle: 6
+    dir: 56
+    name: DoubleMap.lua.txt
+  - bundle: 66
+    dir: 57
+    name: EntitySceneFactory.lua.txt
+  - bundle: 66
+    dir: 57
+    name: Game.lua.txt
+  - bundle: 66
+    dir: 57
+    name: Scene.lua.txt
+  - bundle: 66
+    dir: 57
+    name: SceneType.lua.txt
+  - bundle: 66
+    dir: 57
+    name: TimerComponent.lua.txt
+  - bundle: 90
+    dir: 58
+    name: EventAttribute.lua.txt
+  - bundle: 90
+    dir: 58
+    name: IEvent.lua.txt
+  - bundle: 6
+    dir: 56
+    name: HashSetComponent.lua.txt
+  - bundle: 0
+    dir: 59
+    name: EnumHelper.lua.txt
+  - bundle: 0
+    dir: 59
+    name: FileHelper.lua.txt
+  - bundle: 0
+    dir: 59
+    name: IdGenerater.lua.txt
+  - bundle: 0
+    dir: 59
+    name: MD5Helper.lua.txt
+  - bundle: 0
+    dir: 59
+    name: MethodInfoHelper.lua.txt
+  - bundle: 0
+    dir: 59
+    name: NetworkHelper.lua.txt
+  - bundle: 0
+    dir: 59
+    name: ObjectHelper.lua.txt
+  - bundle: 0
+    dir: 59
+    name: RandomHelper.lua.txt
+  - bundle: 0
+    dir: 59
+    name: StringHelper.lua.txt
+  - bundle: 0
+    dir: 59
+    name: TimeHelper.lua.txt
+  - bundle: 6
+    dir: 56
+    name: ListComponent.lua.txt
+  - bundle: 77
+    dir: 60
+    name: Log.lua.txt
+  - bundle: 77
+    dir: 60
+    name: LogHelper.lua.txt
+  - bundle: 6
+    dir: 56
+    name: LogType.lua.txt
+  - bundle: 6
+    dir: 56
+    name: MultiDictionary.lua.txt
+  - bundle: 6
+    dir: 56
+    name: MultiMap.lua.txt
+  - bundle: 6
+    dir: 56
+    name: MultiMapComponent.lua.txt
+  - bundle: 6
+    dir: 56
+    name: MultiMapSet.lua.txt
+  - bundle: 81
+    dir: 61
+    name: BaseAttribute.lua.txt
+  - bundle: 81
+    dir: 61
+    name: ComponentView.lua.txt
+  - bundle: 81
+    dir: 61
+    name: Entity.lua.txt
+  - bundle: 81
+    dir: 61
+    name: EntityEventAttribute.lua.txt
+  - bundle: 81
+    dir: 61
+    name: EntityFactory.lua.txt
+  - bundle: 81
+    dir: 61
+    name: EventSystem.lua.txt
+  - bundle: 81
+    dir: 61
+    name: HideInHierarchy.lua.txt
+  - bundle: 81
+    dir: 61
+    name: IAwakeSystem.lua.txt
+  - bundle: 81
+    dir: 61
+    name: IChangeSystem.lua.txt
+  - bundle: 81
+    dir: 61
+    name: IDeserializeSystem.lua.txt
+  - bundle: 81
+    dir: 61
+    name: IDestroySystem.lua.txt
+  - bundle: 81
+    dir: 61
+    name: ILateUpdateSystem.lua.txt
+  - bundle: 81
+    dir: 61
+    name: ILoadSystem.lua.txt
+  - bundle: 81
+    dir: 61
+    name: ISerializeToEntity.lua.txt
+  - bundle: 81
+    dir: 61
+    name: IStartSystem.lua.txt
+  - bundle: 81
+    dir: 61
+    name: IUpdateSystem.lua.txt
+  - bundle: 81
+    dir: 61
+    name: NoMemoryCheck.lua.txt
+  - bundle: 81
+    dir: 61
+    name: NoObjectPool.lua.txt
+  - bundle: 81
+    dir: 61
+    name: ObjectPool.lua.txt
+  - bundle: 81
+    dir: 61
+    name: ObjectSystemAttribute.lua.txt
+  - bundle: 81
+    dir: 61
+    name: ProtoObject.lua.txt
+  - bundle: 81
+    dir: 61
+    name: TimeInfo.lua.txt
+  - bundle: 6
+    dir: 56
+    name: ObjectWait.lua.txt
+  - bundle: 6
+    dir: 56
+    name: Pool.lua.txt
+  - bundle: 6
+    dir: 56
+    name: ProcessHelper.lua.txt
+  - bundle: 6
+    dir: 56
+    name: QueueDictionary.lua.txt
+  - bundle: 74
+    dir: 62
+    name: SceneHelper.lua.txt
+  - bundle: 74
+    dir: 62
+    name: ZoneSceneFlagComponent.lua.txt
+  - bundle: 74
+    dir: 62
+    name: ZoneSceneManagerComponent.lua.txt
+  - bundle: 6
+    dir: 56
+    name: StructBsonSerialize.lua.txt
+  - bundle: 6
+    dir: 56
+    name: UnOrderMultiMap.lua.txt
+  - bundle: 6
+    dir: 56
+    name: UnOrderMultiMapSet.lua.txt
+  - bundle: 79
+    dir: 63
+    name: XunLuoPathComponent.lua.txt
+  - bundle: 54
+    dir: 64
+    name: Define.lua.txt
+  - bundle: 54
+    dir: 64
+    name: EventType.lua.txt
+  - bundle: 43
+    dir: 65
+    name: PathHelper.lua.txt
+  - bundle: 43
+    dir: 65
+    name: PositionHelper.lua.txt
+  - bundle: 43
+    dir: 65
+    name: ResourceHelper.lua.txt
+  - bundle: 67
+    dir: 66
+    name: MoveComponent.lua.txt
+  - bundle: 15
+    dir: 67
+    name: SessionComponent.lua.txt
+  - bundle: 92
+    dir: 68
+    name: Unit.lua.txt
+  - bundle: 92
+    dir: 68
+    name: UnitComponent.lua.txt
+  - bundle: 54
+    dir: 64
+    name: WaitType.lua.txt
+  - bundle: 5
+    dir: 69
+    name: AIConfig.lua.txt
+  - bundle: 5
+    dir: 69
+    name: StartMachineConfig.lua.txt
+  - bundle: 5
+    dir: 69
+    name: StartProcessConfig.lua.txt
+  - bundle: 5
+    dir: 69
+    name: StartSceneConfig.lua.txt
+  - bundle: 5
+    dir: 69
+    name: StartZoneConfig.lua.txt
+  - bundle: 5
+    dir: 69
+    name: UnitConfig.lua.txt
+  - bundle: 88
+    dir: 70
+    name: OuterMessage.lua.txt
+  - bundle: 88
+    dir: 70
+    name: OuterOpcode.lua.txt
+  - bundle: 45
+    dir: 71
+    name: AAIHandler.lua.txt
+  - bundle: 45
+    dir: 71
+    name: AIComponent.lua.txt
+  - bundle: 45
+    dir: 71
+    name: AIDispatcherComponent.lua.txt
+  - bundle: 30
+    dir: 72
+    name: IActorMessage.lua.txt
+  - bundle: 78
+    dir: 73
+    name: ActorResponse.lua.txt
+  - bundle: 78
+    dir: 73
+    name: IActorLocationMessage.lua.txt
+  - bundle: 75
+    dir: 74
+    name: ConfigAttribute.lua.txt
+  - bundle: 75
+    dir: 74
+    name: ConfigComponent.lua.txt
+  - bundle: 75
+    dir: 74
+    name: IConfig.lua.txt
+  - bundle: 39
+    dir: 75
+    name: CoroutineLock.lua.txt
+  - bundle: 39
+    dir: 75
+    name: CoroutineLockComponent.lua.txt
+  - bundle: 39
+    dir: 75
+    name: CoroutineLockType.lua.txt
+  - bundle: 91
+    dir: 76
+    name: AMHandler.lua.txt
+  - bundle: 91
+    dir: 76
+    name: ErrorCode.lua.txt
+  - bundle: 91
+    dir: 76
+    name: IMHandler.lua.txt
+  - bundle: 91
+    dir: 76
+    name: IMessage.lua.txt
+  - bundle: 91
+    dir: 76
+    name: IMessageDispatcher.lua.txt
+  - bundle: 91
+    dir: 76
+    name: MessageAttribute.lua.txt
+  - bundle: 91
+    dir: 76
+    name: MessageDispatcherComponent.lua.txt
+  - bundle: 91
+    dir: 76
+    name: MessageHandlerAttribute.lua.txt
+  - bundle: 91
+    dir: 76
+    name: MessagePool.lua.txt
+  - bundle: 91
+    dir: 76
+    name: MessageProxy.lua.txt
+  - bundle: 91
+    dir: 76
+    name: MessageSerializeHelper.lua.txt
+  - bundle: 91
+    dir: 76
+    name: NetKcpComponent.lua.txt
+  - bundle: 91
+    dir: 76
+    name: NetThreadComponent.lua.txt
+  - bundle: 91
+    dir: 76
+    name: OpcodeHelper.lua.txt
+  - bundle: 91
+    dir: 76
+    name: OpcodeTypeComponent.lua.txt
+  - bundle: 91
+    dir: 76
+    name: PingComponent.lua.txt
+  - bundle: 91
+    dir: 76
+    name: ProtobufHelper.lua.txt
+  - bundle: 91
+    dir: 76
+    name: ResponseTypeAttribute.lua.txt
+  - bundle: 91
+    dir: 76
+    name: RpcException.lua.txt
+  - bundle: 91
+    dir: 76
+    name: Session.lua.txt
+  - bundle: 91
+    dir: 76
+    name: SessionAcceptTimeoutComponent.lua.txt
+  - bundle: 91
+    dir: 76
+    name: SessionCallbackComponent.lua.txt
+  - bundle: 91
+    dir: 76
+    name: SessionIdleCheckerComponent.lua.txt
+  - bundle: 64
+    dir: 77
+    name: AChannel.lua.txt
+  - bundle: 64
+    dir: 77
+    name: AService.lua.txt
+  - bundle: 64
+    dir: 77
+    name: Circularbuffer.lua.txt
+  - bundle: 64
+    dir: 77
+    name: KChannel.lua.txt
+  - bundle: 64
+    dir: 77
+    name: KService.lua.txt
+  - bundle: 84
+    dir: 78
+    name: PacketParser.lua.txt
+  - bundle: 84
+    dir: 78
+    name: TChannel.lua.txt
+  - bundle: 84
+    dir: 78
+    name: TService.lua.txt
+  - bundle: 52
+    dir: 79
+    name: INumericWatcher.lua.txt
+  - bundle: 52
+    dir: 79
+    name: NumericComponent.lua.txt
+  - bundle: 52
+    dir: 79
+    name: NumericType.lua.txt
+  - bundle: 52
+    dir: 79
+    name: NumericWatcherAttribute.lua.txt
+  - bundle: 52
+    dir: 79
+    name: NumericWatcherComponent.lua.txt
+  - bundle: 42
+    dir: 80
+    name: manifest.lua.txt
+  - bundle: 71
+    dir: 81
+    name: CameraComponent.lua.txt
+  - bundle: 86
+    dir: 82
+    name: GlobalComponent.lua.txt
+  - bundle: 24
+    dir: 83
+    name: AUIEvent.lua.txt
+  - bundle: 24
+    dir: 83
+    name: CanvasConfig.lua.txt
+  - bundle: 24
+    dir: 83
+    name: LayerNames.lua.txt
+  - bundle: 24
+    dir: 83
+    name: UI.lua.txt
+  - bundle: 24
+    dir: 83
+    name: UIComponent.lua.txt
+  - bundle: 24
+    dir: 83
+    name: UIEventAttribute.lua.txt
+  - bundle: 24
+    dir: 83
+    name: UIEventComponent.lua.txt
+  - bundle: 24
+    dir: 83
+    name: UIType.lua.txt
+  - bundle: 16
+    dir: 84
+    name: OperaComponent.lua.txt
+  - bundle: 11
+    dir: 85
+    name: SceneChangeComponent.lua.txt
+  - bundle: 87
+    dir: 86
+    name: UILoadingComponent.lua.txt
+  - bundle: 73
+    dir: 87
+    name: UILobbyComponent.lua.txt
+  - bundle: 12
+    dir: 88
+    name: UILoginComponent.lua.txt
+  - bundle: 22
+    dir: 89
+    name: AnimatorComponent.lua.txt
+  - bundle: 22
+    dir: 89
+    name: GameObjectComponent.lua.txt
+  - bundle: 10
+    dir: 90
+    name: manifest.lua.txt
+  - bundle: 3
+    dir: 27
+    name: Object.lua.txt
+  - bundle: 3
+    dir: 27
+    name: ProtobufAdapter.lua.txt
+  - bundle: 3
+    dir: 27
+    name: json.lua.txt
+  - bundle: 1
+    dir: 91
+    name: protobuf.lua.txt
+  - bundle: 3
+    dir: 27
+    name: protoc.lua.txt
+  - bundle: 3
+    dir: 27
+    name: xLuaAdapter.lua.txt
+  - bundle: 38
+    dir: 92
+    name: Game.unity
+  bundles:
+  - deps: 
+    hash: 17ec59fd8221100964f3768bbd79d729
+    id: 0
+    len: 8425
+    name: 01f2b6e48d82797de0d70a6c3c8cc126.unity3d
+  - deps: 
+    hash: dca0fc555ceab2e1c3aa7004dc80e89c
+    id: 1
+    len: 4748
+    name: 02c2ff34d0dadf4f9bf5ac27bd96ffc3.unity3d
+  - deps: 
+    hash: de0ee9edd2c86b5aa7f22e46e5bcb25b
+    id: 2
+    len: 3400
+    name: 046bf8b5a22bc4447983c1934ed7e1f3.unity3d
+  - deps: 
+    hash: e0fb91ed864f7de9dd8896a411df46d9
+    id: 3
+    len: 111176
+    name: 05fc704a375f2fcfefc4cf05b82a0572.unity3d
+  - deps: 
+    hash: 6f96393a3b31828d92a8930ae3c8ce75
+    id: 4
+    len: 2749
+    name: 0609f86cdc1d654cdfec06a34a3f6147.unity3d
+  - deps: 
+    hash: 9ff521ad5836f0c0a68b8f0026d36c9b
+    id: 5
+    len: 3884
+    name: 0a212695d59fd8c6e9fe49e2e53d20cd.unity3d
+  - deps: 
+    hash: 82d419ad8949873abee61f35f0297c48
+    id: 6
+    len: 8442
+    name: 0c57bbe71bd7a0af03c49dd03e0dc555.unity3d
+  - deps: 
+    hash: cfb6bebc814f830fe5ca45f32a842e66
+    id: 7
+    len: 3808
+    name: 10c7b216565d2d14a4189871ab74ba18.unity3d
+  - deps: 
+    hash: 163143b4704bf780d368a6f4f6328cd6
+    id: 8
+    len: 2593
+    name: 1194c546319bcbd88f3393c515d0b601.unity3d
+  - deps: 
+    hash: 1e80fa6d110532c0f8497d11e674bafd
+    id: 9
+    len: 2317
+    name: 120c19f75e425dd84121ec3dd3de3d8e.unity3d
+  - deps: 
+    hash: 2b72aa78f1ff9bcac6dd951ae5823ce2
+    id: 10
+    len: 1710
+    name: 13af7d616d01cd9bf9aa841a42e690b7.unity3d
+  - deps: 
+    hash: 28c14a27d9838c22c91812d9a3257e61
+    id: 11
+    len: 1488
+    name: 16849d08363402131cd749e8e4d5469c.unity3d
+  - deps: 
+    hash: ec06e4f0208dae2184ca9fe7d29ec0de
+    id: 12
+    len: 1485
+    name: 19ea23f8a923dd2983a8fad9325d3001.unity3d
+  - deps: 
+    hash: 6d0c2a4e2bb67df82e0b7879e8c909c2
+    id: 13
+    len: 1965
+    name: 1a08f80d3ad7e6960788a940b240c27c.unity3d
+  - deps: 
+    hash: d2fe80f29f41ddd8d95d987606b83e05
+    id: 14
+    len: 1395
+    name: 2203b61c4fc3c61d5203c8d8dbf7454d.unity3d
+  - deps: 
+    hash: 32c0e81f332eece8a2e88359cc75bbf8
+    id: 15
+    len: 1507
+    name: 233105cdf44f9d1090fce7c33ebc7fe0.unity3d
+  - deps: 
+    hash: 983688a06310aedc289c991ad8c8df4e
+    id: 16
+    len: 1584
+    name: 24db146b595f39375211f7ae50e9f63b.unity3d
+  - deps: 
+    hash: ffffd1f33a34db6f81ada7109813d5ce
+    id: 17
+    len: 71647
+    name: 2a9195317d6b6ee062ac1efd8b6125da.unity3d
+  - deps: 
+    hash: 2441e9c2157fa14959a254264c23b59f
+    id: 18
+    len: 431393
+    name: 3089c3dd7fe718e89abbfbe9ae76279d.unity3d
+  - deps: 
+    hash: d124d150866d137fcb0a39a3f5e283c9
+    id: 19
+    len: 50717
+    name: 3c34655556d93c2fdee1b6298c526170.unity3d
+  - deps: 
+    hash: 314833ad370930406ede3c4280619df4
+    id: 20
+    len: 600454
+    name: 402616af1163063e0f9a6fb7bc245e46.unity3d
+  - deps: 
+    hash: 7c9797aa676e88296d8c1f9f5dcd4d33
+    id: 21
+    len: 2787
+    name: 40be6bcb4d4aeff51edf7472f7fb5692.unity3d
+  - deps: 
+    hash: dc0fb7eba7c353bf86132be045cbc982
+    id: 22
+    len: 1917
+    name: 485c7edc0f35321deb2f35bf00f7bb01.unity3d
+  - deps: 
+    hash: bec90dde76d467f5a363fbfa3ff01365
+    id: 23
+    len: 2508
+    name: 4d06d87b3412482b231e0c9c77785020.unity3d
+  - deps: 
+    hash: ca0688eb42f6b5872f51308ac6dd4eda
+    id: 24
+    len: 3274
+    name: 4dea20ef7fb8515935109bd16c77668c.unity3d
+  - deps: 
+    hash: c85ab9ebee7b5c19174b0efaebded756
+    id: 25
+    len: 1801
+    name: 4f0c2415c6545a6675944dd8949c4c60.unity3d
+  - deps: 
+    hash: bb206fc55d8967056ad2056de26dbc8a
+    id: 26
+    len: 18748
+    name: 55106d3b8d4a179c78bd59a9860fba31.unity3d
+  - deps: 
+    hash: e40d4b062f3f39a476f8b87dd67ddbd4
+    id: 27
+    len: 2956
+    name: 55cfbbd03dce18c6ccf5b7a4dfbf5cd6.unity3d
+  - deps: 
+    hash: 4abcc749064b5eb33747d75cf3187619
+    id: 28
+    len: 2583
+    name: 5be52f10d0deb44d0a1e4c685e271f3e.unity3d
+  - deps: 
+    hash: 351553b09b7eef5fe98b51050a96680c
+    id: 29
+    len: 5302
+    name: 63711338080cede321d5321e01438965.unity3d
+  - deps: 
+    hash: 51c96e94f5a3a29877509eb92fda095d
+    id: 30
+    len: 1489
+    name: 6a6690216fb20c5c8fdc4a7ef9cd048e.unity3d
+  - deps: 
+    hash: cc645d0b8d2f3d0b7036af23015bf612
+    id: 31
+    len: 2739
+    name: 6a8cffc1919b39158690dc495c6b9fa0.unity3d
+  - deps: 
+    hash: 8a31c60649cda750add39313f76ac40a
+    id: 32
+    len: 1673
+    name: 6c7d6e64907ac615d3432562bcc74cb2.unity3d
+  - deps: 
+    hash: b285d56cbbffc81bd75894f27875838d
+    id: 33
+    len: 11166
+    name: 702dff404097538c477e472c834d3d35.unity3d
+  - deps: 
+    hash: a35748b21a78697c8bb1a65572251ba5
+    id: 34
+    len: 1612
+    name: 73fdec0cf3ff42a22e75328ee15d3e66.unity3d
+  - deps: 
+    hash: e67d779e2c921f73ded1d6396440e09a
+    id: 35
+    len: 39557
+    name: 7a8a72037ae38de3fbc7073d8bac055f.unity3d
+  - deps: 
+    hash: 5a8f6ec7dfc87b65bda556fb0c55ddfc
+    id: 36
+    len: 2819
+    name: 7c52e3ac01751cab6d94e286c296551c.unity3d
+  - deps: 
+    hash: ea188c0fbb4ab39c46cfd1e160d52ad9
+    id: 37
+    len: 95099
+    name: 7e4414a01ec1ac68b479dcb00cc959a9.unity3d
+  - deps: 
+    hash: a2ba0679df1d5b7a3f920e47a2437b10
+    id: 38
+    len: 103071
+    name: 808f0f0f8caefc93706e3d9c8c513f4a.unity3d
+  - deps: 
+    hash: dcb621af35342b55c8b60d9395852340
+    id: 39
+    len: 5464
+    name: 80af09bb257ff25692a513211e3341d2.unity3d
+  - deps: 
+    hash: 345a01e85b35a142a1af4e0c184d7336
+    id: 40
+    len: 7788
+    name: 838e889454bf91eb22c7984cd4153e3a.unity3d
+  - deps: 
+    hash: e39507f9266bfb133334d076625032ef
+    id: 41
+    len: 3831
+    name: 8410cd0fa0bd6db626043d9864f159fe.unity3d
+  - deps: 
+    hash: 5284111bbdd5119b8e811e6de3d1bbfc
+    id: 42
+    len: 4232
+    name: 84143b13588b2e1c33db8113e7a2621a.unity3d
+  - deps: 
+    hash: ff1e0f5558f0427c14c0232cd5d09c97
+    id: 43
+    len: 4114
+    name: 876db00baab8a068a0f535af1eae9b55.unity3d
+  - deps: 
+    hash: 7fcfe9dab7da8faab859a6bb8e5a0e89
+    id: 44
+    len: 2535
+    name: 88600f04f52dab61101dcee76779ba9c.unity3d
+  - deps: 
+    hash: e1e5f678b8cb47c3041d3a568d79f9f6
+    id: 45
+    len: 1904
+    name: 89fa75d86feff36ad6edca7a4d96d4a8.unity3d
+  - deps: 
+    hash: 3d89c572b02fdb53e19003886dd4812d
+    id: 46
+    len: 795821
+    name: 8aa14e02e95720a327df4a74af6dc655.unity3d
+  - deps: 
+    hash: c422bdb0daf2a34524b09f15a3424d4e
+    id: 47
+    len: 2055
+    name: 8f0387b69836f2ff85673877be389e69.unity3d
+  - deps: 
+    hash: 695f8c0e679d22d4a7164d6c3add88a6
+    id: 48
+    len: 2907
+    name: 8fd7dfc0b8a44a750cfefd3f5d4c20d4.unity3d
+  - deps: 
+    hash: 12f4a9f4be2d89bd25843546e4215c81
+    id: 49
+    len: 2268
+    name: 91bf8d2d921c7e79efb5a449763722d7.unity3d
+  - deps: 
+    hash: 94bf649106494d9926eaab5cfc0b046a
+    id: 50
+    len: 1753
+    name: 9549b24cb9ba3d9ff14fdd62c4f5db47.unity3d
+  - deps: 
+    hash: b18c096c04056e9a8bbe6686cce736a1
+    id: 51
+    len: 22704
+    name: 96ae57f4a969d67a6b0261c6455e4d05.unity3d
+  - deps: 
+    hash: a38b1698ddbf9ccc442e664add431db4
+    id: 52
+    len: 4036
+    name: 99c5537f1276fd8ae2fe8ce83ac769a6.unity3d
+  - deps: 
+    hash: 700ac4c2a0223ad4bd845fdcc77b2732
+    id: 53
+    len: 960810
+    name: 9c59ccc16d10b0d57f99584eb75b1de9.unity3d
+  - deps: 
+    hash: 30d372c0635a3fe87626bc27310d73be
+    id: 54
+    len: 1852
+    name: a0e64672d14d6b0fa3ad6e66e5f70d1e.unity3d
+  - deps: 
+    hash: ccb46198a17007df5d9a5c8f62fe190e
+    id: 55
+    len: 328458
+    name: a19ae5802106f9c2067ba649790b369e.unity3d
+  - deps: 
+    hash: 666140b2fbfd4327a4007c41d44ad7ae
+    id: 56
+    len: 424900
+    name: a4963071b55cb4c37bf67d755b07a1ad.unity3d
+  - deps: 
+    hash: 92633cb82b4b0df0bc2465dc8efd7387
+    id: 57
+    len: 20234
+    name: a7a30ad620959d68fb8546a82426751f.unity3d
+  - deps: 
+    hash: bb5fd407caca35dac4fe2bbdaf12fd2c
+    id: 58
+    len: 2680
+    name: a863726c2e494e3a4f9bd727f6083db3.unity3d
+  - deps: 
+    hash: 3343d464be1ad969074ca907b536bbf1
+    id: 59
+    len: 1506
+    name: ac1d94c7fae1ae3a13c1d7aa732f1a0e.unity3d
+  - deps: 
+    hash: 302f4235b6887d76f3ca5a90d376e488
+    id: 60
+    len: 1638
+    name: b6aa9689ae02e4be9aab9ef5885d8766.unity3d
+  - deps: 
+    hash: 4f3bf71f42a06f25db594a3a88956b47
+    id: 61
+    len: 1635
+    name: b80c3deebd7bc57197bf278ccf7f53b4.unity3d
+  - deps: 
+    hash: 6cb33c2fafdbd28b674730da58202801
+    id: 62
+    len: 105051
+    name: bc9e17174c77b4cf2149d0521576ece2.unity3d
+  - deps: 
+    hash: cf0c40f9b371eb8c1fde46abaf4ddf8c
+    id: 63
+    len: 2356
+    name: bdb01cae3585f64f1b6be2e0e6ca0004.unity3d
+  - deps: 
+    hash: c3cfeb43cf45e027a2716e81ee9230af
+    id: 64
+    len: 10493
+    name: be1f380baf94d04c2e7ec81aced90f7e.unity3d
+  - deps: 
+    hash: b41369a6b2008fbb5948c3b720e2729b
+    id: 65
+    len: 394296
+    name: bf65ade91b6aeaa76ff8cb0e3fee1b4e.unity3d
+  - deps: 
+    hash: 4789c2b6effb21bddfea53d41c1cd1b1
+    id: 66
+    len: 5467
+    name: c4d9e137b96c172549a714d5a6e8052c.unity3d
+  - deps: 
+    hash: 066e2724102f533bc4562a82e39e4dfe
+    id: 67
+    len: 1901
+    name: c66824d7856cd9a948d8b98c78dd06bc.unity3d
+  - deps: 
+    hash: 182a8fd6fdcff98638b8608139604dd1
+    id: 68
+    len: 1634
+    name: c836f81e1ebb90e72df11896a944dfc0.unity3d
+  - deps: 
+    hash: 1da5c6cac1aca8e5e8305b918c798dae
+    id: 69
+    len: 3612
+    name: c9c1202d97ff4d8e6ed9bad41852335a.unity3d
+  - deps: 
+    hash: d7004ca322625d20c99a7307b580766b
+    id: 70
+    len: 1903
+    name: ca806c0b069422b4515f34a968ef09e8.unity3d
+  - deps: 
+    hash: 7c4eb1ec0ddaf11ee95e3903ff96bb83
+    id: 71
+    len: 1873
+    name: cb8aa0a794949253ec3cef0fdf47978e.unity3d
+  - deps: 
+    hash: ef44a1e5c4932c4bf46ecf4d201e8032
+    id: 72
+    len: 1252
+    name: cbded06cd402f111d96d6d5aad84b42a.unity3d
+  - deps: 
+    hash: 96cdf1d267d20c2b3a299dfa628232f8
+    id: 73
+    len: 1485
+    name: d7abe58e52142b2f1a4ad859c1b754af.unity3d
+  - deps: 
+    hash: fe5e39e641d654876daae20ee3ba27de
+    id: 74
+    len: 1891
+    name: d83f3bf9efa14ac94ed4cb6cb2b66b01.unity3d
+  - deps: 
+    hash: ae4c8445e8977bc48ccef7badd50a783
+    id: 75
+    len: 1843
+    name: d9d72118449b2b3533c0f0d0488bd3bc.unity3d
+  - deps: 
+    hash: 3bc7ad777766fde74ef9a29ba468fe7e
+    id: 76
+    len: 2541
+    name: d9e1dffea63a93caf2aef28de30d256f.unity3d
+  - deps: 
+    hash: 8db08b5e57e657fb71512a2688821769
+    id: 77
+    len: 2523
+    name: dab6eabb14f315beaf18080db626b819.unity3d
+  - deps: 
+    hash: 4edced46ed002bd7bbad2749c707cbf0
+    id: 78
+    len: 1942
+    name: db9fde46bafe4b5af61db01325f8da27.unity3d
+  - deps: 
+    hash: 38875d846373ff48659dad72efdffd8d
+    id: 79
+    len: 1616
+    name: dd1702244ad81aa6545273492d22423d.unity3d
+  - deps: 
+    hash: 6ece0e1c1d3397c5163be4731df36e6e
+    id: 80
+    len: 33706
+    name: dd380a1ab44849fa5fdf67919ebbe150.unity3d
+  - deps: 
+    hash: 2d0ef40358c63d12371778d9f8479229
+    id: 81
+    len: 13000
+    name: ddb2158162da243442ec8dac46038e26.unity3d
+  - deps: 
+    hash: bd751a5efeb124f6a76339491e733b5c
+    id: 82
+    len: 187164
+    name: e7306fc71312fb4da59f771df26b83c0.unity3d
+  - deps: 
+    hash: c6790c4af3e69c75d8bef8491d4c872e
+    id: 83
+    len: 5195
+    name: e8bf07ca155fcf8ae6b05eeea7196a98.unity3d
+  - deps: 
+    hash: 91f111dae0acafcbfdfb889fbcd59625
+    id: 84
+    len: 6394
+    name: ec91fc52b4bd77362326b040874471fb.unity3d
+  - deps: 
+    hash: e141dabadcff9d6d336f7633f76b37f6
+    id: 85
+    len: 5543
+    name: eea8a9377a01427af975e29051e49b28.unity3d
+  - deps: 
+    hash: 35f2b53b3482672d9be2c6b44e357092
+    id: 86
+    len: 1480
+    name: f1bc540e2c3d71af306233351be92f46.unity3d
+  - deps: 
+    hash: 1989c8439b7b060abf136674950024f3
+    id: 87
+    len: 1487
+    name: f27ecaa4b75865cdfe95ed979e73cbb5.unity3d
+  - deps: 
+    hash: c3d0a6577fe1719339432beafb61fff3
+    id: 88
+    len: 3632
+    name: f544743dc9ded229cf0f4f416427106e.unity3d
+  - deps: 
+    hash: 26a60077307b32806aec6e3e9b2de4bc
+    id: 89
+    len: 2852
+    name: f578554d094ca6d4d91366ff9d1e55a3.unity3d
+  - deps: 
+    hash: 5c6acb9bf068fa3ce08f99b1b3ed7913
+    id: 90
+    len: 1861
+    name: f9325e48baacdfc36b97fccf9748220d.unity3d
+  - deps: 
+    hash: 2c69f0af7ea6c40058265eda6f41348a
+    id: 91
+    len: 9231
+    name: fb038e56715577ea20be992e55cb89e2.unity3d
+  - deps: 
+    hash: c37ee512c5389a9ea27d5cbde46de46b
+    id: 92
+    len: 2364
+    name: fba25aa4f14b7dbcb789704a8b60949a.unity3d
+  dirs:
+  - Assets/Bundles/Config
+  - Assets/Bundles/FUI/Bag
+  - Assets/Bundles/FUI/Battle
+  - Assets/Bundles/FUI/Character
+  - Assets/Bundles/FUI/Common
+  - Assets/Bundles/FUI/Consignment
+  - Assets/Bundles/FUI/Dialog
+  - Assets/Bundles/FUI/Friend
+  - Assets/Bundles/FUI
+  - Assets/Bundles/FUI/Login
+  - Assets/Bundles/FUI/Mail
+  - Assets/Bundles/FUI/Popup
+  - Assets/Bundles/FUI/Rank
+  - Assets/Bundles/FUI/Shop
+  - Assets/Bundles/FUI/Skill
+  - Assets/Bundles/FUI/Task
+  - Assets/Bundles/FUI/TransPointUI
+  - Assets/Bundles/Lua/CSharpLua
+  - Assets/Bundles/Lua/CSharpLua/CoreSystem
+  - Assets/Bundles/Lua/CSharpLua/CoreSystem/Collections
+  - Assets/Bundles/Lua/CSharpLua/CoreSystem/Globalization
+  - Assets/Bundles/Lua/CSharpLua/CoreSystem/IO
+  - Assets/Bundles/Lua/CSharpLua/CoreSystem/Numerics
+  - Assets/Bundles/Lua/CSharpLua/CoreSystem/Reflection
+  - Assets/Bundles/Lua/CSharpLua/CoreSystem/Text
+  - Assets/Bundles/Lua/CSharpLua/CoreSystem/Threading
+  - Assets/Bundles/Lua/CSharpLua/Sample
+  - Assets/Bundles/Lua
+  - Assets/Bundles/Lua/Hotfix/Core/Scene
+  - Assets/Bundles/Lua/Hotfix/Demo/AI
+  - Assets/Bundles/Lua/Hotfix/Demo
+  - Assets/Bundles/Lua/Hotfix/Demo/Move
+  - Assets/Bundles/Lua/Hotfix/Demo/Session
+  - Assets/Bundles/Lua/Hotfix/Demo/Unit
+  - Assets/Bundles/Lua/Hotfix/Game/Common
+  - Assets/Bundles/Lua/Hotfix/Game/Entity
+  - Assets/Bundles/Lua/Hotfix/Game/Event
+  - Assets/Bundles/Lua/Hotfix/Game/FairyGUI
+  - Assets/Bundles/Lua/Hotfix/Game/Handler
+  - Assets/Bundles/Lua/Hotfix/Game/Helper
+  - Assets/Bundles/Lua/Hotfix/Game
+  - Assets/Bundles/Lua/Hotfix/Module/AI
+  - Assets/Bundles/Lua/Hotfix/Module/Config
+  - Assets/Bundles/Lua/Hotfix/Module/Message
+  - Assets/Bundles/Lua/Hotfix/Module/Numeric
+  - Assets/Bundles/Lua/Hotfix
+  - Assets/Bundles/Lua/HotfixView
+  - Assets/Bundles/Lua/HotfixView/Global
+  - Assets/Bundles/Lua/HotfixView/Helper
+  - Assets/Bundles/Lua/HotfixView/Module/Resource
+  - Assets/Bundles/Lua/HotfixView/Module/UI
+  - Assets/Bundles/Lua/HotfixView/Opera
+  - Assets/Bundles/Lua/HotfixView/Scene
+  - Assets/Bundles/Lua/HotfixView/Unit
+  - Assets/Bundles/Lua/Model/Base
+  - Assets/Bundles/Lua/Model/Core/Async
+  - Assets/Bundles/Lua/Model/Core
+  - Assets/Bundles/Lua/Model/Core/Entity
+  - Assets/Bundles/Lua/Model/Core/Event
+  - Assets/Bundles/Lua/Model/Core/Helper
+  - Assets/Bundles/Lua/Model/Core/Log
+  - Assets/Bundles/Lua/Model/Core/Object
+  - Assets/Bundles/Lua/Model/Core/Scene
+  - Assets/Bundles/Lua/Model/Demo/AI
+  - Assets/Bundles/Lua/Model/Demo
+  - Assets/Bundles/Lua/Model/Demo/Helper
+  - Assets/Bundles/Lua/Model/Demo/Move
+  - Assets/Bundles/Lua/Model/Demo/Session
+  - Assets/Bundles/Lua/Model/Demo/Unit
+  - Assets/Bundles/Lua/Model/Generate/Config
+  - Assets/Bundles/Lua/Model/Generate/Message
+  - Assets/Bundles/Lua/Model/Module/AI
+  - Assets/Bundles/Lua/Model/Module/Actor
+  - Assets/Bundles/Lua/Model/Module/ActorLocation
+  - Assets/Bundles/Lua/Model/Module/Config
+  - Assets/Bundles/Lua/Model/Module/CoroutineLock
+  - Assets/Bundles/Lua/Model/Module/Message
+  - Assets/Bundles/Lua/Model/Module/Network
+  - Assets/Bundles/Lua/Model/Module/NetworkTCP
+  - Assets/Bundles/Lua/Model/Module/Numeric
+  - Assets/Bundles/Lua/Model
+  - Assets/Bundles/Lua/ModelView/Camera
+  - Assets/Bundles/Lua/ModelView/Global
+  - Assets/Bundles/Lua/ModelView/Module/UI
+  - Assets/Bundles/Lua/ModelView/Opera
+  - Assets/Bundles/Lua/ModelView/Scene
+  - Assets/Bundles/Lua/ModelView/UI/UILoading
+  - Assets/Bundles/Lua/ModelView/UI/UILobby
+  - Assets/Bundles/Lua/ModelView/UI/UILogin
+  - Assets/Bundles/Lua/ModelView/Unit
+  - Assets/Bundles/Lua/ModelView
+  - Assets/Bundles/Lua/pbc
+  - Assets/Bundles/Scene
