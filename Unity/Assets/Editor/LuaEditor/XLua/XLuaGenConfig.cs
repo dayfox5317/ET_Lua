@@ -202,24 +202,27 @@ public static class XLuaGenConfig
         typeof(InputField),
         typeof(libx.AssetRequest),
         typeof(libx.Assets),
-        typeof(ArrayHelper),
+
         typeof(UnityEngine.RectTransform),
         typeof(UnityEngine.RectTransform.Axis),
         typeof(UnityEngine.RectTransform.Edge),
-       typeof( UnityEngine.UI.Selectable),
-       typeof( UnityEngine.UI.Selectable.Transition),
-         typeof( UnityEngine.UI.Button.ButtonClickedEvent),
-         typeof(System.IO.SeekOrigin),
-          typeof(System.Reflection.MemberInfo)
+        typeof( UnityEngine.UI.Selectable),
+        typeof( UnityEngine.UI.Selectable.Transition),
+        typeof( UnityEngine.UI.Button.ButtonClickedEvent),
+        typeof(System.IO.SeekOrigin),
+        typeof(System.Reflection.MemberInfo),
+        //typeof(System.Runtime.InteropServices.StructLayoutAttribute),
+        //typeof(System.Runtime.InteropServices.LayoutKind),
+
         };
-            var types = typeof(ArrayHelper).Assembly.GetTypes();
-           
-          
-            list.AddRange(types.Where(x=>!x.FullName.StartsWith("XLua")));
+            var types = typeof(CircularBuffer).Assembly.GetTypes();
+
+
+            list.AddRange(types.Where(x => !x.FullName.StartsWith("XLua")));
 
             list.Add(typeof(SocketAsyncOperation));
             list.Add(typeof(SocketError));
-           // list.Add(typeof(con).Assembly.GetTypes());
+            // list.Add(typeof(con).Assembly.GetTypes());
             list.AddRange(typeof(UnityEngine.UI.InputField).Assembly.GetTypes());
             list.Remove(typeof(UnityEngine.UI.Graphic));
             list.Remove(typeof(UnityEngine.UI.DefaultControls));
@@ -236,7 +239,7 @@ public static class XLuaGenConfig
             //        }
             //    }
             //}
-        //    list.Remove(typeof(UnityEngine.UI.GraphicRebuildTracker));
+            //    list.Remove(typeof(UnityEngine.UI.GraphicRebuildTracker));
             return list;
         }
     }
@@ -325,7 +328,7 @@ public static class XLuaGenConfig
                 internalBlackList.Add(new List<string>() { "System.Net.Sockets.SocketAsyncEventArgs", "SocketClientAccessPolicyProtocol" });
                 internalBlackList.Add(new List<string>() { "System.Type", "IsSZArray" });
                 internalBlackList.Add(new List<string>() { "UnityEngine.UI.Text", "OnRebuildRequested" });
-                internalBlackList.Add(new List<string>() { "UnityEngine.AnimatorControllerParameter", "name" });
+                //internalBlackList.Add(new List<string>() { "UnityEngine.AnimatorControllerParameter", "name" });
 
             }
 

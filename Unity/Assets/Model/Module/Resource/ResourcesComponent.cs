@@ -1,4 +1,5 @@
-﻿using System;
+﻿using libx;
+using System;
 using System.Collections.Generic;
 
 #if UNITY_EDITOR
@@ -34,6 +35,89 @@ namespace ET
 
         }
 
+        #region Assets
+
+        /// <summary>
+        /// 加载资源，path需要是全路径
+        /// </summary>
+        /// <param name="path"></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public T LoadAsset<T>(string path) where T : UnityEngine.Object
+        {
+            AssetRequest assetRequest = Assets.LoadAsset(path, typeof(T));
+            return (T)assetRequest.asset;
+        }
+
+        /// <summary>
+        /// 异步加载资源，path需要是全路径
+        /// </summary>
+        /// <param name="path"></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public ETTask<T> LoadAssetAsync<T>(string path) where T : UnityEngine.Object
+        {
+            ETTask<T> tcs =  ETTask<T>.Create();
+            AssetRequest assetRequest = Assets.LoadAssetAsync(path, typeof(T));
+            n2req[path] = assetRequest;
+            //如果已经加载完成则直接返回结果（适用于编辑器模式下的异步写法和重复加载）,下面的API如果有需求可按照此格式添加相关代码
+            if (assetRequest.isDone)
+            {
+                tcs.SetResult((T)assetRequest.asset);
+                return tcs;
+            }
+
+            //+=委托链，否则会导致前面完成委托被覆盖
+            assetRequest.completed += (arq) => { tcs.SetResult((T)arq.asset); };
+            return tcs;
+        }
+
+        /// <summary>
+        /// 卸载资源，path需要是全路径
+        /// </summary>
+        /// <param name="path"></param>
+        public void UnLoadAsset(string path)
+        {
+            if (n2req.ContainsKey(path))
+            {
+                n2req[path].Release();
+                n2req.Remove(path);
+                ET.Log.Debug("[Unload]" + path);
+            }
+           
+        }
+
+        #endregion
+
+        #region Scenes
+
+        /// <summary>
+        /// 加载场景，path需要是全路径
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
+        public ETTask<SceneAssetRequest> LoadSceneAsync(string path)
+        {
+            ETTask<SceneAssetRequest> tcs = ETTask<SceneAssetRequest>.Create();
+            SceneAssetRequest sceneAssetRequest = Assets.LoadSceneAsync(path, false);
+            sceneAssetRequest.completed = (arq) =>
+            {
+                tcs.SetResult(sceneAssetRequest);
+            };
+            return tcs;
+        }
+
+        /// <summary>
+        /// 卸载场景，path需要是全路径
+        /// </summary>
+        /// <param name="path"></param>
+        public void UnLoadScene(string path)
+        {
+            UnLoadAsset(path);
+        }
+
+        #endregion
+
         public override void Dispose()
         {
             if (this.IsDisposed)
@@ -60,6 +144,7 @@ namespace ET
             return req;
 
         }
+        
         public async ETTask<UnityEngine.Object> LoadAssetAsync(string path, Type type)
         {
             if (n2req.ContainsKey(path))
@@ -88,47 +173,14 @@ namespace ET
             return req.asset;
 
         }
-        public void UnLoadAsset(string path)
-        {
-            if (n2req.ContainsKey(path))
-            {
-                n2req[path].Release();
-                n2req.Remove(path);
-                ET.Log.Debug("[Unload]" + path);
-            }
-           
-
-        }
+   
 
 
         public string[] GetAllAssetPaths()
         {
-            string[] rets = null;
-            var files = libx.Assets.GetAllAssetPaths();
-#if __CSharpLua__
+           
 
-            
-            /*
-            [[
-
-                    local ArrayString = System.Array(System.String)
-                    rets = ArrayString:new(files.Length)
-                    for i = 0, files.Length - 1 do
-                     rets[i] = files[i]
-                    end
-                   
-            ]]
-            */
-            
-#endif
-            //var len = ETCold.ArrayHelper.GetLength(files);
-            //for (int i = 0; i < len; i++)
-            //{
-            //   var str = ETCold.ArrayHelper.GetStringItem(files, i);
-
-            //}
-
-            return rets;
+            return libx.Assets.GetAllAssetPaths();
         }
 
 

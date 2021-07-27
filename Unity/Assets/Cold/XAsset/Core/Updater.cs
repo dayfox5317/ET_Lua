@@ -590,12 +590,10 @@ namespace libx
         {
             OnMessage("正在初始化");
 
-
+#if UNITY_EDITOR
             Assets.runtimeMode = !development;
-
-#if !UNITY_EDITOR
-            Assets.runtimeMode = true;
 #endif
+
             var init = Assets.Initialize();
             yield return init;
           
@@ -606,14 +604,14 @@ namespace libx
                 Assets.AddSearchPath("Assets/Bundles/Material");
                 Assets.AddSearchPath("Assets/Bundles/Other");
                 Assets.AddSearchPath("Assets/Bundles/Prefab");
-                Assets.AddSearchPath("Assets/Bundles/Scene");
+                Assets.AddSearchPath("Assets/Scenes");
                 Assets.AddSearchPath("Assets/Bundles/ScriptableObject");
                 Assets.AddSearchPath("Assets/Bundles/TextAsset");
                 Assets.AddSearchPath("Assets/Bundles/UI");
                 Assets.AddSearchPath("Assets/Bundles/Unit");
                 Assets.AddSearchPath("Assets/Bundles/Code");
 
-
+                Assets.AddSearchPath("Assets/Bundles/Config");
                 var ls = ETCold.LoadHelper.PreGetLuaScripts();
               //  var mb = MessageBox.Show("提示", "初始化脚本中");
                 for (int i = 0; i < ls.Length; i++)

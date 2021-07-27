@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-#if SERVER
+#if NOT_UNITY
 namespace ET
 #else
 namespace ETCold
@@ -85,7 +85,10 @@ namespace ETCold
 			bytes[offset] = (byte)(num & 0xff);
 			bytes[offset + 1] = (byte)((num & 0xff00) >> 8);
 		}
-		
+		public static void WriteTo(this byte[] bytes, int offset, long num)
+		{
+			bytes.WriteLongTo(offset, num);
+		}
 		public static unsafe void WriteLongTo(this byte[] bytes, int offset, long num)
 		{
 			byte* bPoint  = (byte*)&num;
@@ -105,8 +108,8 @@ namespace ETCold
 			{
 				str += $"{_b} ";
 			}
-			#if SERVER
-			Log.Debug(str);
+            #if NOT_UNITY
+            ET.Game.ILog.Debug(str);
 			#else
 			UnityEngine.Debug.Log(str);
 			#endif

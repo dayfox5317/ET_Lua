@@ -11,7 +11,6 @@ System.namespace("ET", function (namespace)
     local class, __ctor__
     __ctor__ = function (this)
       this.Services = HashSetAService()
-      this.Random = System.Random()
       ET.Entity.__ctor__(this)
     end
     class = {
@@ -25,7 +24,6 @@ System.namespace("ET", function (namespace)
         return {
           fields = {
             { "Instance", 0xE, class },
-            { "Random", 0x6, System.Random },
             { "Services", 0x6, System.HashSet(out.ET.AService) },
             { "ThreadSynchronizationContext", 0x6, out.ETCold.ThreadSynchronizationContext }
           },

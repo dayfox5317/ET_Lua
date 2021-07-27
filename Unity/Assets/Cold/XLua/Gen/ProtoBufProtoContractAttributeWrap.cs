@@ -21,7 +21,7 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(ProtoBuf.ProtoContractAttribute);
-			Utils.BeginObjectRegister(type, L, translator, 0, 22, 11, 11);
+			Utils.BeginObjectRegister(type, L, translator, 0, 24, 12, 12);
 			
             			
 						
@@ -36,6 +36,7 @@ namespace XLua.CSObjectWrap
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getAsReferenceDefault", _g_get_AsReferenceDefault);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getIsGroup", _g_get_IsGroup);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getEnumPassthru", _g_get_EnumPassthru);
+            Utils.RegisterFunc(L, Utils.METHOD_IDX, "getSurrogate", _g_get_Surrogate);
             
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "setName", _s_set_Name);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "setImplicitFirstTag", _s_set_ImplicitFirstTag);
@@ -48,6 +49,7 @@ namespace XLua.CSObjectWrap
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "setAsReferenceDefault", _s_set_AsReferenceDefault);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "setIsGroup", _s_set_IsGroup);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "setEnumPassthru", _s_set_EnumPassthru);
+            Utils.RegisterFunc(L, Utils.METHOD_IDX, "setSurrogate", _s_set_Surrogate);
             
 						
 			
@@ -63,6 +65,7 @@ namespace XLua.CSObjectWrap
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "AsReferenceDefault", _g_get_AsReferenceDefault);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "IsGroup", _g_get_IsGroup);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "EnumPassthru", _g_get_EnumPassthru);
+            Utils.RegisterFunc(L, Utils.GETTER_IDX, "Surrogate", _g_get_Surrogate);
             
 			Utils.RegisterFunc(L, Utils.SETTER_IDX, "Name", _s_set_Name);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "ImplicitFirstTag", _s_set_ImplicitFirstTag);
@@ -75,6 +78,7 @@ namespace XLua.CSObjectWrap
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "AsReferenceDefault", _s_set_AsReferenceDefault);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "IsGroup", _s_set_IsGroup);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "EnumPassthru", _s_set_EnumPassthru);
+            Utils.RegisterFunc(L, Utils.SETTER_IDX, "Surrogate", _s_set_Surrogate);
             
 			
 			
@@ -290,6 +294,20 @@ namespace XLua.CSObjectWrap
             return 1;
         }
         
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _g_get_Surrogate(RealStatePtr L)
+        {
+		    try {
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			
+                ProtoBuf.ProtoContractAttribute gen_to_be_invoked = (ProtoBuf.ProtoContractAttribute)translator.FastGetCSObj(L, 1);
+                translator.Push(L, gen_to_be_invoked.Surrogate);
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            return 1;
+        }
+        
         
         
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
@@ -451,6 +469,21 @@ namespace XLua.CSObjectWrap
 			
                 ProtoBuf.ProtoContractAttribute gen_to_be_invoked = (ProtoBuf.ProtoContractAttribute)translator.FastGetCSObj(L, 1);
                 gen_to_be_invoked.EnumPassthru = LuaAPI.lua_toboolean(L, 2);
+            
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            return 0;
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _s_set_Surrogate(RealStatePtr L)
+        {
+		    try {
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			
+                ProtoBuf.ProtoContractAttribute gen_to_be_invoked = (ProtoBuf.ProtoContractAttribute)translator.FastGetCSObj(L, 1);
+                gen_to_be_invoked.Surrogate = (System.Type)translator.GetObject(L, 2, typeof(System.Type));
             
             } catch(System.Exception gen_e) {
                 return LuaAPI.luaL_error(L, "c# exception:" + gen_e);

@@ -9,7 +9,7 @@
     <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>TRACE2_0;SERVER;NOT_CLIENT</DefineConstants>
+    <DefineConstants>TRACE2_0;SERVER;NOT_CLIENT;NOT_UNITY</DefineConstants>
     <OutputPath>..\..\Bin\</OutputPath>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -91,12 +91,12 @@
     </Compile>
 
     <Compile Include="..\..\Unity\Assets\Cold\ET\Module\Network\Circularbuffer.cs">
-      <Link>Module\NetworkTCP\Circularbuffer.cs</Link>
+      <Link>Module\Network\Circularbuffer.cs</Link>
     </Compile>
 
-    <Compile Include="..\..\Unity\Assets\Cold\ET\Module\Network\Kcp.cs">
+    <!--<Compile Include="..\..\Unity\Assets\Cold\ET\Module\Network\Kcp.cs">
       <Link>Module\Network\Kcp.cs</Link>
-    </Compile>
+    </Compile>-->
 
     <Compile Include="..\..\Unity\Assets\Editor\Helper\MongoHelper.cs">
       <Link>Base\MongoHelper.cs</Link>
@@ -221,10 +221,14 @@
   <ItemGroup>
     <PackageReference Include="CommandLineParser" Version="2.2.1" />
     <PackageReference Include="Microsoft.CodeAnalysis.Scripting" Version="2.9.0" />
+    <PackageReference Include="MongoDB.Bson" Version="2.13.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.13.0" />
     <PackageReference Include="NLog" Version="4.5.4" />
     <PackageReference Include="SharpZipLib" Version="1.0.0-alpha2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ThirdParty\Server.ThirdParty.csproj" />
+    <ProjectReference Include="..\..\ThirdParty\protobuf-net\protobuf-net.csproj" />
+    <ProjectReference Include="..\..\ThirdParty\ShareLib\ShareLib.csproj" />
+    <ProjectReference Include="..\..\ThirdParty\UnityEngine\UnityEngine.csproj" />
   </ItemGroup>
 </Project>

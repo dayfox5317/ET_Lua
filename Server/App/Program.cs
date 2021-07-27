@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading;
 using CommandLine;
+using ETCold;
 using NLog;
 
 namespace ET
@@ -13,15 +14,18 @@ namespace ET
 		{
 			// 异步方法全部会回掉到主线程
 			SynchronizationContext.SetSynchronizationContext(ThreadSynchronizationContext.Instance);
-			
+
 			try
-			{		
+			{
+				Game.ILog = new NLogger("Server");
+
+
 				Game.EventSystem.AddRangeType(typeof(Game).Assembly.GetTypes());
 				Game.EventSystem.AddRangeType(DllHelper.GetHotfixAssembly().GetTypes());
 				Game.EventSystem.Init();
 				ProtobufHelper.Init();
 				MongoHelper.Init();
-				
+
 				// 命令行参数
 				Options options = null;
 				Parser.Default.ParseArguments<Options>(args)
@@ -29,13 +33,14 @@ namespace ET
 						.WithParsed(o => { options = o; });
 
 				Game.Options = options;
-				
-				LogManager.Configuration.Variables["appIdFormat"] = $"{Game.Scene.Id:0000}";
-				
+				Game.ILog = new NLogger(Game.Options.AppType.ToString());
+
+				LogManager.Configuration.Variables["appIdFormat"] = $"{Game.Options.Process:000000}";
+
 				Log.Info($"server start........................ {Game.Scene.Id}");
 
 				Game.EventSystem.Publish(new EventType.AppStart());
-				
+
 				while (true)
 				{
 					try

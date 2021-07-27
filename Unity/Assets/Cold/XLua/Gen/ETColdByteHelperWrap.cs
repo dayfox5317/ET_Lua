@@ -272,6 +272,21 @@ namespace XLua.CSObjectWrap
                     
                     return 0;
                 }
+                if(gen_param_count == 3&& (LuaAPI.lua_isnil(L, 1) || LuaAPI.lua_type(L, 1) == LuaTypes.LUA_TSTRING)&& LuaTypes.LUA_TNUMBER == LuaAPI.lua_type(L, 2)&& (LuaTypes.LUA_TNUMBER == LuaAPI.lua_type(L, 3) || LuaAPI.lua_isint64(L, 3))) 
+                {
+                    byte[] _bytes = LuaAPI.lua_tobytes(L, 1);
+                    int _offset = LuaAPI.xlua_tointeger(L, 2);
+                    long _num = LuaAPI.lua_toint64(L, 3);
+                    
+                    ETCold.ByteHelper.WriteTo( 
+                        _bytes, 
+                        _offset, 
+                        _num );
+                    
+                    
+                    
+                    return 0;
+                }
                 
             } catch(System.Exception gen_e) {
                 return LuaAPI.luaL_error(L, "c# exception:" + gen_e);

@@ -43,6 +43,10 @@ namespace XLua
 				translator.RegisterPushAndGetAndUpdate<System.IO.SeekOrigin>(translator.PushSystemIOSeekOrigin, translator.Get, translator.UpdateSystemIOSeekOrigin);
 				translator.RegisterPushAndGetAndUpdate<libx.LoadState>(translator.PushlibxLoadState, translator.Get, translator.UpdatelibxLoadState);
 				translator.RegisterPushAndGetAndUpdate<libx.VerifyBy>(translator.PushlibxVerifyBy, translator.Get, translator.UpdatelibxVerifyBy);
+				translator.RegisterPushAndGetAndUpdate<Battlehub.UIControls.ItemDropAction>(translator.PushBattlehubUIControlsItemDropAction, translator.Get, translator.UpdateBattlehubUIControlsItemDropAction);
+				translator.RegisterPushAndGetAndUpdate<Battlehub.UIControls.VirtualizingMode>(translator.PushBattlehubUIControlsVirtualizingMode, translator.Get, translator.UpdateBattlehubUIControlsVirtualizingMode);
+				translator.RegisterPushAndGetAndUpdate<Battlehub.UIControls.DockPanels.RegionSplitType>(translator.PushBattlehubUIControlsDockPanelsRegionSplitType, translator.Get, translator.UpdateBattlehubUIControlsDockPanelsRegionSplitType);
+				translator.RegisterPushAndGetAndUpdate<Battlehub.Utils.KnownCursor>(translator.PushBattlehubUtilsKnownCursor, translator.Get, translator.UpdateBattlehubUtilsKnownCursor);
 				translator.RegisterPushAndGetAndUpdate<ETCold.DebugType>(translator.PushETColdDebugType, translator.Get, translator.UpdateETColdDebugType);
 				translator.RegisterPushAndGetAndUpdate<ETCold.UILayer>(translator.PushETColdUILayer, translator.Get, translator.UpdateETColdUILayer);
 				translator.RegisterPushAndGetAndUpdate<ET.AwaiterStatus>(translator.PushETAwaiterStatus, translator.Get, translator.UpdateETAwaiterStatus);
@@ -1364,6 +1368,342 @@ namespace XLua
                 if (!CopyByValue.Pack(buff, 0,  (int)val))
                 {
                     throw new Exception("pack fail for libx.VerifyBy ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int BattlehubUIControlsItemDropAction_TypeID = -1;
+		int BattlehubUIControlsItemDropAction_EnumRef = -1;
+        
+        public void PushBattlehubUIControlsItemDropAction(RealStatePtr L, Battlehub.UIControls.ItemDropAction val)
+        {
+            if (BattlehubUIControlsItemDropAction_TypeID == -1)
+            {
+			    bool is_first;
+                BattlehubUIControlsItemDropAction_TypeID = getTypeId(L, typeof(Battlehub.UIControls.ItemDropAction), out is_first);
+				
+				if (BattlehubUIControlsItemDropAction_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(Battlehub.UIControls.ItemDropAction));
+				    BattlehubUIControlsItemDropAction_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, BattlehubUIControlsItemDropAction_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, BattlehubUIControlsItemDropAction_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for Battlehub.UIControls.ItemDropAction ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, BattlehubUIControlsItemDropAction_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out Battlehub.UIControls.ItemDropAction val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != BattlehubUIControlsItemDropAction_TypeID)
+				{
+				    throw new Exception("invalid userdata for Battlehub.UIControls.ItemDropAction");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for Battlehub.UIControls.ItemDropAction");
+                }
+				val = (Battlehub.UIControls.ItemDropAction)e;
+                
+            }
+            else
+            {
+                val = (Battlehub.UIControls.ItemDropAction)objectCasters.GetCaster(typeof(Battlehub.UIControls.ItemDropAction))(L, index, null);
+            }
+        }
+		
+        public void UpdateBattlehubUIControlsItemDropAction(RealStatePtr L, int index, Battlehub.UIControls.ItemDropAction val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != BattlehubUIControlsItemDropAction_TypeID)
+				{
+				    throw new Exception("invalid userdata for Battlehub.UIControls.ItemDropAction");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for Battlehub.UIControls.ItemDropAction ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int BattlehubUIControlsVirtualizingMode_TypeID = -1;
+		int BattlehubUIControlsVirtualizingMode_EnumRef = -1;
+        
+        public void PushBattlehubUIControlsVirtualizingMode(RealStatePtr L, Battlehub.UIControls.VirtualizingMode val)
+        {
+            if (BattlehubUIControlsVirtualizingMode_TypeID == -1)
+            {
+			    bool is_first;
+                BattlehubUIControlsVirtualizingMode_TypeID = getTypeId(L, typeof(Battlehub.UIControls.VirtualizingMode), out is_first);
+				
+				if (BattlehubUIControlsVirtualizingMode_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(Battlehub.UIControls.VirtualizingMode));
+				    BattlehubUIControlsVirtualizingMode_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, BattlehubUIControlsVirtualizingMode_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, BattlehubUIControlsVirtualizingMode_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for Battlehub.UIControls.VirtualizingMode ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, BattlehubUIControlsVirtualizingMode_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out Battlehub.UIControls.VirtualizingMode val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != BattlehubUIControlsVirtualizingMode_TypeID)
+				{
+				    throw new Exception("invalid userdata for Battlehub.UIControls.VirtualizingMode");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for Battlehub.UIControls.VirtualizingMode");
+                }
+				val = (Battlehub.UIControls.VirtualizingMode)e;
+                
+            }
+            else
+            {
+                val = (Battlehub.UIControls.VirtualizingMode)objectCasters.GetCaster(typeof(Battlehub.UIControls.VirtualizingMode))(L, index, null);
+            }
+        }
+		
+        public void UpdateBattlehubUIControlsVirtualizingMode(RealStatePtr L, int index, Battlehub.UIControls.VirtualizingMode val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != BattlehubUIControlsVirtualizingMode_TypeID)
+				{
+				    throw new Exception("invalid userdata for Battlehub.UIControls.VirtualizingMode");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for Battlehub.UIControls.VirtualizingMode ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int BattlehubUIControlsDockPanelsRegionSplitType_TypeID = -1;
+		int BattlehubUIControlsDockPanelsRegionSplitType_EnumRef = -1;
+        
+        public void PushBattlehubUIControlsDockPanelsRegionSplitType(RealStatePtr L, Battlehub.UIControls.DockPanels.RegionSplitType val)
+        {
+            if (BattlehubUIControlsDockPanelsRegionSplitType_TypeID == -1)
+            {
+			    bool is_first;
+                BattlehubUIControlsDockPanelsRegionSplitType_TypeID = getTypeId(L, typeof(Battlehub.UIControls.DockPanels.RegionSplitType), out is_first);
+				
+				if (BattlehubUIControlsDockPanelsRegionSplitType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(Battlehub.UIControls.DockPanels.RegionSplitType));
+				    BattlehubUIControlsDockPanelsRegionSplitType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, BattlehubUIControlsDockPanelsRegionSplitType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, BattlehubUIControlsDockPanelsRegionSplitType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for Battlehub.UIControls.DockPanels.RegionSplitType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, BattlehubUIControlsDockPanelsRegionSplitType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out Battlehub.UIControls.DockPanels.RegionSplitType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != BattlehubUIControlsDockPanelsRegionSplitType_TypeID)
+				{
+				    throw new Exception("invalid userdata for Battlehub.UIControls.DockPanels.RegionSplitType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for Battlehub.UIControls.DockPanels.RegionSplitType");
+                }
+				val = (Battlehub.UIControls.DockPanels.RegionSplitType)e;
+                
+            }
+            else
+            {
+                val = (Battlehub.UIControls.DockPanels.RegionSplitType)objectCasters.GetCaster(typeof(Battlehub.UIControls.DockPanels.RegionSplitType))(L, index, null);
+            }
+        }
+		
+        public void UpdateBattlehubUIControlsDockPanelsRegionSplitType(RealStatePtr L, int index, Battlehub.UIControls.DockPanels.RegionSplitType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != BattlehubUIControlsDockPanelsRegionSplitType_TypeID)
+				{
+				    throw new Exception("invalid userdata for Battlehub.UIControls.DockPanels.RegionSplitType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for Battlehub.UIControls.DockPanels.RegionSplitType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int BattlehubUtilsKnownCursor_TypeID = -1;
+		int BattlehubUtilsKnownCursor_EnumRef = -1;
+        
+        public void PushBattlehubUtilsKnownCursor(RealStatePtr L, Battlehub.Utils.KnownCursor val)
+        {
+            if (BattlehubUtilsKnownCursor_TypeID == -1)
+            {
+			    bool is_first;
+                BattlehubUtilsKnownCursor_TypeID = getTypeId(L, typeof(Battlehub.Utils.KnownCursor), out is_first);
+				
+				if (BattlehubUtilsKnownCursor_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(Battlehub.Utils.KnownCursor));
+				    BattlehubUtilsKnownCursor_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, BattlehubUtilsKnownCursor_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, BattlehubUtilsKnownCursor_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for Battlehub.Utils.KnownCursor ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, BattlehubUtilsKnownCursor_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out Battlehub.Utils.KnownCursor val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != BattlehubUtilsKnownCursor_TypeID)
+				{
+				    throw new Exception("invalid userdata for Battlehub.Utils.KnownCursor");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for Battlehub.Utils.KnownCursor");
+                }
+				val = (Battlehub.Utils.KnownCursor)e;
+                
+            }
+            else
+            {
+                val = (Battlehub.Utils.KnownCursor)objectCasters.GetCaster(typeof(Battlehub.Utils.KnownCursor))(L, index, null);
+            }
+        }
+		
+        public void UpdateBattlehubUtilsKnownCursor(RealStatePtr L, int index, Battlehub.Utils.KnownCursor val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != BattlehubUtilsKnownCursor_TypeID)
+				{
+				    throw new Exception("invalid userdata for Battlehub.Utils.KnownCursor");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for Battlehub.Utils.KnownCursor ,value="+val);
                 }
             }
 			
@@ -4678,6 +5018,30 @@ namespace XLua
 				translator.PushlibxVerifyBy(L, array[index]);
 				return true;
 			}
+			else if (type == typeof(Battlehub.UIControls.ItemDropAction[]))
+			{
+			    Battlehub.UIControls.ItemDropAction[] array = obj as Battlehub.UIControls.ItemDropAction[];
+				translator.PushBattlehubUIControlsItemDropAction(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(Battlehub.UIControls.VirtualizingMode[]))
+			{
+			    Battlehub.UIControls.VirtualizingMode[] array = obj as Battlehub.UIControls.VirtualizingMode[];
+				translator.PushBattlehubUIControlsVirtualizingMode(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(Battlehub.UIControls.DockPanels.RegionSplitType[]))
+			{
+			    Battlehub.UIControls.DockPanels.RegionSplitType[] array = obj as Battlehub.UIControls.DockPanels.RegionSplitType[];
+				translator.PushBattlehubUIControlsDockPanelsRegionSplitType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(Battlehub.Utils.KnownCursor[]))
+			{
+			    Battlehub.Utils.KnownCursor[] array = obj as Battlehub.Utils.KnownCursor[];
+				translator.PushBattlehubUtilsKnownCursor(L, array[index]);
+				return true;
+			}
 			else if (type == typeof(ETCold.DebugType[]))
 			{
 			    ETCold.DebugType[] array = obj as ETCold.DebugType[];
@@ -5011,6 +5375,30 @@ namespace XLua
 			else if (type == typeof(libx.VerifyBy[]))
 			{
 			    libx.VerifyBy[] array = obj as libx.VerifyBy[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(Battlehub.UIControls.ItemDropAction[]))
+			{
+			    Battlehub.UIControls.ItemDropAction[] array = obj as Battlehub.UIControls.ItemDropAction[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(Battlehub.UIControls.VirtualizingMode[]))
+			{
+			    Battlehub.UIControls.VirtualizingMode[] array = obj as Battlehub.UIControls.VirtualizingMode[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(Battlehub.UIControls.DockPanels.RegionSplitType[]))
+			{
+			    Battlehub.UIControls.DockPanels.RegionSplitType[] array = obj as Battlehub.UIControls.DockPanels.RegionSplitType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(Battlehub.Utils.KnownCursor[]))
+			{
+			    Battlehub.Utils.KnownCursor[] array = obj as Battlehub.Utils.KnownCursor[];
 				translator.Get(L, obj_idx, out array[array_idx]);
 				return true;
 			}

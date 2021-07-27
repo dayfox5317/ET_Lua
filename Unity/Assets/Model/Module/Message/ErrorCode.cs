@@ -26,6 +26,10 @@ namespace ET
         public const int ERR_WebsocketMessageTooBig = 100219;
         public const int ERR_WebsocketRecvError = 100220;
 
+        public const int ERR_KcpReadNotSame = 100230;
+        public const int ERR_KcpSplitError = 100231;
+        public const int ERR_KcpSplitCountError = 100232;
+
         public const int ERR_ActorNoMailBoxComponent = 110003;
         public const int ERR_ActorLocationSenderTimeout = 110004;
         public const int ERR_PacketParserError = 110005;

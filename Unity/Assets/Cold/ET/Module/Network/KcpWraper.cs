@@ -9,6 +9,16 @@ namespace ETCold
     public class KcpWraper
     {
         public IntPtr Instance;
+
+        
+
+
+        public readonly static KcpWraper Empty = new KcpWraper();
+
+        private KcpWraper()
+        {
+            Instance = IntPtr.Zero;
+        }
         public KcpWraper(uint conn, uint usr)
         {
             Instance = Kcp.KcpCreate(conn, new IntPtr(usr));
@@ -33,9 +43,9 @@ namespace ETCold
             Kcp.KcpSetoutput(KcpOutput);
 
         }
-        public int Recv(byte[] data,int len)
+        public int Recv(byte[] data,int index,int len)
         {
-         return   Kcp.KcpRecv(Instance,data, len);
+         return   Kcp.KcpRecv(Instance,data,index, len);
 
         }
         public int Peeksize()
@@ -110,6 +120,10 @@ namespace ETCold
         public bool IsEnable()
         {
             return Instance != IntPtr.Zero;
+        }
+        public override int GetHashCode()
+        {
+            return Instance.GetHashCode();
         }
     }
 }

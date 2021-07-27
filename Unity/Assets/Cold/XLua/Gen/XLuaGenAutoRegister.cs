@@ -311,9 +311,6 @@ namespace XLua.CSObjectWrap
             translator.DelayWrapLoader(typeof(libx.Assets), libxAssetsWrap.__Register);
         
         
-            translator.DelayWrapLoader(typeof(ETCold.ArrayHelper), ETColdArrayHelperWrap.__Register);
-        
-        
             translator.DelayWrapLoader(typeof(UnityEngine.RectTransform), UnityEngineRectTransformWrap.__Register);
         
         
@@ -331,13 +328,13 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.UI.Button.ButtonClickedEvent), UnityEngineUIButtonButtonClickedEventWrap.__Register);
         
+        
+            translator.DelayWrapLoader(typeof(System.IO.SeekOrigin), SystemIOSeekOriginWrap.__Register);
+        
         }
         
         static void wrapInit2(LuaEnv luaenv, ObjectTranslator translator)
         {
-        
-            translator.DelayWrapLoader(typeof(System.IO.SeekOrigin), SystemIOSeekOriginWrap.__Register);
-        
         
             translator.DelayWrapLoader(typeof(System.Reflection.MemberInfo), SystemReflectionMemberInfoWrap.__Register);
         
@@ -346,6 +343,12 @@ namespace XLua.CSObjectWrap
         
         
             translator.DelayWrapLoader(typeof(ReferenceCollectorDataComparer), ReferenceCollectorDataComparerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(IMGUITester), IMGUITesterWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(TestLayout), TestLayoutWrap.__Register);
         
         
             translator.DelayWrapLoader(typeof(BuildinSceneLoader), BuildinSceneLoaderWrap.__Register);
@@ -441,10 +444,288 @@ namespace XLua.CSObjectWrap
             translator.DelayWrapLoader(typeof(libx.Utility), libxUtilityWrap.__Register);
         
         
-            translator.DelayWrapLoader(typeof(ETModel.IDisposableClassInheritanceAdaptor), ETModelIDisposableClassInheritanceAdaptorWrap.__Register);
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.CancelArgs), BattlehubUIControlsCancelArgsWrap.__Register);
         
         
-            translator.DelayWrapLoader(typeof(ETModel.ILAdapterAttribute), ETModelILAdapterAttributeWrap.__Register);
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.IUpdateFocusedHandler), BattlehubUIControlsIUpdateFocusedHandlerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.InputProvider), BattlehubUIControlsInputProviderWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.InputProviderAdapter), BattlehubUIControlsInputProviderAdapterWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ProgressBar), BattlehubUIControlsProgressBarWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.RectTransformChangeListener), BattlehubUIControlsRectTransformChangeListenerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.RectTransformExtensions), BattlehubUIControlsRectTransformExtensionsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.Repeater), BattlehubUIControlsRepeaterWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.TransformChildrenChangeListener), BattlehubUIControlsTransformChildrenChangeListenerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.UIStyle), BattlehubUIControlsUIStyleWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.UnityEventHelper), BattlehubUIControlsUnityEventHelperWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.UIMenuStyle), BattlehubUIControlsUIMenuStyleWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MultiToggle), BattlehubUIControlsMultiToggleWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MultiToggleLayer), BattlehubUIControlsMultiToggleLayerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MultiTogglePanel), BattlehubUIControlsMultiTogglePanelWrap.__Register);
+        
+        }
+        
+        static void wrapInit3(LuaEnv luaenv, ObjectTranslator translator)
+        {
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MultiselectDropdown), BattlehubUIControlsMultiselectDropdownWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ItemContainer), BattlehubUIControlsItemContainerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ItemDropAction), BattlehubUIControlsItemDropActionWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ItemDropMarker), BattlehubUIControlsItemDropMarkerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.SelectionChangedArgs), BattlehubUIControlsSelectionChangedArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ItemsCancelArgs), BattlehubUIControlsItemsCancelArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ItemsRemovedArgs), BattlehubUIControlsItemsRemovedArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ItemDataBindingArgs), BattlehubUIControlsItemDataBindingArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ItemArgs), BattlehubUIControlsItemArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ItemDropCancelArgs), BattlehubUIControlsItemDropCancelArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ItemDropArgs), BattlehubUIControlsItemDropArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ItemsControl), BattlehubUIControlsItemsControlWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.LayoutElementResizer), BattlehubUIControlsLayoutElementResizerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ListBox), BattlehubUIControlsListBoxWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ListBoxItem), BattlehubUIControlsListBoxItemWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ItemExpandingArgs), BattlehubUIControlsItemExpandingArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.TreeViewItemDataBindingArgs), BattlehubUIControlsTreeViewItemDataBindingArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.TreeView), BattlehubUIControlsTreeViewWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.TreeViewDropMarker), BattlehubUIControlsTreeViewDropMarkerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.TreeViewExpander), BattlehubUIControlsTreeViewExpanderWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ParentChangedEventArgs), BattlehubUIControlsParentChangedEventArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.TreeViewItem), BattlehubUIControlsTreeViewItemWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.PointerEnterExitListener), BattlehubUIControlsPointerEnterExitListenerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.VirtualizingItemContainer), BattlehubUIControlsVirtualizingItemContainerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.VirtualizingItemDropMarker), BattlehubUIControlsVirtualizingItemDropMarkerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.ItemContainerData), BattlehubUIControlsItemContainerDataWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.PointerEventArgs), BattlehubUIControlsPointerEventArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.VirtualizingItemsControl), BattlehubUIControlsVirtualizingItemsControlWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.VirtualizingItemsControlInputProvider), BattlehubUIControlsVirtualizingItemsControlInputProviderWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.VirtualizingMode), BattlehubUIControlsVirtualizingModeWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.VirtualizingScrollRect), BattlehubUIControlsVirtualizingScrollRectWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.VirtualizingItemExpandingArgs), BattlehubUIControlsVirtualizingItemExpandingArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.VirtualizingItemCollapsedArgs), BattlehubUIControlsVirtualizingItemCollapsedArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.VirtualizingTreeViewItemDataBindingArgs), BattlehubUIControlsVirtualizingTreeViewItemDataBindingArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.VirtualizingParentChangedEventArgs), BattlehubUIControlsVirtualizingParentChangedEventArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.TreeViewItemContainerData), BattlehubUIControlsTreeViewItemContainerDataWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.VirtualizingTreeView), BattlehubUIControlsVirtualizingTreeViewWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.VirtualizingTreeViewExtension), BattlehubUIControlsVirtualizingTreeViewExtensionWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.VirtualizingTreeViewDropMarker), BattlehubUIControlsVirtualizingTreeViewDropMarkerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.VirtualizingTreeViewItem), BattlehubUIControlsVirtualizingTreeViewItemWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.TooltipControl.ToggleTooltip), BattlehubUIControlsTooltipControlToggleTooltipWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.TooltipControl.Tooltip), BattlehubUIControlsTooltipControlTooltipWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.TooltipControl.TooltipLayer), BattlehubUIControlsTooltipControlTooltipLayerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.TooltipControl.TooltipUI), BattlehubUIControlsTooltipControlTooltipUIWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MenuControl.ContextMenuTrigger), BattlehubUIControlsMenuControlContextMenuTriggerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MenuControl.MainMenuButton), BattlehubUIControlsMenuControlMainMenuButtonWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MenuControl.MenuItemValidationArgs), BattlehubUIControlsMenuControlMenuItemValidationArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MenuControl.MenuItemValidationEvent), BattlehubUIControlsMenuControlMenuItemValidationEventWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MenuControl.MenuItemEvent), BattlehubUIControlsMenuControlMenuItemEventWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MenuControl.MenuItemInfo), BattlehubUIControlsMenuControlMenuItemInfoWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MenuControl.Menu), BattlehubUIControlsMenuControlMenuWrap.__Register);
+        
+        }
+        
+        static void wrapInit4(LuaEnv luaenv, ObjectTranslator translator)
+        {
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MenuControl.MenuDefinitionAttribute), BattlehubUIControlsMenuControlMenuDefinitionAttributeWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MenuControl.MenuCommandAttribute), BattlehubUIControlsMenuControlMenuCommandAttributeWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MenuControl.MenuCreator), BattlehubUIControlsMenuControlMenuCreatorWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MenuControl.MenuItem), BattlehubUIControlsMenuControlMenuItemWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.DockPanels.DepthMaskingBehavior), BattlehubUIControlsDockPanelsDepthMaskingBehaviorWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.DockPanels.DockPanel), BattlehubUIControlsDockPanelsDockPanelWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.DockPanels.EatDragEvent), BattlehubUIControlsDockPanelsEatDragEventWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.DockPanels.HeaderPanel), BattlehubUIControlsDockPanelsHeaderPanelWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.DockPanels.RegionSplitType), BattlehubUIControlsDockPanelsRegionSplitTypeWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.DockPanels.PersistentLayoutInfo), BattlehubUIControlsDockPanelsPersistentLayoutInfoWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.DockPanels.LayoutInfo), BattlehubUIControlsDockPanelsLayoutInfoWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.DockPanels.Region), BattlehubUIControlsDockPanelsRegionWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.DockPanels.RepeatButton), BattlehubUIControlsDockPanelsRepeatButtonWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.DockPanels.Resizer), BattlehubUIControlsDockPanelsResizerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.DockPanels.PointerEventArgs), BattlehubUIControlsDockPanelsPointerEventArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.DockPanels.ITabDelegate), BattlehubUIControlsDockPanelsITabDelegateWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.DockPanels.Tab), BattlehubUIControlsDockPanelsTabWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.DockPanels.TabPanelScroller), BattlehubUIControlsDockPanelsTabPanelScrollerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.Dialogs.DialogCancelArgs), BattlehubUIControlsDialogsDialogCancelArgsWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.Dialogs.Dialog), BattlehubUIControlsDialogsDialogWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.Dialogs.DialogManager), BattlehubUIControlsDialogsDialogManagerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.Common.DragAndDropListener), BattlehubUIControlsCommonDragAndDropListenerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.RTCommon.UGUIEventTrigger), BattlehubRTCommonUGUIEventTriggerWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.Utils.KnownCursor), BattlehubUtilsKnownCursorWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Battlehub.Utils.CursorHelper), BattlehubUtilsCursorHelperWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(ETCold.ABPathHelper), ETColdABPathHelperWrap.__Register);
         
         
             translator.DelayWrapLoader(typeof(ETCold.AnimatorHelper), ETColdAnimatorHelperWrap.__Register);
@@ -488,10 +769,6 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(ETCold.PathHelper), ETColdPathHelperWrap.__Register);
         
-        }
-        
-        static void wrapInit3(LuaEnv luaenv, ObjectTranslator translator)
-        {
         
             translator.DelayWrapLoader(typeof(ETCold.ProcessHelper), ETColdProcessHelperWrap.__Register);
         
@@ -503,21 +780,6 @@ namespace XLua.CSObjectWrap
         
         
             translator.DelayWrapLoader(typeof(ETCold.StringHelper), ETColdStringHelperWrap.__Register);
-        
-        
-            translator.DelayWrapLoader(typeof(ETCold.TypeHelper), ETColdTypeHelperWrap.__Register);
-        
-        
-            translator.DelayWrapLoader(typeof(ETCold.FastRawList), ETColdFastRawListWrap.__Register);
-        
-        
-            translator.DelayWrapLoader(typeof(ETCold.RawTypeInfo), ETColdRawTypeInfoWrap.__Register);
-        
-        
-            translator.DelayWrapLoader(typeof(ETCold.RawMemberInfo), ETColdRawMemberInfoWrap.__Register);
-        
-        
-            translator.DelayWrapLoader(typeof(ETCold.RawFieldInfo), ETColdRawFieldInfoWrap.__Register);
         
         
             translator.DelayWrapLoader(typeof(ETCold.ZipHelper), ETColdZipHelperWrap.__Register);
@@ -540,6 +802,10 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(ETCold.KcpWraper), ETColdKcpWraperWrap.__Register);
         
+        }
+        
+        static void wrapInit5(LuaEnv luaenv, ObjectTranslator translator)
+        {
         
             translator.DelayWrapLoader(typeof(ETCold.AssetBundleLoaderAsync), ETColdAssetBundleLoaderAsyncWrap.__Register);
         
@@ -604,37 +870,22 @@ namespace XLua.CSObjectWrap
             translator.DelayWrapLoader(typeof(ET.Object), ETObjectWrap.__Register);
         
         
-            translator.DelayWrapLoader(typeof(ET.Hotfix), ETHotfixWrap.__Register);
-        
-        
             translator.DelayWrapLoader(typeof(ET.CanvasConfig), ETCanvasConfigWrap.__Register);
         
         
             translator.DelayWrapLoader(typeof(ET.IStaticMethod), ETIStaticMethodWrap.__Register);
         
         
-            translator.DelayWrapLoader(typeof(ET.ILStaticMethod), ETILStaticMethodWrap.__Register);
-        
-        
             translator.DelayWrapLoader(typeof(ET.MonoStaticMethod), ETMonoStaticMethodWrap.__Register);
-        
-        
-            translator.DelayWrapLoader(typeof(ET.ILHelper), ETILHelperWrap.__Register);
-        
-        
-            translator.DelayWrapLoader(typeof(ET.IAsyncStateMachineClassInheritanceAdaptor), ETIAsyncStateMachineClassInheritanceAdaptorWrap.__Register);
         
         
             translator.DelayWrapLoader(typeof(MessageBox.EventId), MessageBoxEventIdWrap.__Register);
         
         
-            translator.DelayWrapLoader(typeof(ETModel.IDisposableClassInheritanceAdaptor.IDisposableAdaptor), ETModelIDisposableClassInheritanceAdaptorIDisposableAdaptorWrap.__Register);
+            translator.DelayWrapLoader(typeof(Battlehub.UIControls.MultiselectDropdown.OptionData), BattlehubUIControlsMultiselectDropdownOptionDataWrap.__Register);
         
         
             translator.DelayWrapLoader(typeof(ETCold.Define.GlobalProto), ETColdDefineGlobalProtoWrap.__Register);
-        
-        
-            translator.DelayWrapLoader(typeof(ET.IAsyncStateMachineClassInheritanceAdaptor.IAsyncStateMachineAdaptor), ETIAsyncStateMachineClassInheritanceAdaptorIAsyncStateMachineAdaptorWrap.__Register);
         
         
             translator.DelayWrapLoader(typeof(System.Net.Sockets.SocketAsyncOperation), SystemNetSocketsSocketAsyncOperationWrap.__Register);
@@ -645,10 +896,6 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.UI.AnimationTriggers), UnityEngineUIAnimationTriggersWrap.__Register);
         
-        }
-        
-        static void wrapInit4(LuaEnv luaenv, ObjectTranslator translator)
-        {
         
             translator.DelayWrapLoader(typeof(UnityEngine.UI.CanvasUpdate), UnityEngineUICanvasUpdateWrap.__Register);
         
@@ -712,6 +959,10 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.UI.HorizontalOrVerticalLayoutGroup), UnityEngineUIHorizontalOrVerticalLayoutGroupWrap.__Register);
         
+        }
+        
+        static void wrapInit6(LuaEnv luaenv, ObjectTranslator translator)
+        {
         
             translator.DelayWrapLoader(typeof(UnityEngine.UI.ILayoutElement), UnityEngineUIILayoutElementWrap.__Register);
         
@@ -802,10 +1053,6 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.UI.Shadow), UnityEngineUIShadowWrap.__Register);
         
-        }
-        
-        static void wrapInit5(LuaEnv luaenv, ObjectTranslator translator)
-        {
         
             translator.DelayWrapLoader(typeof(UnityEngine.EventSystems.AxisEventData), UnityEngineEventSystemsAxisEventDataWrap.__Register);
         
@@ -869,6 +1116,10 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.EventSystems.IMoveHandler), UnityEngineEventSystemsIMoveHandlerWrap.__Register);
         
+        }
+        
+        static void wrapInit7(LuaEnv luaenv, ObjectTranslator translator)
+        {
         
             translator.DelayWrapLoader(typeof(UnityEngine.EventSystems.ISubmitHandler), UnityEngineEventSystemsISubmitHandlerWrap.__Register);
         
@@ -959,10 +1210,6 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.UI.InputField.ContentType), UnityEngineUIInputFieldContentTypeWrap.__Register);
         
-        }
-        
-        static void wrapInit6(LuaEnv luaenv, ObjectTranslator translator)
-        {
         
             translator.DelayWrapLoader(typeof(UnityEngine.UI.InputField.InputType), UnityEngineUIInputFieldInputTypeWrap.__Register);
         
@@ -1026,6 +1273,10 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.UI.Slider.Direction), UnityEngineUISliderDirectionWrap.__Register);
         
+        }
+        
+        static void wrapInit8(LuaEnv luaenv, ObjectTranslator translator)
+        {
         
             translator.DelayWrapLoader(typeof(UnityEngine.UI.Slider.SliderEvent), UnityEngineUISliderSliderEventWrap.__Register);
         
@@ -1070,6 +1321,10 @@ namespace XLua.CSObjectWrap
             wrapInit5(luaenv, translator);
             
             wrapInit6(luaenv, translator);
+            
+            wrapInit7(luaenv, translator);
+            
+            wrapInit8(luaenv, translator);
             
             
             translator.AddInterfaceBridgeCreator(typeof(System.Collections.IEnumerator), SystemCollectionsIEnumeratorBridge.__Create);

@@ -21,20 +21,22 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(UnityEngine.AnimatorControllerParameter);
-			Utils.BeginObjectRegister(type, L, translator, 0, 12, 5, 4);
+			Utils.BeginObjectRegister(type, L, translator, 0, 14, 6, 5);
 			
             			
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "Equals", _m_Equals);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "GetHashCode", _m_GetHashCode);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "GetName", _m_GetName);
 						
+            Utils.RegisterFunc(L, Utils.METHOD_IDX, "getname", _g_get_name);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getnameHash", _g_get_nameHash);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "gettype", _g_get_type);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getdefaultFloat", _g_get_defaultFloat);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getdefaultInt", _g_get_defaultInt);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getdefaultBool", _g_get_defaultBool);
             
-			Utils.RegisterFunc(L, Utils.METHOD_IDX, "settype", _s_set_type);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "setname", _s_set_name);
+            Utils.RegisterFunc(L, Utils.METHOD_IDX, "settype", _s_set_type);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "setdefaultFloat", _s_set_defaultFloat);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "setdefaultInt", _s_set_defaultInt);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "setdefaultBool", _s_set_defaultBool);
@@ -42,13 +44,15 @@ namespace XLua.CSObjectWrap
 						
 			
 			
-			Utils.RegisterFunc(L, Utils.GETTER_IDX, "nameHash", _g_get_nameHash);
+			Utils.RegisterFunc(L, Utils.GETTER_IDX, "name", _g_get_name);
+            Utils.RegisterFunc(L, Utils.GETTER_IDX, "nameHash", _g_get_nameHash);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "type", _g_get_type);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "defaultFloat", _g_get_defaultFloat);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "defaultInt", _g_get_defaultInt);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "defaultBool", _g_get_defaultBool);
             
-			Utils.RegisterFunc(L, Utils.SETTER_IDX, "type", _s_set_type);
+			Utils.RegisterFunc(L, Utils.SETTER_IDX, "name", _s_set_name);
+            Utils.RegisterFunc(L, Utils.SETTER_IDX, "type", _s_set_type);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "defaultFloat", _s_set_defaultFloat);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "defaultInt", _s_set_defaultInt);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "defaultBool", _s_set_defaultBool);
@@ -201,6 +205,20 @@ namespace XLua.CSObjectWrap
         
         
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _g_get_name(RealStatePtr L)
+        {
+		    try {
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			
+                UnityEngine.AnimatorControllerParameter gen_to_be_invoked = (UnityEngine.AnimatorControllerParameter)translator.FastGetCSObj(L, 1);
+                LuaAPI.lua_pushstring(L, gen_to_be_invoked.name);
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            return 1;
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static int _g_get_nameHash(RealStatePtr L)
         {
 		    try {
@@ -271,6 +289,21 @@ namespace XLua.CSObjectWrap
         }
         
         
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _s_set_name(RealStatePtr L)
+        {
+		    try {
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			
+                UnityEngine.AnimatorControllerParameter gen_to_be_invoked = (UnityEngine.AnimatorControllerParameter)translator.FastGetCSObj(L, 1);
+                gen_to_be_invoked.name = LuaAPI.lua_tostring(L, 2);
+            
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            return 0;
+        }
         
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static int _s_set_type(RealStatePtr L)

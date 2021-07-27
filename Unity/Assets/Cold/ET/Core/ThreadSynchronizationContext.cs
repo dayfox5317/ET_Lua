@@ -4,7 +4,7 @@ using System.Threading;
 using ET;
 using UnityEngine;
 
-#if SERVER
+#if NOT_UNITY
 namespace ET
 #else
 namespace ETCold
@@ -41,8 +41,8 @@ namespace ETCold
                 }
                 catch (Exception e)
                 {
-                    #if SERVER
-                     Log.Error(e);
+#if NOT_UNITY
+                    Log.Error(e);
                     #else
                     Debug.LogError(e);
                     #endif
@@ -65,7 +65,7 @@ namespace ETCold
                 }
                 catch (Exception ex)
                 {
-                    #if SERVER
+                    #if NOT_UNITY
                      Log.Error(ex);
                     #else
                     Debug.LogError(ex);

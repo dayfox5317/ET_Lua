@@ -26,8 +26,10 @@ System.namespace("ET", function (namespace)
       if scene ~= nil then
         return scene
       end
-      local instanceIdStruct = System.new(ET.InstanceIdStruct, 3, class.Options.Process, 0)
-      scene = ET.EntitySceneFactory.CreateScene1(instanceIdStruct:ToLong(), 0, ET.SceneType.Process, "Process")
+      scene = ET.EntitySceneFactory.CreateScene1(ET.IdGenerater.Instance:GenerateInstanceId(), 0, ET.SceneType.Process, "Process")
+
+      --InstanceIdStruct instanceIdStruct = new InstanceIdStruct(Options.Process, 0);
+      --scene = EntitySceneFactory.CreateScene(instanceIdStruct.ToLong(), 0, SceneType.Process, "Process");
       return scene
     end
     getObjectPool = function ()
@@ -37,7 +39,6 @@ System.namespace("ET", function (namespace)
       return ET.IdGenerater.Instance
     end
     Update = function ()
-      -- ThreadSynchronizationContext.Update();
       getTimeInfo():Update()
       getEventSystem():Update()
     end
@@ -84,6 +85,7 @@ System.namespace("ET", function (namespace)
           },
           fields = {
             { "FrameFinishCallback", 0xE, System.List(System.Delegate) },
+            { "ILog", 0xE, out.ETCold.ILog },
             { "Options", 0xE, out.ET.Options },
             { "scene", 0x9, out.ET.Scene }
           },

@@ -7,11 +7,14 @@ System.import(function (out)
 end)
 System.namespace("ET", function (namespace)
   namespace.class("Log", function (namespace)
-    local ILog, CheckLogLevel, Trace, Debug, Info, TraceInfo, Warning, Error, 
-    Error1, Trace1, Warning1, Info1, Debug1, Error2, class, static
+    local getILog, CheckLogLevel, Trace, Debug, Info, TraceInfo, Warning, Error, 
+    Error1, Trace1, Warning1, Info1, Debug1, Error2, Console, Console1, 
+    class, static
     static = function (this)
-      ILog = ETCold.UnityLogger()
-      this.ILog = ILog
+      ET.Game.ILog = ETCold.UnityLogger()
+    end
+    getILog = function ()
+      return ET.Game.ILog
     end
     CheckLogLevel = function (level)
       if ET.Game.Options == nil then
@@ -33,7 +36,7 @@ System.namespace("ET", function (namespace)
       local info = debug.getinfo(2,"Sl");
                   msg = msg.."\r\n"..info.source..":"..info.currentline;
 
-      ILog:Trace(msg .. "\n" .. System.toString(st))
+      getILog():Trace(msg .. "\n" .. System.toString(st))
     end
     Debug = function (msg)
       if not CheckLogLevel(2 --[[Log.DebugLevel]]) then
@@ -47,7 +50,7 @@ System.namespace("ET", function (namespace)
       local info = debug.getinfo(2,"Sl");
                   msg = msg.."\r\n"..info.source..":"..info.currentline;
 
-      ILog:Debug(msg)
+      getILog():Debug(msg)
     end
     Info = function (msg)
       if not CheckLogLevel(3 --[[Log.InfoLevel]]) then
@@ -57,7 +60,7 @@ System.namespace("ET", function (namespace)
       local info = debug.getinfo(2,"Sl");
                   msg = msg.."\r\n"..info.source..":"..info.currentline;
 
-      ILog:Info(msg)
+      getILog():Info(msg)
     end
     TraceInfo = function (msg)
       if not CheckLogLevel(3 --[[Log.InfoLevel]]) then
@@ -68,7 +71,7 @@ System.namespace("ET", function (namespace)
       local info = debug.getinfo(2,"Sl");
                   msg = msg.."\r\n"..info.source..":"..info.currentline;
 
-      ILog:Trace(msg .. "\n" .. System.toString(st))
+      getILog():Trace(msg .. "\n" .. System.toString(st))
     end
     Warning = function (msg)
       if not CheckLogLevel(4 --[[Log.WarningLevel]]) then
@@ -79,7 +82,7 @@ System.namespace("ET", function (namespace)
       local info = debug.getinfo(2,"Sl");
                   msg = msg.."\r\n"..info.source..":"..info.currentline;
 
-      ILog:Warning(msg)
+      getILog():Warning(msg)
     end
     Error = function (msg)
       local default = class.ErrorCallback
@@ -88,7 +91,7 @@ System.namespace("ET", function (namespace)
       end
       local info = debug.getinfo(2,"Sl");
                   msg = msg.."\r\n"..info.source..":"..info.currentline;
-      ILog:Error(msg .. "")
+      getILog():Error(msg .. "")
     end
     Error1 = function (e)
       local msg = e:ToString()
@@ -100,7 +103,7 @@ System.namespace("ET", function (namespace)
       local info = debug.getinfo(2,"Sl");
                   msg = msg.."\r\n"..info.source..":"..info.currentline;
 
-      ILog:Error(msg)
+      getILog():Error(msg)
     end
     Trace1 = function (message, args)
       if not CheckLogLevel(1 --[[Log.TraceLevel]]) then
@@ -111,19 +114,19 @@ System.namespace("ET", function (namespace)
         default(message, args)
       end
       local st = System.StackTrace(1, true)
-      ILog:Trace(System.String.Format(message, args) .. "\n" .. System.toString(st))
+      getILog():Trace(System.String.Format(message, args) .. "\n" .. System.toString(st))
     end
     Warning1 = function (message, args)
       if not CheckLogLevel(4 --[[Log.WarningLevel]]) then
         return
       end
-      ILog:Warning(System.String.Format(message, args))
+      getILog():Warning(System.String.Format(message, args))
     end
     Info1 = function (message, args)
       if not CheckLogLevel(3 --[[Log.InfoLevel]]) then
         return
       end
-      ILog:Info(System.String.Format(message, args))
+      getILog():Info(System.String.Format(message, args))
     end
     Debug1 = function (message, args)
       if not CheckLogLevel(2 --[[Log.DebugLevel]]) then
@@ -133,7 +136,7 @@ System.namespace("ET", function (namespace)
       if default ~= nil then
         default(message, args)
       end
-      ILog:Debug(System.String.Format(message, args))
+      getILog():Debug(System.String.Format(message, args))
     end
     Error2 = function (message, args)
       local st = System.StackTrace(1, true)
@@ -142,9 +145,23 @@ System.namespace("ET", function (namespace)
       if default ~= nil then
         default(s)
       end
-      ILog:Error(s)
+      getILog():Error(s)
+    end
+    Console = function (message)
+      if ET.Game.Options.Console == 1 then
+        System.Console.WriteLine(message)
+      end
+      getILog():Debug(message)
+    end
+    Console1 = function (message, args)
+      local s = System.String.Format(message, args)
+      if ET.Game.Options.Console == 1 then
+        System.Console.WriteLine(s)
+      end
+      getILog():Debug(s)
     end
     class = {
+      getILog = getILog,
       CheckLogLevel = CheckLogLevel,
       Trace = Trace,
       Debug = Debug,
@@ -158,14 +175,18 @@ System.namespace("ET", function (namespace)
       Info1 = Info1,
       Debug1 = Debug1,
       Error2 = Error2,
+      Console = Console,
+      Console1 = Console1,
       static = static,
       __metadata__ = function (out)
         return {
           properties = {
-            { "ILog", 0xE, out.ETCold.ILog }
+            { "ILog", 0x20E, out.ETCold.ILog, getILog }
           },
           methods = {
             { "CheckLogLevel", 0x18E, CheckLogLevel, System.Int32, System.Boolean },
+            { "Console", 0x10E, Console, System.String },
+            { "Console", 0x20E, Console1, System.String, System.Array(System.Object) },
             { "Debug", 0x10E, Debug, System.String },
             { "Debug", 0x20E, Debug1, System.String, System.Array(System.Object) },
             { "Error", 0x10E, Error, System.String },

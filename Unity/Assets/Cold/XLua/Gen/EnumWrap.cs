@@ -886,6 +886,264 @@ namespace XLua.CSObjectWrap
 		}
 	}
     
+    public class BattlehubUIControlsItemDropActionWrap
+    {
+		public static void __Register(RealStatePtr L)
+        {
+		    ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+		    Utils.BeginObjectRegister(typeof(Battlehub.UIControls.ItemDropAction), L, translator, 0, 0, 0, 0);
+			Utils.EndObjectRegister(typeof(Battlehub.UIControls.ItemDropAction), L, translator, null, null, null, null, null);
+			
+			Utils.BeginClassRegister(typeof(Battlehub.UIControls.ItemDropAction), L, null, 5, 0, 0);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "None", Battlehub.UIControls.ItemDropAction.None);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "SetLastChild", Battlehub.UIControls.ItemDropAction.SetLastChild);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "SetPrevSibling", Battlehub.UIControls.ItemDropAction.SetPrevSibling);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "SetNextSibling", Battlehub.UIControls.ItemDropAction.SetNextSibling);
+            
+			Utils.RegisterFunc(L, Utils.CLS_IDX, "__CastFrom", __CastFrom);
+            
+            Utils.EndClassRegister(typeof(Battlehub.UIControls.ItemDropAction), L, translator);
+        }
+		
+		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int __CastFrom(RealStatePtr L)
+		{
+			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			LuaTypes lua_type = LuaAPI.lua_type(L, 1);
+            if (lua_type == LuaTypes.LUA_TNUMBER)
+            {
+                translator.PushBattlehubUIControlsItemDropAction(L, (Battlehub.UIControls.ItemDropAction)LuaAPI.xlua_tointeger(L, 1));
+            }
+			
+            else if(lua_type == LuaTypes.LUA_TSTRING)
+            {
+			    if (LuaAPI.xlua_is_eq_str(L, 1, "None"))
+                {
+                    translator.PushBattlehubUIControlsItemDropAction(L, Battlehub.UIControls.ItemDropAction.None);
+                }
+				else if (LuaAPI.xlua_is_eq_str(L, 1, "SetLastChild"))
+                {
+                    translator.PushBattlehubUIControlsItemDropAction(L, Battlehub.UIControls.ItemDropAction.SetLastChild);
+                }
+				else if (LuaAPI.xlua_is_eq_str(L, 1, "SetPrevSibling"))
+                {
+                    translator.PushBattlehubUIControlsItemDropAction(L, Battlehub.UIControls.ItemDropAction.SetPrevSibling);
+                }
+				else if (LuaAPI.xlua_is_eq_str(L, 1, "SetNextSibling"))
+                {
+                    translator.PushBattlehubUIControlsItemDropAction(L, Battlehub.UIControls.ItemDropAction.SetNextSibling);
+                }
+				else
+                {
+                    return LuaAPI.luaL_error(L, "invalid string for Battlehub.UIControls.ItemDropAction!");
+                }
+            }
+			
+            else
+            {
+                return LuaAPI.luaL_error(L, "invalid lua type for Battlehub.UIControls.ItemDropAction! Expect number or string, got + " + lua_type);
+            }
+
+            return 1;
+		}
+	}
+    
+    public class BattlehubUIControlsVirtualizingModeWrap
+    {
+		public static void __Register(RealStatePtr L)
+        {
+		    ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+		    Utils.BeginObjectRegister(typeof(Battlehub.UIControls.VirtualizingMode), L, translator, 0, 0, 0, 0);
+			Utils.EndObjectRegister(typeof(Battlehub.UIControls.VirtualizingMode), L, translator, null, null, null, null, null);
+			
+			Utils.BeginClassRegister(typeof(Battlehub.UIControls.VirtualizingMode), L, null, 3, 0, 0);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "Horizontal", Battlehub.UIControls.VirtualizingMode.Horizontal);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "Vertical", Battlehub.UIControls.VirtualizingMode.Vertical);
+            
+			Utils.RegisterFunc(L, Utils.CLS_IDX, "__CastFrom", __CastFrom);
+            
+            Utils.EndClassRegister(typeof(Battlehub.UIControls.VirtualizingMode), L, translator);
+        }
+		
+		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int __CastFrom(RealStatePtr L)
+		{
+			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			LuaTypes lua_type = LuaAPI.lua_type(L, 1);
+            if (lua_type == LuaTypes.LUA_TNUMBER)
+            {
+                translator.PushBattlehubUIControlsVirtualizingMode(L, (Battlehub.UIControls.VirtualizingMode)LuaAPI.xlua_tointeger(L, 1));
+            }
+			
+            else if(lua_type == LuaTypes.LUA_TSTRING)
+            {
+			    if (LuaAPI.xlua_is_eq_str(L, 1, "Horizontal"))
+                {
+                    translator.PushBattlehubUIControlsVirtualizingMode(L, Battlehub.UIControls.VirtualizingMode.Horizontal);
+                }
+				else if (LuaAPI.xlua_is_eq_str(L, 1, "Vertical"))
+                {
+                    translator.PushBattlehubUIControlsVirtualizingMode(L, Battlehub.UIControls.VirtualizingMode.Vertical);
+                }
+				else
+                {
+                    return LuaAPI.luaL_error(L, "invalid string for Battlehub.UIControls.VirtualizingMode!");
+                }
+            }
+			
+            else
+            {
+                return LuaAPI.luaL_error(L, "invalid lua type for Battlehub.UIControls.VirtualizingMode! Expect number or string, got + " + lua_type);
+            }
+
+            return 1;
+		}
+	}
+    
+    public class BattlehubUIControlsDockPanelsRegionSplitTypeWrap
+    {
+		public static void __Register(RealStatePtr L)
+        {
+		    ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+		    Utils.BeginObjectRegister(typeof(Battlehub.UIControls.DockPanels.RegionSplitType), L, translator, 0, 0, 0, 0);
+			Utils.EndObjectRegister(typeof(Battlehub.UIControls.DockPanels.RegionSplitType), L, translator, null, null, null, null, null);
+			
+			Utils.BeginClassRegister(typeof(Battlehub.UIControls.DockPanels.RegionSplitType), L, null, 6, 0, 0);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "None", Battlehub.UIControls.DockPanels.RegionSplitType.None);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "Left", Battlehub.UIControls.DockPanels.RegionSplitType.Left);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "Top", Battlehub.UIControls.DockPanels.RegionSplitType.Top);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "Right", Battlehub.UIControls.DockPanels.RegionSplitType.Right);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "Bottom", Battlehub.UIControls.DockPanels.RegionSplitType.Bottom);
+            
+			Utils.RegisterFunc(L, Utils.CLS_IDX, "__CastFrom", __CastFrom);
+            
+            Utils.EndClassRegister(typeof(Battlehub.UIControls.DockPanels.RegionSplitType), L, translator);
+        }
+		
+		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int __CastFrom(RealStatePtr L)
+		{
+			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			LuaTypes lua_type = LuaAPI.lua_type(L, 1);
+            if (lua_type == LuaTypes.LUA_TNUMBER)
+            {
+                translator.PushBattlehubUIControlsDockPanelsRegionSplitType(L, (Battlehub.UIControls.DockPanels.RegionSplitType)LuaAPI.xlua_tointeger(L, 1));
+            }
+			
+            else if(lua_type == LuaTypes.LUA_TSTRING)
+            {
+			    if (LuaAPI.xlua_is_eq_str(L, 1, "None"))
+                {
+                    translator.PushBattlehubUIControlsDockPanelsRegionSplitType(L, Battlehub.UIControls.DockPanels.RegionSplitType.None);
+                }
+				else if (LuaAPI.xlua_is_eq_str(L, 1, "Left"))
+                {
+                    translator.PushBattlehubUIControlsDockPanelsRegionSplitType(L, Battlehub.UIControls.DockPanels.RegionSplitType.Left);
+                }
+				else if (LuaAPI.xlua_is_eq_str(L, 1, "Top"))
+                {
+                    translator.PushBattlehubUIControlsDockPanelsRegionSplitType(L, Battlehub.UIControls.DockPanels.RegionSplitType.Top);
+                }
+				else if (LuaAPI.xlua_is_eq_str(L, 1, "Right"))
+                {
+                    translator.PushBattlehubUIControlsDockPanelsRegionSplitType(L, Battlehub.UIControls.DockPanels.RegionSplitType.Right);
+                }
+				else if (LuaAPI.xlua_is_eq_str(L, 1, "Bottom"))
+                {
+                    translator.PushBattlehubUIControlsDockPanelsRegionSplitType(L, Battlehub.UIControls.DockPanels.RegionSplitType.Bottom);
+                }
+				else
+                {
+                    return LuaAPI.luaL_error(L, "invalid string for Battlehub.UIControls.DockPanels.RegionSplitType!");
+                }
+            }
+			
+            else
+            {
+                return LuaAPI.luaL_error(L, "invalid lua type for Battlehub.UIControls.DockPanels.RegionSplitType! Expect number or string, got + " + lua_type);
+            }
+
+            return 1;
+		}
+	}
+    
+    public class BattlehubUtilsKnownCursorWrap
+    {
+		public static void __Register(RealStatePtr L)
+        {
+		    ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+		    Utils.BeginObjectRegister(typeof(Battlehub.Utils.KnownCursor), L, translator, 0, 0, 0, 0);
+			Utils.EndObjectRegister(typeof(Battlehub.Utils.KnownCursor), L, translator, null, null, null, null, null);
+			
+			Utils.BeginClassRegister(typeof(Battlehub.Utils.KnownCursor), L, null, 5, 0, 0);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "VResize", Battlehub.Utils.KnownCursor.VResize);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "HResize", Battlehub.Utils.KnownCursor.HResize);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "DropNotAllowed", Battlehub.Utils.KnownCursor.DropNotAllowed);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "DropAllowed", Battlehub.Utils.KnownCursor.DropAllowed);
+            
+			Utils.RegisterFunc(L, Utils.CLS_IDX, "__CastFrom", __CastFrom);
+            
+            Utils.EndClassRegister(typeof(Battlehub.Utils.KnownCursor), L, translator);
+        }
+		
+		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int __CastFrom(RealStatePtr L)
+		{
+			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			LuaTypes lua_type = LuaAPI.lua_type(L, 1);
+            if (lua_type == LuaTypes.LUA_TNUMBER)
+            {
+                translator.PushBattlehubUtilsKnownCursor(L, (Battlehub.Utils.KnownCursor)LuaAPI.xlua_tointeger(L, 1));
+            }
+			
+            else if(lua_type == LuaTypes.LUA_TSTRING)
+            {
+			    if (LuaAPI.xlua_is_eq_str(L, 1, "VResize"))
+                {
+                    translator.PushBattlehubUtilsKnownCursor(L, Battlehub.Utils.KnownCursor.VResize);
+                }
+				else if (LuaAPI.xlua_is_eq_str(L, 1, "HResize"))
+                {
+                    translator.PushBattlehubUtilsKnownCursor(L, Battlehub.Utils.KnownCursor.HResize);
+                }
+				else if (LuaAPI.xlua_is_eq_str(L, 1, "DropNotAllowed"))
+                {
+                    translator.PushBattlehubUtilsKnownCursor(L, Battlehub.Utils.KnownCursor.DropNotAllowed);
+                }
+				else if (LuaAPI.xlua_is_eq_str(L, 1, "DropAllowed"))
+                {
+                    translator.PushBattlehubUtilsKnownCursor(L, Battlehub.Utils.KnownCursor.DropAllowed);
+                }
+				else
+                {
+                    return LuaAPI.luaL_error(L, "invalid string for Battlehub.Utils.KnownCursor!");
+                }
+            }
+			
+            else
+            {
+                return LuaAPI.luaL_error(L, "invalid lua type for Battlehub.Utils.KnownCursor! Expect number or string, got + " + lua_type);
+            }
+
+            return 1;
+		}
+	}
+    
     public class ETColdDebugTypeWrap
     {
 		public static void __Register(RealStatePtr L)

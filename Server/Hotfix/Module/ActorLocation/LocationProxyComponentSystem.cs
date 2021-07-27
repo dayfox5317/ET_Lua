@@ -3,16 +3,16 @@
 namespace ET
 {
     [ObjectSystem]
-    public class LocationProxyComponentAwakeSystem: AwakeSystem<LocationProxyComponent>
+    public class LocationProxyComponentAwakeSystem : AwakeSystem<LocationProxyComponent>
     {
         public override void Awake(LocationProxyComponent self)
         {
             LocationProxyComponent.Instance = self;
         }
     }
-    
+
     [ObjectSystem]
-    public class LocationProxyComponentDestroySystem: DestroySystem<LocationProxyComponent>
+    public class LocationProxyComponentDestroySystem : DestroySystem<LocationProxyComponent>
     {
         public override void Destroy(LocationProxyComponent self)
         {
@@ -24,7 +24,7 @@ namespace ET
     {
         private static long GetLocationSceneId(long key)
         {
-            return StartSceneConfigCategory.Instance.LocationConfig.SceneId;
+            return StartSceneConfigCategory.Instance.LocationConfig.InstanceId;
         }
 
         public static async ETTask Add(this LocationProxyComponent self, long key, long instanceId)
@@ -64,7 +64,7 @@ namespace ET
 
             // location server配置到共享区，一个大战区可以配置N多个location server,这里暂时为1
             ObjectGetResponse response =
-                    (ObjectGetResponse) await MessageHelper.CallActor(GetLocationSceneId(key),
+                    (ObjectGetResponse)await MessageHelper.CallActor(GetLocationSceneId(key),
                         new ObjectGetRequest() { Key = key });
             return response.InstanceId;
         }

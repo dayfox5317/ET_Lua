@@ -114,7 +114,7 @@ namespace libx
                 },
                 new BuildRule()
                 {
-                    searchPath = hotUpdatePath+"Scene",
+                    searchPath = "Assets/Scenes",
                     searchPattern = rule.searchPatternScene,
                     nameBy = NameBy.Path
                 },

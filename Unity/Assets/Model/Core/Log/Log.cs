@@ -4,7 +4,7 @@ using System.IO;
 using System.Net;
 using ETCold;
 
-#if NOT_CLIENT
+#if NOT_UNITY
 using NLog;
 #endif
 
@@ -16,15 +16,13 @@ namespace ET
         public const int DebugLevel = 2;
         public const int InfoLevel = 3;
         public const int WarningLevel = 4;
-        
-        public static ILog ILog { get; }
+
+        public static ILog ILog => Game.ILog;
 
         static Log()
         {
-#if SERVER
-            ILog = new NLogger("Server");
-#else
-            ILog = new UnityLogger();
+#if !NOT_UNITY
+            Game.ILog = new UnityLogger();
 #endif
         }
 
@@ -203,6 +201,24 @@ namespace ET
             string s = string.Format(message, args) + '\n' + st;
             ErrorCallback?.Invoke(s);
             ILog.Error(s);
+        }
+        public static void Console(string message)
+        {
+            if (Game.Options.Console == 1)
+            {
+                System.Console.WriteLine(message);
+            }
+            ILog.Debug(message);
+        }
+
+        public static void Console(string message, params object[] args)
+        {
+            string s = string.Format(message, args);
+            if (Game.Options.Console == 1)
+            {
+                System.Console.WriteLine(s);
+            }
+            ILog.Debug(s);
         }
     }
 }

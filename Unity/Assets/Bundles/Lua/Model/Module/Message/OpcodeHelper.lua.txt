@@ -32,14 +32,14 @@ System.namespace("ET", function (namespace)
         return
       end
 
-      ET.Log.ILog:Debug("zone: {0} {1}", zone, message:ToString())
+      ET.Game.ILog:Debug("zone: {0} {1}", zone, message:ToString())
     end
     LogMsg1 = function (opcode, actorId, message)
       if not IsNeedLogMessage(opcode) then
         return
       end
 
-      ET.Log.ILog:Debug("actorId: {0} {1}", actorId, message:ToString())
+      ET.Game.ILog:Debug("actorId: {0} {1}", actorId, message:ToString())
     end
     return {
       IsOuterMessage = IsOuterMessage,

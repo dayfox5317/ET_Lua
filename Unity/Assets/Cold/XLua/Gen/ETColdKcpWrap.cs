@@ -305,11 +305,13 @@ namespace XLua.CSObjectWrap
                 {
                     System.IntPtr _kcp = LuaAPI.lua_touserdata(L, 1);
                     byte[] _buffer = LuaAPI.lua_tobytes(L, 2);
-                    int _len = LuaAPI.xlua_tointeger(L, 3);
+                    int _index = LuaAPI.xlua_tointeger(L, 3);
+                    int _len = LuaAPI.xlua_tointeger(L, 4);
                     
                         int gen_ret = ETCold.Kcp.KcpRecv( 
                         _kcp, 
                         _buffer, 
+                        _index, 
                         _len );
                         LuaAPI.xlua_pushinteger(L, gen_ret);
                     

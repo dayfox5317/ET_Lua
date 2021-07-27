@@ -23,7 +23,7 @@ namespace ETCold
             try
             {
          
-                Destroy(gameObject.GetComponent<libx.Updater>());
+                Destroy(UnityEngine.Object.FindObjectOfType<libx.Updater>());
                 LuaHelper.StartHotfix();
             }
             catch (Exception e)

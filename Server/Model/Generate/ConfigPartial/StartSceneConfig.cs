@@ -7,35 +7,37 @@ namespace ET
     public partial class StartSceneConfigCategory
     {
         public MultiMap<int, StartSceneConfig> Gates = new MultiMap<int, StartSceneConfig>();
-        
+
         public MultiMap<int, StartSceneConfig> ProcessScenes = new MultiMap<int, StartSceneConfig>();
-        
+
         public Dictionary<long, Dictionary<string, StartSceneConfig>> ZoneScenesByName = new Dictionary<long, Dictionary<string, StartSceneConfig>>();
 
         public StartSceneConfig LocationConfig;
-        
+
+        public List<StartSceneConfig> Robots = new List<StartSceneConfig>();
+
         public List<StartSceneConfig> GetByProcess(int process)
         {
             return this.ProcessScenes[process];
         }
-        
+
         public StartSceneConfig GetBySceneName(int zone, string name)
         {
             return this.ZoneScenesByName[zone][name];
         }
-        
+
         public override void EndInit()
         {
             foreach (StartSceneConfig startSceneConfig in this.GetAll().Values)
             {
                 this.ProcessScenes.Add(startSceneConfig.Process, startSceneConfig);
-                
+
                 if (!this.ZoneScenesByName.ContainsKey(startSceneConfig.Zone))
                 {
                     this.ZoneScenesByName.Add(startSceneConfig.Zone, new Dictionary<string, StartSceneConfig>());
                 }
                 this.ZoneScenesByName[startSceneConfig.Zone].Add(startSceneConfig.Name, startSceneConfig);
-                
+
                 switch (startSceneConfig.Type)
                 {
                     case SceneType.Gate:
@@ -44,15 +46,18 @@ namespace ET
                     case SceneType.Location:
                         this.LocationConfig = startSceneConfig;
                         break;
+                    case SceneType.Robot:
+                        this.Robots.Add(startSceneConfig);
+                        break;
                 }
             }
         }
     }
-    
-    public partial class StartSceneConfig: ISupportInitialize
+
+    public partial class StartSceneConfig : ISupportInitialize
     {
-        public long SceneId;
-        
+        public long InstanceId;
+
         public SceneType Type;
 
         public StartProcessConfig StartProcessConfig
@@ -62,7 +67,7 @@ namespace ET
                 return StartProcessConfigCategory.Instance.Get(this.Process);
             }
         }
-        
+
         public StartZoneConfig StartZoneConfig
         {
             get
@@ -110,8 +115,8 @@ namespace ET
         public override void EndInit()
         {
             this.Type = EnumHelper.FromString<SceneType>(this.SceneType);
-            InstanceIdStruct instanceIdStruct = new InstanceIdStruct(this.Process, (uint) this.Id);
-            this.SceneId = instanceIdStruct.ToLong();
+            InstanceIdStruct instanceIdStruct = new InstanceIdStruct(this.Process, (uint)this.Id);
+            this.InstanceId = instanceIdStruct.ToLong();
         }
     }
 }

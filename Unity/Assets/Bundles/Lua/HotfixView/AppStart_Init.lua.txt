@@ -2,10 +2,6 @@
 local System = System
 local ET = ET
 local ETEventType = ET.EventType
-local ET
-System.import(function (out)
-  ET = out.ET
-end)
 System.namespace("ET", function (namespace)
   namespace.class("AppStart_Init", function (namespace)
     local Run
@@ -18,8 +14,10 @@ System.namespace("ET", function (namespace)
         ET.Game.getScene():AddComponent2(ET.ResourcesComponent)
         --  ResourcesComponent.Instance.LoadBundle("config.unity3d");
         ET.Game.getScene():AddComponent2(ET.ConfigComponent)
-        ET.ConfigComponent.GetAllConfigBytes = ET.LoadConfigHelper.LoadAllConfigBytes
-        ET.ConfigComponentSystem.Load(ET.ConfigComponent.Instance)
+
+        ET.ConfigComponentSystem.LoadAsync(ET.ConfigComponent.Instance):Coroutine()
+
+
         --  ResourcesComponent.Instance.UnloadBundle("config.unity3d");
 
         ET.Game.getScene():AddComponent2(ET.OpcodeTypeComponent)
@@ -37,7 +35,7 @@ System.namespace("ET", function (namespace)
         --    Game.Scene.AddComponent<ImGuiRenderComponent>();
 
         --  ResourcesComponent.Instance.LoadBundle("unit.unity3d");
-        local zoneScene = async:Await(ET.SceneFactory.CreateZoneScene(1, "Process"))
+        local zoneScene = async:Await(ET.SceneFactory.CreateZoneScene(1, "Game", ET.Game.getScene()))
 
         local default = ETEventType.AppStartInitFinish()
         default.ZoneScene = zoneScene

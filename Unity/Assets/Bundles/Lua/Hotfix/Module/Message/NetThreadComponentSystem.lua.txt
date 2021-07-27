@@ -32,7 +32,6 @@ System.namespace("ET", function (namespace)
     }
   end)
 
-
   namespace.class("NetThreadComponentUpdateSystem", function (namespace)
     local LateUpdate
     LateUpdate = function (this, self)
@@ -57,7 +56,6 @@ System.namespace("ET", function (namespace)
       end
     }
   end)
-
 
   namespace.class("NetThreadComponentDestroySystem", function (namespace)
     local Destroy

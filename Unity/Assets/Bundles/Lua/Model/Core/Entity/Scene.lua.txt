@@ -11,11 +11,11 @@ System.namespace("ET", function (namespace)
     internal = function (this)
       this.SceneType = ET.SceneType.Process
     end
-    __ctor1__ = function (this, id, zone, sceneType, name)
+    __ctor1__ = function (this, instanceId, zone, sceneType, name)
       internal(this)
       System.base(this).__ctor__(this)
-      this.Id = id
-      this.InstanceId = id
+      this.Id = instanceId
+      this.InstanceId = instanceId
       this.Zone = zone
       this.SceneType = sceneType
       this.Name = name

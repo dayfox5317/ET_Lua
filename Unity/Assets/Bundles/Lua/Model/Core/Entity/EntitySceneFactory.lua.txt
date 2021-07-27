@@ -15,8 +15,8 @@ System.namespace("ET", function (namespace)
 
       return scene
     end
-    CreateScene1 = function (id, zone, sceneType, name, parent)
-      local scene = ET.Scene(id, zone, sceneType, name)
+    CreateScene1 = function (instanceId, zone, sceneType, name, parent)
+      local scene = ET.Scene(instanceId, zone, sceneType, name)
       scene:setIsRegister(true)
       scene:setParent1(parent)
       scene:setDomain1(scene)
@@ -24,8 +24,8 @@ System.namespace("ET", function (namespace)
       return scene
     end
     CreateScene2 = function (zone, sceneType, name, parent)
-      local id = ET.IdGenerater.Instance:GenerateId()
-      local scene = ET.Scene(id, zone, sceneType, name)
+      local instanceId = ET.IdGenerater.Instance:GenerateInstanceId()
+      local scene = ET.Scene(instanceId, zone, sceneType, name)
       scene:setIsRegister(true)
       scene:setParent1(parent)
       scene:setDomain1(scene)

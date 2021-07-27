@@ -21,7 +21,7 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(ProtoBuf.ProtoMemberAttribute);
-			Utils.BeginObjectRegister(type, L, translator, 0, 20, 10, 9);
+			Utils.BeginObjectRegister(type, L, translator, 0, 18, 9, 8);
 			
             			
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "CompareTo", _m_CompareTo);
@@ -29,7 +29,6 @@ namespace XLua.CSObjectWrap
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getName", _g_get_Name);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getDataFormat", _g_get_DataFormat);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getTag", _g_get_Tag);
-            Utils.RegisterFunc(L, Utils.METHOD_IDX, "getTypeName", _g_get_TypeName);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getIsRequired", _g_get_IsRequired);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getIsPacked", _g_get_IsPacked);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getOverwriteList", _g_get_OverwriteList);
@@ -39,7 +38,6 @@ namespace XLua.CSObjectWrap
             
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "setName", _s_set_Name);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "setDataFormat", _s_set_DataFormat);
-            Utils.RegisterFunc(L, Utils.METHOD_IDX, "setTypeName", _s_set_TypeName);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "setIsRequired", _s_set_IsRequired);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "setIsPacked", _s_set_IsPacked);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "setOverwriteList", _s_set_OverwriteList);
@@ -53,7 +51,6 @@ namespace XLua.CSObjectWrap
 			Utils.RegisterFunc(L, Utils.GETTER_IDX, "Name", _g_get_Name);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "DataFormat", _g_get_DataFormat);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "Tag", _g_get_Tag);
-            Utils.RegisterFunc(L, Utils.GETTER_IDX, "TypeName", _g_get_TypeName);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "IsRequired", _g_get_IsRequired);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "IsPacked", _g_get_IsPacked);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "OverwriteList", _g_get_OverwriteList);
@@ -63,7 +60,6 @@ namespace XLua.CSObjectWrap
             
 			Utils.RegisterFunc(L, Utils.SETTER_IDX, "Name", _s_set_Name);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "DataFormat", _s_set_DataFormat);
-            Utils.RegisterFunc(L, Utils.SETTER_IDX, "TypeName", _s_set_TypeName);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "IsRequired", _s_set_IsRequired);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "IsPacked", _s_set_IsPacked);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "OverwriteList", _s_set_OverwriteList);
@@ -221,20 +217,6 @@ namespace XLua.CSObjectWrap
         }
         
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-        static int _g_get_TypeName(RealStatePtr L)
-        {
-		    try {
-                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
-			
-                ProtoBuf.ProtoMemberAttribute gen_to_be_invoked = (ProtoBuf.ProtoMemberAttribute)translator.FastGetCSObj(L, 1);
-                LuaAPI.lua_pushstring(L, gen_to_be_invoked.TypeName);
-            } catch(System.Exception gen_e) {
-                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
-            }
-            return 1;
-        }
-        
-        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static int _g_get_IsRequired(RealStatePtr L)
         {
 		    try {
@@ -344,21 +326,6 @@ namespace XLua.CSObjectWrap
                 ProtoBuf.ProtoMemberAttribute gen_to_be_invoked = (ProtoBuf.ProtoMemberAttribute)translator.FastGetCSObj(L, 1);
                 ProtoBuf.DataFormat gen_value;translator.Get(L, 2, out gen_value);
 				gen_to_be_invoked.DataFormat = gen_value;
-            
-            } catch(System.Exception gen_e) {
-                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
-            }
-            return 0;
-        }
-        
-        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-        static int _s_set_TypeName(RealStatePtr L)
-        {
-		    try {
-                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
-			
-                ProtoBuf.ProtoMemberAttribute gen_to_be_invoked = (ProtoBuf.ProtoMemberAttribute)translator.FastGetCSObj(L, 1);
-                gen_to_be_invoked.TypeName = LuaAPI.lua_tostring(L, 2);
             
             } catch(System.Exception gen_e) {
                 return LuaAPI.luaL_error(L, "c# exception:" + gen_e);

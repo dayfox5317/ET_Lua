@@ -101,6 +101,7 @@ System.namespace("ET", function (namespace)
       __metadata__ = function (out)
         return {
           properties = {
+            { "AppName", 0x6, System.String, System.apply(out.ProtoBuf.ProtoMemberAttribute(4), function (default) default:setIsRequired(true) end) },
             { "Id", 0x106, System.Int32, getId, setId, System.apply(out.ProtoBuf.ProtoMemberAttribute(1), function (default) default:setIsRequired(true) end) },
             { "InnerPort", 0x6, System.Int32, System.apply(out.ProtoBuf.ProtoMemberAttribute(3), function (default) default:setIsRequired(true) end) },
             { "MachineId", 0x6, System.Int32, System.apply(out.ProtoBuf.ProtoMemberAttribute(2), function (default) default:setIsRequired(true) end) }

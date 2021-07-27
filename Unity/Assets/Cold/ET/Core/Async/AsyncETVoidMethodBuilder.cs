@@ -27,7 +27,7 @@ namespace ET
         [DebuggerHidden]
         public void SetException(Exception exception)
         {
-            #if SERVER
+            #if NOT_UNITY
              Log.Error(exception);
             #else
             UnityEngine.Debug.LogError(exception);

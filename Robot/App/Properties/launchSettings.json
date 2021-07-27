@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Robot.App": {
+      "commandName": "Project",
+      "commandLineArgs": " --AppType=Robot --Process=2 --Console=1"
+    }
+  }
+}

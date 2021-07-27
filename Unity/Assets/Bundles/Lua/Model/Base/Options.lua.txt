@@ -5,15 +5,17 @@ System.import(function (out)
   ET = out.ET
 end)
 System.namespace("ET", function (namespace)
-  namespace.enum("ServerType", function ()
+  namespace.enum("AppType", function ()
     local class
     class = {
-      Game = 0,
-      Watcher = 1,
+      Server = 0,
+      Robot = 1,
+      Watcher = 2,
       __metadata__ = function (out)
         return {
           fields = {
-            { "Game", 0xE, class },
+            { "Robot", 0xE, class },
+            { "Server", 0xE, class },
             { "Watcher", 0xE, class }
           },
           class = { 0x6 }
@@ -26,20 +28,22 @@ System.namespace("ET", function (namespace)
   namespace.class("Options", function (namespace)
     local __ctor__
     __ctor__ = function (this)
-      this.ServerType = ET.ServerType.Game
+      this.AppType = ET.AppType.Server
     end
     return {
       Process = 1,
       Develop = 0,
       LogLevel = 2,
+      Console = 0,
       __ctor__ = __ctor__,
       __metadata__ = function (out)
         return {
           properties = {
+            { "AppType", 0x6, out.ET.AppType },
+            { "Console", 0x6, System.Int32 },
             { "Develop", 0x6, System.Int32 },
             { "LogLevel", 0x6, System.Int32 },
-            { "Process", 0x6, System.Int32 },
-            { "ServerType", 0x6, out.ET.ServerType }
+            { "Process", 0x6, System.Int32 }
           },
           class = { 0x6 }
         }

@@ -36,8 +36,8 @@ namespace ET
             {
                 return;
             }
-            
-            Log.ILog.Debug("zone: {0} {1}", zone, message.ToString());
+
+            Game.ILog.Debug("zone: {0} {1}", zone, message.ToString());
         }
         
         public static void LogMsg(ushort opcode, long actorId, object message)
@@ -47,7 +47,7 @@ namespace ET
                 return;
             }
             
-            Log.ILog.Debug("actorId: {0} {1}", actorId, message.ToString());
+            Game.ILog.Debug("actorId: {0} {1}", actorId, message.ToString());
         }
     }
 }

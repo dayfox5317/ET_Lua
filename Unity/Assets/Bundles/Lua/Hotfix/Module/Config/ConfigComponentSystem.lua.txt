@@ -22,7 +22,7 @@ System.namespace("ET", function (namespace)
           methods = {
             { "Awake", 0x106, Awake, out.ET.ConfigComponent }
           },
-          class = { 0x6, out.ET.ObjectSystemAttribute() }
+          class = { 0x6 }
         }
       end
     }
@@ -45,24 +45,20 @@ System.namespace("ET", function (namespace)
           methods = {
             { "Destroy", 0x106, Destroy, out.ET.ConfigComponent }
           },
-          class = { 0x6, out.ET.ObjectSystemAttribute() }
+          class = { 0x6 }
         }
       end
     }
   end)
 
   namespace.class("ConfigComponentSystem", function (namespace)
-    local Load, LoadAsync, LoadOneInThread
-    Load = function (self)
-      self.AllConfig:Clear()
-      local types = ET.Game.getEventSystem():GetTypes(System.typeof(ET.ConfigAttribute))
+    local LoadOneConfig, LoadAsync, LoadOneInThread
+    LoadOneConfig = function (self, configType)
+      local oneConfigBytes = self.ConfigLoader:GetOneConfigBytes(configType:getName())
 
-      local configBytes = DictStringArrayByte()
-      ET.ConfigComponent.GetAllConfigBytes(types, configBytes)
+      local category = ET.ProtobufHelper.FromBytes(configType, oneConfigBytes, 0, #oneConfigBytes)
 
-      for _, type in System.each(types) do
-        LoadOneInThread(self, type, configBytes)
-      end
+      self.AllConfig:set(configType, category)
     end
     LoadAsync = function (self)
       return System.async(function (async, self)
@@ -70,7 +66,7 @@ System.namespace("ET", function (namespace)
         local types = ET.Game.getEventSystem():GetTypes(System.typeof(ET.ConfigAttribute))
 
         local configBytes = DictStringArrayByte()
-        ET.ConfigComponent.GetAllConfigBytes(types, configBytes)
+        self.ConfigLoader:GetAllConfigBytes(configBytes)
 
         local listTasks = ListTask()
 
@@ -80,7 +76,7 @@ System.namespace("ET", function (namespace)
           end)
           listTasks:Add(task)
         end
-
+        async:Await(ET.ETTask.getCompletedTask())
         async:await(System.Task.WhenAll(nil, listTasks:ToArray()))
       end, nil, self)
     end
@@ -95,13 +91,13 @@ System.namespace("ET", function (namespace)
       end
     end
     return {
-      Load = Load,
+      LoadOneConfig = LoadOneConfig,
       LoadAsync = LoadAsync,
       __metadata__ = function (out)
         return {
           methods = {
-            { "Load", 0x10E, Load, out.ET.ConfigComponent },
             { "LoadAsync", 0x18E, LoadAsync, out.ET.ConfigComponent, out.ET.ETTask },
+            { "LoadOneConfig", 0x20E, LoadOneConfig, out.ET.ConfigComponent, System.Type },
             { "LoadOneInThread", 0x309, LoadOneInThread, out.ET.ConfigComponent, System.Type, System.Dictionary(System.String, System.Array(System.Byte)) }
           },
           class = { 0xE }

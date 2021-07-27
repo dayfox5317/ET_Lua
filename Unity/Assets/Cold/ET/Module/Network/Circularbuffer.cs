@@ -44,7 +44,7 @@ namespace ETCold
                 }
                 if (c < 0)
                 {
-#if SERVER
+#if NOT_UNITY
 				   Log.Error($"CircularBuffer count < 0: {this.bufferQueue.Count}, { this.LastIndex}, { this.FirstIndex}");
 #else
 	                UnityEngine.Debug.LogError($"CircularBuffer count < 0: {this.bufferQueue.Count}, { this.LastIndex}, { this.FirstIndex}");

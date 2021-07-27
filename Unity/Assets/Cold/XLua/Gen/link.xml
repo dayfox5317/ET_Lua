@@ -110,6 +110,7 @@
 		<type fullname="ProtoBuf.ProtoIncludeAttribute" preserve="all"/>
 		<type fullname="ProtoBuf.ProtoPartialIgnoreAttribute" preserve="all"/>
 		<type fullname="ProtoBuf.ProtoPartialMemberAttribute" preserve="all"/>
+		<type fullname="ETCold.Kcp" preserve="all"/>
 		
 	</assembly>
 
@@ -135,7 +136,6 @@
 	<assembly fullname="Unity.Cold">
 	    <type fullname="System.Runtime.CompilerServices.AsyncMethodBuilderAttribute" preserve="all"/>
 		<type fullname="ETCold.UnityLogger" preserve="all"/>
-		<type fullname="ETCold.Kcp" preserve="all"/>
 		<type fullname="ETCold.ThreadSynchronizationContext" preserve="all"/>
 		<type fullname="ETCold.ComponentView" preserve="all"/>
 		<type fullname="ETCold.UILayerScript" preserve="all"/>
@@ -146,9 +146,10 @@
 		<type fullname="ReferenceCollector" preserve="all"/>
 		<type fullname="libx.AssetRequest" preserve="all"/>
 		<type fullname="libx.Assets" preserve="all"/>
-		<type fullname="ETCold.ArrayHelper" preserve="all"/>
 		<type fullname="ReferenceCollectorData" preserve="all"/>
 		<type fullname="ReferenceCollectorDataComparer" preserve="all"/>
+		<type fullname="IMGUITester" preserve="all"/>
+		<type fullname="TestLayout" preserve="all"/>
 		<type fullname="BuildinSceneLoader" preserve="all"/>
 		<type fullname="MessageBox" preserve="all"/>
 		<type fullname="libx.Download" preserve="all"/>
@@ -180,8 +181,98 @@
 		<type fullname="libx.UpdateScreen" preserve="all"/>
 		<type fullname="libx.StringExtension" preserve="all"/>
 		<type fullname="libx.Utility" preserve="all"/>
-		<type fullname="ETModel.IDisposableClassInheritanceAdaptor" preserve="all"/>
-		<type fullname="ETModel.ILAdapterAttribute" preserve="all"/>
+		<type fullname="Battlehub.UIControls.CancelArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.IUpdateFocusedHandler" preserve="all"/>
+		<type fullname="Battlehub.UIControls.InputProvider" preserve="all"/>
+		<type fullname="Battlehub.UIControls.InputProviderAdapter" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ProgressBar" preserve="all"/>
+		<type fullname="Battlehub.UIControls.RectTransformChangeListener" preserve="all"/>
+		<type fullname="Battlehub.UIControls.RectTransformExtensions" preserve="all"/>
+		<type fullname="Battlehub.UIControls.Repeater" preserve="all"/>
+		<type fullname="Battlehub.UIControls.TransformChildrenChangeListener" preserve="all"/>
+		<type fullname="Battlehub.UIControls.UIStyle" preserve="all"/>
+		<type fullname="Battlehub.UIControls.UnityEventHelper" preserve="all"/>
+		<type fullname="Battlehub.UIControls.UIMenuStyle" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MultiToggle" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MultiToggleLayer" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MultiTogglePanel" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MultiselectDropdown" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ItemContainer" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ItemDropAction" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ItemDropMarker" preserve="all"/>
+		<type fullname="Battlehub.UIControls.SelectionChangedArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ItemsCancelArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ItemsRemovedArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ItemDataBindingArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ItemArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ItemDropCancelArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ItemDropArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ItemsControl" preserve="all"/>
+		<type fullname="Battlehub.UIControls.LayoutElementResizer" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ListBox" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ListBoxItem" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ItemExpandingArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.TreeViewItemDataBindingArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.TreeView" preserve="all"/>
+		<type fullname="Battlehub.UIControls.TreeViewDropMarker" preserve="all"/>
+		<type fullname="Battlehub.UIControls.TreeViewExpander" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ParentChangedEventArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.TreeViewItem" preserve="all"/>
+		<type fullname="Battlehub.UIControls.PointerEnterExitListener" preserve="all"/>
+		<type fullname="Battlehub.UIControls.VirtualizingItemContainer" preserve="all"/>
+		<type fullname="Battlehub.UIControls.VirtualizingItemDropMarker" preserve="all"/>
+		<type fullname="Battlehub.UIControls.ItemContainerData" preserve="all"/>
+		<type fullname="Battlehub.UIControls.PointerEventArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.VirtualizingItemsControl" preserve="all"/>
+		<type fullname="Battlehub.UIControls.VirtualizingItemsControlInputProvider" preserve="all"/>
+		<type fullname="Battlehub.UIControls.VirtualizingMode" preserve="all"/>
+		<type fullname="Battlehub.UIControls.VirtualizingScrollRect" preserve="all"/>
+		<type fullname="Battlehub.UIControls.VirtualizingItemExpandingArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.VirtualizingItemCollapsedArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.VirtualizingTreeViewItemDataBindingArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.VirtualizingParentChangedEventArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.TreeViewItemContainerData" preserve="all"/>
+		<type fullname="Battlehub.UIControls.VirtualizingTreeView" preserve="all"/>
+		<type fullname="Battlehub.UIControls.VirtualizingTreeViewExtension" preserve="all"/>
+		<type fullname="Battlehub.UIControls.VirtualizingTreeViewDropMarker" preserve="all"/>
+		<type fullname="Battlehub.UIControls.VirtualizingTreeViewItem" preserve="all"/>
+		<type fullname="Battlehub.UIControls.TooltipControl.ToggleTooltip" preserve="all"/>
+		<type fullname="Battlehub.UIControls.TooltipControl.Tooltip" preserve="all"/>
+		<type fullname="Battlehub.UIControls.TooltipControl.TooltipLayer" preserve="all"/>
+		<type fullname="Battlehub.UIControls.TooltipControl.TooltipUI" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MenuControl.ContextMenuTrigger" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MenuControl.MainMenuButton" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MenuControl.MenuItemValidationArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MenuControl.MenuItemValidationEvent" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MenuControl.MenuItemEvent" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MenuControl.MenuItemInfo" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MenuControl.Menu" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MenuControl.MenuDefinitionAttribute" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MenuControl.MenuCommandAttribute" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MenuControl.MenuCreator" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MenuControl.MenuItem" preserve="all"/>
+		<type fullname="Battlehub.UIControls.DockPanels.DepthMaskingBehavior" preserve="all"/>
+		<type fullname="Battlehub.UIControls.DockPanels.DockPanel" preserve="all"/>
+		<type fullname="Battlehub.UIControls.DockPanels.EatDragEvent" preserve="all"/>
+		<type fullname="Battlehub.UIControls.DockPanels.HeaderPanel" preserve="all"/>
+		<type fullname="Battlehub.UIControls.DockPanels.RegionSplitType" preserve="all"/>
+		<type fullname="Battlehub.UIControls.DockPanels.PersistentLayoutInfo" preserve="all"/>
+		<type fullname="Battlehub.UIControls.DockPanels.LayoutInfo" preserve="all"/>
+		<type fullname="Battlehub.UIControls.DockPanels.Region" preserve="all"/>
+		<type fullname="Battlehub.UIControls.DockPanels.RepeatButton" preserve="all"/>
+		<type fullname="Battlehub.UIControls.DockPanels.Resizer" preserve="all"/>
+		<type fullname="Battlehub.UIControls.DockPanels.PointerEventArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.DockPanels.ITabDelegate" preserve="all"/>
+		<type fullname="Battlehub.UIControls.DockPanels.Tab" preserve="all"/>
+		<type fullname="Battlehub.UIControls.DockPanels.TabPanelScroller" preserve="all"/>
+		<type fullname="Battlehub.UIControls.Dialogs.DialogCancelArgs" preserve="all"/>
+		<type fullname="Battlehub.UIControls.Dialogs.Dialog" preserve="all"/>
+		<type fullname="Battlehub.UIControls.Dialogs.DialogManager" preserve="all"/>
+		<type fullname="Battlehub.UIControls.Common.DragAndDropListener" preserve="all"/>
+		<type fullname="Battlehub.RTCommon.UGUIEventTrigger" preserve="all"/>
+		<type fullname="Battlehub.Utils.KnownCursor" preserve="all"/>
+		<type fullname="Battlehub.Utils.CursorHelper" preserve="all"/>
+		<type fullname="ETCold.ABPathHelper" preserve="all"/>
 		<type fullname="ETCold.AnimatorHelper" preserve="all"/>
 		<type fullname="ETCold.AssetDatabaseHelper" preserve="all"/>
 		<type fullname="ETCold.CalLuaHelper" preserve="all"/>
@@ -200,11 +291,6 @@
 		<type fullname="ETCold.RandomHelper" preserve="all"/>
 		<type fullname="ETCold.ResourcesHelper" preserve="all"/>
 		<type fullname="ETCold.StringHelper" preserve="all"/>
-		<type fullname="ETCold.TypeHelper" preserve="all"/>
-		<type fullname="ETCold.FastRawList" preserve="all"/>
-		<type fullname="ETCold.RawTypeInfo" preserve="all"/>
-		<type fullname="ETCold.RawMemberInfo" preserve="all"/>
-		<type fullname="ETCold.RawFieldInfo" preserve="all"/>
 		<type fullname="ETCold.ZipHelper" preserve="all"/>
 		<type fullname="ETCold.FileLogger" preserve="all"/>
 		<type fullname="ETCold.ILog" preserve="all"/>
@@ -233,17 +319,12 @@
 		<type fullname="ET.AwaiterStatus" preserve="all"/>
 		<type fullname="ET.ISupportInitialize" preserve="all"/>
 		<type fullname="ET.Object" preserve="all"/>
-		<type fullname="ET.Hotfix" preserve="all"/>
 		<type fullname="ET.CanvasConfig" preserve="all"/>
 		<type fullname="ET.IStaticMethod" preserve="all"/>
-		<type fullname="ET.ILStaticMethod" preserve="all"/>
 		<type fullname="ET.MonoStaticMethod" preserve="all"/>
-		<type fullname="ET.ILHelper" preserve="all"/>
-		<type fullname="ET.IAsyncStateMachineClassInheritanceAdaptor" preserve="all"/>
 		<type fullname="MessageBox+EventId" preserve="all"/>
-		<type fullname="ETModel.IDisposableClassInheritanceAdaptor+IDisposableAdaptor" preserve="all"/>
+		<type fullname="Battlehub.UIControls.MultiselectDropdown+OptionData" preserve="all"/>
 		<type fullname="ETCold.Define+GlobalProto" preserve="all"/>
-		<type fullname="ET.IAsyncStateMachineClassInheritanceAdaptor+IAsyncStateMachineAdaptor" preserve="all"/>
 		
 	</assembly>
 

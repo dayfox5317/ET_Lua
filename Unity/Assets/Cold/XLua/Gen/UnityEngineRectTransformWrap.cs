@@ -10,7 +10,7 @@ using LuaCSFunction = XLua.LuaDLL.lua_CSFunction;
 
 using XLua;
 using System.Collections.Generic;
-
+using Battlehub.UIControls;
 
 namespace XLua.CSObjectWrap
 {
@@ -21,7 +21,7 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(UnityEngine.RectTransform);
-			Utils.BeginObjectRegister(type, L, translator, 0, 22, 9, 8);
+			Utils.BeginObjectRegister(type, L, translator, 0, 23, 9, 8);
 			
             			
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "ForceUpdateRectTransforms", _m_ForceUpdateRectTransforms);
@@ -29,6 +29,7 @@ namespace XLua.CSObjectWrap
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "GetWorldCorners", _m_GetWorldCorners);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "SetInsetAndSizeFromParentEdge", _m_SetInsetAndSizeFromParentEdge);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "SetSizeWithCurrentAnchors", _m_SetSizeWithCurrentAnchors);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "Stretch", _m_Stretch);
 						
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getrect", _g_get_rect);
             Utils.RegisterFunc(L, Utils.METHOD_IDX, "getanchorMin", _g_get_anchorMin);
@@ -268,6 +269,34 @@ namespace XLua.CSObjectWrap
                     gen_to_be_invoked.SetSizeWithCurrentAnchors( 
                         _axis, 
                         _size );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_Stretch(RealStatePtr L)
+        {
+		    try {
+			
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                UnityEngine.RectTransform gen_to_be_invoked = (UnityEngine.RectTransform)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    UnityEngine.RectTransform _rt = (UnityEngine.RectTransform)translator.GetObject(L, 1, typeof(UnityEngine.RectTransform));
+                    
+                    gen_to_be_invoked.Stretch(  );
                     
                     
                     

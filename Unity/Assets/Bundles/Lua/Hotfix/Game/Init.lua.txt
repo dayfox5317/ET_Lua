@@ -8,42 +8,12 @@ System.import(function (out)
   ET = out.ET
 end)
 System.namespace("ET", function (namespace)
-  namespace.class("TestWrap", function (namespace)
-    local InvokeWrap, class, __ctor__
-    __ctor__ = function (this, str, b)
-      ET.Log.Warning(str:GetType():getFullName())
-      ET.Log.Warning(str .. b)
-    end
-    InvokeWrap = function (a, b, c)
-      ET.Log.Debug(a .. b .. c .. "local A =" .. System.toString(class.A))
-    end
-    class = {
-      InvokeWrap = InvokeWrap,
-      __ctor__ = __ctor__,
-      __metadata__ = function (out)
-        return {
-          fields = {
-            { "A", 0xE, System.Array(System.Int32) },
-            { "B", 0x6, System.String },
-            { "C", 0x6, System.Array(System.String) },
-            { "D", 0x6, System.List(System.String) }
-          },
-          methods = {
-            { ".ctor", 0x206, nil, System.String, System.String },
-            { "InvokeWrap", 0x30E, InvokeWrap, System.String, System.Int32, System.String }
-          },
-          class = { 0x6 }
-        }
-      end
-    }
-    return class
-  end)
   namespace.class("Init", function (namespace)
     local Start, Update, LateUpdate, OnApplicationQuit
     Start = function ()
       System.try(function ()
         ET.TypeHelper.Init()
-        --	Game.EventSystem.Add(ET.Hotfix.Instance.GetHotfixTypes());
+
         ET.Game.getEventSystem():Init()
         ET.Log.Info("开始热更")
 
@@ -54,29 +24,7 @@ System.namespace("ET", function (namespace)
 
         ET.ProtobufHelper.Init()
 
-        --var act = typeof(TestWrap);
 
-        --ArrayHelper.Test(act);
-
-        -- var go = new UnityEngine.GameObject("te");
-
-
-        -- var  pts = ETCold.TypeHelper.GetMembers(typeof(UnityEngine.GameObject));
-        -- for (int i = 0; i < ArrayHelper.GetLength(pts); i++)
-        -- {
-        -- Log.Info("Field->"+ ArrayHelper.GetMemberItem(pts,i).Name);
-        -- }
-        -- var pts2 = (typeof(ET.Game)).GetFields();
-        -- for (int i = 0; i < pts2.Length; i++)
-        -- {
-        -- Log.Info("Field 2 ->" +pts2[i].FieldType);
-        -- }
-        -- Log.Error("IsArray->" + pts.GetType().IsArray);
-        -- Log.Error("Len->" + pts.Length);
-        -- Log.Error("Len->" + pts[0].Name);
-
-        --	ETCold.TypeHelper.TestT(typeof(Game));
-        --ArrayHelper.Test(Game.EventSystem);
 
         ET.Game.Options = ET.Options()
 

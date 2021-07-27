@@ -5,6 +5,7 @@ local libx = libx
 local UnityEngine = UnityEngine
 local ETTask_1Object = ET.ETTask_1(UnityEngine.Object)
 local DictStringAssetRequest = System.Dictionary(System.String, libx.AssetRequest)
+local ETTask_1SceneAssetRequest = ET.ETTask_1(libx.SceneAssetRequest)
 local ET
 System.import(function (out)
   ET = out.ET
@@ -34,8 +35,8 @@ System.namespace("ET", function (namespace)
   end)
 
   namespace.class("ResourcesComponent", function (namespace)
-    local Awake, Dispose, LoadSceneAsync, LoadAssetAsync, LoadAsset, UnLoadAsset, GetAllAssetPaths, class, 
-    __ctor__
+    local Awake, LoadAsset, LoadAssetAsync, UnLoadAsset, LoadSceneAsync, UnLoadScene, Dispose, LoadSceneAsync1, 
+    LoadAssetAsync1, LoadAsset1, GetAllAssetPaths, class, __ctor__
     __ctor__ = function (this)
       ET.Entity.__ctor__(this)
     end
@@ -44,6 +45,69 @@ System.namespace("ET", function (namespace)
 
 
       class.Instance = this
+    end
+    -- <summary>
+    -- 加载资源，path需要是全路径
+    -- </summary>
+    -- <param name="path"></param>
+    -- <typeparam name="T"></typeparam>
+    -- <returns></returns>
+    LoadAsset = function (this, path, T)
+      local assetRequest = libx.Assets.LoadAsset(path, System.typeof(T))
+      return System.cast(T, assetRequest:getasset())
+    end
+    -- <summary>
+    -- 异步加载资源，path需要是全路径
+    -- </summary>
+    -- <param name="path"></param>
+    -- <typeparam name="T"></typeparam>
+    -- <returns></returns>
+    LoadAssetAsync = function (this, path, T)
+      local tcs = ET.ETTask_1(T).Create(false)
+      local assetRequest = libx.Assets.LoadAssetAsync(path, System.typeof(T))
+      this.n2req:set(path, assetRequest)
+      --如果已经加载完成则直接返回结果（适用于编辑器模式下的异步写法和重复加载）,下面的API如果有需求可按照此格式添加相关代码
+      if assetRequest:getisDone() then
+        tcs:SetResult(System.cast(T, assetRequest:getasset()))
+        return tcs
+      end
+
+      --+=委托链，否则会导致前面完成委托被覆盖
+      assetRequest.completed = assetRequest.completed + function (arq)
+        tcs:SetResult(System.cast(T, arq:getasset()))
+      end
+      return tcs
+    end
+    -- <summary>
+    -- 卸载资源，path需要是全路径
+    -- </summary>
+    -- <param name="path"></param>
+    UnLoadAsset = function (this, path)
+      if this.n2req:ContainsKey(path) then
+        this.n2req:get(path):Release()
+        this.n2req:RemoveKey(path)
+        ET.Log.Debug("[Unload]" .. path)
+      end
+    end
+    -- <summary>
+    -- 加载场景，path需要是全路径
+    -- </summary>
+    -- <param name="path"></param>
+    -- <returns></returns>
+    LoadSceneAsync = function (this, path)
+      local tcs = ETTask_1SceneAssetRequest.Create(false)
+      local sceneAssetRequest = libx.Assets.LoadSceneAsync(path, false)
+      sceneAssetRequest.completed = function (arq)
+        tcs:SetResult(sceneAssetRequest)
+      end
+      return tcs
+    end
+    -- <summary>
+    -- 卸载场景，path需要是全路径
+    -- </summary>
+    -- <param name="path"></param>
+    UnLoadScene = function (this, path)
+      UnLoadAsset(this, path)
     end
     Dispose = function (this)
       if this:getIsDisposed() then
@@ -59,12 +123,12 @@ System.namespace("ET", function (namespace)
       --    UnLoadAsset(item.Key);
       --}
     end
-    LoadSceneAsync = function (this, path, ad)
+    LoadSceneAsync1 = function (this, path, ad)
       local req = libx.Assets.LoadSceneAsync(path, ad)
 
       return req
     end
-    LoadAssetAsync = function (this, path, type)
+    LoadAssetAsync1 = function (this, path, type)
       return System.async(function (async, this, path, type)
         if this.n2req:ContainsKey(path) then
           return this.n2req:get(path):getasset()
@@ -79,7 +143,7 @@ System.namespace("ET", function (namespace)
         return async:Await(task)
       end, nil, this, path, type)
     end
-    LoadAsset = function (this, path, type)
+    LoadAsset1 = function (this, path, type)
       if this.n2req:ContainsKey(path) then
         return this.n2req:get(path):getasset()
       end
@@ -87,34 +151,8 @@ System.namespace("ET", function (namespace)
       this.n2req:set(path, req)
       return req:getasset()
     end
-    UnLoadAsset = function (this, path)
-      if this.n2req:ContainsKey(path) then
-        this.n2req:get(path):Release()
-        this.n2req:RemoveKey(path)
-        ET.Log.Debug("[Unload]" .. path)
-      end
-    end
     GetAllAssetPaths = function (this)
-      local rets = nil
-      local files = libx.Assets.GetAllAssetPaths()
-
-
-
-      local ArrayString = System.Array(System.String)
-      rets = ArrayString:new(files.Length)
-      for i = 0, files.Length - 1 do
-       rets[i] = files[i]
-      end
-
-
-      --var len = ETCold.ArrayHelper.GetLength(files);
-      --for (int i = 0; i < len; i++)
-      --{
-      --   var str = ETCold.ArrayHelper.GetStringItem(files, i);
-
-      --}
-
-      return rets
+      return libx.Assets.GetAllAssetPaths()
     end
     class = {
       base = function (out)
@@ -123,11 +161,15 @@ System.namespace("ET", function (namespace)
         }
       end,
       Awake = Awake,
-      Dispose = Dispose,
-      LoadSceneAsync = LoadSceneAsync,
-      LoadAssetAsync = LoadAssetAsync,
       LoadAsset = LoadAsset,
+      LoadAssetAsync = LoadAssetAsync,
       UnLoadAsset = UnLoadAsset,
+      LoadSceneAsync = LoadSceneAsync,
+      UnLoadScene = UnLoadScene,
+      Dispose = Dispose,
+      LoadSceneAsync1 = LoadSceneAsync1,
+      LoadAssetAsync1 = LoadAssetAsync1,
+      LoadAsset1 = LoadAsset1,
       GetAllAssetPaths = GetAllAssetPaths,
       __ctor__ = __ctor__,
       __metadata__ = function (out)
@@ -142,10 +184,14 @@ System.namespace("ET", function (namespace)
             { "Awake", 0x6, Awake },
             { "Dispose", 0x6, Dispose },
             { "GetAllAssetPaths", 0x86, GetAllAssetPaths, System.Array(System.String) },
-            { "LoadAsset", 0x286, LoadAsset, System.String, System.Type, out.UnityEngine.Object },
-            { "LoadAssetAsync", 0x286, LoadAssetAsync, System.String, System.Type, out.ET.ETTask_1(out.UnityEngine.Object) },
-            { "LoadSceneAsync", 0x286, LoadSceneAsync, System.String, System.Boolean, out.libx.AssetRequest },
-            { "UnLoadAsset", 0x106, UnLoadAsset, System.String }
+            { "LoadAsset", 0x10186, LoadAsset, function (T) return System.String, T end },
+            { "LoadAsset", 0x286, LoadAsset1, System.String, System.Type, out.UnityEngine.Object },
+            { "LoadAssetAsync", 0x10186, LoadAssetAsync, function (T) return System.String, out.ET.ETTask_1(T) end },
+            { "LoadAssetAsync", 0x286, LoadAssetAsync1, System.String, System.Type, out.ET.ETTask_1(out.UnityEngine.Object) },
+            { "LoadSceneAsync", 0x186, LoadSceneAsync, System.String, out.ET.ETTask_1(out.libx.SceneAssetRequest) },
+            { "LoadSceneAsync", 0x286, LoadSceneAsync1, System.String, System.Boolean, out.libx.AssetRequest },
+            { "UnLoadAsset", 0x106, UnLoadAsset, System.String },
+            { "UnLoadScene", 0x106, UnLoadScene, System.String }
           },
           class = { 0x6 }
         }

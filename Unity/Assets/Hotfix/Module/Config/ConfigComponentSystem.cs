@@ -4,46 +4,40 @@ using System.Threading.Tasks;
 
 namespace ET
 {
-	[ObjectSystem]
-    public class ConfigAwakeSystem : AwakeSystem<ConfigComponent>
-    {
-        public override void Awake(ConfigComponent self)
-        {
-	        ConfigComponent.Instance = self;
-        }
-    }
-    
-    [ObjectSystem]
-    public class ConfigDestroySystem : DestroySystem<ConfigComponent>
-    {
-	    public override void Destroy(ConfigComponent self)
-	    {
-		    ConfigComponent.Instance = null;
-	    }
-    }
-    
-    public static class ConfigComponentSystem
+	public class ConfigAwakeSystem : AwakeSystem<ConfigComponent>
 	{
-		public static void Load(this ConfigComponent self)
+		public override void Awake(ConfigComponent self)
 		{
-			self.AllConfig.Clear();
-			HashSet<Type> types = Game.EventSystem.GetTypes(typeof (ConfigAttribute));
-			
-			Dictionary<string, byte[]> configBytes = new Dictionary<string, byte[]>();
-			ConfigComponent.GetAllConfigBytes(types,configBytes);
-
-			foreach (Type type in types)
-			{
-				self.LoadOneInThread(type, configBytes);
-			}
+			ConfigComponent.Instance = self;
 		}
+	}
+
+	public class ConfigDestroySystem : DestroySystem<ConfigComponent>
+	{
+		public override void Destroy(ConfigComponent self)
+		{
+			ConfigComponent.Instance = null;
+		}
+	}
+
+	public static class ConfigComponentSystem
+	{
+		public static void LoadOneConfig(this ConfigComponent self, Type configType)
+		{
+			byte[] oneConfigBytes = self.ConfigLoader.GetOneConfigBytes(configType.Name);
+
+			object category = ProtobufHelper.FromBytes(configType, oneConfigBytes, 0, oneConfigBytes.Length);
+
+			self.AllConfig[configType] = category;
+		}
+
 		public static async ETTask LoadAsync(this ConfigComponent self)
 		{
 			self.AllConfig.Clear();
-			HashSet<Type> types = Game.EventSystem.GetTypes(typeof (ConfigAttribute));
-			
+			HashSet<Type> types = Game.EventSystem.GetTypes(typeof(ConfigAttribute));
+
 			Dictionary<string, byte[]> configBytes = new Dictionary<string, byte[]>();
-			ConfigComponent.GetAllConfigBytes(types,configBytes);
+			self.ConfigLoader.GetAllConfigBytes(configBytes);
 
 			List<Task> listTasks = new List<Task>();
 
@@ -52,7 +46,7 @@ namespace ET
 				Task task = Task.Run(() => self.LoadOneInThread(type, configBytes));
 				listTasks.Add(task);
 			}
-
+			await ETTask.CompletedTask;
 			await Task.WhenAll(listTasks.ToArray());
 		}
 
@@ -64,7 +58,7 @@ namespace ET
 
 			lock (self)
 			{
-				self.AllConfig[configType] = category;	
+				self.AllConfig[configType] = category;
 			}
 		}
 	}

@@ -14,6 +14,7 @@ System.namespace("ET", function (namespace)
       Client = 30,
       Zone = 31,
       Login = 32,
+      Robot = 33,
       __metadata__ = function (out)
         return {
           fields = {
@@ -26,6 +27,7 @@ System.namespace("ET", function (namespace)
             { "Map", 0xE, class },
             { "Process", 0xE, class },
             { "Realm", 0xE, class },
+            { "Robot", 0xE, class },
             { "Zone", 0xE, class }
           },
           class = { 0x6 }

@@ -12,8 +12,10 @@ namespace ET
             Game.Scene.AddComponent<ResourcesComponent>();
           //  ResourcesComponent.Instance.LoadBundle("config.unity3d");
             Game.Scene.AddComponent<ConfigComponent>();
-            ConfigComponent.GetAllConfigBytes = LoadConfigHelper.LoadAllConfigBytes;
-            ConfigComponent.Instance.Load();
+          
+             ConfigComponent.Instance.LoadAsync().Coroutine();
+       
+
           //  ResourcesComponent.Instance.UnloadBundle("config.unity3d");
             
             Game.Scene.AddComponent<OpcodeTypeComponent>();
@@ -28,10 +30,10 @@ namespace ET
             Game.Scene.AddComponent<AIDispatcherComponent>();
 
 
-        //    Game.Scene.AddComponent<ImGuiRenderComponent>();
+            //    Game.Scene.AddComponent<ImGuiRenderComponent>();
 
             //  ResourcesComponent.Instance.LoadBundle("unit.unity3d");
-            Scene zoneScene = await SceneFactory.CreateZoneScene(1, "Process");
+            Scene zoneScene = await SceneFactory.CreateZoneScene(1, "Game", Game.Scene);
 
             await Game.EventSystem.Publish(new EventType.AppStartInitFinish() { ZoneScene = zoneScene });
         }

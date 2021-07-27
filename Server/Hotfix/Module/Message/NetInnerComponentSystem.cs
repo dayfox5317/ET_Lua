@@ -7,13 +7,13 @@ using System.Threading;
 namespace ET
 {
     [ObjectSystem]
-    public class NetInnerComponentAwakeSystem: AwakeSystem<NetInnerComponent>
+    public class NetInnerComponentAwakeSystem : AwakeSystem<NetInnerComponent>
     {
         public override void Awake(NetInnerComponent self)
         {
             NetInnerComponent.Instance = self;
             self.MessageDispatcher = new InnerMessageDispatcher();
-            
+
             self.Service = new TService(NetThreadComponent.Instance.ThreadSynchronizationContext, ServiceType.Inner);
             self.Service.ErrorCallback += self.OnError;
             self.Service.ReadCallback += self.OnRead;
@@ -23,7 +23,7 @@ namespace ET
     }
 
     [ObjectSystem]
-    public class NetInnerComponentAwake1System: AwakeSystem<NetInnerComponent, IPEndPoint>
+    public class NetInnerComponentAwake1System : AwakeSystem<NetInnerComponent, IPEndPoint>
     {
         public override void Awake(NetInnerComponent self, IPEndPoint address)
         {
@@ -40,7 +40,7 @@ namespace ET
     }
 
     [ObjectSystem]
-    public class NetInnerComponentLoadSystem: LoadSystem<NetInnerComponent>
+    public class NetInnerComponentLoadSystem : LoadSystem<NetInnerComponent>
     {
         public override void Load(NetInnerComponent self)
         {
@@ -49,7 +49,7 @@ namespace ET
     }
 
     [ObjectSystem]
-    public class NetInnerComponentDestroySystem: DestroySystem<NetInnerComponent>
+    public class NetInnerComponentDestroySystem : DestroySystem<NetInnerComponent>
     {
         public override void Destroy(NetInnerComponent self)
         {
@@ -95,7 +95,7 @@ namespace ET
         // 这个channelId是由CreateConnectChannelId生成的
         public static Session Create(this NetInnerComponent self, IPEndPoint ipEndPoint)
         {
-            uint localConn = self.Service.CreateRandomLocalConn(self.Random);
+            uint localConn = self.Service.CreateRandomLocalConn();
             long channelId = self.Service.CreateConnectChannelId(localConn);
             Session session = self.CreateInner(channelId, ipEndPoint);
             return session;
@@ -121,7 +121,7 @@ namespace ET
             Session session = self.GetChild<Session>(channelId);
             if (session == null)
             {
-                IPEndPoint ipEndPoint = StartProcessConfigCategory.Instance.Get((int) channelId).InnerIPPort;
+                IPEndPoint ipEndPoint = StartProcessConfigCategory.Instance.Get((int)channelId).InnerIPPort;
                 session = self.CreateInner(channelId, ipEndPoint);
             }
 

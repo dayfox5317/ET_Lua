@@ -26,7 +26,7 @@ System.namespace("ET", function (namespace)
         return {
           fields = {
             { "AllConfig", 0x6, System.Dictionary(System.Type, System.Object) },
-            { "GetAllConfigBytes", 0xE, System.Delegate(System.HashSet(System.Type), System.Dictionary(System.String, System.Array(System.Byte)), System.Void) },
+            { "ConfigLoader", 0x6, out.ET.IConfigLoader },
             { "Instance", 0xE, class }
           },
           class = { 0x6 }

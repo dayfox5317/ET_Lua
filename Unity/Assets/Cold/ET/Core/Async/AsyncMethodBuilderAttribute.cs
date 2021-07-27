@@ -1,4 +1,5 @@
-﻿#if !SERVER
+﻿#if !NOT_UNITY
+
 namespace System.Runtime.CompilerServices
 {
     public sealed class AsyncMethodBuilderAttribute: Attribute

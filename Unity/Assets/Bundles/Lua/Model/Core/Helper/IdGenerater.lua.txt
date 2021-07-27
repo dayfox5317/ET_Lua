@@ -125,10 +125,9 @@ System.namespace("ET", function (namespace)
       end
     }
   end)
-
   namespace.struct("UnitIdStruct", function (namespace)
-    local ToLong, ToString, GetUnitZone, __ctor__
-    __ctor__ = function (this, zone, process, time, value)
+    local ToLong, ToString, GetUnitZone, __ctor1__, __ctor2__
+    __ctor1__ = function (this, zone, process, time, value)
       if zone == nil then
         return
       end
@@ -137,12 +136,18 @@ System.namespace("ET", function (namespace)
       this.Value = value
       this.Zone = System.toUInt16(zone)
     end
+    __ctor2__ = function (this, id)
+      local result = System.toUInt64(id)
+      this.Value = System.toUInt16(System.band(result, 65535 --[[UInt16.MaxValue]]))
+      result = System.sr(result, 16)
+      this.ProcessMode = System.toByte(System.band(result, 255 --[[Byte.MaxValue]]))
+      result = System.sr(result, 8)
+      this.Zone = System.toUInt16(System.band(result, 0x03ff))
+      result = System.sr(result, 10)
+      this.Time = System.toUInt32(result)
+    end
     ToLong = function (this)
       local result = 0
-
-      result = System.bor(result, 9223372036854775808 --[[1ul << 63]])
-      -- 最高位变成1，暂时让它跟普通id区分一下，正式版删除
-
       result = System.bor(result, this.Value)
       result = System.bor(result, System.sl(this.ProcessMode, 16))
       result = System.bor(result, System.sl(this.Zone, 24))
@@ -165,7 +170,10 @@ System.namespace("ET", function (namespace)
       ToLong = ToLong,
       ToString = ToString,
       GetUnitZone = GetUnitZone,
-      __ctor__ = __ctor__,
+      __ctor__ = {
+        __ctor1__,
+        __ctor2__
+      },
       __metadata__ = function (out)
         return {
           fields = {
@@ -175,7 +183,8 @@ System.namespace("ET", function (namespace)
             { "Zone", 0x6, System.UInt16 }
           },
           methods = {
-            { ".ctor", 0x406, __ctor__, System.Int32, System.Int32, System.UInt32, System.UInt16 },
+            { ".ctor", 0x406, __ctor1__, System.Int32, System.Int32, System.UInt32, System.UInt16 },
+            { ".ctor", 0x106, __ctor2__, System.Int64 },
             { "GetUnitZone", 0x18E, GetUnitZone, System.Int64, System.Int32 },
             { "ToLong", 0x86, ToLong, System.Int64 },
             { "ToString", 0x86, ToString, System.String }
@@ -193,63 +202,76 @@ System.namespace("ET", function (namespace)
       this.Instance = class()
     end
     __ctor__ = function (this)
-      local epoch1970 = System.div(System.DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc):getTicks(), 10000)
-      this.epoch2020 = System.div(System.DateTime(2020, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc):getTicks(), 10000) - epoch1970
-      this.instanceIdEpoch = System.div(System.DateTime(System.DateTime.getNow():getYear(), 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc):getTicks(), 10000) - epoch1970
+      local epoch1970tick = System.div(System.DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc):getTicks(), 10000)
+      this.epoch2020 = System.div(System.DateTime(2020, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc):getTicks(), 10000) - epoch1970tick
+      this.epochThisYear = System.div(System.DateTime(System.DateTime.getNow():getYear(), 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc):getTicks(), 10000) - epoch1970tick
+
+      this.lastInstanceIdTime = TimeSinceThisYear(this)
+      if this.lastInstanceIdTime <= 0 then
+        ET.Log.Warning("lastInstanceIdTime less than 0: " .. this.lastInstanceIdTime)
+        this.lastInstanceIdTime = 1
+      end
+      this.lastIdTime = TimeSince2020(this)
+      if this.lastIdTime <= 0 then
+        ET.Log.Warning("lastIdTime less than 0: " .. this.lastIdTime)
+        this.lastIdTime = 1
+      end
+      this.lastUnitIdTime = TimeSince2020(this)
+      if this.lastUnitIdTime <= 0 then
+        ET.Log.Warning("lastUnitIdTime less than 0: " .. this.lastUnitIdTime)
+        this.lastUnitIdTime = 1
+      end
     end
     Dispose = function (this)
       this.epoch2020 = 0
-      this.instanceIdEpoch = 0
+      this.epochThisYear = 0
       this.value = 0
     end
     TimeSince2020 = function (this)
-      return System.toUInt32(System.div((ET.Game.getTimeInfo().FrameTime - this.epoch2020), 1000))
+      local a = System.toUInt32(System.div((ET.Game.getTimeInfo().FrameTime - this.epoch2020), 1000))
+      return a
     end
     TimeSinceThisYear = function (this)
-      return System.toUInt32(System.div((ET.Game.getTimeInfo().FrameTime - this.instanceIdEpoch), 1000))
+      local a = System.toUInt32(System.div((ET.Game.getTimeInfo().FrameTime - this.epochThisYear), 1000))
+      return a
     end
     GenerateInstanceId = function (this)
       local time = TimeSinceThisYear(this)
 
-      if time == this.lastInstanceIdTime then
-        this.instanceIdThisSecCount = this.instanceIdThisSecCount + 1
-      else
+      if time > this.lastInstanceIdTime then
         this.lastInstanceIdTime = time
-        this.instanceIdThisSecCount = 1
-      end
-      if this.instanceIdThisSecCount > 262142 --[[IdGenerater.Mask18bit - 1]] then
-        ET.Log.Error("instanceid count per sec overflow: " .. this.instanceIdThisSecCount)
-      end
-
-
-      local default = this.instanceIdValue + 1
-      this.instanceIdValue = default
-      if default > 262142 --[[IdGenerater.Mask18bit - 1]] then
         this.instanceIdValue = 0
+      else
+        this.instanceIdValue = this.instanceIdValue + 1
+
+        if this.instanceIdValue > 262142 --[[IdGenerater.Mask18bit - 1]] then
+          this.lastInstanceIdTime = this.lastInstanceIdTime + 1
+          -- 借用下一秒
+          this.instanceIdValue = 0
+        end
       end
-      local instanceIdStruct = System.new(ET.InstanceIdStruct, 2, time, ET.Game.Options.Process, this.instanceIdValue)
+
+      local instanceIdStruct = System.new(ET.InstanceIdStruct, 2, this.lastInstanceIdTime, ET.Game.Options.Process, this.instanceIdValue)
       return instanceIdStruct:ToLong()
     end
     GenerateId = function (this)
       local time = TimeSince2020(this)
 
-      if time == this.lastIdTime then
-        this.idThisSecCount = this.idThisSecCount + 1
-      else
+      if time > this.lastIdTime then
         this.lastIdTime = time
-        this.idThisSecCount = 1
-      end
-      if this.idThisSecCount == 65535 --[[UInt16.MaxValue]] then
-        ET.Log.Error("id count per sec overflow: " .. this.idThisSecCount)
-      end
-
-
-      local default = this.value + 1
-      this.value = default
-      if default > 65534 --[[ushort.MaxValue - 1]] then
         this.value = 0
+      else
+        this.value = this.value + 1
+
+        if this.value > 65534 --[[ushort.MaxValue - 1]] then
+          this.value = 0
+          this.lastIdTime = this.lastIdTime + 1
+          -- 借用下一秒
+          ET.Log.Error("id count per sec overflow: " .. time .. " " .. this.lastIdTime)
+        end
       end
-      local idStruct = ET.IdStruct(time, ET.Game.Options.Process, this.value)
+
+      local idStruct = ET.IdStruct(this.lastIdTime, ET.Game.Options.Process, this.value)
       return idStruct:ToLong()
     end
     GenerateUnitId = function (this, zone)
@@ -258,24 +280,21 @@ System.namespace("ET", function (namespace)
       end
       local time = TimeSince2020(this)
 
-
-      if time == this.lastUnitIdTime then
-        this.unitIdThisSecCount = this.unitIdThisSecCount + 1
-      else
+      if time > this.lastUnitIdTime then
         this.lastUnitIdTime = time
-        this.unitIdThisSecCount = 1
-      end
-      if this.unitIdThisSecCount == 65535 --[[UInt16.MaxValue]] then
-        ET.Log.Error("unitid count per sec overflow: " .. this.unitIdThisSecCount)
-      end
-
-      local default = this.unitIdValue + 1
-      this.unitIdValue = default
-      if default > 65534 --[[ushort.MaxValue - 1]] then
         this.unitIdValue = 0
+      else
+        this.unitIdValue = this.unitIdValue + 1
+
+        if this.unitIdValue > 65534 --[[ushort.MaxValue - 1]] then
+          this.unitIdValue = 0
+          this.lastUnitIdTime = this.lastUnitIdTime + 1
+          -- 借用下一秒
+          ET.Log.Error("unitid count per sec overflow: " .. time .. " " .. this.lastUnitIdTime)
+        end
       end
 
-      local unitIdStruct = ET.UnitIdStruct(zone, ET.Game.Options.Process, time, this.unitIdValue)
+      local unitIdStruct = ET.UnitIdStruct(zone, ET.Game.Options.Process, this.lastUnitIdTime, this.unitIdValue)
       return unitIdStruct:ToLong()
     end
     class = {
@@ -287,14 +306,11 @@ System.namespace("ET", function (namespace)
       epoch2020 = 0,
       value = 0,
       lastIdTime = 0,
-      idThisSecCount = 0,
-      instanceIdEpoch = 0,
+      epochThisYear = 0,
       instanceIdValue = 0,
       lastInstanceIdTime = 0,
-      instanceIdThisSecCount = 0,
       unitIdValue = 0,
       lastUnitIdTime = 0,
-      unitIdThisSecCount = 0,
       Dispose = Dispose,
       GenerateInstanceId = GenerateInstanceId,
       GenerateId = GenerateId,
@@ -305,15 +321,12 @@ System.namespace("ET", function (namespace)
         return {
           fields = {
             { "epoch2020", 0x1, System.Int64 },
-            { "idThisSecCount", 0x1, System.UInt16 },
+            { "epochThisYear", 0x1, System.Int64 },
             { "Instance", 0xE, class },
-            { "instanceIdEpoch", 0x1, System.Int64 },
-            { "instanceIdThisSecCount", 0x1, System.UInt32 },
             { "instanceIdValue", 0x1, System.UInt32 },
             { "lastIdTime", 0x1, System.UInt32 },
             { "lastInstanceIdTime", 0x1, System.UInt32 },
             { "lastUnitIdTime", 0x1, System.UInt32 },
-            { "unitIdThisSecCount", 0x1, System.UInt16 },
             { "unitIdValue", 0x1, System.UInt16 },
             { "value", 0x1, System.UInt16 }
           },

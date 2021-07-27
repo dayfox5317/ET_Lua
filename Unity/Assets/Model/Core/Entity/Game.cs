@@ -21,8 +21,10 @@ namespace ET
                 {
                     return scene;
                 }
-                InstanceIdStruct instanceIdStruct = new InstanceIdStruct(Options.Process, 0);
-                scene = EntitySceneFactory.CreateScene(instanceIdStruct.ToLong(), 0, SceneType.Process, "Process");
+                scene = EntitySceneFactory.CreateScene(IdGenerater.Instance.GenerateInstanceId(), 0, SceneType.Process, "Process");
+
+                //InstanceIdStruct instanceIdStruct = new InstanceIdStruct(Options.Process, 0);
+                //scene = EntitySceneFactory.CreateScene(instanceIdStruct.ToLong(), 0, SceneType.Process, "Process");
                 return scene;
             }
         }
@@ -33,11 +35,15 @@ namespace ET
 
         public static Options Options;
 
+        public static ILog ILog;
+
         public static List<Action> FrameFinishCallback = new List<Action>();
 
         public static void Update()
         {
-           // ThreadSynchronizationContext.Update();
+#if NOT_UNITY
+            ThreadSynchronizationContext.Update();
+#endif
             TimeInfo.Update();
             EventSystem.Update();
         }
