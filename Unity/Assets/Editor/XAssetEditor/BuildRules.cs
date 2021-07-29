@@ -110,6 +110,8 @@ namespace libx
         public string searchPatternPrefab = "*.prefab";
 		public string searchPatternScene = "*.unity";
 		public string searchPatternText = "*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt";
+        public string searchFUI = "*.bytes,*.png";
+
         public static bool nameByHash = true;
 		[Tooltip("构建的版本号")]
 		[Header("Builds")] //

@@ -18,6 +18,7 @@ namespace ET
 
 		public Type Type()
 		{
+			Log.Debug(typeof(T).FullName);
 			return typeof(T);
 		}
 

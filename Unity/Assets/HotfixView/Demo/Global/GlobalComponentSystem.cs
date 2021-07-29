@@ -13,4 +13,5 @@ namespace ET
             self.UI = GameObject.Find("/Global/UI").transform;
         }
     }
+  
 }

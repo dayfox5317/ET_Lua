@@ -18,6 +18,7 @@ local Init = function(isStartGame)
     --require("LuaConfig")()
     require("CSharpLua.Classloader")
     require("xLuaAdapter")
+    --require("FairyGUI")
    
     json = require("json")
    -- System.init({

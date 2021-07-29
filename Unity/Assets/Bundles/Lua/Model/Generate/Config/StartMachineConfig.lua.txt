@@ -101,7 +101,8 @@ System.namespace("ET", function (namespace)
           properties = {
             { "Id", 0x106, System.Int32, getId, setId, System.apply(out.ProtoBuf.ProtoMemberAttribute(1), function (default) default:setIsRequired(true) end) },
             { "InnerIP", 0x6, System.String, System.apply(out.ProtoBuf.ProtoMemberAttribute(2), function (default) default:setIsRequired(true) end) },
-            { "OuterIP", 0x6, System.String, System.apply(out.ProtoBuf.ProtoMemberAttribute(3), function (default) default:setIsRequired(true) end) }
+            { "OuterIP", 0x6, System.String, System.apply(out.ProtoBuf.ProtoMemberAttribute(3), function (default) default:setIsRequired(true) end) },
+            { "WatcherPort", 0x6, System.String, System.apply(out.ProtoBuf.ProtoMemberAttribute(4), function (default) default:setIsRequired(true) end) }
           },
           methods = {
             { "AfterDeserialization", 0x6, AfterDeserialization, out.ProtoBuf.ProtoAfterDeserializationAttribute() }

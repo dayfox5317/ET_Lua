@@ -186,8 +186,8 @@
     <Compile Include="Assets\Model\Module\Message\ResponseTypeAttribute.cs" />
     <Compile Include="Assets\Model\Module\Message\RpcException.cs" />
     <Compile Include="Assets\Model\Core\Async\ETTaskHelper.cs" />
-    <Compile Include="Assets\Model\Core\Object\ObjectPool.cs" />
     <Compile Include="Assets\Model\Module\NetworkTCP\TChannel.cs" />
+    <Compile Include="Assets\Model\Core\Object\ObjectPool.cs" />
     <Compile Include="Assets\Model\Module\Config\IConfig.cs" />
   </ItemGroup>
   <ItemGroup>

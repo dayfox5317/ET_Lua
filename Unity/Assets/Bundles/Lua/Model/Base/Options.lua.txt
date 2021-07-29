@@ -11,9 +11,11 @@ System.namespace("ET", function (namespace)
       Server = 0,
       Robot = 1,
       Watcher = 2,
+      GameTool = 3,
       __metadata__ = function (out)
         return {
           fields = {
+            { "GameTool", 0xE, class },
             { "Robot", 0xE, class },
             { "Server", 0xE, class },
             { "Watcher", 0xE, class }
@@ -35,12 +37,14 @@ System.namespace("ET", function (namespace)
       Develop = 0,
       LogLevel = 2,
       Console = 0,
+      CreateScenes = 1,
       __ctor__ = __ctor__,
       __metadata__ = function (out)
         return {
           properties = {
             { "AppType", 0x6, out.ET.AppType },
             { "Console", 0x6, System.Int32 },
+            { "CreateScenes", 0x6, System.Int32 },
             { "Develop", 0x6, System.Int32 },
             { "LogLevel", 0x6, System.Int32 },
             { "Process", 0x6, System.Int32 }

@@ -135,6 +135,12 @@ namespace libx
                     searchPath = hotUpdatePath+"UI",
                     searchPattern = rule.searchPatternPrefab,
                     nameBy = NameBy.Path
+                },
+                  new BuildRule()
+                {
+                    searchPath = hotUpdatePath+"FUI",
+                    searchPattern = rule.searchFUI,
+                    nameBy = NameBy.Path
                 }
                 //,
                 //new BuildRule()

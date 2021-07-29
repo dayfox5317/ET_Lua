@@ -71,5 +71,10 @@
         {
             public Unit Unit;
         }
+
+        public struct Test_CreateTestFUI
+        {
+            public Scene ZoneScene;
+        }
     }
 }

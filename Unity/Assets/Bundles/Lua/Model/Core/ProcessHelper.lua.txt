@@ -4,8 +4,9 @@ local SystemIO = System.IO
 local SystemInteropServices = System.Runtime.InteropServices
 System.namespace("ET", function (namespace)
   namespace.class("ProcessHelper", function (namespace)
-    local Run
-    Run = function (exe, arguments, workingDirectory, waitExit)
+    local Run, WaitExitAsync, WaitForExitAsync
+    Run = function (exe, arguments, workingDirectory)
+      --Log.Debug($"Process Run exe:{exe} ,arguments:{arguments} ,workingDirectory:{workingDirectory}");
       local default, extern = System.try(function ()
         local redirectStandardOutput = true
         local redirectStandardError = true
@@ -15,13 +16,6 @@ System.namespace("ET", function (namespace)
           redirectStandardError = false
           useShellExecute = true
         end
-
-        if waitExit then
-          redirectStandardOutput = true
-          redirectStandardError = true
-          useShellExecute = false
-        end
-
         local default = System.ProcessStartInfo()
         default:setFileName(exe)
         default:setArguments(arguments)
@@ -34,12 +28,7 @@ System.namespace("ET", function (namespace)
 
         local process = System.Process.Start(info)
 
-        if waitExit then
-          process:WaitForExit()
-          if process:getExitCode() ~= 0 then
-            System.throw(System.Exception(process:getStandardOutput():ReadToEnd() .. " " .. process:getStandardError():ReadToEnd()))
-          end
-        end
+        WaitExitAsync(process)
 
         return true, process
       end, function (default)
@@ -50,12 +39,62 @@ System.namespace("ET", function (namespace)
         return extern
       end
     end
+    WaitExitAsync = function (process)
+      System.async(function (async, process)
+        async:await(process:WaitForExitAsync(System.default(System.CancellationToken)))
+      end, true, process)
+    end
+    WaitForExitAsync = function (self)
+      return System.async(function (async, self)
+        if not self:getHasExited() then
+          return
+        end
+
+        local default, extern = System.try(function ()
+          self:setEnableRaisingEvents(true)
+        end, function (default)
+          if System.is(default, System.InvalidOperationException) then
+            if self:getHasExited() then
+              return true
+            end
+            System.throw(default)
+          else
+            return 1, default
+          end
+        end)
+        if default then
+          return extern
+        end
+
+        local tcs = System.TaskCompletionSource()
+
+        local function Handler(s, e) 
+          tcs:TrySetResult(true)
+        end
+
+        self:addExited(Handler)
+
+        local ref, out = System.try(function ()
+          if self:getHasExited() then
+            return true
+          end
+          async:await(tcs:getTask())
+        end, nil, function ()
+          self:removeExited(Handler)
+        end)
+        if ref then
+          return out
+        end
+      end, nil, self)
+    end
     return {
       Run = Run,
       __metadata__ = function (out)
         return {
           methods = {
-            { "Run", 0x48E, Run, System.String, System.String, System.String, System.Boolean, System.Process }
+            { "Run", 0x38E, Run, System.String, System.String, System.String, System.Process },
+            { "WaitExitAsync", 0x109, WaitExitAsync, System.Process },
+            { "WaitForExitAsync", 0x189, WaitForExitAsync, System.Process, System.Task }
           },
           class = { 0xE }
         }

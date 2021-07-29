@@ -211,6 +211,14 @@ public static class XLuaGenConfig
         typeof( UnityEngine.UI.Button.ButtonClickedEvent),
         typeof(System.IO.SeekOrigin),
         typeof(System.Reflection.MemberInfo),
+        typeof(UnityEngine.Screen),
+                typeof(UnityEngine.Texture2D),
+        typeof(UnityEngine.Texture2D.EXRFlags),
+                typeof(FairyGUI.PackageItem),
+                                typeof(FairyGUI.GObject),
+                                                typeof(FairyGUI.EventListener),
+
+
         //typeof(System.Runtime.InteropServices.StructLayoutAttribute),
         //typeof(System.Runtime.InteropServices.LayoutKind),
 
@@ -263,7 +271,13 @@ public static class XLuaGenConfig
                 typeof(Action<long, MemoryStream>),
                 typeof(Action<long, IPEndPoint>),
                 typeof(Func<byte[],uint, int>),
-                typeof(Action<libx.AssetRequest>)
+                typeof(Action<libx.AssetRequest>),
+
+                typeof(FairyGUI.UIPackage.CreateObjectCallback),
+                typeof(FairyGUI.UIPackage.LoadResourceAsync),
+                        typeof(FairyGUI.UIPackage.LoadResource),
+                        typeof(FairyGUI.EventCallback1)
+
             };
 
 

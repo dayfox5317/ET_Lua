@@ -16,7 +16,7 @@ namespace ETEditor
         [MenuItem("Tools/生成Excel配置")]
         static void Start()
         {
-            ProcessHelper.Run("dotnet", "ExcelExporter.dll", "..\\Tools\\ExcelExporter\\Bin\\", false);
+            ETCold.ProcessHelper.Run("dotnet", "ExcelExporter.dll", "..\\Tools\\ExcelExporter\\Bin\\");
             AssetDatabase.Refresh();
         }
     }

@@ -81,7 +81,7 @@ namespace ETCold
 			return false;
 		}
 
-		public static void CopyDirectory(string srcDir, string tgtDir)
+		public static void CopyDirectory(string srcDir, string tgtDir,bool copy_sub=true)
 		{
 			DirectoryInfo source = new DirectoryInfo(srcDir);
 			DirectoryInfo target = new DirectoryInfo(tgtDir);
@@ -107,12 +107,16 @@ namespace ETCold
 			{
 				File.Copy(files[i].FullName, Path.Combine(target.FullName, files[i].Name), true);
 			}
+            if (!copy_sub)
+            {
+				return;
+            }
 	
 			DirectoryInfo[] dirs = source.GetDirectories();
 	
 			for (int j = 0; j < dirs.Length; j++)
 			{
-				CopyDirectory(dirs[j].FullName, Path.Combine(target.FullName, dirs[j].Name));
+				CopyDirectory(dirs[j].FullName, Path.Combine(target.FullName, dirs[j].Name), copy_sub);
 			}
 		}
 

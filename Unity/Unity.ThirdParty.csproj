@@ -135,8 +135,8 @@
     <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\MapDecorator.cs" />
     <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\GuidSerializer.cs" />
     <Compile Include="Assets\ThirdParty\protobuf-net\WireType.cs" />
-    <Compile Include="Assets\ThirdParty\protobuf-net\IProtoOutputT.cs" />
     <Compile Include="Assets\ThirdParty\protobuf-net\Meta\TypeModel.InputOutput.cs" />
+    <Compile Include="Assets\ThirdParty\protobuf-net\IProtoOutputT.cs" />
     <Compile Include="Assets\ThirdParty\protobuf-net\ServiceModel\ProtoBehaviorAttribute.cs" />
     <Compile Include="Assets\ThirdParty\protobuf-net\BclHelpers.cs" />
     <Compile Include="Assets\ThirdParty\LitJson\JsonMockWrapper.cs" />

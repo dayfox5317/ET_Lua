@@ -41,16 +41,59 @@ namespace XLua
 				translator.RegisterPushAndGetAndUpdate<UnityEngine.RectTransform.Edge>(translator.PushUnityEngineRectTransformEdge, translator.Get, translator.UpdateUnityEngineRectTransformEdge);
 				translator.RegisterPushAndGetAndUpdate<UnityEngine.UI.Selectable.Transition>(translator.PushUnityEngineUISelectableTransition, translator.Get, translator.UpdateUnityEngineUISelectableTransition);
 				translator.RegisterPushAndGetAndUpdate<System.IO.SeekOrigin>(translator.PushSystemIOSeekOrigin, translator.Get, translator.UpdateSystemIOSeekOrigin);
+				translator.RegisterPushAndGetAndUpdate<UnityEngine.Texture2D.EXRFlags>(translator.PushUnityEngineTexture2DEXRFlags, translator.Get, translator.UpdateUnityEngineTexture2DEXRFlags);
 				translator.RegisterPushAndGetAndUpdate<libx.LoadState>(translator.PushlibxLoadState, translator.Get, translator.UpdatelibxLoadState);
 				translator.RegisterPushAndGetAndUpdate<libx.VerifyBy>(translator.PushlibxVerifyBy, translator.Get, translator.UpdatelibxVerifyBy);
 				translator.RegisterPushAndGetAndUpdate<Battlehub.UIControls.ItemDropAction>(translator.PushBattlehubUIControlsItemDropAction, translator.Get, translator.UpdateBattlehubUIControlsItemDropAction);
 				translator.RegisterPushAndGetAndUpdate<Battlehub.UIControls.VirtualizingMode>(translator.PushBattlehubUIControlsVirtualizingMode, translator.Get, translator.UpdateBattlehubUIControlsVirtualizingMode);
 				translator.RegisterPushAndGetAndUpdate<Battlehub.UIControls.DockPanels.RegionSplitType>(translator.PushBattlehubUIControlsDockPanelsRegionSplitType, translator.Get, translator.UpdateBattlehubUIControlsDockPanelsRegionSplitType);
 				translator.RegisterPushAndGetAndUpdate<Battlehub.Utils.KnownCursor>(translator.PushBattlehubUtilsKnownCursor, translator.Get, translator.UpdateBattlehubUtilsKnownCursor);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.BlendMode>(translator.PushFairyGUIBlendMode, translator.Get, translator.UpdateFairyGUIBlendMode);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.HitTestMode>(translator.PushFairyGUIHitTestMode, translator.Get, translator.UpdateFairyGUIHitTestMode);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.MaterialFlags>(translator.PushFairyGUIMaterialFlags, translator.Get, translator.UpdateFairyGUIMaterialFlags);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.DestroyMethod>(translator.PushFairyGUIDestroyMethod, translator.Get, translator.UpdateFairyGUIDestroyMethod);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.EaseType>(translator.PushFairyGUIEaseType, translator.Get, translator.UpdateFairyGUIEaseType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.TweenPropType>(translator.PushFairyGUITweenPropType, translator.Get, translator.UpdateFairyGUITweenPropType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.PackageItemType>(translator.PushFairyGUIPackageItemType, translator.Get, translator.UpdateFairyGUIPackageItemType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.ObjectType>(translator.PushFairyGUIObjectType, translator.Get, translator.UpdateFairyGUIObjectType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.AlignType>(translator.PushFairyGUIAlignType, translator.Get, translator.UpdateFairyGUIAlignType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.VertAlignType>(translator.PushFairyGUIVertAlignType, translator.Get, translator.UpdateFairyGUIVertAlignType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.OverflowType>(translator.PushFairyGUIOverflowType, translator.Get, translator.UpdateFairyGUIOverflowType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.FillType>(translator.PushFairyGUIFillType, translator.Get, translator.UpdateFairyGUIFillType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.AutoSizeType>(translator.PushFairyGUIAutoSizeType, translator.Get, translator.UpdateFairyGUIAutoSizeType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.ScrollType>(translator.PushFairyGUIScrollType, translator.Get, translator.UpdateFairyGUIScrollType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.ScrollBarDisplayType>(translator.PushFairyGUIScrollBarDisplayType, translator.Get, translator.UpdateFairyGUIScrollBarDisplayType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.RelationType>(translator.PushFairyGUIRelationType, translator.Get, translator.UpdateFairyGUIRelationType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.ListLayoutType>(translator.PushFairyGUIListLayoutType, translator.Get, translator.UpdateFairyGUIListLayoutType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.ListSelectionMode>(translator.PushFairyGUIListSelectionMode, translator.Get, translator.UpdateFairyGUIListSelectionMode);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.ProgressTitleType>(translator.PushFairyGUIProgressTitleType, translator.Get, translator.UpdateFairyGUIProgressTitleType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.ButtonMode>(translator.PushFairyGUIButtonMode, translator.Get, translator.UpdateFairyGUIButtonMode);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.TransitionActionType>(translator.PushFairyGUITransitionActionType, translator.Get, translator.UpdateFairyGUITransitionActionType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.GroupLayoutType>(translator.PushFairyGUIGroupLayoutType, translator.Get, translator.UpdateFairyGUIGroupLayoutType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.ChildrenRenderOrder>(translator.PushFairyGUIChildrenRenderOrder, translator.Get, translator.UpdateFairyGUIChildrenRenderOrder);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.PopupDirection>(translator.PushFairyGUIPopupDirection, translator.Get, translator.UpdateFairyGUIPopupDirection);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.FlipType>(translator.PushFairyGUIFlipType, translator.Get, translator.UpdateFairyGUIFlipType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.FillMethod>(translator.PushFairyGUIFillMethod, translator.Get, translator.UpdateFairyGUIFillMethod);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.OriginHorizontal>(translator.PushFairyGUIOriginHorizontal, translator.Get, translator.UpdateFairyGUIOriginHorizontal);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.OriginVertical>(translator.PushFairyGUIOriginVertical, translator.Get, translator.UpdateFairyGUIOriginVertical);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.Origin90>(translator.PushFairyGUIOrigin90, translator.Get, translator.UpdateFairyGUIOrigin90);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.Origin180>(translator.PushFairyGUIOrigin180, translator.Get, translator.UpdateFairyGUIOrigin180);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.Origin360>(translator.PushFairyGUIOrigin360, translator.Get, translator.UpdateFairyGUIOrigin360);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.FocusRule>(translator.PushFairyGUIFocusRule, translator.Get, translator.UpdateFairyGUIFocusRule);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.FitScreen>(translator.PushFairyGUIFitScreen, translator.Get, translator.UpdateFairyGUIFitScreen);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.Utils.HtmlElementType>(translator.PushFairyGUIUtilsHtmlElementType, translator.Get, translator.UpdateFairyGUIUtilsHtmlElementType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.Utils.XMLTagType>(translator.PushFairyGUIUtilsXMLTagType, translator.Get, translator.UpdateFairyGUIUtilsXMLTagType);
 				translator.RegisterPushAndGetAndUpdate<ETCold.DebugType>(translator.PushETColdDebugType, translator.Get, translator.UpdateETColdDebugType);
 				translator.RegisterPushAndGetAndUpdate<ETCold.UILayer>(translator.PushETColdUILayer, translator.Get, translator.UpdateETColdUILayer);
 				translator.RegisterPushAndGetAndUpdate<ET.AwaiterStatus>(translator.PushETAwaiterStatus, translator.Get, translator.UpdateETAwaiterStatus);
 				translator.RegisterPushAndGetAndUpdate<MessageBox.EventId>(translator.PushMessageBoxEventId, translator.Get, translator.UpdateMessageBoxEventId);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.RTLSupport.DirectionType>(translator.PushFairyGUIRTLSupportDirectionType, translator.Get, translator.UpdateFairyGUIRTLSupportDirectionType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.TextFormat.SpecialStyle>(translator.PushFairyGUITextFormatSpecialStyle, translator.Get, translator.UpdateFairyGUITextFormatSpecialStyle);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.GPathPoint.CurveType>(translator.PushFairyGUIGPathPointCurveType, translator.Get, translator.UpdateFairyGUIGPathPointCurveType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.ControllerAction.ActionType>(translator.PushFairyGUIControllerActionActionType, translator.Get, translator.UpdateFairyGUIControllerActionActionType);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.UIConfig.ConfigKey>(translator.PushFairyGUIUIConfigConfigKey, translator.Get, translator.UpdateFairyGUIUIConfigConfigKey);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.UIContentScaler.ScaleMode>(translator.PushFairyGUIUIContentScalerScaleMode, translator.Get, translator.UpdateFairyGUIUIContentScalerScaleMode);
+				translator.RegisterPushAndGetAndUpdate<FairyGUI.UIContentScaler.ScreenMatchMode>(translator.PushFairyGUIUIContentScalerScreenMatchMode, translator.Get, translator.UpdateFairyGUIUIContentScalerScreenMatchMode);
 				translator.RegisterPushAndGetAndUpdate<System.Net.Sockets.SocketAsyncOperation>(translator.PushSystemNetSocketsSocketAsyncOperation, translator.Get, translator.UpdateSystemNetSocketsSocketAsyncOperation);
 				translator.RegisterPushAndGetAndUpdate<System.Net.Sockets.SocketError>(translator.PushSystemNetSocketsSocketError, translator.Get, translator.UpdateSystemNetSocketsSocketError);
 				translator.RegisterPushAndGetAndUpdate<UnityEngine.UI.CanvasUpdate>(translator.PushUnityEngineUICanvasUpdate, translator.Get, translator.UpdateUnityEngineUICanvasUpdate);
@@ -1209,6 +1252,90 @@ namespace XLua
             }
         }
         
+        int UnityEngineTexture2DEXRFlags_TypeID = -1;
+		int UnityEngineTexture2DEXRFlags_EnumRef = -1;
+        
+        public void PushUnityEngineTexture2DEXRFlags(RealStatePtr L, UnityEngine.Texture2D.EXRFlags val)
+        {
+            if (UnityEngineTexture2DEXRFlags_TypeID == -1)
+            {
+			    bool is_first;
+                UnityEngineTexture2DEXRFlags_TypeID = getTypeId(L, typeof(UnityEngine.Texture2D.EXRFlags), out is_first);
+				
+				if (UnityEngineTexture2DEXRFlags_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(UnityEngine.Texture2D.EXRFlags));
+				    UnityEngineTexture2DEXRFlags_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, UnityEngineTexture2DEXRFlags_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, UnityEngineTexture2DEXRFlags_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for UnityEngine.Texture2D.EXRFlags ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, UnityEngineTexture2DEXRFlags_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out UnityEngine.Texture2D.EXRFlags val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != UnityEngineTexture2DEXRFlags_TypeID)
+				{
+				    throw new Exception("invalid userdata for UnityEngine.Texture2D.EXRFlags");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for UnityEngine.Texture2D.EXRFlags");
+                }
+				val = (UnityEngine.Texture2D.EXRFlags)e;
+                
+            }
+            else
+            {
+                val = (UnityEngine.Texture2D.EXRFlags)objectCasters.GetCaster(typeof(UnityEngine.Texture2D.EXRFlags))(L, index, null);
+            }
+        }
+		
+        public void UpdateUnityEngineTexture2DEXRFlags(RealStatePtr L, int index, UnityEngine.Texture2D.EXRFlags val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != UnityEngineTexture2DEXRFlags_TypeID)
+				{
+				    throw new Exception("invalid userdata for UnityEngine.Texture2D.EXRFlags");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for UnityEngine.Texture2D.EXRFlags ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
         int libxLoadState_TypeID = -1;
 		int libxLoadState_EnumRef = -1;
         
@@ -1713,6 +1840,2946 @@ namespace XLua
             }
         }
         
+        int FairyGUIBlendMode_TypeID = -1;
+		int FairyGUIBlendMode_EnumRef = -1;
+        
+        public void PushFairyGUIBlendMode(RealStatePtr L, FairyGUI.BlendMode val)
+        {
+            if (FairyGUIBlendMode_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIBlendMode_TypeID = getTypeId(L, typeof(FairyGUI.BlendMode), out is_first);
+				
+				if (FairyGUIBlendMode_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.BlendMode));
+				    FairyGUIBlendMode_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIBlendMode_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIBlendMode_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.BlendMode ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIBlendMode_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.BlendMode val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIBlendMode_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.BlendMode");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.BlendMode");
+                }
+				val = (FairyGUI.BlendMode)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.BlendMode)objectCasters.GetCaster(typeof(FairyGUI.BlendMode))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIBlendMode(RealStatePtr L, int index, FairyGUI.BlendMode val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIBlendMode_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.BlendMode");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.BlendMode ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIHitTestMode_TypeID = -1;
+		int FairyGUIHitTestMode_EnumRef = -1;
+        
+        public void PushFairyGUIHitTestMode(RealStatePtr L, FairyGUI.HitTestMode val)
+        {
+            if (FairyGUIHitTestMode_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIHitTestMode_TypeID = getTypeId(L, typeof(FairyGUI.HitTestMode), out is_first);
+				
+				if (FairyGUIHitTestMode_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.HitTestMode));
+				    FairyGUIHitTestMode_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIHitTestMode_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIHitTestMode_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.HitTestMode ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIHitTestMode_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.HitTestMode val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIHitTestMode_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.HitTestMode");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.HitTestMode");
+                }
+				val = (FairyGUI.HitTestMode)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.HitTestMode)objectCasters.GetCaster(typeof(FairyGUI.HitTestMode))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIHitTestMode(RealStatePtr L, int index, FairyGUI.HitTestMode val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIHitTestMode_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.HitTestMode");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.HitTestMode ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIMaterialFlags_TypeID = -1;
+		int FairyGUIMaterialFlags_EnumRef = -1;
+        
+        public void PushFairyGUIMaterialFlags(RealStatePtr L, FairyGUI.MaterialFlags val)
+        {
+            if (FairyGUIMaterialFlags_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIMaterialFlags_TypeID = getTypeId(L, typeof(FairyGUI.MaterialFlags), out is_first);
+				
+				if (FairyGUIMaterialFlags_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.MaterialFlags));
+				    FairyGUIMaterialFlags_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIMaterialFlags_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIMaterialFlags_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.MaterialFlags ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIMaterialFlags_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.MaterialFlags val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIMaterialFlags_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.MaterialFlags");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.MaterialFlags");
+                }
+				val = (FairyGUI.MaterialFlags)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.MaterialFlags)objectCasters.GetCaster(typeof(FairyGUI.MaterialFlags))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIMaterialFlags(RealStatePtr L, int index, FairyGUI.MaterialFlags val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIMaterialFlags_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.MaterialFlags");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.MaterialFlags ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIDestroyMethod_TypeID = -1;
+		int FairyGUIDestroyMethod_EnumRef = -1;
+        
+        public void PushFairyGUIDestroyMethod(RealStatePtr L, FairyGUI.DestroyMethod val)
+        {
+            if (FairyGUIDestroyMethod_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIDestroyMethod_TypeID = getTypeId(L, typeof(FairyGUI.DestroyMethod), out is_first);
+				
+				if (FairyGUIDestroyMethod_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.DestroyMethod));
+				    FairyGUIDestroyMethod_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIDestroyMethod_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIDestroyMethod_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.DestroyMethod ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIDestroyMethod_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.DestroyMethod val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIDestroyMethod_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.DestroyMethod");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.DestroyMethod");
+                }
+				val = (FairyGUI.DestroyMethod)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.DestroyMethod)objectCasters.GetCaster(typeof(FairyGUI.DestroyMethod))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIDestroyMethod(RealStatePtr L, int index, FairyGUI.DestroyMethod val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIDestroyMethod_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.DestroyMethod");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.DestroyMethod ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIEaseType_TypeID = -1;
+		int FairyGUIEaseType_EnumRef = -1;
+        
+        public void PushFairyGUIEaseType(RealStatePtr L, FairyGUI.EaseType val)
+        {
+            if (FairyGUIEaseType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIEaseType_TypeID = getTypeId(L, typeof(FairyGUI.EaseType), out is_first);
+				
+				if (FairyGUIEaseType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.EaseType));
+				    FairyGUIEaseType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIEaseType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIEaseType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.EaseType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIEaseType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.EaseType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIEaseType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.EaseType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.EaseType");
+                }
+				val = (FairyGUI.EaseType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.EaseType)objectCasters.GetCaster(typeof(FairyGUI.EaseType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIEaseType(RealStatePtr L, int index, FairyGUI.EaseType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIEaseType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.EaseType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.EaseType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUITweenPropType_TypeID = -1;
+		int FairyGUITweenPropType_EnumRef = -1;
+        
+        public void PushFairyGUITweenPropType(RealStatePtr L, FairyGUI.TweenPropType val)
+        {
+            if (FairyGUITweenPropType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUITweenPropType_TypeID = getTypeId(L, typeof(FairyGUI.TweenPropType), out is_first);
+				
+				if (FairyGUITweenPropType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.TweenPropType));
+				    FairyGUITweenPropType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUITweenPropType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUITweenPropType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.TweenPropType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUITweenPropType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.TweenPropType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUITweenPropType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.TweenPropType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.TweenPropType");
+                }
+				val = (FairyGUI.TweenPropType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.TweenPropType)objectCasters.GetCaster(typeof(FairyGUI.TweenPropType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUITweenPropType(RealStatePtr L, int index, FairyGUI.TweenPropType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUITweenPropType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.TweenPropType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.TweenPropType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIPackageItemType_TypeID = -1;
+		int FairyGUIPackageItemType_EnumRef = -1;
+        
+        public void PushFairyGUIPackageItemType(RealStatePtr L, FairyGUI.PackageItemType val)
+        {
+            if (FairyGUIPackageItemType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIPackageItemType_TypeID = getTypeId(L, typeof(FairyGUI.PackageItemType), out is_first);
+				
+				if (FairyGUIPackageItemType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.PackageItemType));
+				    FairyGUIPackageItemType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIPackageItemType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIPackageItemType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.PackageItemType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIPackageItemType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.PackageItemType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIPackageItemType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.PackageItemType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.PackageItemType");
+                }
+				val = (FairyGUI.PackageItemType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.PackageItemType)objectCasters.GetCaster(typeof(FairyGUI.PackageItemType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIPackageItemType(RealStatePtr L, int index, FairyGUI.PackageItemType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIPackageItemType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.PackageItemType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.PackageItemType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIObjectType_TypeID = -1;
+		int FairyGUIObjectType_EnumRef = -1;
+        
+        public void PushFairyGUIObjectType(RealStatePtr L, FairyGUI.ObjectType val)
+        {
+            if (FairyGUIObjectType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIObjectType_TypeID = getTypeId(L, typeof(FairyGUI.ObjectType), out is_first);
+				
+				if (FairyGUIObjectType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.ObjectType));
+				    FairyGUIObjectType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIObjectType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIObjectType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.ObjectType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIObjectType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.ObjectType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIObjectType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ObjectType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.ObjectType");
+                }
+				val = (FairyGUI.ObjectType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.ObjectType)objectCasters.GetCaster(typeof(FairyGUI.ObjectType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIObjectType(RealStatePtr L, int index, FairyGUI.ObjectType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIObjectType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ObjectType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.ObjectType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIAlignType_TypeID = -1;
+		int FairyGUIAlignType_EnumRef = -1;
+        
+        public void PushFairyGUIAlignType(RealStatePtr L, FairyGUI.AlignType val)
+        {
+            if (FairyGUIAlignType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIAlignType_TypeID = getTypeId(L, typeof(FairyGUI.AlignType), out is_first);
+				
+				if (FairyGUIAlignType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.AlignType));
+				    FairyGUIAlignType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIAlignType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIAlignType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.AlignType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIAlignType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.AlignType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIAlignType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.AlignType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.AlignType");
+                }
+				val = (FairyGUI.AlignType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.AlignType)objectCasters.GetCaster(typeof(FairyGUI.AlignType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIAlignType(RealStatePtr L, int index, FairyGUI.AlignType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIAlignType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.AlignType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.AlignType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIVertAlignType_TypeID = -1;
+		int FairyGUIVertAlignType_EnumRef = -1;
+        
+        public void PushFairyGUIVertAlignType(RealStatePtr L, FairyGUI.VertAlignType val)
+        {
+            if (FairyGUIVertAlignType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIVertAlignType_TypeID = getTypeId(L, typeof(FairyGUI.VertAlignType), out is_first);
+				
+				if (FairyGUIVertAlignType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.VertAlignType));
+				    FairyGUIVertAlignType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIVertAlignType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIVertAlignType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.VertAlignType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIVertAlignType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.VertAlignType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIVertAlignType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.VertAlignType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.VertAlignType");
+                }
+				val = (FairyGUI.VertAlignType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.VertAlignType)objectCasters.GetCaster(typeof(FairyGUI.VertAlignType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIVertAlignType(RealStatePtr L, int index, FairyGUI.VertAlignType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIVertAlignType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.VertAlignType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.VertAlignType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIOverflowType_TypeID = -1;
+		int FairyGUIOverflowType_EnumRef = -1;
+        
+        public void PushFairyGUIOverflowType(RealStatePtr L, FairyGUI.OverflowType val)
+        {
+            if (FairyGUIOverflowType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIOverflowType_TypeID = getTypeId(L, typeof(FairyGUI.OverflowType), out is_first);
+				
+				if (FairyGUIOverflowType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.OverflowType));
+				    FairyGUIOverflowType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIOverflowType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIOverflowType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.OverflowType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIOverflowType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.OverflowType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIOverflowType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.OverflowType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.OverflowType");
+                }
+				val = (FairyGUI.OverflowType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.OverflowType)objectCasters.GetCaster(typeof(FairyGUI.OverflowType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIOverflowType(RealStatePtr L, int index, FairyGUI.OverflowType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIOverflowType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.OverflowType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.OverflowType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIFillType_TypeID = -1;
+		int FairyGUIFillType_EnumRef = -1;
+        
+        public void PushFairyGUIFillType(RealStatePtr L, FairyGUI.FillType val)
+        {
+            if (FairyGUIFillType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIFillType_TypeID = getTypeId(L, typeof(FairyGUI.FillType), out is_first);
+				
+				if (FairyGUIFillType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.FillType));
+				    FairyGUIFillType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIFillType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIFillType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.FillType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIFillType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.FillType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIFillType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.FillType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.FillType");
+                }
+				val = (FairyGUI.FillType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.FillType)objectCasters.GetCaster(typeof(FairyGUI.FillType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIFillType(RealStatePtr L, int index, FairyGUI.FillType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIFillType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.FillType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.FillType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIAutoSizeType_TypeID = -1;
+		int FairyGUIAutoSizeType_EnumRef = -1;
+        
+        public void PushFairyGUIAutoSizeType(RealStatePtr L, FairyGUI.AutoSizeType val)
+        {
+            if (FairyGUIAutoSizeType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIAutoSizeType_TypeID = getTypeId(L, typeof(FairyGUI.AutoSizeType), out is_first);
+				
+				if (FairyGUIAutoSizeType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.AutoSizeType));
+				    FairyGUIAutoSizeType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIAutoSizeType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIAutoSizeType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.AutoSizeType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIAutoSizeType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.AutoSizeType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIAutoSizeType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.AutoSizeType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.AutoSizeType");
+                }
+				val = (FairyGUI.AutoSizeType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.AutoSizeType)objectCasters.GetCaster(typeof(FairyGUI.AutoSizeType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIAutoSizeType(RealStatePtr L, int index, FairyGUI.AutoSizeType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIAutoSizeType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.AutoSizeType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.AutoSizeType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIScrollType_TypeID = -1;
+		int FairyGUIScrollType_EnumRef = -1;
+        
+        public void PushFairyGUIScrollType(RealStatePtr L, FairyGUI.ScrollType val)
+        {
+            if (FairyGUIScrollType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIScrollType_TypeID = getTypeId(L, typeof(FairyGUI.ScrollType), out is_first);
+				
+				if (FairyGUIScrollType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.ScrollType));
+				    FairyGUIScrollType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIScrollType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIScrollType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.ScrollType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIScrollType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.ScrollType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIScrollType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ScrollType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.ScrollType");
+                }
+				val = (FairyGUI.ScrollType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.ScrollType)objectCasters.GetCaster(typeof(FairyGUI.ScrollType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIScrollType(RealStatePtr L, int index, FairyGUI.ScrollType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIScrollType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ScrollType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.ScrollType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIScrollBarDisplayType_TypeID = -1;
+		int FairyGUIScrollBarDisplayType_EnumRef = -1;
+        
+        public void PushFairyGUIScrollBarDisplayType(RealStatePtr L, FairyGUI.ScrollBarDisplayType val)
+        {
+            if (FairyGUIScrollBarDisplayType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIScrollBarDisplayType_TypeID = getTypeId(L, typeof(FairyGUI.ScrollBarDisplayType), out is_first);
+				
+				if (FairyGUIScrollBarDisplayType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.ScrollBarDisplayType));
+				    FairyGUIScrollBarDisplayType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIScrollBarDisplayType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIScrollBarDisplayType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.ScrollBarDisplayType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIScrollBarDisplayType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.ScrollBarDisplayType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIScrollBarDisplayType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ScrollBarDisplayType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.ScrollBarDisplayType");
+                }
+				val = (FairyGUI.ScrollBarDisplayType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.ScrollBarDisplayType)objectCasters.GetCaster(typeof(FairyGUI.ScrollBarDisplayType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIScrollBarDisplayType(RealStatePtr L, int index, FairyGUI.ScrollBarDisplayType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIScrollBarDisplayType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ScrollBarDisplayType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.ScrollBarDisplayType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIRelationType_TypeID = -1;
+		int FairyGUIRelationType_EnumRef = -1;
+        
+        public void PushFairyGUIRelationType(RealStatePtr L, FairyGUI.RelationType val)
+        {
+            if (FairyGUIRelationType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIRelationType_TypeID = getTypeId(L, typeof(FairyGUI.RelationType), out is_first);
+				
+				if (FairyGUIRelationType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.RelationType));
+				    FairyGUIRelationType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIRelationType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIRelationType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.RelationType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIRelationType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.RelationType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIRelationType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.RelationType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.RelationType");
+                }
+				val = (FairyGUI.RelationType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.RelationType)objectCasters.GetCaster(typeof(FairyGUI.RelationType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIRelationType(RealStatePtr L, int index, FairyGUI.RelationType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIRelationType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.RelationType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.RelationType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIListLayoutType_TypeID = -1;
+		int FairyGUIListLayoutType_EnumRef = -1;
+        
+        public void PushFairyGUIListLayoutType(RealStatePtr L, FairyGUI.ListLayoutType val)
+        {
+            if (FairyGUIListLayoutType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIListLayoutType_TypeID = getTypeId(L, typeof(FairyGUI.ListLayoutType), out is_first);
+				
+				if (FairyGUIListLayoutType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.ListLayoutType));
+				    FairyGUIListLayoutType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIListLayoutType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIListLayoutType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.ListLayoutType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIListLayoutType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.ListLayoutType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIListLayoutType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ListLayoutType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.ListLayoutType");
+                }
+				val = (FairyGUI.ListLayoutType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.ListLayoutType)objectCasters.GetCaster(typeof(FairyGUI.ListLayoutType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIListLayoutType(RealStatePtr L, int index, FairyGUI.ListLayoutType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIListLayoutType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ListLayoutType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.ListLayoutType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIListSelectionMode_TypeID = -1;
+		int FairyGUIListSelectionMode_EnumRef = -1;
+        
+        public void PushFairyGUIListSelectionMode(RealStatePtr L, FairyGUI.ListSelectionMode val)
+        {
+            if (FairyGUIListSelectionMode_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIListSelectionMode_TypeID = getTypeId(L, typeof(FairyGUI.ListSelectionMode), out is_first);
+				
+				if (FairyGUIListSelectionMode_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.ListSelectionMode));
+				    FairyGUIListSelectionMode_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIListSelectionMode_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIListSelectionMode_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.ListSelectionMode ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIListSelectionMode_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.ListSelectionMode val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIListSelectionMode_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ListSelectionMode");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.ListSelectionMode");
+                }
+				val = (FairyGUI.ListSelectionMode)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.ListSelectionMode)objectCasters.GetCaster(typeof(FairyGUI.ListSelectionMode))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIListSelectionMode(RealStatePtr L, int index, FairyGUI.ListSelectionMode val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIListSelectionMode_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ListSelectionMode");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.ListSelectionMode ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIProgressTitleType_TypeID = -1;
+		int FairyGUIProgressTitleType_EnumRef = -1;
+        
+        public void PushFairyGUIProgressTitleType(RealStatePtr L, FairyGUI.ProgressTitleType val)
+        {
+            if (FairyGUIProgressTitleType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIProgressTitleType_TypeID = getTypeId(L, typeof(FairyGUI.ProgressTitleType), out is_first);
+				
+				if (FairyGUIProgressTitleType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.ProgressTitleType));
+				    FairyGUIProgressTitleType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIProgressTitleType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIProgressTitleType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.ProgressTitleType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIProgressTitleType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.ProgressTitleType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIProgressTitleType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ProgressTitleType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.ProgressTitleType");
+                }
+				val = (FairyGUI.ProgressTitleType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.ProgressTitleType)objectCasters.GetCaster(typeof(FairyGUI.ProgressTitleType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIProgressTitleType(RealStatePtr L, int index, FairyGUI.ProgressTitleType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIProgressTitleType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ProgressTitleType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.ProgressTitleType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIButtonMode_TypeID = -1;
+		int FairyGUIButtonMode_EnumRef = -1;
+        
+        public void PushFairyGUIButtonMode(RealStatePtr L, FairyGUI.ButtonMode val)
+        {
+            if (FairyGUIButtonMode_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIButtonMode_TypeID = getTypeId(L, typeof(FairyGUI.ButtonMode), out is_first);
+				
+				if (FairyGUIButtonMode_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.ButtonMode));
+				    FairyGUIButtonMode_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIButtonMode_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIButtonMode_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.ButtonMode ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIButtonMode_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.ButtonMode val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIButtonMode_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ButtonMode");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.ButtonMode");
+                }
+				val = (FairyGUI.ButtonMode)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.ButtonMode)objectCasters.GetCaster(typeof(FairyGUI.ButtonMode))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIButtonMode(RealStatePtr L, int index, FairyGUI.ButtonMode val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIButtonMode_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ButtonMode");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.ButtonMode ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUITransitionActionType_TypeID = -1;
+		int FairyGUITransitionActionType_EnumRef = -1;
+        
+        public void PushFairyGUITransitionActionType(RealStatePtr L, FairyGUI.TransitionActionType val)
+        {
+            if (FairyGUITransitionActionType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUITransitionActionType_TypeID = getTypeId(L, typeof(FairyGUI.TransitionActionType), out is_first);
+				
+				if (FairyGUITransitionActionType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.TransitionActionType));
+				    FairyGUITransitionActionType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUITransitionActionType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUITransitionActionType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.TransitionActionType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUITransitionActionType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.TransitionActionType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUITransitionActionType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.TransitionActionType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.TransitionActionType");
+                }
+				val = (FairyGUI.TransitionActionType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.TransitionActionType)objectCasters.GetCaster(typeof(FairyGUI.TransitionActionType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUITransitionActionType(RealStatePtr L, int index, FairyGUI.TransitionActionType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUITransitionActionType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.TransitionActionType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.TransitionActionType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIGroupLayoutType_TypeID = -1;
+		int FairyGUIGroupLayoutType_EnumRef = -1;
+        
+        public void PushFairyGUIGroupLayoutType(RealStatePtr L, FairyGUI.GroupLayoutType val)
+        {
+            if (FairyGUIGroupLayoutType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIGroupLayoutType_TypeID = getTypeId(L, typeof(FairyGUI.GroupLayoutType), out is_first);
+				
+				if (FairyGUIGroupLayoutType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.GroupLayoutType));
+				    FairyGUIGroupLayoutType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIGroupLayoutType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIGroupLayoutType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.GroupLayoutType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIGroupLayoutType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.GroupLayoutType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIGroupLayoutType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.GroupLayoutType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.GroupLayoutType");
+                }
+				val = (FairyGUI.GroupLayoutType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.GroupLayoutType)objectCasters.GetCaster(typeof(FairyGUI.GroupLayoutType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIGroupLayoutType(RealStatePtr L, int index, FairyGUI.GroupLayoutType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIGroupLayoutType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.GroupLayoutType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.GroupLayoutType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIChildrenRenderOrder_TypeID = -1;
+		int FairyGUIChildrenRenderOrder_EnumRef = -1;
+        
+        public void PushFairyGUIChildrenRenderOrder(RealStatePtr L, FairyGUI.ChildrenRenderOrder val)
+        {
+            if (FairyGUIChildrenRenderOrder_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIChildrenRenderOrder_TypeID = getTypeId(L, typeof(FairyGUI.ChildrenRenderOrder), out is_first);
+				
+				if (FairyGUIChildrenRenderOrder_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.ChildrenRenderOrder));
+				    FairyGUIChildrenRenderOrder_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIChildrenRenderOrder_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIChildrenRenderOrder_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.ChildrenRenderOrder ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIChildrenRenderOrder_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.ChildrenRenderOrder val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIChildrenRenderOrder_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ChildrenRenderOrder");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.ChildrenRenderOrder");
+                }
+				val = (FairyGUI.ChildrenRenderOrder)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.ChildrenRenderOrder)objectCasters.GetCaster(typeof(FairyGUI.ChildrenRenderOrder))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIChildrenRenderOrder(RealStatePtr L, int index, FairyGUI.ChildrenRenderOrder val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIChildrenRenderOrder_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ChildrenRenderOrder");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.ChildrenRenderOrder ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIPopupDirection_TypeID = -1;
+		int FairyGUIPopupDirection_EnumRef = -1;
+        
+        public void PushFairyGUIPopupDirection(RealStatePtr L, FairyGUI.PopupDirection val)
+        {
+            if (FairyGUIPopupDirection_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIPopupDirection_TypeID = getTypeId(L, typeof(FairyGUI.PopupDirection), out is_first);
+				
+				if (FairyGUIPopupDirection_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.PopupDirection));
+				    FairyGUIPopupDirection_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIPopupDirection_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIPopupDirection_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.PopupDirection ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIPopupDirection_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.PopupDirection val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIPopupDirection_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.PopupDirection");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.PopupDirection");
+                }
+				val = (FairyGUI.PopupDirection)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.PopupDirection)objectCasters.GetCaster(typeof(FairyGUI.PopupDirection))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIPopupDirection(RealStatePtr L, int index, FairyGUI.PopupDirection val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIPopupDirection_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.PopupDirection");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.PopupDirection ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIFlipType_TypeID = -1;
+		int FairyGUIFlipType_EnumRef = -1;
+        
+        public void PushFairyGUIFlipType(RealStatePtr L, FairyGUI.FlipType val)
+        {
+            if (FairyGUIFlipType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIFlipType_TypeID = getTypeId(L, typeof(FairyGUI.FlipType), out is_first);
+				
+				if (FairyGUIFlipType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.FlipType));
+				    FairyGUIFlipType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIFlipType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIFlipType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.FlipType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIFlipType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.FlipType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIFlipType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.FlipType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.FlipType");
+                }
+				val = (FairyGUI.FlipType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.FlipType)objectCasters.GetCaster(typeof(FairyGUI.FlipType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIFlipType(RealStatePtr L, int index, FairyGUI.FlipType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIFlipType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.FlipType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.FlipType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIFillMethod_TypeID = -1;
+		int FairyGUIFillMethod_EnumRef = -1;
+        
+        public void PushFairyGUIFillMethod(RealStatePtr L, FairyGUI.FillMethod val)
+        {
+            if (FairyGUIFillMethod_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIFillMethod_TypeID = getTypeId(L, typeof(FairyGUI.FillMethod), out is_first);
+				
+				if (FairyGUIFillMethod_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.FillMethod));
+				    FairyGUIFillMethod_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIFillMethod_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIFillMethod_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.FillMethod ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIFillMethod_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.FillMethod val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIFillMethod_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.FillMethod");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.FillMethod");
+                }
+				val = (FairyGUI.FillMethod)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.FillMethod)objectCasters.GetCaster(typeof(FairyGUI.FillMethod))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIFillMethod(RealStatePtr L, int index, FairyGUI.FillMethod val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIFillMethod_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.FillMethod");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.FillMethod ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIOriginHorizontal_TypeID = -1;
+		int FairyGUIOriginHorizontal_EnumRef = -1;
+        
+        public void PushFairyGUIOriginHorizontal(RealStatePtr L, FairyGUI.OriginHorizontal val)
+        {
+            if (FairyGUIOriginHorizontal_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIOriginHorizontal_TypeID = getTypeId(L, typeof(FairyGUI.OriginHorizontal), out is_first);
+				
+				if (FairyGUIOriginHorizontal_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.OriginHorizontal));
+				    FairyGUIOriginHorizontal_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIOriginHorizontal_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIOriginHorizontal_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.OriginHorizontal ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIOriginHorizontal_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.OriginHorizontal val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIOriginHorizontal_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.OriginHorizontal");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.OriginHorizontal");
+                }
+				val = (FairyGUI.OriginHorizontal)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.OriginHorizontal)objectCasters.GetCaster(typeof(FairyGUI.OriginHorizontal))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIOriginHorizontal(RealStatePtr L, int index, FairyGUI.OriginHorizontal val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIOriginHorizontal_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.OriginHorizontal");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.OriginHorizontal ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIOriginVertical_TypeID = -1;
+		int FairyGUIOriginVertical_EnumRef = -1;
+        
+        public void PushFairyGUIOriginVertical(RealStatePtr L, FairyGUI.OriginVertical val)
+        {
+            if (FairyGUIOriginVertical_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIOriginVertical_TypeID = getTypeId(L, typeof(FairyGUI.OriginVertical), out is_first);
+				
+				if (FairyGUIOriginVertical_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.OriginVertical));
+				    FairyGUIOriginVertical_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIOriginVertical_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIOriginVertical_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.OriginVertical ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIOriginVertical_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.OriginVertical val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIOriginVertical_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.OriginVertical");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.OriginVertical");
+                }
+				val = (FairyGUI.OriginVertical)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.OriginVertical)objectCasters.GetCaster(typeof(FairyGUI.OriginVertical))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIOriginVertical(RealStatePtr L, int index, FairyGUI.OriginVertical val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIOriginVertical_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.OriginVertical");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.OriginVertical ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIOrigin90_TypeID = -1;
+		int FairyGUIOrigin90_EnumRef = -1;
+        
+        public void PushFairyGUIOrigin90(RealStatePtr L, FairyGUI.Origin90 val)
+        {
+            if (FairyGUIOrigin90_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIOrigin90_TypeID = getTypeId(L, typeof(FairyGUI.Origin90), out is_first);
+				
+				if (FairyGUIOrigin90_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.Origin90));
+				    FairyGUIOrigin90_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIOrigin90_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIOrigin90_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.Origin90 ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIOrigin90_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.Origin90 val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIOrigin90_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.Origin90");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.Origin90");
+                }
+				val = (FairyGUI.Origin90)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.Origin90)objectCasters.GetCaster(typeof(FairyGUI.Origin90))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIOrigin90(RealStatePtr L, int index, FairyGUI.Origin90 val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIOrigin90_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.Origin90");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.Origin90 ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIOrigin180_TypeID = -1;
+		int FairyGUIOrigin180_EnumRef = -1;
+        
+        public void PushFairyGUIOrigin180(RealStatePtr L, FairyGUI.Origin180 val)
+        {
+            if (FairyGUIOrigin180_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIOrigin180_TypeID = getTypeId(L, typeof(FairyGUI.Origin180), out is_first);
+				
+				if (FairyGUIOrigin180_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.Origin180));
+				    FairyGUIOrigin180_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIOrigin180_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIOrigin180_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.Origin180 ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIOrigin180_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.Origin180 val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIOrigin180_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.Origin180");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.Origin180");
+                }
+				val = (FairyGUI.Origin180)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.Origin180)objectCasters.GetCaster(typeof(FairyGUI.Origin180))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIOrigin180(RealStatePtr L, int index, FairyGUI.Origin180 val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIOrigin180_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.Origin180");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.Origin180 ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIOrigin360_TypeID = -1;
+		int FairyGUIOrigin360_EnumRef = -1;
+        
+        public void PushFairyGUIOrigin360(RealStatePtr L, FairyGUI.Origin360 val)
+        {
+            if (FairyGUIOrigin360_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIOrigin360_TypeID = getTypeId(L, typeof(FairyGUI.Origin360), out is_first);
+				
+				if (FairyGUIOrigin360_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.Origin360));
+				    FairyGUIOrigin360_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIOrigin360_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIOrigin360_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.Origin360 ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIOrigin360_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.Origin360 val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIOrigin360_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.Origin360");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.Origin360");
+                }
+				val = (FairyGUI.Origin360)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.Origin360)objectCasters.GetCaster(typeof(FairyGUI.Origin360))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIOrigin360(RealStatePtr L, int index, FairyGUI.Origin360 val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIOrigin360_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.Origin360");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.Origin360 ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIFocusRule_TypeID = -1;
+		int FairyGUIFocusRule_EnumRef = -1;
+        
+        public void PushFairyGUIFocusRule(RealStatePtr L, FairyGUI.FocusRule val)
+        {
+            if (FairyGUIFocusRule_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIFocusRule_TypeID = getTypeId(L, typeof(FairyGUI.FocusRule), out is_first);
+				
+				if (FairyGUIFocusRule_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.FocusRule));
+				    FairyGUIFocusRule_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIFocusRule_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIFocusRule_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.FocusRule ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIFocusRule_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.FocusRule val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIFocusRule_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.FocusRule");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.FocusRule");
+                }
+				val = (FairyGUI.FocusRule)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.FocusRule)objectCasters.GetCaster(typeof(FairyGUI.FocusRule))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIFocusRule(RealStatePtr L, int index, FairyGUI.FocusRule val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIFocusRule_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.FocusRule");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.FocusRule ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIFitScreen_TypeID = -1;
+		int FairyGUIFitScreen_EnumRef = -1;
+        
+        public void PushFairyGUIFitScreen(RealStatePtr L, FairyGUI.FitScreen val)
+        {
+            if (FairyGUIFitScreen_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIFitScreen_TypeID = getTypeId(L, typeof(FairyGUI.FitScreen), out is_first);
+				
+				if (FairyGUIFitScreen_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.FitScreen));
+				    FairyGUIFitScreen_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIFitScreen_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIFitScreen_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.FitScreen ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIFitScreen_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.FitScreen val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIFitScreen_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.FitScreen");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.FitScreen");
+                }
+				val = (FairyGUI.FitScreen)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.FitScreen)objectCasters.GetCaster(typeof(FairyGUI.FitScreen))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIFitScreen(RealStatePtr L, int index, FairyGUI.FitScreen val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIFitScreen_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.FitScreen");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.FitScreen ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIUtilsHtmlElementType_TypeID = -1;
+		int FairyGUIUtilsHtmlElementType_EnumRef = -1;
+        
+        public void PushFairyGUIUtilsHtmlElementType(RealStatePtr L, FairyGUI.Utils.HtmlElementType val)
+        {
+            if (FairyGUIUtilsHtmlElementType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIUtilsHtmlElementType_TypeID = getTypeId(L, typeof(FairyGUI.Utils.HtmlElementType), out is_first);
+				
+				if (FairyGUIUtilsHtmlElementType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.Utils.HtmlElementType));
+				    FairyGUIUtilsHtmlElementType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIUtilsHtmlElementType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIUtilsHtmlElementType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.Utils.HtmlElementType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIUtilsHtmlElementType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.Utils.HtmlElementType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIUtilsHtmlElementType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.Utils.HtmlElementType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.Utils.HtmlElementType");
+                }
+				val = (FairyGUI.Utils.HtmlElementType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.Utils.HtmlElementType)objectCasters.GetCaster(typeof(FairyGUI.Utils.HtmlElementType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIUtilsHtmlElementType(RealStatePtr L, int index, FairyGUI.Utils.HtmlElementType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIUtilsHtmlElementType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.Utils.HtmlElementType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.Utils.HtmlElementType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIUtilsXMLTagType_TypeID = -1;
+		int FairyGUIUtilsXMLTagType_EnumRef = -1;
+        
+        public void PushFairyGUIUtilsXMLTagType(RealStatePtr L, FairyGUI.Utils.XMLTagType val)
+        {
+            if (FairyGUIUtilsXMLTagType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIUtilsXMLTagType_TypeID = getTypeId(L, typeof(FairyGUI.Utils.XMLTagType), out is_first);
+				
+				if (FairyGUIUtilsXMLTagType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.Utils.XMLTagType));
+				    FairyGUIUtilsXMLTagType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIUtilsXMLTagType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIUtilsXMLTagType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.Utils.XMLTagType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIUtilsXMLTagType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.Utils.XMLTagType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIUtilsXMLTagType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.Utils.XMLTagType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.Utils.XMLTagType");
+                }
+				val = (FairyGUI.Utils.XMLTagType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.Utils.XMLTagType)objectCasters.GetCaster(typeof(FairyGUI.Utils.XMLTagType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIUtilsXMLTagType(RealStatePtr L, int index, FairyGUI.Utils.XMLTagType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIUtilsXMLTagType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.Utils.XMLTagType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.Utils.XMLTagType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
         int ETColdDebugType_TypeID = -1;
 		int ETColdDebugType_EnumRef = -1;
         
@@ -2040,6 +5107,594 @@ namespace XLua
                 if (!CopyByValue.Pack(buff, 0,  (int)val))
                 {
                     throw new Exception("pack fail for MessageBox.EventId ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIRTLSupportDirectionType_TypeID = -1;
+		int FairyGUIRTLSupportDirectionType_EnumRef = -1;
+        
+        public void PushFairyGUIRTLSupportDirectionType(RealStatePtr L, FairyGUI.RTLSupport.DirectionType val)
+        {
+            if (FairyGUIRTLSupportDirectionType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIRTLSupportDirectionType_TypeID = getTypeId(L, typeof(FairyGUI.RTLSupport.DirectionType), out is_first);
+				
+				if (FairyGUIRTLSupportDirectionType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.RTLSupport.DirectionType));
+				    FairyGUIRTLSupportDirectionType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIRTLSupportDirectionType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIRTLSupportDirectionType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.RTLSupport.DirectionType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIRTLSupportDirectionType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.RTLSupport.DirectionType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIRTLSupportDirectionType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.RTLSupport.DirectionType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.RTLSupport.DirectionType");
+                }
+				val = (FairyGUI.RTLSupport.DirectionType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.RTLSupport.DirectionType)objectCasters.GetCaster(typeof(FairyGUI.RTLSupport.DirectionType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIRTLSupportDirectionType(RealStatePtr L, int index, FairyGUI.RTLSupport.DirectionType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIRTLSupportDirectionType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.RTLSupport.DirectionType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.RTLSupport.DirectionType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUITextFormatSpecialStyle_TypeID = -1;
+		int FairyGUITextFormatSpecialStyle_EnumRef = -1;
+        
+        public void PushFairyGUITextFormatSpecialStyle(RealStatePtr L, FairyGUI.TextFormat.SpecialStyle val)
+        {
+            if (FairyGUITextFormatSpecialStyle_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUITextFormatSpecialStyle_TypeID = getTypeId(L, typeof(FairyGUI.TextFormat.SpecialStyle), out is_first);
+				
+				if (FairyGUITextFormatSpecialStyle_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.TextFormat.SpecialStyle));
+				    FairyGUITextFormatSpecialStyle_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUITextFormatSpecialStyle_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUITextFormatSpecialStyle_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.TextFormat.SpecialStyle ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUITextFormatSpecialStyle_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.TextFormat.SpecialStyle val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUITextFormatSpecialStyle_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.TextFormat.SpecialStyle");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.TextFormat.SpecialStyle");
+                }
+				val = (FairyGUI.TextFormat.SpecialStyle)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.TextFormat.SpecialStyle)objectCasters.GetCaster(typeof(FairyGUI.TextFormat.SpecialStyle))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUITextFormatSpecialStyle(RealStatePtr L, int index, FairyGUI.TextFormat.SpecialStyle val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUITextFormatSpecialStyle_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.TextFormat.SpecialStyle");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.TextFormat.SpecialStyle ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIGPathPointCurveType_TypeID = -1;
+		int FairyGUIGPathPointCurveType_EnumRef = -1;
+        
+        public void PushFairyGUIGPathPointCurveType(RealStatePtr L, FairyGUI.GPathPoint.CurveType val)
+        {
+            if (FairyGUIGPathPointCurveType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIGPathPointCurveType_TypeID = getTypeId(L, typeof(FairyGUI.GPathPoint.CurveType), out is_first);
+				
+				if (FairyGUIGPathPointCurveType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.GPathPoint.CurveType));
+				    FairyGUIGPathPointCurveType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIGPathPointCurveType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIGPathPointCurveType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.GPathPoint.CurveType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIGPathPointCurveType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.GPathPoint.CurveType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIGPathPointCurveType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.GPathPoint.CurveType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.GPathPoint.CurveType");
+                }
+				val = (FairyGUI.GPathPoint.CurveType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.GPathPoint.CurveType)objectCasters.GetCaster(typeof(FairyGUI.GPathPoint.CurveType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIGPathPointCurveType(RealStatePtr L, int index, FairyGUI.GPathPoint.CurveType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIGPathPointCurveType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.GPathPoint.CurveType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.GPathPoint.CurveType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIControllerActionActionType_TypeID = -1;
+		int FairyGUIControllerActionActionType_EnumRef = -1;
+        
+        public void PushFairyGUIControllerActionActionType(RealStatePtr L, FairyGUI.ControllerAction.ActionType val)
+        {
+            if (FairyGUIControllerActionActionType_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIControllerActionActionType_TypeID = getTypeId(L, typeof(FairyGUI.ControllerAction.ActionType), out is_first);
+				
+				if (FairyGUIControllerActionActionType_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.ControllerAction.ActionType));
+				    FairyGUIControllerActionActionType_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIControllerActionActionType_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIControllerActionActionType_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.ControllerAction.ActionType ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIControllerActionActionType_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.ControllerAction.ActionType val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIControllerActionActionType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ControllerAction.ActionType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.ControllerAction.ActionType");
+                }
+				val = (FairyGUI.ControllerAction.ActionType)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.ControllerAction.ActionType)objectCasters.GetCaster(typeof(FairyGUI.ControllerAction.ActionType))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIControllerActionActionType(RealStatePtr L, int index, FairyGUI.ControllerAction.ActionType val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIControllerActionActionType_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.ControllerAction.ActionType");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.ControllerAction.ActionType ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIUIConfigConfigKey_TypeID = -1;
+		int FairyGUIUIConfigConfigKey_EnumRef = -1;
+        
+        public void PushFairyGUIUIConfigConfigKey(RealStatePtr L, FairyGUI.UIConfig.ConfigKey val)
+        {
+            if (FairyGUIUIConfigConfigKey_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIUIConfigConfigKey_TypeID = getTypeId(L, typeof(FairyGUI.UIConfig.ConfigKey), out is_first);
+				
+				if (FairyGUIUIConfigConfigKey_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.UIConfig.ConfigKey));
+				    FairyGUIUIConfigConfigKey_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIUIConfigConfigKey_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIUIConfigConfigKey_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.UIConfig.ConfigKey ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIUIConfigConfigKey_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.UIConfig.ConfigKey val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIUIConfigConfigKey_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.UIConfig.ConfigKey");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.UIConfig.ConfigKey");
+                }
+				val = (FairyGUI.UIConfig.ConfigKey)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.UIConfig.ConfigKey)objectCasters.GetCaster(typeof(FairyGUI.UIConfig.ConfigKey))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIUIConfigConfigKey(RealStatePtr L, int index, FairyGUI.UIConfig.ConfigKey val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIUIConfigConfigKey_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.UIConfig.ConfigKey");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.UIConfig.ConfigKey ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIUIContentScalerScaleMode_TypeID = -1;
+		int FairyGUIUIContentScalerScaleMode_EnumRef = -1;
+        
+        public void PushFairyGUIUIContentScalerScaleMode(RealStatePtr L, FairyGUI.UIContentScaler.ScaleMode val)
+        {
+            if (FairyGUIUIContentScalerScaleMode_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIUIContentScalerScaleMode_TypeID = getTypeId(L, typeof(FairyGUI.UIContentScaler.ScaleMode), out is_first);
+				
+				if (FairyGUIUIContentScalerScaleMode_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.UIContentScaler.ScaleMode));
+				    FairyGUIUIContentScalerScaleMode_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIUIContentScalerScaleMode_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIUIContentScalerScaleMode_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.UIContentScaler.ScaleMode ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIUIContentScalerScaleMode_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.UIContentScaler.ScaleMode val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIUIContentScalerScaleMode_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.UIContentScaler.ScaleMode");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.UIContentScaler.ScaleMode");
+                }
+				val = (FairyGUI.UIContentScaler.ScaleMode)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.UIContentScaler.ScaleMode)objectCasters.GetCaster(typeof(FairyGUI.UIContentScaler.ScaleMode))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIUIContentScalerScaleMode(RealStatePtr L, int index, FairyGUI.UIContentScaler.ScaleMode val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIUIContentScalerScaleMode_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.UIContentScaler.ScaleMode");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.UIContentScaler.ScaleMode ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int FairyGUIUIContentScalerScreenMatchMode_TypeID = -1;
+		int FairyGUIUIContentScalerScreenMatchMode_EnumRef = -1;
+        
+        public void PushFairyGUIUIContentScalerScreenMatchMode(RealStatePtr L, FairyGUI.UIContentScaler.ScreenMatchMode val)
+        {
+            if (FairyGUIUIContentScalerScreenMatchMode_TypeID == -1)
+            {
+			    bool is_first;
+                FairyGUIUIContentScalerScreenMatchMode_TypeID = getTypeId(L, typeof(FairyGUI.UIContentScaler.ScreenMatchMode), out is_first);
+				
+				if (FairyGUIUIContentScalerScreenMatchMode_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(FairyGUI.UIContentScaler.ScreenMatchMode));
+				    FairyGUIUIContentScalerScreenMatchMode_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, FairyGUIUIContentScalerScreenMatchMode_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, FairyGUIUIContentScalerScreenMatchMode_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for FairyGUI.UIContentScaler.ScreenMatchMode ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, FairyGUIUIContentScalerScreenMatchMode_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out FairyGUI.UIContentScaler.ScreenMatchMode val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIUIContentScalerScreenMatchMode_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.UIContentScaler.ScreenMatchMode");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for FairyGUI.UIContentScaler.ScreenMatchMode");
+                }
+				val = (FairyGUI.UIContentScaler.ScreenMatchMode)e;
+                
+            }
+            else
+            {
+                val = (FairyGUI.UIContentScaler.ScreenMatchMode)objectCasters.GetCaster(typeof(FairyGUI.UIContentScaler.ScreenMatchMode))(L, index, null);
+            }
+        }
+		
+        public void UpdateFairyGUIUIContentScalerScreenMatchMode(RealStatePtr L, int index, FairyGUI.UIContentScaler.ScreenMatchMode val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != FairyGUIUIContentScalerScreenMatchMode_TypeID)
+				{
+				    throw new Exception("invalid userdata for FairyGUI.UIContentScaler.ScreenMatchMode");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for FairyGUI.UIContentScaler.ScreenMatchMode ,value="+val);
                 }
             }
 			
@@ -5006,6 +8661,12 @@ namespace XLua
 				translator.PushSystemIOSeekOrigin(L, array[index]);
 				return true;
 			}
+			else if (type == typeof(UnityEngine.Texture2D.EXRFlags[]))
+			{
+			    UnityEngine.Texture2D.EXRFlags[] array = obj as UnityEngine.Texture2D.EXRFlags[];
+				translator.PushUnityEngineTexture2DEXRFlags(L, array[index]);
+				return true;
+			}
 			else if (type == typeof(libx.LoadState[]))
 			{
 			    libx.LoadState[] array = obj as libx.LoadState[];
@@ -5042,6 +8703,216 @@ namespace XLua
 				translator.PushBattlehubUtilsKnownCursor(L, array[index]);
 				return true;
 			}
+			else if (type == typeof(FairyGUI.BlendMode[]))
+			{
+			    FairyGUI.BlendMode[] array = obj as FairyGUI.BlendMode[];
+				translator.PushFairyGUIBlendMode(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.HitTestMode[]))
+			{
+			    FairyGUI.HitTestMode[] array = obj as FairyGUI.HitTestMode[];
+				translator.PushFairyGUIHitTestMode(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.MaterialFlags[]))
+			{
+			    FairyGUI.MaterialFlags[] array = obj as FairyGUI.MaterialFlags[];
+				translator.PushFairyGUIMaterialFlags(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.DestroyMethod[]))
+			{
+			    FairyGUI.DestroyMethod[] array = obj as FairyGUI.DestroyMethod[];
+				translator.PushFairyGUIDestroyMethod(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.EaseType[]))
+			{
+			    FairyGUI.EaseType[] array = obj as FairyGUI.EaseType[];
+				translator.PushFairyGUIEaseType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.TweenPropType[]))
+			{
+			    FairyGUI.TweenPropType[] array = obj as FairyGUI.TweenPropType[];
+				translator.PushFairyGUITweenPropType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.PackageItemType[]))
+			{
+			    FairyGUI.PackageItemType[] array = obj as FairyGUI.PackageItemType[];
+				translator.PushFairyGUIPackageItemType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ObjectType[]))
+			{
+			    FairyGUI.ObjectType[] array = obj as FairyGUI.ObjectType[];
+				translator.PushFairyGUIObjectType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.AlignType[]))
+			{
+			    FairyGUI.AlignType[] array = obj as FairyGUI.AlignType[];
+				translator.PushFairyGUIAlignType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.VertAlignType[]))
+			{
+			    FairyGUI.VertAlignType[] array = obj as FairyGUI.VertAlignType[];
+				translator.PushFairyGUIVertAlignType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.OverflowType[]))
+			{
+			    FairyGUI.OverflowType[] array = obj as FairyGUI.OverflowType[];
+				translator.PushFairyGUIOverflowType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.FillType[]))
+			{
+			    FairyGUI.FillType[] array = obj as FairyGUI.FillType[];
+				translator.PushFairyGUIFillType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.AutoSizeType[]))
+			{
+			    FairyGUI.AutoSizeType[] array = obj as FairyGUI.AutoSizeType[];
+				translator.PushFairyGUIAutoSizeType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ScrollType[]))
+			{
+			    FairyGUI.ScrollType[] array = obj as FairyGUI.ScrollType[];
+				translator.PushFairyGUIScrollType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ScrollBarDisplayType[]))
+			{
+			    FairyGUI.ScrollBarDisplayType[] array = obj as FairyGUI.ScrollBarDisplayType[];
+				translator.PushFairyGUIScrollBarDisplayType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.RelationType[]))
+			{
+			    FairyGUI.RelationType[] array = obj as FairyGUI.RelationType[];
+				translator.PushFairyGUIRelationType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ListLayoutType[]))
+			{
+			    FairyGUI.ListLayoutType[] array = obj as FairyGUI.ListLayoutType[];
+				translator.PushFairyGUIListLayoutType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ListSelectionMode[]))
+			{
+			    FairyGUI.ListSelectionMode[] array = obj as FairyGUI.ListSelectionMode[];
+				translator.PushFairyGUIListSelectionMode(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ProgressTitleType[]))
+			{
+			    FairyGUI.ProgressTitleType[] array = obj as FairyGUI.ProgressTitleType[];
+				translator.PushFairyGUIProgressTitleType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ButtonMode[]))
+			{
+			    FairyGUI.ButtonMode[] array = obj as FairyGUI.ButtonMode[];
+				translator.PushFairyGUIButtonMode(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.TransitionActionType[]))
+			{
+			    FairyGUI.TransitionActionType[] array = obj as FairyGUI.TransitionActionType[];
+				translator.PushFairyGUITransitionActionType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.GroupLayoutType[]))
+			{
+			    FairyGUI.GroupLayoutType[] array = obj as FairyGUI.GroupLayoutType[];
+				translator.PushFairyGUIGroupLayoutType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ChildrenRenderOrder[]))
+			{
+			    FairyGUI.ChildrenRenderOrder[] array = obj as FairyGUI.ChildrenRenderOrder[];
+				translator.PushFairyGUIChildrenRenderOrder(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.PopupDirection[]))
+			{
+			    FairyGUI.PopupDirection[] array = obj as FairyGUI.PopupDirection[];
+				translator.PushFairyGUIPopupDirection(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.FlipType[]))
+			{
+			    FairyGUI.FlipType[] array = obj as FairyGUI.FlipType[];
+				translator.PushFairyGUIFlipType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.FillMethod[]))
+			{
+			    FairyGUI.FillMethod[] array = obj as FairyGUI.FillMethod[];
+				translator.PushFairyGUIFillMethod(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.OriginHorizontal[]))
+			{
+			    FairyGUI.OriginHorizontal[] array = obj as FairyGUI.OriginHorizontal[];
+				translator.PushFairyGUIOriginHorizontal(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.OriginVertical[]))
+			{
+			    FairyGUI.OriginVertical[] array = obj as FairyGUI.OriginVertical[];
+				translator.PushFairyGUIOriginVertical(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.Origin90[]))
+			{
+			    FairyGUI.Origin90[] array = obj as FairyGUI.Origin90[];
+				translator.PushFairyGUIOrigin90(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.Origin180[]))
+			{
+			    FairyGUI.Origin180[] array = obj as FairyGUI.Origin180[];
+				translator.PushFairyGUIOrigin180(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.Origin360[]))
+			{
+			    FairyGUI.Origin360[] array = obj as FairyGUI.Origin360[];
+				translator.PushFairyGUIOrigin360(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.FocusRule[]))
+			{
+			    FairyGUI.FocusRule[] array = obj as FairyGUI.FocusRule[];
+				translator.PushFairyGUIFocusRule(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.FitScreen[]))
+			{
+			    FairyGUI.FitScreen[] array = obj as FairyGUI.FitScreen[];
+				translator.PushFairyGUIFitScreen(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.Utils.HtmlElementType[]))
+			{
+			    FairyGUI.Utils.HtmlElementType[] array = obj as FairyGUI.Utils.HtmlElementType[];
+				translator.PushFairyGUIUtilsHtmlElementType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.Utils.XMLTagType[]))
+			{
+			    FairyGUI.Utils.XMLTagType[] array = obj as FairyGUI.Utils.XMLTagType[];
+				translator.PushFairyGUIUtilsXMLTagType(L, array[index]);
+				return true;
+			}
 			else if (type == typeof(ETCold.DebugType[]))
 			{
 			    ETCold.DebugType[] array = obj as ETCold.DebugType[];
@@ -5064,6 +8935,48 @@ namespace XLua
 			{
 			    MessageBox.EventId[] array = obj as MessageBox.EventId[];
 				translator.PushMessageBoxEventId(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.RTLSupport.DirectionType[]))
+			{
+			    FairyGUI.RTLSupport.DirectionType[] array = obj as FairyGUI.RTLSupport.DirectionType[];
+				translator.PushFairyGUIRTLSupportDirectionType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.TextFormat.SpecialStyle[]))
+			{
+			    FairyGUI.TextFormat.SpecialStyle[] array = obj as FairyGUI.TextFormat.SpecialStyle[];
+				translator.PushFairyGUITextFormatSpecialStyle(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.GPathPoint.CurveType[]))
+			{
+			    FairyGUI.GPathPoint.CurveType[] array = obj as FairyGUI.GPathPoint.CurveType[];
+				translator.PushFairyGUIGPathPointCurveType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ControllerAction.ActionType[]))
+			{
+			    FairyGUI.ControllerAction.ActionType[] array = obj as FairyGUI.ControllerAction.ActionType[];
+				translator.PushFairyGUIControllerActionActionType(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.UIConfig.ConfigKey[]))
+			{
+			    FairyGUI.UIConfig.ConfigKey[] array = obj as FairyGUI.UIConfig.ConfigKey[];
+				translator.PushFairyGUIUIConfigConfigKey(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.UIContentScaler.ScaleMode[]))
+			{
+			    FairyGUI.UIContentScaler.ScaleMode[] array = obj as FairyGUI.UIContentScaler.ScaleMode[];
+				translator.PushFairyGUIUIContentScalerScaleMode(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.UIContentScaler.ScreenMatchMode[]))
+			{
+			    FairyGUI.UIContentScaler.ScreenMatchMode[] array = obj as FairyGUI.UIContentScaler.ScreenMatchMode[];
+				translator.PushFairyGUIUIContentScalerScreenMatchMode(L, array[index]);
 				return true;
 			}
 			else if (type == typeof(System.Net.Sockets.SocketAsyncOperation[]))
@@ -5366,6 +9279,12 @@ namespace XLua
 				translator.Get(L, obj_idx, out array[array_idx]);
 				return true;
 			}
+			else if (type == typeof(UnityEngine.Texture2D.EXRFlags[]))
+			{
+			    UnityEngine.Texture2D.EXRFlags[] array = obj as UnityEngine.Texture2D.EXRFlags[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
 			else if (type == typeof(libx.LoadState[]))
 			{
 			    libx.LoadState[] array = obj as libx.LoadState[];
@@ -5402,6 +9321,216 @@ namespace XLua
 				translator.Get(L, obj_idx, out array[array_idx]);
 				return true;
 			}
+			else if (type == typeof(FairyGUI.BlendMode[]))
+			{
+			    FairyGUI.BlendMode[] array = obj as FairyGUI.BlendMode[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.HitTestMode[]))
+			{
+			    FairyGUI.HitTestMode[] array = obj as FairyGUI.HitTestMode[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.MaterialFlags[]))
+			{
+			    FairyGUI.MaterialFlags[] array = obj as FairyGUI.MaterialFlags[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.DestroyMethod[]))
+			{
+			    FairyGUI.DestroyMethod[] array = obj as FairyGUI.DestroyMethod[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.EaseType[]))
+			{
+			    FairyGUI.EaseType[] array = obj as FairyGUI.EaseType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.TweenPropType[]))
+			{
+			    FairyGUI.TweenPropType[] array = obj as FairyGUI.TweenPropType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.PackageItemType[]))
+			{
+			    FairyGUI.PackageItemType[] array = obj as FairyGUI.PackageItemType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ObjectType[]))
+			{
+			    FairyGUI.ObjectType[] array = obj as FairyGUI.ObjectType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.AlignType[]))
+			{
+			    FairyGUI.AlignType[] array = obj as FairyGUI.AlignType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.VertAlignType[]))
+			{
+			    FairyGUI.VertAlignType[] array = obj as FairyGUI.VertAlignType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.OverflowType[]))
+			{
+			    FairyGUI.OverflowType[] array = obj as FairyGUI.OverflowType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.FillType[]))
+			{
+			    FairyGUI.FillType[] array = obj as FairyGUI.FillType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.AutoSizeType[]))
+			{
+			    FairyGUI.AutoSizeType[] array = obj as FairyGUI.AutoSizeType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ScrollType[]))
+			{
+			    FairyGUI.ScrollType[] array = obj as FairyGUI.ScrollType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ScrollBarDisplayType[]))
+			{
+			    FairyGUI.ScrollBarDisplayType[] array = obj as FairyGUI.ScrollBarDisplayType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.RelationType[]))
+			{
+			    FairyGUI.RelationType[] array = obj as FairyGUI.RelationType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ListLayoutType[]))
+			{
+			    FairyGUI.ListLayoutType[] array = obj as FairyGUI.ListLayoutType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ListSelectionMode[]))
+			{
+			    FairyGUI.ListSelectionMode[] array = obj as FairyGUI.ListSelectionMode[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ProgressTitleType[]))
+			{
+			    FairyGUI.ProgressTitleType[] array = obj as FairyGUI.ProgressTitleType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ButtonMode[]))
+			{
+			    FairyGUI.ButtonMode[] array = obj as FairyGUI.ButtonMode[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.TransitionActionType[]))
+			{
+			    FairyGUI.TransitionActionType[] array = obj as FairyGUI.TransitionActionType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.GroupLayoutType[]))
+			{
+			    FairyGUI.GroupLayoutType[] array = obj as FairyGUI.GroupLayoutType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ChildrenRenderOrder[]))
+			{
+			    FairyGUI.ChildrenRenderOrder[] array = obj as FairyGUI.ChildrenRenderOrder[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.PopupDirection[]))
+			{
+			    FairyGUI.PopupDirection[] array = obj as FairyGUI.PopupDirection[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.FlipType[]))
+			{
+			    FairyGUI.FlipType[] array = obj as FairyGUI.FlipType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.FillMethod[]))
+			{
+			    FairyGUI.FillMethod[] array = obj as FairyGUI.FillMethod[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.OriginHorizontal[]))
+			{
+			    FairyGUI.OriginHorizontal[] array = obj as FairyGUI.OriginHorizontal[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.OriginVertical[]))
+			{
+			    FairyGUI.OriginVertical[] array = obj as FairyGUI.OriginVertical[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.Origin90[]))
+			{
+			    FairyGUI.Origin90[] array = obj as FairyGUI.Origin90[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.Origin180[]))
+			{
+			    FairyGUI.Origin180[] array = obj as FairyGUI.Origin180[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.Origin360[]))
+			{
+			    FairyGUI.Origin360[] array = obj as FairyGUI.Origin360[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.FocusRule[]))
+			{
+			    FairyGUI.FocusRule[] array = obj as FairyGUI.FocusRule[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.FitScreen[]))
+			{
+			    FairyGUI.FitScreen[] array = obj as FairyGUI.FitScreen[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.Utils.HtmlElementType[]))
+			{
+			    FairyGUI.Utils.HtmlElementType[] array = obj as FairyGUI.Utils.HtmlElementType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.Utils.XMLTagType[]))
+			{
+			    FairyGUI.Utils.XMLTagType[] array = obj as FairyGUI.Utils.XMLTagType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
 			else if (type == typeof(ETCold.DebugType[]))
 			{
 			    ETCold.DebugType[] array = obj as ETCold.DebugType[];
@@ -5423,6 +9552,48 @@ namespace XLua
 			else if (type == typeof(MessageBox.EventId[]))
 			{
 			    MessageBox.EventId[] array = obj as MessageBox.EventId[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.RTLSupport.DirectionType[]))
+			{
+			    FairyGUI.RTLSupport.DirectionType[] array = obj as FairyGUI.RTLSupport.DirectionType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.TextFormat.SpecialStyle[]))
+			{
+			    FairyGUI.TextFormat.SpecialStyle[] array = obj as FairyGUI.TextFormat.SpecialStyle[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.GPathPoint.CurveType[]))
+			{
+			    FairyGUI.GPathPoint.CurveType[] array = obj as FairyGUI.GPathPoint.CurveType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.ControllerAction.ActionType[]))
+			{
+			    FairyGUI.ControllerAction.ActionType[] array = obj as FairyGUI.ControllerAction.ActionType[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.UIConfig.ConfigKey[]))
+			{
+			    FairyGUI.UIConfig.ConfigKey[] array = obj as FairyGUI.UIConfig.ConfigKey[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.UIContentScaler.ScaleMode[]))
+			{
+			    FairyGUI.UIContentScaler.ScaleMode[] array = obj as FairyGUI.UIContentScaler.ScaleMode[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(FairyGUI.UIContentScaler.ScreenMatchMode[]))
+			{
+			    FairyGUI.UIContentScaler.ScreenMatchMode[] array = obj as FairyGUI.UIContentScaler.ScreenMatchMode[];
 				translator.Get(L, obj_idx, out array[array_idx]);
 				return true;
 			}

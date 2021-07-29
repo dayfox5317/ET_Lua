@@ -33,6 +33,13 @@ System.namespace("ET", function (namespace)
 
           ET.Log.Info("登陆gate成功!")
 
+
+          for i = 0, 19 do
+            local gateSession0 = ET.NetKcpComponentSystem.Create(zoneScene:GetComponent(ET.NetKcpComponent), ET.NetworkHelper.ToIPEndPoint1(r2CLogin.Address))
+            gateSession0:AddComponent2(ET.PingComponent)
+          end
+
+
           local default = ETEventType.LoginFinish()
           default.ZoneScene = zoneScene
           async:Await(ET.Game.getEventSystem():Publish(default, ETEventType.LoginFinish))

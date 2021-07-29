@@ -38,6 +38,7 @@ System.namespace("ET", function (namespace)
     }
   end)
 
+
   namespace.class("UILobbyComponentSystem", function (namespace)
     local EnterMap
     EnterMap = function (self)

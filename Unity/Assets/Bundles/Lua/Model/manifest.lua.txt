@@ -244,6 +244,7 @@ return function (path)
       "ET.EventType.MoveStop",
       "ET.EventType.NumbericChange",
       "ET.EventType.PingChange",
+      "ET.EventType.Test_CreateTestFUI",
       "ET.FileHelper",
       "ET.G2C_EnterMap",
       "ET.G2C_LoginGate",

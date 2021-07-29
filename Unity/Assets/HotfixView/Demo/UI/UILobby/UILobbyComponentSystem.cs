@@ -15,7 +15,8 @@ namespace ET
             self.text = (rc.GetObject("Text") as GameObject).GetComponent(typeof(Text)) as Text;
         }
     }
-    
+  
+
     public static class UILobbyComponentSystem
     {
         public static void EnterMap(this UILobbyComponent self)

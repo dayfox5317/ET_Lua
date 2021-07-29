@@ -60,6 +60,7 @@
     <Compile Include="Assets\HotfixView\Demo\UI\UILogin\LoginFinish_RemoveLoginUI.cs" />
     <Compile Include="Assets\HotfixView\Demo\UI\UILobby\UILobbyEvent.cs" />
     <Compile Include="Assets\HotfixView\Demo\Unit\ChangeRotation_SyncGameObjectRotation.cs" />
+    <Compile Include="Assets\HotfixView\Demo\FUI\FUILogin\AppStartInitFinish_CreateLoginFUI.cs" />
     <Compile Include="Assets\HotfixView\Demo\UI\UILoading\LoadingFinishEvent_RemoveLoadingUI.cs" />
     <Compile Include="Assets\HotfixView\Demo\UI\UILobby\UILobbyComponentSystem.cs" />
     <Compile Include="Assets\HotfixView\Demo\Unit\AfterUnitCreate_CreateUnitView.cs" />
@@ -70,10 +71,12 @@
     <Compile Include="Assets\HotfixView\Demo\UI\UILobby\LoginFinish_CreateLobbyUI.cs" />
     <Compile Include="Assets\HotfixView\Module\Resource\GameObjectHelper.cs" />
     <Compile Include="Assets\HotfixView\Demo\UI\UILobby\EnterMapFinish_RemoveLobbyUI.cs" />
-    <Compile Include="Assets\HotfixView\Demo\UI\UILogin\AppStartInitFinish_CreateLoginUI.cs" />
+    <Compile Include="Assets\HotfixView\Demo\FUI\FUITest\Test_CreateTestFUI.cs" />
     <Compile Include="Assets\HotfixView\Demo\Unit\ChangePosition_SyncGameObjectPos.cs" />
+    <Compile Include="Assets\HotfixView\Demo\UI\UILogin\AppStartInitFinish_CreateLoginUI.cs" />
     <Compile Include="Assets\HotfixView\Demo\UI\UIHelper.cs" />
     <Compile Include="Assets\HotfixView\Demo\Config\ConfigComponent_SetConfigLoader_Awake.cs" />
+    <Compile Include="Assets\HotfixView\Demo\FUI\FUILogin\FUILoginBindingSystem.cs" />
     <Compile Include="Assets\HotfixView\AppStart_Init.cs" />
     <Compile Include="Assets\HotfixView\Demo\Scene\SceneChangeComponentSystem.cs" />
     <Compile Include="Assets\HotfixView\Demo\Opera\OperaComponentSystem.cs" />
@@ -81,6 +84,7 @@
     <Compile Include="Assets\HotfixView\Demo\Config\ConfigLoader.cs" />
     <Compile Include="Assets\HotfixView\Demo\UI\UILoading\LoadingBeginEvent_CreateLoadingUI.cs" />
     <Compile Include="Assets\HotfixView\Demo\UI\UILoading\UILoadingEvent.cs" />
+    <Compile Include="Assets\HotfixView\Demo\FUI\FUITest\UI_Button1System.cs" />
     <Compile Include="Assets\HotfixView\Demo\Helper\LoadConfigHelper.cs" />
     <Compile Include="Assets\HotfixView\Demo\Unit\AnimatorComponentSystem.cs" />
     <Compile Include="Assets\HotfixView\Demo\Scene\AfterCreateZoneScene_AddComponent.cs" />

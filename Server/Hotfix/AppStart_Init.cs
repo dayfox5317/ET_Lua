@@ -1,15 +1,11 @@
-
-
 using System.Net;
 
 namespace ET
 {
-    [Event]
     public class AppStart_Init : AEvent<EventType.AppStart>
     {
         protected override async ETTask Run(EventType.AppStart args)
         {
-            
             Game.Scene.AddComponent<ConfigComponent>();
             await ConfigComponent.Instance.LoadAsync();
 
@@ -30,19 +26,31 @@ namespace ET
             Game.Scene.AddComponent<NumericWatcherComponent>();
 
             Game.Scene.AddComponent<NetThreadComponent>();
-            Game.Scene.AddComponent<NetInnerComponent, IPEndPoint>(processConfig.InnerIPPort);
-
-            var processScenes = StartSceneConfigCategory.Instance.GetByProcess(Game.Options.Process);
-            foreach (StartSceneConfig startConfig in processScenes)
-            {
-                await SceneFactory.Create(Game.Scene, startConfig.Id, startConfig.InstanceId, startConfig.Zone, startConfig.Name, startConfig.Type, startConfig);
-            }
 
             switch (Game.Options.AppType)
             {
                 case AppType.Server:
-                    break;
+                    {
+                        Game.Scene.AddComponent<NetInnerComponent, IPEndPoint>(processConfig.InnerIPPort);
+
+                        var processScenes = StartSceneConfigCategory.Instance.GetByProcess(Game.Options.Process);
+                        foreach (StartSceneConfig startConfig in processScenes)
+                        {
+                            await SceneFactory.Create(Game.Scene, startConfig.Id, startConfig.InstanceId, startConfig.Zone, startConfig.Name,
+                                startConfig.Type, startConfig);
+                        }
+
+                        break;
+                    }
                 case AppType.Watcher:
+                    {
+                        StartMachineConfig startMachineConfig = WatcherHelper.GetThisMachineConfig();
+                        WatcherComponent watcherComponent = Game.Scene.AddComponent<WatcherComponent>();
+                        watcherComponent.Start(Game.Options.CreateScenes);
+                        Game.Scene.AddComponent<NetInnerComponent, IPEndPoint>(NetworkHelper.ToIPEndPoint($"{startMachineConfig.InnerIP}:{startMachineConfig.WatcherPort}"));
+                        break;
+                    }
+                case AppType.GameTool:
                     break;
             }
 

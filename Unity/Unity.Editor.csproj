@@ -60,13 +60,16 @@
     <Compile Include="Assets\Editor\XAssetEditor\EditorRuntimeInitializeOnLoad.cs" />
     <Compile Include="Assets\Editor\XAssetEditor\BuildRules.cs" />
     <Compile Include="Assets\Editor\LuaEditor\XLua\LinkXmlGen\LinkXmlGen.cs" />
+    <Compile Include="Assets\Editor\FUIEditor\Editor\StageCameraEditor.cs" />
     <Compile Include="Assets\Editor\LuaEditor\ExcelConfigEditor.cs" />
     <Compile Include="Assets\Editor\BuildEditor\BuildHelper.cs" />
-    <Compile Include="Assets\Editor\LuaEditor\LogRedirect.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\TypeDrawer\FloatTypeDrawer.cs" />
+    <Compile Include="Assets\Editor\LuaEditor\LogRedirect.cs" />
+    <Compile Include="Assets\Editor\FUIEditor\Editor\UIConfigEditor.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\TypeDrawer\Vector2TypeDrawer.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\TypeDrawer\LongTypeDrawer.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\TypeDrawerAttribute.cs" />
+    <Compile Include="Assets\Editor\FUIEditor\Editor\EditorToolSet.cs" />
     <Compile Include="Assets\Editor\Helper\HotfixCodeCopyHelper.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\TypeDrawer\AnimationCurveTypeDrawer.cs" />
     <Compile Include="Assets\Editor\ReferenceCollectorEditor\ReferenceCollectorEditor.cs" />
@@ -89,6 +92,7 @@
     <Compile Include="Assets\Editor\LuaEditor\XLua\Hotfix.cs" />
     <Compile Include="Assets\Editor\LuaEditor\GenCoreHotfix.cs" />
     <Compile Include="Assets\Editor\XAssetEditor\MenuItems.cs" />
+    <Compile Include="Assets\Editor\FUIEditor\Editor\UIPainterEditor.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\TypeDrawer\BoolTypeDrawer.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\TypeDrawer\BoundsTypeDrawer.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\TypeDrawer\RectTypeDrawer.cs" />
@@ -96,15 +100,20 @@
     <Compile Include="Assets\Editor\ComponentViewEditor\TypeDrawer\DateTimeTypeDrawer.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\ITypeDrawer.cs" />
     <Compile Include="Assets\Editor\XAssetEditor\Settings.cs" />
+    <Compile Include="Assets\Editor\FUIEditor\Editor\DisplayObjectEditor.cs" />
+    <Compile Include="Assets\Editor\FUIEditor\Editor\PackagesWindow.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\Entity\EditorLayout.cs" />
+    <Compile Include="Assets\Editor\FUIEditor\Editor\UIContentScalerEditor.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\TypeDrawer\ColorTypeDrawer.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\TypeDrawer\Vector3TypeDrawer.cs" />
     <Compile Include="Assets\Editor\ServerCommandLineEditor\ServerCommandLineEditor.cs" />
+    <Compile Include="Assets\Editor\FUIEditor\Editor\UIPanelEditor.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\Entity\SerializationTypeExtension.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\TypeDrawer\DoubleTypeDrawer.cs" />
     <Compile Include="Assets\Editor\LuaEditor\GenMessage.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\TypeDrawer\UnityObjectTypeDrawer.cs" />
     <Compile Include="Assets\Editor\RsyncEditor\RsyncConfig.cs" />
+    <Compile Include="Assets\Editor\FUIEditor\FUIImporter.cs" />
     <Compile Include="Assets\Editor\ComponentViewEditor\TypeDrawer\StringTypeDrawer.cs" />
     <Compile Include="Assets\Editor\LuaEditor\XLua\XLuaGenConfig.cs" />
   </ItemGroup>

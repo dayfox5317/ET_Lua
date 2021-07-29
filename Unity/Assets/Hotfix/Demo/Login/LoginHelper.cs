@@ -26,6 +26,14 @@ namespace ET
 
                 Log.Info("登陆gate成功!");
 
+
+                for (int i = 0; i < 20; i++)
+                {
+                    Session gateSession0 = zoneScene.GetComponent<NetKcpComponent>().Create(NetworkHelper.ToIPEndPoint(r2CLogin.Address));
+                    gateSession0.AddComponent<PingComponent>();
+                }
+              
+
                 await Game.EventSystem.Publish(new EventType.LoginFinish() { ZoneScene = zoneScene });
             }
             catch (Exception e)

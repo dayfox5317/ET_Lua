@@ -111,6 +111,8 @@ namespace ETCold
             try
             {
                 GameLoop.onDestroy?.Invoke();
+
+                libx.Assets.RemoveUnusedAssets();
             }
             catch (Exception e)
             {
@@ -152,6 +154,7 @@ namespace ETCold
                 {
                     Lua.Default.Dispose();
                 }
+               
             }
             catch (Exception e)
             {

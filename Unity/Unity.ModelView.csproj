@@ -56,23 +56,37 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ModelView\Module\FUI\FUIComponent.cs" />
+    <Compile Include="Assets\ModelView\Module\FUI\GComponentHelper.cs" />
     <Compile Include="Assets\ModelView\Demo\Unit\AnimatorComponent.cs" />
     <Compile Include="Assets\ModelView\Demo\Camera\CameraComponent.cs" />
     <Compile Include="Assets\ModelView\Demo\Global\GlobalComponent.cs" />
     <Compile Include="Assets\ModelView\Module\UI\UIEventComponent.cs" />
+    <Compile Include="Assets\ModelView\Module\FUI\FUI.cs" />
+    <Compile Include="Assets\ModelView\Module\FUI\GObjectHelper.cs" />
     <Compile Include="Assets\ModelView\Module\UI\LayerNames.cs" />
+    <Compile Include="Assets\ModelView\Demo\FUI\AutoGen\ModelViewBinder.cs" />
     <Compile Include="Assets\ModelView\Demo\Scene\SceneChangeComponent.cs" />
+    <Compile Include="Assets\ModelView\Demo\FUI\AutoGen\FUIButton1\FUIButton1.cs" />
+    <Compile Include="Assets\ModelView\Module\FUI\FUIPackageComponent.cs" />
+    <Compile Include="Assets\ModelView\Demo\FUI\AutoGen\FUILoginStartButton\FUILoginStartButton.cs" />
     <Compile Include="Assets\ModelView\Module\UI\UIComponent.cs" />
     <Compile Include="Assets\ModelView\Demo\Opera\OperaComponent.cs" />
+    <Compile Include="Assets\ModelView\Module\FUI\FUIInitComponent.cs" />
+    <Compile Include="Assets\ModelView\Module\FUI\FUIScalerComponent.cs" />
     <Compile Include="Assets\ModelView\Demo\UI\UILobby\UILobbyComponent.cs" />
     <Compile Include="Assets\ModelView\Module\UI\AUIEvent.cs" />
     <Compile Include="Assets\ModelView\Demo\RTUI\DragDropTarget.cs" />
+    <Compile Include="Assets\ModelView\Demo\FUI\FUILogin.cs" />
     <Compile Include="Assets\ModelView\Module\UI\UIType.cs" />
+    <Compile Include="Assets\ModelView\Demo\FUI\FUITest\UI_Button1.cs" />
     <Compile Include="Assets\ModelView\Demo\UI\UILogin\UILoginComponent.cs" />
     <Compile Include="Assets\ModelView\Demo\Unit\GameObjectComponent.cs" />
     <Compile Include="Assets\ModelView\Module\UI\UI.cs" />
     <Compile Include="Assets\ModelView\Demo\UI\UILoading\UILoadingComponent.cs" />
+    <Compile Include="Assets\ModelView\Module\FUI\FUIStackComponent.cs" />
     <Compile Include="Assets\ModelView\Module\UI\UIEventAttribute.cs" />
+    <Compile Include="Assets\ModelView\Demo\FUI\AutoGen\FUIComponent1\FUIComponent1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ModelView\Unity.ModelView.asmdef" />

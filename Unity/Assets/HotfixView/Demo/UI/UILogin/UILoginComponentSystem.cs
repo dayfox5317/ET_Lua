@@ -17,7 +17,13 @@ namespace ET
 			self.account = rc.GetObject("Account") as GameObject;
 		}
 	}
-	
+	public class UILoginComponentUpdateSystem : UpdateSystem<UILoginComponent>
+	{
+		public override void Update(UILoginComponent self)
+		{
+			Log.Error("dsx");
+		}
+	}
 	public static class UILoginComponentSystem
 	{
 		public static void OnLogin(this UILoginComponent self)

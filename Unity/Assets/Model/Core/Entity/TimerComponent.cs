@@ -56,6 +56,7 @@ namespace ET
     {
         public override void Update(TimerComponent self)
         {
+            
             self.Update();
         }
     }

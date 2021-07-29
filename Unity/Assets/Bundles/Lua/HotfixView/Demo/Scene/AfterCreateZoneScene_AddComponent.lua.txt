@@ -9,6 +9,12 @@ System.namespace("ET", function (namespace)
         local zoneScene = args.ZoneScene
         zoneScene:AddComponent2(ET.UIEventComponent)
         zoneScene:AddComponent2(ET.UIComponent)
+
+
+        zoneScene:AddComponent2(ET.FUIComponent)
+        zoneScene:AddComponent2(ET.FUIPackageComponent)
+        async:Await(zoneScene:AddComponent2(ET.FUIInitComponent):Init())
+        zoneScene:AddComponent2(ET.FUIScalerComponent)
         async:Await(ET.ETTask.getCompletedTask())
       end, nil, this, args)
     end

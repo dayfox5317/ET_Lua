@@ -27,7 +27,7 @@ namespace ETCold
                     redirectStandardError = true;
                     useShellExecute = false;
                 }
-                
+
                 ProcessStartInfo info = new ProcessStartInfo
                 {
                     FileName = exe,
@@ -38,7 +38,7 @@ namespace ETCold
                     RedirectStandardOutput = redirectStandardOutput,
                     RedirectStandardError = redirectStandardError,
                 };
-                
+
                 Process process = Process.Start(info);
 
                 if (waitExit)

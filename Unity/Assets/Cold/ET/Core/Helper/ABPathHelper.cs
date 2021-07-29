@@ -14,7 +14,10 @@
         {
             return $"Assets/Bundles/FUI/{fileName}.bytes";
         }
-
+        public static string GetFGUIAtlasResPath(string fileName)
+        {
+            return $"Assets/Bundles/FUI/{fileName}";
+        }
         public static string GetFGUIResPath(string fileName, string extension)
         {
             return $"Assets/Bundles/FUI/{fileName}{extension}";

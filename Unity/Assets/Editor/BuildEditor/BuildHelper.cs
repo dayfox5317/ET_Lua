@@ -14,7 +14,7 @@ namespace ET
         [MenuItem("Tools/web资源服务器")]
         public static void OpenFileServer()
         {
-            ProcessHelper.Run("dotnet", "FileServer.dll", "..\\FileServer\\");
+            ETCold.ProcessHelper.Run("dotnet", "FileServer.dll", "..\\FileServer\\",true);
         }
 
         public static void Build(PlatformType type, BuildAssetBundleOptions buildAssetBundleOptions, BuildOptions buildOptions, bool isBuildExe, bool isContainAB, bool clearFolder)

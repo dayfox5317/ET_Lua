@@ -185,7 +185,24 @@ namespace XLua.CSObjectWrap
 			
             
             
-                
+			    int gen_param_count = LuaAPI.lua_gettop(L);
+            
+                if(gen_param_count == 3&& (LuaAPI.lua_isnil(L, 1) || LuaAPI.lua_type(L, 1) == LuaTypes.LUA_TSTRING)&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)&& LuaTypes.LUA_TBOOLEAN == LuaAPI.lua_type(L, 3)) 
+                {
+                    string _srcDir = LuaAPI.lua_tostring(L, 1);
+                    string _tgtDir = LuaAPI.lua_tostring(L, 2);
+                    bool _copy_sub = LuaAPI.lua_toboolean(L, 3);
+                    
+                    ETCold.FileHelper.CopyDirectory( 
+                        _srcDir, 
+                        _tgtDir, 
+                        _copy_sub );
+                    
+                    
+                    
+                    return 0;
+                }
+                if(gen_param_count == 2&& (LuaAPI.lua_isnil(L, 1) || LuaAPI.lua_type(L, 1) == LuaTypes.LUA_TSTRING)&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)) 
                 {
                     string _srcDir = LuaAPI.lua_tostring(L, 1);
                     string _tgtDir = LuaAPI.lua_tostring(L, 2);
@@ -202,6 +219,8 @@ namespace XLua.CSObjectWrap
             } catch(System.Exception gen_e) {
                 return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
             }
+            
+            return LuaAPI.luaL_error(L, "invalid arguments to ETCold.FileHelper.CopyDirectory!");
             
         }
         

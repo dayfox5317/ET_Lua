@@ -9,6 +9,7 @@
     <PropertyGroup>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+        <AssemblyName>Robot</AssemblyName>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

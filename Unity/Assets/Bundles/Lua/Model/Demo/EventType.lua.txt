@@ -182,5 +182,18 @@ System.namespace("ET", function (namespace)
         end
       }
     end)
+
+    namespace.struct("Test_CreateTestFUI", function (namespace)
+      return {
+        __metadata__ = function (out)
+          return {
+            fields = {
+              { "ZoneScene", 0x6, out.ET.Scene }
+            },
+            class = { 0x6 }
+          }
+        end
+      }
+    end)
   end)
 end)

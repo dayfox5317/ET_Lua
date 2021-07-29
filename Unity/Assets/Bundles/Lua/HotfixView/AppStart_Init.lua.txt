@@ -32,6 +32,7 @@ System.namespace("ET", function (namespace)
         ET.Game.getScene():AddComponent2(ET.AIDispatcherComponent)
 
 
+
         --    Game.Scene.AddComponent<ImGuiRenderComponent>();
 
         --  ResourcesComponent.Instance.LoadBundle("unit.unity3d");
