@@ -59,7 +59,6 @@ return function (path)
       "ET.FUIInitComponent",
       "ET.FUILoginAwakeSystem",
       "ET.FUILoginStartButtonAwakeSystem",
-      "ET.FUILoginUpdateSystem",
       "ET.FUIPackage",
       "ET.FUIPackageComponent",
       "ET.FUIScalerComponent.RegisterInfo",

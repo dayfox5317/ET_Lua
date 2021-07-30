@@ -9,35 +9,9 @@ System.import(function (out)
   ETTask_1FUILogin = ET.ETTask_1(ET.FUILogin)
 end)
 System.namespace("ET", function (namespace)
-  namespace.class("FUILoginUpdateSystem", function (namespace)
-    local Update
-    Update = function (this, self)
-      ET.Log.Error("FUILogin awake")
-      --ReferenceCollector rc = self.GetParent<UI>().GameObject.GetComponent(typeof(ReferenceCollector)) as ReferenceCollector;
-      --	self.m_n1.self.onClick.Set(()=> { self.OnLogin(); });
-    end
-    return {
-      base = function (out)
-        return {
-          out.ET.UpdateSystem_1(out.ET.FUILogin)
-        }
-      end,
-      Update = Update,
-      __metadata__ = function (out)
-        return {
-          methods = {
-            { "Update", 0x106, Update, out.ET.FUILogin }
-          },
-          class = { 0x6 }
-        }
-      end
-    }
-  end)
-
   namespace.class("FUILoginAwakeSystem", function (namespace)
     local Awake
     Awake = function (this, self, go)
-      ET.Log.Error("FUILogin awake")
       self:Awake(go)
     end
     return {
@@ -59,11 +33,7 @@ System.namespace("ET", function (namespace)
   end)
 
   namespace.class("FUILogin", function (namespace)
-    local CreateGObject, CreateGObjectAsync, CreateInstance, CreateInstanceAsync, Create1, Awake, Dispose, class, 
-    __ctor__
-    __ctor__ = function (this)
-      System.base(this).__ctor__(this)
-    end
+    local CreateGObject, CreateGObjectAsync, CreateInstance, CreateInstanceAsync, Create1, Awake, Dispose, class
     CreateGObject = function ()
       return FairyGUI.UIPackage.CreateObject("ModelView" --[[FUILogin.UIPackageName]], "Login" --[[FUILogin.UIResName]])
     end
@@ -71,13 +41,13 @@ System.namespace("ET", function (namespace)
       FairyGUI.UIPackage.CreateObjectAsync("ModelView" --[[FUILogin.UIPackageName]], "Login" --[[FUILogin.UIResName]], result)
     end
     CreateInstance = function (domain)
-      return ET.EntityFactory.Create1(domain, CreateGObject(), false, class, FairyGUI.GObject)
+      return ET.EntityFactory.CreateWithParent1(domain, CreateGObject(), false, class, FairyGUI.GObject)
     end
     CreateInstanceAsync = function (domain)
       local tcs = ETTask_1FUILogin.Create(false)
 
       CreateGObjectAsync(function (go)
-        tcs:SetResult(ET.EntityFactory.Create1(domain, go, false, class, FairyGUI.GObject))
+        tcs:SetResult(ET.EntityFactory.CreateWithParent1(domain, go, false, class, FairyGUI.GObject))
       end)
 
       return tcs
@@ -90,16 +60,15 @@ System.namespace("ET", function (namespace)
         return
       end
 
-      --GObject = go;	
+      this.GObject = go
 
-      --if (string.IsNullOrWhiteSpace(Name))
-      --         {
-      --	Name = Id.ToString();
-      --         }
+      if System.String.IsNullOrWhiteSpace(this:getName()) then
+        this:setName(this.Id:ToString())
+      end
 
       this.self = System.cast(FairyGUI.GComponent, go)
 
-      --self.Add(this);
+      ET.GObjectHelper.Add(this.self, this)
 
       local com = go:getasCom()
 
@@ -132,7 +101,7 @@ System.namespace("ET", function (namespace)
     class = {
       base = function (out)
         return {
-          out.ET.Entity
+          out.ET.FUI
         }
       end,
       CreateInstance = CreateInstance,
@@ -140,7 +109,6 @@ System.namespace("ET", function (namespace)
       Create1 = Create1,
       Awake = Awake,
       Dispose = Dispose,
-      __ctor__ = __ctor__,
       __metadata__ = function (out)
         return {
           fields = {

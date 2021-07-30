@@ -106,26 +106,27 @@ System.namespace("ET", function (namespace)
       this.GObject = nil
       this.isFromFGUIPool = false
     end
-    Add = function (this, ui, asChildGObject)
+    Add = function (this, Name, ui, asChildGObject)
       if ui == nil or getIsEmpty(ui) then
         System.throw(System.Exception("ui can not be empty" .. ""))
       end
 
-      if System.String.IsNullOrWhiteSpace(getName(ui)) then
-        System.throw(System.Exception("ui.Name can not be empty" .. ""))
+
+      if System.String.IsNullOrWhiteSpace(Name) then
+        System.throw(System.Exception("fui Name can not be empty" .. ""))
       end
 
-      if this.fuiChildren:ContainsKey(getName(ui)) then
-        System.throw(System.Exception("ui.Name(" .. getName(ui) .. ") already exist"))
+      if this.fuiChildren:ContainsKey(Name) then
+        System.throw(System.Exception("fui Name(" .. Name .. ") already exist"))
       end
 
-      this.fuiChildren:AddKeyValue(getName(ui), ui)
+      this.fuiChildren:AddKeyValue(Name, ui)
 
       if getIsComponent(this) and asChildGObject then
         this.GObject:getasCom():AddChild(ui.GObject)
       end
 
-      ui:setParent(this)
+      ui.UIParent = this
     end
     MakeFullScreen = function (this)
       local default = this.GObject
@@ -232,7 +233,8 @@ System.namespace("ET", function (namespace)
           fields = {
             { "fuiChildren", 0x1, System.Dictionary(System.String, out.ET.FUI) },
             { "GObject", 0x6, out.FairyGUI.GObject },
-            { "isFromFGUIPool", 0x3, System.Boolean }
+            { "isFromFGUIPool", 0x3, System.Boolean },
+            { "UIParent", 0x6, class }
           },
           properties = {
             { "IsComponent", 0x206, System.Boolean, getIsComponent },
@@ -242,7 +244,7 @@ System.namespace("ET", function (namespace)
             { "Visible", 0x106, System.Boolean, getVisible, setVisible }
           },
           methods = {
-            { "Add", 0x206, Add, class, System.Boolean },
+            { "Add", 0x306, Add, System.String, class, System.Boolean },
             { "Dispose", 0x6, Dispose },
             { "Get", 0x186, Get, System.String, class },
             { "GetAll", 0x86, GetAll, System.Array(out.ET.FUI) },

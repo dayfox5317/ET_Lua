@@ -2,25 +2,25 @@
 local System = System
 local ET = ET
 System.namespace("ET", function (namespace)
-  namespace.class("Test_CreateTestFUI", function (namespace)
+  namespace.class("LoginFinish_RemoveLoginFUI", function (namespace)
     local Run
     Run = function (this, args)
       return System.async(function (async, this, args)
-        local fui = async:Await(ET.UI_Button1.CreateInstanceAsync(args.ZoneScene))
-        args.ZoneScene:GetComponent(ET.FUIComponent):Add("Button1" --[[UI_Button1.UIResName]], fui, true)
+        args.ZoneScene:GetComponent(ET.FUIComponent):Remove("Login" --[[FUILogin.UIResName]])
+        async:Await(ET.ETTask.getCompletedTask())
       end, nil, this, args)
     end
     return {
       base = function (out)
         return {
-          out.ET.AEvent_1(out.ET.EventType.Test_CreateTestFUI)
+          out.ET.AEvent_1(out.ET.EventType.LoginFinish)
         }
       end,
       Run = Run,
       __metadata__ = function (out)
         return {
           methods = {
-            { "Run", 0x183, Run, out.ET.EventType.Test_CreateTestFUI, out.ET.ETTask }
+            { "Run", 0x183, Run, out.ET.EventType.LoginFinish, out.ET.ETTask }
           },
           class = { 0x6 }
         }

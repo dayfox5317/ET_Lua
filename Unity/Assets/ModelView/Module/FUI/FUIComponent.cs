@@ -7,7 +7,7 @@ namespace ET
 	{
 		public override void Awake(FUIComponent self)
 		{
-			self.Root = EntityFactory.Create<FUI, GObject>(Game.Scene, GRoot.inst);
+			self.Root = EntityFactory.Create<FUI, GObject>(self.Domain, GRoot.inst);
 		}
 	}
 
@@ -31,9 +31,9 @@ namespace ET
 			Root = null;
 		}
 
-		public void Add(FUI ui, bool asChildGObject)
+		public void Add(string Name,FUI ui, bool asChildGObject)
 		{
-			Root?.Add(ui, asChildGObject);
+			Root?.Add(Name,ui, asChildGObject);
 		}
 
 		public void Remove(string name)

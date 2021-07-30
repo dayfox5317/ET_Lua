@@ -16,6 +16,8 @@ namespace ET
 
     public class FUI : Entity
     {
+        public FUI UIParent;
+
         public GObject GObject;
 
         public string Name
@@ -121,31 +123,32 @@ namespace ET
             isFromFGUIPool = false;
         }
 
-        public void Add(FUI ui, bool asChildGObject)
+        public void Add(string Name, FUI ui, bool asChildGObject)
         {
             if (ui == null || ui.IsEmpty)
             {
                 throw new Exception($"ui can not be empty");
             }
+          
 
-            if (string.IsNullOrWhiteSpace(ui.Name))
+            if (string.IsNullOrWhiteSpace(Name))
             {
-                throw new Exception($"ui.Name can not be empty");
+                throw new Exception($"fui Name can not be empty");
             }
 
-            if (fuiChildren.ContainsKey(ui.Name))
+            if (fuiChildren.ContainsKey(Name))
             {
-                throw new Exception($"ui.Name({ui.Name}) already exist");
+                throw new Exception($"fui Name({Name}) already exist");
             }
 
-            fuiChildren.Add(ui.Name, ui);
+            fuiChildren.Add(Name, ui);
 
             if (IsComponent && asChildGObject)
             {
                 GObject.asCom.AddChild(ui.GObject);
             }
-
-            ui.Parent = this;
+            
+            ui.UIParent = this;
         }
 
         public void MakeFullScreen()

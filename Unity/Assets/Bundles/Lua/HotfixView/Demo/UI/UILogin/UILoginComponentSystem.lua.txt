@@ -36,28 +36,7 @@ System.namespace("ET", function (namespace)
       end
     }
   end)
-  namespace.class("UILoginComponentUpdateSystem", function (namespace)
-    local Update
-    Update = function (this, self)
-      ET.Log.Error("dsx")
-    end
-    return {
-      base = function (out)
-        return {
-          out.ET.UpdateSystem_1(out.ET.UILoginComponent)
-        }
-      end,
-      Update = Update,
-      __metadata__ = function (out)
-        return {
-          methods = {
-            { "Update", 0x106, Update, out.ET.UILoginComponent }
-          },
-          class = { 0x6 }
-        }
-      end
-    }
-  end)
+
   namespace.class("UILoginComponentSystem", function (namespace)
     local OnLogin
     OnLogin = function (self)

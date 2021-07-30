@@ -43,12 +43,12 @@ System.namespace("ET", function (namespace)
   end)
 
   namespace.class("Entity", function (namespace)
-    local Create, CreateWithComponentParent, CreateWithComponentParent1, CreateWithComponentParent2, CreateWithComponentParent3, CreateWithComponentParent4, hashSetPool, dictPool, 
-    childrenPool, getIsFromPool, setIsFromPool, getIsRegister, setIsRegister, getIsComponent, setIsComponent, getIsCreate, 
-    setIsCreate, getIsDisposed, getParent, setParent, setComponentParent, AfterSetParent, GetParent, getDomain, 
-    setDomain, getChildren, AddChild, RemoveChild, AddChildDB, RemoveChildDB, getComponents, Dispose, 
-    AddToComponentsDB, RemoveFromComponentsDB, AddToComponent, RemoveFromComponent, GetChild, AddComponent, AddComponent1, AddComponent2, 
-    AddComponent3, AddComponent4, AddComponent5, RemoveComponent, RemoveComponent1, RemoveComponent2, GetComponent, GetComponent1, 
+    local hashSetPool, dictPool, childrenPool, getIsFromPool, setIsFromPool, getIsRegister, setIsRegister, getIsComponent, 
+    setIsComponent, getIsCreate, setIsCreate, getIsDisposed, getParent, setParent, setComponentParent, AfterSetParent, 
+    GetParent, getDomain, setDomain, getChildren, AddChild, RemoveChild, AddChildDB, RemoveChildDB, 
+    getComponents, Dispose, AddToComponentsDB, RemoveFromComponentsDB, AddToComponent, RemoveFromComponent, GetChild, AddComponent, 
+    AddComponent1, AddComponent2, AddComponent3, AddComponent4, AddComponent5, RemoveComponent, RemoveComponent1, RemoveComponent2, 
+    GetComponent, GetComponent1, Create, CreateWithComponentParent, CreateWithComponentParent1, CreateWithComponentParent2, CreateWithComponentParent3, CreateWithComponentParent4, 
     class, static, __ctor__
     static = function (this)
       hashSetPool = Pool_1HashSetEntity()
@@ -58,67 +58,6 @@ System.namespace("ET", function (namespace)
     __ctor__ = function (this)
       this.status = ET.EntityStatus.None
       ET.Object.__ctor__(this)
-    end
-    Create = function (type, isFromPool)
-      local component
-      if isFromPool then
-        component = System.cast(class, ET.ObjectPool.getInstance():Fetch(type))
-      else
-        component = System.cast(class, System.Activator.CreateInstance(type))
-      end
-      setIsFromPool(component, isFromPool)
-      setIsCreate(component, true)
-      component.Id = 0
-      return component
-    end
-    CreateWithComponentParent = function (this, type, isFromPool)
-      local component = Create(type, isFromPool)
-
-      component.Id = this.Id
-      setComponentParent(component, this)
-
-      ET.EventSystem.getInstance():Awake(component)
-      return component
-    end
-    CreateWithComponentParent1 = function (this, isFromPool, T)
-      local type = System.typeof(T)
-      local component = Create(type, isFromPool)
-
-      component.Id = this.Id
-      setComponentParent(component, this)
-
-      ET.EventSystem.getInstance():Awake(component)
-      return System.cast(T, component)
-    end
-    CreateWithComponentParent2 = function (this, a, isFromPool, T, A)
-      local type = System.typeof(T)
-      local component = Create(type, isFromPool)
-
-      component.Id = this.Id
-      setComponentParent(component, this)
-
-      ET.EventSystem.getInstance():Awake1(component, a, A)
-      return System.cast(T, component)
-    end
-    CreateWithComponentParent3 = function (this, a, b, isFromPool, T, A, B)
-      local type = System.typeof(T)
-      local component = Create(type, isFromPool)
-
-      component.Id = this.Id
-      setComponentParent(component, this)
-
-      ET.EventSystem.getInstance():Awake2(component, a, b, A, B)
-      return System.cast(T, component)
-    end
-    CreateWithComponentParent4 = function (this, a, b, c, isFromPool, T, A, B, C)
-      local type = System.typeof(T)
-      local component = Create(type, isFromPool)
-
-      component.Id = this.Id
-      setComponentParent(component, this)
-
-      ET.EventSystem.getInstance():Awake3(component, a, b, c, A, B, C)
-      return System.cast(T, component)
     end
     getIsFromPool = function (this)
       return (System.band(this.status, ET.EntityStatus.IsFromPool)) == ET.EntityStatus.IsFromPool
@@ -615,13 +554,73 @@ System.namespace("ET", function (namespace)
 
       return component
     end
+    Create = function (type, isFromPool)
+      local component
+      if isFromPool then
+        component = System.cast(class, ET.ObjectPool.getInstance():Fetch(type))
+      else
+        component = System.cast(class, System.Activator.CreateInstance(type))
+      end
+      setIsFromPool(component, isFromPool)
+      setIsCreate(component, true)
+      component.Id = 0
+      return component
+    end
+    CreateWithComponentParent = function (this, type, isFromPool)
+      local component = Create(type, isFromPool)
+
+      component.Id = this.Id
+      setComponentParent(component, this)
+
+      ET.EventSystem.getInstance():Awake(component)
+      return component
+    end
+    CreateWithComponentParent1 = function (this, isFromPool, T)
+      local type = System.typeof(T)
+      local component = Create(type, isFromPool)
+
+      component.Id = this.Id
+      setComponentParent(component, this)
+
+      ET.EventSystem.getInstance():Awake(component)
+      return System.cast(T, component)
+    end
+    CreateWithComponentParent2 = function (this, a, isFromPool, T, A)
+      local type = System.typeof(T)
+      local component = Create(type, isFromPool)
+
+      component.Id = this.Id
+      setComponentParent(component, this)
+
+      ET.EventSystem.getInstance():Awake1(component, a, A)
+      return System.cast(T, component)
+    end
+    CreateWithComponentParent3 = function (this, a, b, isFromPool, T, A, B)
+      local type = System.typeof(T)
+      local component = Create(type, isFromPool)
+
+      component.Id = this.Id
+      setComponentParent(component, this)
+
+      ET.EventSystem.getInstance():Awake2(component, a, b, A, B)
+      return System.cast(T, component)
+    end
+    CreateWithComponentParent4 = function (this, a, b, c, isFromPool, T, A, B, C)
+      local type = System.typeof(T)
+      local component = Create(type, isFromPool)
+
+      component.Id = this.Id
+      setComponentParent(component, this)
+
+      ET.EventSystem.getInstance():Awake3(component, a, b, c, A, B, C)
+      return System.cast(T, component)
+    end
     class = {
       base = function (out)
         return {
           out.ET.Object
         }
       end,
-      Create = Create,
       InstanceId = 0,
       getIsFromPool = getIsFromPool,
       setIsFromPool = setIsFromPool,
@@ -651,42 +650,11 @@ System.namespace("ET", function (namespace)
       RemoveComponent2 = RemoveComponent2,
       GetComponent = GetComponent,
       GetComponent1 = GetComponent1,
+      Create = Create,
       static = static,
       __ctor__ = __ctor__,
       __metadata__ = function (out)
         return {
-          methods = {
-            { ".ctor", 0x3, nil },
-            { "AddChild", 0x101, AddChild, class },
-            { "AddChildDB", 0x101, AddChildDB, class },
-            { "AddComponent", 0x40386, AddComponent5, function (K, P1, P2, P3) return P1, P2, P3, K end },
-            { "AddComponent", 0x30286, AddComponent4, function (K, P1, P2) return P1, P2, K end },
-            { "AddComponent", 0x20186, AddComponent3, function (K, P1) return P1, K end },
-            { "AddComponent", 0x10086, AddComponent2, function (K) return K end },
-            { "AddComponent", 0x186, AddComponent1, System.Type, class },
-            { "AddComponent", 0x186, AddComponent, class, class },
-            { "AddToComponent", 0x201, AddToComponent, System.Type, class },
-            { "AddToComponentsDB", 0x101, AddToComponentsDB, class },
-            { "AfterSetParent", 0x1, AfterSetParent },
-            { "Create", 0x28E, Create, System.Type, System.Boolean, class },
-            { "CreateWithComponentParent", 0x30381, CreateWithComponentParent3, function (T, A, B) return A, B, System.Boolean, T end },
-            { "CreateWithComponentParent", 0x281, CreateWithComponentParent, System.Type, System.Boolean, class },
-            { "CreateWithComponentParent", 0x10181, CreateWithComponentParent1, function (T) return System.Boolean, T end },
-            { "CreateWithComponentParent", 0x20281, CreateWithComponentParent2, function (T, A) return A, System.Boolean, T end },
-            { "CreateWithComponentParent", 0x40481, CreateWithComponentParent4, function (T, A, B, C) return A, B, C, System.Boolean, T end },
-            { "Dispose", 0x6, Dispose },
-            { "GetChild", 0x10186, GetChild, function (K) return System.Int64, K end },
-            { "GetComponent", 0x10086, GetComponent, function (K) return K end },
-            { "GetComponent", 0x186, GetComponent1, System.Type, class },
-            { "GetParent", 0x10086, GetParent, function (T) return T end },
-            { "RemoveChild", 0x101, RemoveChild, class },
-            { "RemoveChildDB", 0x101, RemoveChildDB, class },
-            { "RemoveComponent", 0x10006, RemoveComponent, function (K) return end },
-            { "RemoveComponent", 0x106, RemoveComponent1, class },
-            { "RemoveComponent", 0x106, RemoveComponent2, System.Type },
-            { "RemoveFromComponent", 0x201, RemoveFromComponent, System.Type, class },
-            { "RemoveFromComponentsDB", 0x101, RemoveFromComponentsDB, class }
-          },
           fields = {
             { "children", 0x1, System.Dictionary(System.Int64, out.ET.Entity), out.MongoDB.Bson.Serialization.Attributes.BsonIgnoreAttribute() },
             { "childrenDB", 0x1, System.HashSet(out.ET.Entity), out.MongoDB.Bson.Serialization.Attributes.BsonElementAttribute("Children"), out.MongoDB.Bson.Serialization.Attributes.BsonIgnoreIfNullAttribute() },
@@ -712,6 +680,38 @@ System.namespace("ET", function (namespace)
             { "IsFromPool", 0x106, System.Boolean, getIsFromPool, setIsFromPool, out.MongoDB.Bson.Serialization.Attributes.BsonIgnoreAttribute() },
             { "IsRegister", 0x106, System.Boolean, getIsRegister, setIsRegister, out.MongoDB.Bson.Serialization.Attributes.BsonIgnoreAttribute() },
             { "Parent", 0x106, class, getParent, setParent, out.MongoDB.Bson.Serialization.Attributes.BsonIgnoreAttribute() }
+          },
+          methods = {
+            { ".ctor", 0x3, nil },
+            { "AddChild", 0x101, AddChild, class },
+            { "AddChildDB", 0x101, AddChildDB, class },
+            { "AddComponent", 0x40386, AddComponent5, function (K, P1, P2, P3) return P1, P2, P3, K end },
+            { "AddComponent", 0x30286, AddComponent4, function (K, P1, P2) return P1, P2, K end },
+            { "AddComponent", 0x20186, AddComponent3, function (K, P1) return P1, K end },
+            { "AddComponent", 0x10086, AddComponent2, function (K) return K end },
+            { "AddComponent", 0x186, AddComponent, class, class },
+            { "AddComponent", 0x186, AddComponent1, System.Type, class },
+            { "AddToComponent", 0x201, AddToComponent, System.Type, class },
+            { "AddToComponentsDB", 0x101, AddToComponentsDB, class },
+            { "AfterSetParent", 0x1, AfterSetParent },
+            { "Create", 0x28E, Create, System.Type, System.Boolean, class },
+            { "CreateWithComponentParent", 0x40481, CreateWithComponentParent4, function (T, A, B, C) return A, B, C, System.Boolean, T end },
+            { "CreateWithComponentParent", 0x20281, CreateWithComponentParent2, function (T, A) return A, System.Boolean, T end },
+            { "CreateWithComponentParent", 0x30381, CreateWithComponentParent3, function (T, A, B) return A, B, System.Boolean, T end },
+            { "CreateWithComponentParent", 0x10181, CreateWithComponentParent1, function (T) return System.Boolean, T end },
+            { "CreateWithComponentParent", 0x281, CreateWithComponentParent, System.Type, System.Boolean, class },
+            { "Dispose", 0x6, Dispose },
+            { "GetChild", 0x10186, GetChild, function (K) return System.Int64, K end },
+            { "GetComponent", 0x10086, GetComponent, function (K) return K end },
+            { "GetComponent", 0x186, GetComponent1, System.Type, class },
+            { "GetParent", 0x10086, GetParent, function (T) return T end },
+            { "RemoveChild", 0x101, RemoveChild, class },
+            { "RemoveChildDB", 0x101, RemoveChildDB, class },
+            { "RemoveComponent", 0x10006, RemoveComponent, function (K) return end },
+            { "RemoveComponent", 0x106, RemoveComponent1, class },
+            { "RemoveComponent", 0x106, RemoveComponent2, System.Type },
+            { "RemoveFromComponent", 0x201, RemoveFromComponent, System.Type, class },
+            { "RemoveFromComponentsDB", 0x101, RemoveFromComponentsDB, class }
           },
           class = { 0x6 }
         }

@@ -10,7 +10,7 @@ System.namespace("ET", function (namespace)
   namespace.class("FUIComponentAwakeSystem", function (namespace)
     local Awake
     Awake = function (this, self)
-      self.Root = ET.EntityFactory.Create1(ET.Game.getScene(), FairyGUI.GRoot.getinst(), false, ET.FUI, FairyGUI.GObject)
+      self.Root = ET.EntityFactory.Create1(self:getDomain(), FairyGUI.GRoot.getinst(), false, ET.FUI, FairyGUI.GObject)
     end
     return {
       base = function (out)
@@ -51,10 +51,10 @@ System.namespace("ET", function (namespace)
       end
       this.Root = nil
     end
-    Add = function (this, ui, asChildGObject)
+    Add = function (this, Name, ui, asChildGObject)
       local default = this.Root
       if default ~= nil then
-        default:Add(ui, asChildGObject)
+        default:Add(Name, ui, asChildGObject)
       end
     end
     Remove = function (this, name)
@@ -105,7 +105,7 @@ System.namespace("ET", function (namespace)
             { "Root", 0x6, out.ET.FUI }
           },
           methods = {
-            { "Add", 0x206, Add, out.ET.FUI, System.Boolean },
+            { "Add", 0x306, Add, System.String, out.ET.FUI, System.Boolean },
             { "Clear", 0x6, Clear },
             { "Dispose", 0x6, Dispose },
             { "Get", 0x186, Get, System.String, out.ET.FUI },

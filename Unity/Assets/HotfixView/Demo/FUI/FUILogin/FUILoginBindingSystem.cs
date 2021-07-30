@@ -7,17 +7,17 @@ using UnityEngine.UI;
 namespace ET
 {
     [ObjectSystem]
-    public class FUILoginBindingSystem : UpdateSystem<FUILogin>
+    public class FUILoginBindingSystem : StartSystem<FUILogin>
     {
-        public override void Update(FUILogin self)
+        public override void Start(FUILogin self)
         {
-            Log.Error("FUILogin awake");
-            //ReferenceCollector rc = self.GetParent<UI>().GameObject.GetComponent(typeof(ReferenceCollector)) as ReferenceCollector;
-            //	self.m_n1.self.onClick.Set(()=> { self.OnLogin(); });
+            Log.Error("FUILogin binding");
+           	self.m_n1.self.onClick.Set(()=> { self.OnLogin(); });
 
         }
     }
-
+ 
+  
     public static class FUILoginComponentSystem
 	{
 		public static void OnLogin(this FUILogin self)

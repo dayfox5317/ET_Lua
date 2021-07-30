@@ -8,6 +8,7 @@ return function (path)
       "Demo.Config.ConfigLoader",
       "Demo.FUI.FUILogin.AppStartInitFinish_CreateLoginFUI",
       "Demo.FUI.FUILogin.FUILoginBindingSystem",
+      "Demo.FUI.FUILogin.LoginFinish_RemoveLoginFUI",
       "Demo.FUI.FUITest.Test_CreateTestFUI",
       "Demo.FUI.FUITest.UI_Button1System",
       "Demo.Global.GlobalComponentSystem",
@@ -59,6 +60,7 @@ return function (path)
       "ET.LoadingBeginEvent_CreateLoadingUI",
       "ET.LoadingFinishEvent_RemoveLoadingUI",
       "ET.LoginFinish_CreateLobbyUI",
+      "ET.LoginFinish_RemoveLoginFUI",
       "ET.LoginFinish_RemoveLoginUI",
       "ET.OperaComponentAwakeSystem",
       "ET.OperaComponentSystem",
@@ -81,7 +83,6 @@ return function (path)
       "ET.UILobbyEvent",
       "ET.UILoginComponentAwakeSystem",
       "ET.UILoginComponentSystem",
-      "ET.UILoginComponentUpdateSystem",
       "ET.UILoginEvent"
     }
   })

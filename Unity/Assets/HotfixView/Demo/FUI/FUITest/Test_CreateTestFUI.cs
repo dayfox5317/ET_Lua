@@ -7,7 +7,7 @@ namespace ET
 		protected override async ETTask Run(EventType.Test_CreateTestFUI args)
 		{
 			var fui = await UI_Button1.CreateInstanceAsync(args.ZoneScene);
-			args.ZoneScene.GetComponent<FUIComponent>().Add(fui, true);
+			args.ZoneScene.GetComponent<FUIComponent>().Add(UI_Button1.UIResName, fui, true);
 
 		}
 	}

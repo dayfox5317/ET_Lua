@@ -46,6 +46,7 @@ namespace ET
         /// <param name="type"></param>
         public void RemovePackage(string type)
         {
+            if (ResourcesComponent.Instance == null) return;
             UIPackage package;
 
             if (packages.TryGetValue(type, out package))

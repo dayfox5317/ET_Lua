@@ -6,27 +6,18 @@ using FairyGUI.Utils;
 namespace ET
 {
 	
-	public class FUILoginUpdateSystem : UpdateSystem<FUILogin>
-	{
-		public override void Update(FUILogin self)
-		{
-			Log.Error("FUILogin awake");
-			//ReferenceCollector rc = self.GetParent<UI>().GameObject.GetComponent(typeof(ReferenceCollector)) as ReferenceCollector;
-			//	self.m_n1.self.onClick.Set(()=> { self.OnLogin(); });
 
-		}
-	}
 	
     public class FUILoginAwakeSystem : AwakeSystem<FUILogin, GObject>
     {
         public override void Awake(FUILogin self, GObject go)
 		{
-			Log.Error("FUILogin awake");
+			
 			self.Awake(go);
         }
     }
-	
-	public sealed class FUILogin :Entity
+
+	public sealed class FUILogin :FUI
 	{	
 		public const string UIPackageName = "ModelView";
 		public const string UIResName = "Login";
@@ -58,7 +49,7 @@ namespace ET
 
         public static FUILogin CreateInstance(Entity domain)
 		{			
-			return EntityFactory.Create<FUILogin, GObject>(domain, CreateGObject());
+			return EntityFactory.CreateWithParent<FUILogin, GObject>(domain, CreateGObject());
 		}
 
         public static ETTask<FUILogin> CreateInstanceAsync(Entity domain)
@@ -67,7 +58,7 @@ namespace ET
 
             CreateGObjectAsync((go) =>
             {
-                tcs.SetResult(EntityFactory.Create<FUILogin, GObject>(domain, go));
+                tcs.SetResult(EntityFactory.CreateWithParent<FUILogin, GObject>(domain, go));
             });
 
             return tcs;
@@ -102,16 +93,16 @@ namespace ET
 				return;
 			}
 			
-			//GObject = go;	
+			GObject = go;
+
+            if (string.IsNullOrWhiteSpace(Name))
+            {
+                Name = Id.ToString();
+            }
+		
+            self = (GComponent)go;
 			
-			//if (string.IsNullOrWhiteSpace(Name))
-   //         {
-			//	Name = Id.ToString();
-   //         }
-			
-			self = (GComponent)go;
-			
-			//self.Add(this);
+			self.Add(this);
 			
 			var com = go.asCom;
 				

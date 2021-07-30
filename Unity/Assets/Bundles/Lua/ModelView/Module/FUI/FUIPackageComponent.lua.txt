@@ -45,6 +45,9 @@ System.namespace("ET", function (namespace)
     -- </summary>
     -- <param name="type"></param>
     RemovePackage = function (this, type)
+      if ET.ResourcesComponent.Instance == nil then
+        return
+      end
       local package
 
       local default
